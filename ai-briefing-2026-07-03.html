@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday, July 3, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday, July 3, 2026   ·   Based on July 2 newsletters   ·   8 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Proposes 5% Equity Stake to US Government via Sovereign Wealth Fund</h2>
+        <ul>
+          <li><span class="btext">Sam Altman is proposing OpenAI give the US government a 5% equity stake, valued at approximately $42.6B, routed through a public sovereign wealth fund modeled on Alaska’s oil dividend system.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Altman is pushing this as an industry-wide move — not just OpenAI — suggesting other major US AI companies do the same, giving Americans direct financial stake in AI gains.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Any deal may require Congressional approval; the Trump administration previously took a 10% stake in Intel as potential precedent for this structure.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>This is a structural shift in how AI wealth could be publicly distributed.</strong> If adopted industry-wide, it gives the US government financial leverage over leading AI labs while giving OpenAI political cover for accelerated model releases. Watch for this to influence how Anthropic responds to its own regulatory standoffs.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft Launches “Frontier Company” — $2.5B AI Consulting Unit with 6,000 Experts</h2>
+        <ul>
+          <li><span class="btext">Microsoft announced “Frontier Company,” a new $2.5B business unit that embeds 6,000 industry and engineering experts directly with enterprise customers to deploy and continuously improve AI systems.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Focus is on protecting customers’ proprietary data, workflows, and competitive advantages — a direct move into Accenture and McKinsey territory with AI-first professional services.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">No specific launch timeline beyond the July 2 announcement; targets enterprises struggling to move from AI projects to measurable business results.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Microsoft is betting $2.5B that human + AI hybrid consulting is the enterprise adoption wedge.</strong> This is directly relevant to Alteryx’s positioning — Microsoft is now competing in the same ‘help enterprises actually use AI’ space with significantly more capital and direct deployment support.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Gemini Spark Debuts on Mac — Agentic Desktop Assistant with MCP Support</h2>
+        <ul>
+          <li><span class="btext">Google’s Gemini Spark is now available on macOS with real-time tracking (sports, stocks, news, social media, weather), file organization, and Google Workspace integration.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Supports Model Context Protocol (MCP) for custom app connections; integrates with Google Tasks, Keep, Canva, Dropbox, Instacart, OpenTable, and Zillow.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Currently beta, limited to Google AI Ultra subscribers in the US; positions directly against Claude Desktop and Microsoft Copilot for the desktop agentic assistant market.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is making a serious agentic desktop push with MCP and real-time data.</strong> The MCP support is significant — it means Gemini Spark can connect to the same ecosystem Anthropic built with Claude Desktop. The AI Ultra paywall currently limits its reach, but Google will widen access.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Morgan Stanley: Less Agent Autonomy Saved 1,500 Controller-Hours Per Week</h2>
+        <ul>
+          <li><span class="btext">Morgan Stanley built a reconciliation agent that deliberately constrains autonomy — the agent cannot make most decisions independently — and reduced a 6-hour manual process to 2-3 hours.</span><span class="src">VentureBeat AI Insider</span></li>
+          <li><span class="btext">The constraint saved approximately 1,500 controller-hours per week across the reconciliation team — a counter-intuitive finding in financial services AI deployment.</span><span class="src">VentureBeat AI Insider</span></li>
+          <li><span class="btext">Key lesson: in regulated industries, constraining agent autonomy rather than maximizing it was the primary driver of efficiency gains.</span><span class="src">VentureBeat AI Insider</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Restricting what an agent can do — not expanding it — produced the biggest real-world gains.</strong> This directly challenges the assumption that more autonomous agents are always better. For Alteryx’s enterprise AI story, this is useful proof that human-in-the-loop, bounded agents are a feature, not a limitation.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>MRAgent: Memory Framework 27x More Token-Efficient Than LangMem</h2>
+        <ul>
+          <li><span class="btext">MRAgent resolves long-horizon queries using 118,000 tokens vs LangMem’s 3.26 million tokens for the same task — a 27x reduction in memory overhead.</span><span class="src">VentureBeat AI Insider</span></li>
+          <li><span class="btext">The efficiency difference comes from a single architectural choice about how memory is structured; the framework is designed for long-running multi-step agent workflows.</span><span class="src">VentureBeat AI Insider</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A 27x token reduction changes the unit economics of long-horizon agentic tasks.</strong> Token cost is the primary constraint on long-context AI agents at scale. MRAgent’s approach could make extended agentic workflows dramatically more affordable, which matters for any company building multi-step automation products.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta Plans “Meta Compute” — Internal Cloud to Sell AI Compute Access to Developers</h2>
+        <ul>
+          <li><span class="btext">Meta is developing “Meta Compute,” an initiative to sell surplus AI computing power and hosted models to external developers, challenging AWS, Azure, and Google Cloud.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The move is motivated by generating a return on Meta’s multi-billion-dollar data center and chip investments; no launch date confirmed, still in planning stage.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">If launched, Meta would become the fourth hyperscaler, with potential to undercut incumbent cloud pricing given existing infrastructure.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta entering the cloud compute market would reshape AI infrastructure pricing.</strong> A fourth hyperscaler with competitive pricing would be good for developers and bad for AWS/Azure margins. It also signals that massive AI infrastructure investment is increasingly being monetized as a product, not just a cost center.</p>
+        </div>
+      </article>
+      <article class="story cat-4">
+        <div class="tag">DEEPSEEK</div>
+        <h2>ZCode Launches Cross-Platform Agentic Coding Environment Built on GLM-5.2</h2>
+        <ul>
+          <li><span class="btext">ZCode — from Zhipu AI (Z.ai) — is now available on macOS, Windows, and Linux, combining AI agents with developer tools for planning, coding, review, and deployment.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Powered by GLM-5.2, a 744B-parameter open-weight model noted for strong coding performance at a fraction of US rival costs; GLM subscribers get 1.5x usage quota in ZCode.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">GLM-5.2 is gaining traction as a cost-competitive alternative to frontier models for coding tasks, with Coinbase CEO Brian Armstrong already using it as an LLM gateway default.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A full agentic coding IDE built on a Chinese frontier model is now on every major desktop OS.</strong> ZCode extends GLM-5.2’s momentum beyond API access into a complete developer tool. Combined with Coinbase’s production adoption, this signals Chinese AI models are closing the practical gap on coding tooling.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Sovereign Wealth Fund</div>
+          <div class="csrc">Brain Buzz / Everyday AI</div>
+          <p>A state-owned investment vehicle that holds financial assets on behalf of a nation&#x27;s citizens. OpenAI&#x27;s proposal would route a 5% equity stake through this structure, giving everyday Americans a financial share in AI company gains — similar to how Alaska distributes oil revenue.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Constrained Agent Autonomy</div>
+          <div class="csrc">VentureBeat AI Insider</div>
+          <p>The practice of limiting how many decisions an AI agent can make independently, requiring human approval for key steps. Morgan Stanley’s reconciliation agent is a case study: restricting autonomy — not expanding it — produced the largest efficiency gains in a regulated financial workflow.</p>
+        </div>
+        <div class="concept">
+          <div class="term">MRAgent / Token-Efficient Memory</div>
+          <div class="csrc">VentureBeat AI Insider</div>
+          <p>A memory architecture for long-running AI agents that reduces token consumption by 27x compared to LangMem by changing how prior context is stored and retrieved. Lower token usage directly reduces cost for multi-step agentic tasks.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Brain Buzz · Everyday AI · TLDR AI · VentureBeat AI Insider · The Deep View · AI Entrepreneurs · Alpha Signal · The Rundown AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
