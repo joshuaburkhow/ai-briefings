@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday, May 5, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday, May 5, 2026 · Based on May 4 newsletters · 4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Near $900B; Claude Managed Agents Gets Persistent Memory</h2>
+        <ul>
+          <li><span class="btext">Claude Managed Agents persistent memory launched in beta: agents can now maintain context across sessions, access organization-level knowledge bases, and remember user preferences without re-prompting.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Anthropic confirmed a multi-year partnership with Amazon reinforcing the AWS compute relationship, alongside the Google $40B commitment. Anthropic now has redundant hyperscaler relationships — structurally different from OpenAI&#x27;s historical Microsoft dependency.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic released its Q1 2026 transparency report: 80x annualized API usage growth, 15x enterprise customer growth, and a 3x increase in average enterprise contract size compared to Q4 2025.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The dual AWS + Google infrastructure relationship is the strategic moat: OpenAI&#x27;s historical dependence on Azure created a structural single-cloud risk.</strong> Anthropic&#x27;s redundant relationships give it leverage in infrastructure negotiations and resilience against any single hyperscaler&#x27;s capacity constraints.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>DeepSeek V4 Released at $3.48/M Tokens; OpenAI Responds with GPT-5.5 Rollout</h2>
+        <ul>
+          <li><span class="btext">DeepSeek released V4: $3.48 per million tokens, open-weights available on Hugging Face. Benchmarks show strong performance on coding and math. Hallucination rate: 94% on AA-Omniscience (the highest of any measured frontier model).</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">OpenAI accelerated GPT-5.5 rollout in response to DeepSeek V4 pricing pressure. GPT-5.5 Instant is positioned as the cost-efficient default; GPT-5.5 Pro and GPT-5.5-Cyber as specialized tiers.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Meta cut 8,000 jobs globally — approximately 10% of its AI and infrastructure workforce — citing AI-driven productivity gains and a refocus on core revenue-generating products.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>DeepSeek V4 at $3.48/M creates real pricing pressure on frontier model providers: at that price point, the total cost of ownership calculation changes for any product doing high-volume inference.</strong> The 94% hallucination rate means it is not a drop-in replacement for accuracy-sensitive workloads — but for cost-sensitive use cases with tolerance for errors, it is the cheapest option by a wide margin.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Vertex AI Rebrands to Gemini Enterprise Agent Platform; Workspace Intelligence Launches</h2>
+        <ul>
+          <li><span class="btext">Google rebranded Vertex AI to Gemini Enterprise Agent Platform, signaling a shift from infrastructure tooling to complete agent deployment. Includes pre-built agent templates, governance controls, and enterprise SLAs.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Google Workspace Intelligence launched: persistent AI context across Gmail, Docs, Meet, and Calendar — the model remembers what you discussed in meetings and surfaces relevant documents automatically.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Google Cloud Next 2026 highlights: Ironwood TPU (6th generation, 2x training throughput over previous gen), Agentspace (enterprise agent orchestration platform), and NotebookLM for Enterprise (with organizational memory and API access).</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Workspace Intelligence is the Google product most likely to drive immediate enterprise adoption: it removes the context-switching cost of moving between Gmail, Docs, and Calendar by maintaining a continuous memory across all three.</strong> For knowledge workers who live in Google Workspace, this is the first AI feature that feels native rather than bolted on.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Humanoid Robots Enter Production Lines; McKinsey: Agentic AI Requires Full Infrastructure Redesign</h2>
+        <ul>
+          <li><span class="btext">Multiple manufacturers confirmed humanoid robot deployments in active production lines — not pilot programs. BMW, Foxconn, and two unnamed automotive suppliers are running robots on schedules alongside human workers.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">McKinsey published agentic AI infrastructure requirements: full agentic AI deployment requires redesigning data governance, access control, audit logging, and workflow orchestration from the ground up. Existing enterprise IT cannot support agents without significant remediation.</span><span class="src">McKinsey</span></li>
+          <li><span class="btext">The $1-to-$10 rule: AI business cases systematically underestimate true cost. McKinsey analysis finds that for every $1 of direct AI tooling cost, enterprises spend $10 on integration, governance, change management, and training.</span><span class="src">McKinsey</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The $1-to-$10 rule is the number every AI project sponsor needs before approving a budget: if a team is planning an AI deployment and only accounting for model API costs, they are underestimating total cost by 10x.</strong> The integration, governance, and change management costs are not optional — they are the work that determines whether the model is actually used.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Persistent Agent Memory</div>
+          <div class="csrc">Everyday AI</div>
+          <p>The ability for an AI agent to maintain context, preferences, and organizational knowledge across separate sessions without re-prompting. Enables agents to build organizational knowledge over time and reduces the onboarding burden for recurring tasks.</p>
+        </div>
+        <div class="concept">
+          <div class="term">The $1-to-$10 AI Cost Rule</div>
+          <div class="csrc">McKinsey</div>
+          <p>McKinsey&#x27;s finding that for every $1 of direct AI tooling cost, enterprises spend approximately $10 on integration, governance, change management, and training. Systematically underestimating these costs is the primary reason AI deployments run over budget.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Gemini Enterprise Agent Platform</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>Google&#x27;s rebranding of Vertex AI to signal a shift from ML infrastructure tooling to a complete enterprise agent deployment platform — with pre-built templates, governance, and SLAs targeting production agent workloads rather than model experimentation.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Brain Buzz · Everyday AI · McKinsey</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
