@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, July 2, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, July 2, 2026 · Based on July 1 newsletters · 5 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Launches Nano Banana 2 Lite and Gemini Omni Flash for Creative AI</h2>
+        <ul>
+          <li><span class="btext">Google released Nano Banana 2 Lite, its fastest and most cost-efficient Gemini Image model, alongside Gemini Omni Flash for video generation and conversational editing — both available via AI Studio, the Gemini API, and Google enterprise products.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Runway has integrated Gemini Omni Flash, extending Google&#x27;s reach into professional video workflows.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Google is framing these launches as part of a race to define creative AI, courting Hollywood and leaning into trust messaging ahead of rivals.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Flash-tier image and video generation is becoming commodity infrastructure.</strong> Nano Banana 2 Lite and Gemini Omni Flash together cover the full creative stack at cost-competitive pricing. Enterprise buyers now have a credible Google alternative to Runway, Sora, and Firefly for high-volume creative pipelines.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Science Debuts as Anthropic Bets Biology is the Next Code</h2>
+        <ul>
+          <li><span class="btext">Anthropic launched Claude Science in beta for Pro, Max, Team, and Enterprise users on macOS and Linux; natively renders 3D protein structures, genome browser tracks, and chemical structures in a unified workbench.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Claude Science can run on local hardware, addressing privacy and compliance requirements for research institutions handling sensitive biological data.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Anthropic is positioning Claude Science for the same role Claude Code plays in software development — purpose-built, domain-specific, and deeply integrated into existing scientific workflows.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is replicating its coding-assistant playbook in science.</strong> Claude Code became dominant by being purpose-built for code, not just a general model with a code prompt. Claude Science follows the same pattern: domain-specific rendering, tool integration, local deployment. If the biology bet lands, a high-value enterprise segment opens before competitors have a comparable offering.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Amazon Launches $1B AI Adoption Program to Accelerate Enterprise Deployment</h2>
+        <ul>
+          <li><span class="btext">Amazon announced a $1 billion investment to speed up enterprise AI adoption, targeting companies at the implementation stage rather than model evaluation.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Amazon is standing up a dedicated $1B AI team focused on enterprise onboarding and deployment support across AWS customers.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The AI race is entering an adoption and implementation phase.</strong> Building foundation models is table stakes now. Amazon&#x27;s $1B move signals that the next competitive moat is implementation velocity — helping enterprises actually deploy AI at scale. This is the professional services war that follows every major technology platform transition, now running at cloud speed.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meituan&#x27;s LongCat-2.0 Unmasked as &#x27;Owl Alpha,&#x27; a Top-3 Model on OpenRouter</h2>
+        <ul>
+          <li><span class="btext">Meituan officially launched LongCat-2.0, a 1.6 trillion-parameter Mixture-of-Experts model for agentic coding, multi-step workflows, and long-context processing.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The model was the engine behind &#x27;Owl Alpha,&#x27; a stealth model on OpenRouter that ranked top 3 by global daily usage volume before its identity was revealed.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A trillion-parameter model from a Chinese food delivery company is top 3 by daily usage.</strong> LongCat-2.0 confirms that frontier model building is no longer limited to dedicated AI labs. Meituan&#x27;s stealth release-then-reveal strategy also signals an emerging playbook: validate demand anonymously before claiming brand credit. More surprise reveals likely coming from non-obvious players.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Expands ChatGPT Finance Tools to Plus Subscribers</h2>
+        <ul>
+          <li><span class="btext">OpenAI expanded ChatGPT&#x27;s finance tools — portfolio tracking, market data, and financial Q&amp;A; — from enterprise-only to Plus-tier subscribers.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The expansion follows OpenAI&#x27;s push to deepen ChatGPT&#x27;s utility for individual users and compete with Gemini and Copilot on personal productivity and finance features.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>ChatGPT finance tools at the Plus tier brings personal finance AI to the mainstream.</strong> OpenAI is expanding downmarket with high-value vertical features — the same move Google made with Gemini in Workspace. Finance tools on Plus is a retention mechanism: users who integrate AI into financial workflows are less likely to churn. Direct competition with Intuit, Monarch Money, and personal finance apps begins here.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Mixture of Experts (MoE)</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A neural network architecture that routes each input token through only a subset of specialized expert sub-networks rather than activating the full model. Makes trillion-parameter models like LongCat-2.0 practical — only a fraction of parameters fire per token, keeping compute cost closer to a much smaller dense model.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Flash-tier models</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A model tier optimized for speed and cost efficiency at some capability ceiling trade-off. Nano Banana 2 Lite and Gemini Omni Flash are Google&#x27;s flash-tier entries for image and video generation — fast enough for real-time creative pipelines and priced for high-volume enterprise use.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agentic performance</div>
+          <div class="csrc">The Deep View</div>
+          <p>A model&#x27;s ability to plan multi-step tasks, select and use tools such as browsers, terminals, and APIs, self-correct errors, and operate autonomously without per-step human direction. Distinct from benchmark scores — it measures sustained reliability across long, tool-heavy workflows rather than single-turn accuracy.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: TLDR AI · The Deep View · Brain Buzz · Everyday AI · GenAI.works</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
