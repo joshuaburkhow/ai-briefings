@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, June 24, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, June 24, 2026 · Based on June 23 newsletters · 9 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>SpaceX Acquires Cursor for $60B and Signs $6.3B Compute Deal With Reflection AI</h2>
+        <ul>
+          <li><span class="btext">SpaceX acquired AI coding tool Cursor in an all-stock deal valued at $60 billion, announced at Cursor&#x27;s first user conference &#x27;Compile&#x27;.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">The combined Cursor/SpaceX model — Composer 3 with 1.5 trillion parameters trained on 100,000+ GPUs — will ship inside both Cursor and Grok Build.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Separately, SpaceX signed a deal worth up to $6.3B with open-source AI startup Reflection AI to access Project Colossus supercomputer capacity (Nvidia GB300s).</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Colossus is now renting compute externally; other tenants include Anthropic at $1.25B/month and Google at $920M/month.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>SpaceX is now a full-stack AI company.</strong> The Cursor acquisition transforms SpaceX from a compute landlord into a vertically integrated AI developer platform — owning the IDE, the model, and the supercomputer. The simultaneous Reflection AI deal signals that Colossus is becoming a third AI cloud, competing with AWS, Azure, and Google for frontier training workloads.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Expands Daybreak: GPT-5.5-Cyber Scores 85.6% on CyberGym, Scans 30M+ Commits</h2>
+        <ul>
+          <li><span class="btext">OpenAI launched GPT-5.5-Cyber (limited release to verified defenders), scoring 85.6% on CyberGym vs. 81.8% for standard GPT-5.5.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Codex Security scanned 30 million+ commits across 30,000+ codebases, with 500,000+ findings already auto-marked fixed.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">&#x27;Patch the Planet&#x27; initiative launched with Trail of Bits, HackerOne, cURL, Python, Go, and Sigstore; 30+ open-source projects committed.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">A new Cyber Partner Program distributes Daybreak capabilities through vetted security vendors rather than broad direct access.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is building a defensive cyber moat before regulators force the issue.</strong> GPT-5.5-Cyber arrives days after Five Eyes agencies warned that AI capable of major infrastructure attacks is &#x27;months away.&#x27; By gating the model to verified defenders and auto-patching open-source projects at scale, OpenAI is trying to get ahead of the liability question — and lock in government and enterprise security budgets before competitors.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Five Eyes Agencies Warn: AI-Enabled Cyberattacks on Critical Infrastructure Are Months Away</h2>
+        <ul>
+          <li><span class="btext">The US, UK, Canada, Australia, and New Zealand intelligence alliance issued a joint advisory that frontier AI models capable of dismantling cybersecurity defenses are &#x27;months away, not years.&#x27;</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">AI shrinks the window between vulnerability discovery and exploitation; agencies recommend zero-trust architecture, reduced attack surfaces, and accelerated patch cycles.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">White House-level talks shifted toward shared AI security benchmarks across allied nations following the advisory.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The intelligence community is no longer speaking in hypotheticals.</strong> A joint Five Eyes advisory carries weight that individual lab safety reports don&#x27;t — these agencies have classified threat intelligence. The &#x27;months away&#x27; framing puts concrete urgency on AI cyber preparedness and will likely accelerate government procurement of defensive AI tools and formal classification of frontier cyber models as dual-use risks.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Alibaba HappyHorse 1.1 Reaches #2 Globally in AI Video, Surpassing Sora and Seedance</h2>
+        <ul>
+          <li><span class="btext">Alibaba Cloud&#x27;s HappyHorse 1.1 video generation model is now ranked #2 globally, surpassing OpenAI&#x27;s Sora and ByteDance&#x27;s Seedance.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Available on Alibaba Cloud Model Studio with a 40% launch discount; supports text-to-video, image-to-video, subject-to-video, and video editing.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Model Studio API integration is live for enterprise video synthesis workflows.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The video AI race just reshuffled its leaderboard — and a Chinese model is on the podium.</strong> HappyHorse 1.1 landing at #2 globally marks the first time a non-US model has breached the top tier of video generation. Combined with ByteDance&#x27;s Seedance, Chinese video AI now holds two of the top three spots. For enterprise teams building video workflows, this widens the competitive set and will pressure OpenAI and Google to accelerate their next video model releases.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>GLM-5.2 Tops Open-Source Coding Leaderboard: 744B Parameters, MIT License, Beats Kimi K2.7 by 17%</h2>
+        <ul>
+          <li><span class="btext">GLM-5.2 from Z.ai is now the strongest openly available model: 744B parameters, mixture-of-experts architecture, MIT licensed, 1M token context window.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Beats Kimi K2.7 Code by 17% on DeepSWE benchmark, scoring 44% pass@1 (up from 18% on prior version); scored 81.0 on Terminal-Bench 2.1, just 4 points behind Claude Opus 4.8.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Microsoft is reportedly considering open models including GLM-5.2 and DeepSeek variants to power Copilot, as one enterprise accidentally spent $500M on Claude via agentic workloads.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The open-source frontier just closed the gap with closed models — again.</strong> GLM-5.2 follows the DeepSeek playbook: high-quality open weights under a permissive license with benchmark performance rivaling proprietary frontier models. For enterprises facing runaway token costs from agentic workflows, a self-hostable 744B MoE model at MIT license is a credible alternative to API-only providers — and Microsoft&#x27;s reported interest signals this could influence Copilot economics.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Invests $75M in A24 for AI Filmmaking Partnership With DeepMind</h2>
+        <ul>
+          <li><span class="btext">Google invested $75 million in A24, its first studio equity stake, to develop AI-assisted creative workflows for artists in partnership with Google DeepMind.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">A24 retains its film library and data — the deal is structured around DeepMind research support for creative tools, not training data access.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">A24&#x27;s new tech arm is led by Scott Belsky (ex-Adobe); notably, one of A24&#x27;s own directors, Kane Parsons (&#x27;Backrooms&#x27;), called AI &#x27;a symptom of broader cultural and economic rot.&#x27;</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is buying a seat at Hollywood&#x27;s creative table — not just its data.</strong> The A24 deal is structurally different from prior studio AI partnerships: A24 doesn&#x27;t hand over its film catalog, which keeps the deal defensible to talent and unions. Google gets brand association with the most culturally credible independent studio, a testing ground for DeepMind&#x27;s creative tools, and a hedge against the narrative that AI is purely extractive toward creative industries.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI Reshapes Labor: Oracle Cuts 21,000 Jobs, PwC Finds AI Skills Carry 62% Wage Premium</h2>
+        <ul>
+          <li><span class="btext">Oracle reduced its workforce from 162,000 to 141,000 (a 13% cut), costing $1.8B in severance; the company plans to spend $50B on AI infrastructure to support OpenAI and Meta workloads.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Amazon plans $200 billion in AI spending this year alongside 30,000 job cuts; combined Amazon/Meta/Google AI capex is estimated at $650 billion for 2026.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">PwC analysis of 1 billion job postings found AI skills now carry a 62% wage premium, with the job market splitting into AI-augmented roles and roles being eliminated.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The AI labor displacement-and-premium story is now measured in billions and percentages.</strong> Oracle&#x27;s 21K cut lands the same week PwC quantifies AI&#x27;s wage premium at 62%, painting a clear bifurcated picture: massive capex flowing into AI infrastructure funded partly by workforce reductions, while workers with AI skills command outsized compensation. The $650B combined capex for three companies alone underscores that this is structural, not cyclical.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Baseten Raises $1.5B at $13B Valuation; Groq Raises $650M for Data Center Expansion</h2>
+        <ul>
+          <li><span class="btext">Baseten raised $1.5B at a $13B valuation; the inference infrastructure startup grew revenue approximately 20x in one year and now handles over 1 billion daily inference calls.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Groq raised $650M to expand its LPU-based data center capacity, continuing its push as the speed-focused alternative to GPU inference.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Both rounds signal that inference infrastructure — not model training — is where investors see the clearest near-term monetization path in AI.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Inference infrastructure is the new gold rush.</strong> Baseten&#x27;s 20x revenue growth in a single year and Groq&#x27;s continued fundraising reflect the same macro bet: AI model training may be consolidating to a handful of hyperscalers, but serving those models at scale is a massive, fragmented, and fast-growing market. Both companies are positioning as picks-and-shovels plays as enterprise AI inference volumes explode from agentic workloads.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Launches Claude Tag for Slack and Claude Desktop Enterprise Across AWS, GCP, and Azure</h2>
+        <ul>
+          <li><span class="btext">Anthropic&#x27;s Claude Tag integrates Claude directly into Slack Enterprise and Team workspaces — teams @mention Claude to assign tasks; Claude maintains persistent context across channels and pulls from approved company sources.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Claude Desktop Enterprise is now available across AWS, Google Cloud, and Microsoft Foundry with SSO, MDM policy templates, offline install, local conversation history, and inference location controls.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The slug &#x27;claude-sonnet-5&#x27; has appeared on an Anthropic partner provider API, suggesting a new Sonnet model release is imminent.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is racing to embed Claude into the enterprise workflow layer before competitors lock it in.</strong> Claude Tag in Slack targets the same daily-workflow real estate that Microsoft Copilot and Google&#x27;s Gemini integrations occupy. The simultaneous multi-cloud Claude Desktop Enterprise rollout removes the &#x27;only works on one cloud&#x27; objection. Together these moves signal Anthropic&#x27;s enterprise go-to-market is accelerating: it&#x27;s no longer just an API — it&#x27;s aiming to be the AI coworker employees actually interact with daily.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Project Colossus</div>
+          <div class="csrc">The Rundown AI</div>
+          <p>SpaceX&#x27;s supercomputer cluster built on Nvidia GB300 GPUs, originally constructed to train xAI&#x27;s Grok models. It is now being repositioned as a third-party AI compute provider, renting capacity to labs including Anthropic, Google, and Reflection AI.</p>
+        </div>
+        <div class="concept">
+          <div class="term">CyberGym Benchmark</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>A security evaluation benchmark that tests AI models on real-world offensive and defensive cybersecurity tasks. GPT-5.5-Cyber scored 85.6% on CyberGym, making it the highest-performing publicly disclosed model on the benchmark.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Mixture-of-Experts (MoE)</div>
+          <div class="csrc">Everyday AI</div>
+          <p>A neural network architecture that routes each input through a subset of specialized &#x27;expert&#x27; sub-networks rather than the full model, enabling very large parameter counts (e.g., GLM-5.2&#x27;s 744B) while keeping per-token compute cost manageable — critical for self-hosted inference economics.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Patch the Planet</div>
+          <div class="csrc">AI Entrepreneurs</div>
+          <p>OpenAI&#x27;s initiative to apply Codex Security to critical open-source software projects (including cURL, Python, Go, and Sigstore) to automatically identify and remediate security vulnerabilities, with maintainers receiving free Codex access and API credits.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily · Everyday AI · TLDR AI · The Deep View · Brain Buzz · Human in the Loop · AI Breakfast · AINews · AI Entrepreneurs</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
