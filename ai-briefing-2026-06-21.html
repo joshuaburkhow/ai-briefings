@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday, June 21, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday, June 21, 2026 · Based on June 20 newsletters · 5 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Noam Shazeer and Former White House AI Advisor Dean Ball Join OpenAI</h2>
+        <ul>
+          <li><span class="btext">Noam Shazeer — Transformer co-author, co-creator of Character.ai — is leaving Google DeepMind to join OpenAI, closing the loop on his departure from Google reported June 19.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Dean Ball, former White House AI policy advisor, is joining OpenAI to lead a new Strategic Futures team addressing catastrophic risk, AI governance, labor impact, and government relations.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Both hires land directly ahead of OpenAI&#x27;s public market debut, signaling an effort to bolster both technical credibility and policy influence simultaneously.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Two hires, two gaps being filled: Shazeer adds rare foundational architecture credibility at a moment when OpenAI is under pressure from open-weights challengers.</strong> Dean Ball positions OpenAI to shape AI governance policy from the inside rather than react to it.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Nobel Prize Winner John Jumper (AlphaFold) Leaves Google DeepMind for Anthropic</h2>
+        <ul>
+          <li><span class="btext">John Jumper, Nobel Prize winner and lead researcher behind AlphaFold at Google DeepMind, is leaving to join Anthropic.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">AlphaFold, which Jumper led, predicted the 3D structure of virtually every known protein — described as one of the most significant scientific achievements of the decade.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Jumper&#x27;s move is the most significant researcher acquisition Anthropic has made publicly — adding Nobel-level scientific credibility to the company&#x27;s technical team.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AlphaFold was not just a benchmark win — it changed how biology research is done.</strong> Jumper&#x27;s move signals Anthropic is building toward life sciences and scientific reasoning applications, not just enterprise language tasks.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>SpaceX Acquires Anysphere (Cursor) for $60 Billion in First Major Public Acquisition</h2>
+        <ul>
+          <li><span class="btext">SpaceX acquired Anysphere, the parent company of the Cursor AI coding tool, for $60 billion — its first major acquisition as a publicly traded company.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Cursor is the leading AI-native code editor with strong adoption among professional developers; the acquisition gives SpaceX direct ownership of a widely-used developer productivity layer.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The $60B price represents one of the largest acqui-hires in tech history for a product-stage company, signaling how highly SpaceX values embedded AI developer tooling.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>SpaceX buying a coding tool is unexpected but logical: Starlink, Dragon, and Starship engineering all require massive software teams.</strong> Owning the coding tool the team uses, and potentially directing its roadmap toward aerospace-grade requirements, is vertical integration in software.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Norway Bans Generative AI in Elementary Schools Starting August 2026</h2>
+        <ul>
+          <li><span class="btext">Prime Minister Jonas Gahr Stoere announced a near-ban effective August 2026: pupils aged 6-13 (grades 1-7) will generally not be allowed to use generative AI tools.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Ages 14-16 may use AI cautiously under teacher supervision; ages 17-19 will receive dedicated training on responsible AI use.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Rationale: concern that AI hinders development of foundational reading, writing, and math skills — consistent with Norway&#x27;s prior bans on smartphones and tablets in schools.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Norway is simultaneously restricting under-16s from social media, signaling a broader policy posture around digital tools and child development.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Norway is the first country to codify an age-gated AI ban in schools: other governments will watch the outcomes carefully.</strong> If learning outcomes improve, this becomes a policy template. EdTech AI companies should expect regulatory pressure in European markets as a near-term risk.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Commits $350M to AI Economic Transition: $200M Research Fund + $150M Fellowship</h2>
+        <ul>
+          <li><span class="btext">Anthropic is funding a $200M Economic Futures Research Fund focused on understanding and mitigating AI&#x27;s economic impact on workers and labor markets.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">A separate $150M Claude Corps fellowship program will support people building in areas most affected by AI displacement.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">The $350M combined commitment treats AI job disruption as an imminent, concrete issue rather than a distant risk — notably funded by the company accelerating it.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">Announced alongside growing evidence that white-collar knowledge work is the first job category seeing measurable AI-driven productivity displacement.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic funding displacement research is structurally unusual: most labs deflect on labor impact.</strong> A $350M commitment signals either genuine concern, regulatory positioning, or both. Watch whether the research fund operates independently — that determines whether findings can be critical of Anthropic&#x27;s own products.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>GLM-5.2 Clears &quot;Daily Driver&quot; Bar; Z.ai Forecasts Open Fable-Class Model by December 2026</h2>
+        <ul>
+          <li><span class="btext">GLM-5.2, from Z.ai (Zhipu AI&#x27;s consumer brand), is a 744B parameter model (40B active), MIT-licensed, with 1M-token context — described by Jeremy Howard as &quot;at least as good as Opus 4.8 and GPT-5.5&quot; for daily use.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Architecture innovation: IndexShare reuses sparse-attention top-k indices across layer groups, reducing 1M-context inference cost substantially versus standard sparse attention.</span><span class="src">AINews</span></li>
+          <li><span class="btext">On Artificial Analysis AA-Briefcase (agentic knowledge work benchmark): GLM-5.2 scores 1266 Elo vs. Fable 5 at 1587 and Opus 4.8 at 1356 — highest of any open-weights model.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Z.ai has publicly forecast releasing an &quot;Open Fable&quot;-class model by end of 2026 — the first explicit timeline for open-weights frontier parity.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Context: Claude Fable consumer service shut down; GLM-5.2 emerged immediately after, filling the open-weights gap.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The &quot;daily driver&quot; bar is the key threshold: not benchmark wins, but whether practitioners actually replace their closed-model subscriptions.</strong> If Howard and others are correct, GLM-5.2 is the first open model to cross it. The Z.ai &quot;Open Fable by December&quot; forecast sets a concrete target for the rest of the industry.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Figure AI&#x27;s Robot Workforce Now Outnumbers Its 600 Human Employees</h2>
+        <ul>
+          <li><span class="btext">Figure AI crossed a milestone where its robot workforce now numerically exceeds the company&#x27;s 600-person human team.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">BotQ, Figure&#x27;s manufacturing facility, reached a production rate of one robot per hour to hit this milestone.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">Framed as the transition point from demonstration to real deployment — humanoid robots moving from &quot;demo to doing&quot; in a production environment.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">Perplexity also launched &quot;Brain&quot; this week — a self-improving memory system for its Computer agent that builds a context graph from past sessions to improve correctness on repeated tasks.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A robotics company where robots outnumber humans is not a headline stunt: it is a proof point for the manufacturing economics.</strong> If BotQ can produce one robot per hour reliably, unit economics scale. The Perplexity Brain launch is a separate signal: persistent memory for agents is becoming table stakes.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">IndexShare</div>
+          <div class="csrc">AINews</div>
+          <p>GLM-5.2&#x27;s architectural optimization for long-context inference: reuses the sparse-attention top-k indices from one layer group across adjacent groups, avoiding redundant index computation at 1M-token context windows. Enables frontier-class context at substantially lower inference cost.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AA-Briefcase Benchmark</div>
+          <div class="csrc">AINews</div>
+          <p>Artificial Analysis&#x27;s new agentic benchmark for knowledge work: multi-week simulated projects with thousands of fragmented Slack, email, and document inputs, with deliverables like financial models and board decks. Measures real-world agentic capability, not just single-turn reasoning.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AI Control Roadmap (DeepMind)</div>
+          <div class="csrc">Turing Post</div>
+          <p>Google DeepMind&#x27;s framework for securing agentic systems beyond model alignment — building system-level controls that hold even when the agent model itself may behave imperfectly. Addresses multi-agent environments where agents communicate, negotiate, and transact across organizations.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Brain Buzz · Turing Post · AINews (Latent Space) · AI Entrepreneurs · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
