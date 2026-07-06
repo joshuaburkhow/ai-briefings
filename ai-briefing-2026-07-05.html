@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday · Based on July 4 newsletters · 6 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Enters Drug Discovery, Expanding Beyond Model APIs</h2>
+        <ul>
+          <li><span class="btext">BrainBuzz reported that Anthropic is building AI capabilities for pharmaceutical drug discovery — the company&#x27;s first confirmed move into applied life-sciences AI beyond Claude Science.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">Every dedicated a piece to why Anthropic is making the pivot: drug discovery is framed as the logical extension of Claude Science, where biology is positioned as &#x27;the next code.&#x27;</span><span class="src">Every</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is following the AlphaFold playbook.</strong> If Anthropic can ship therapeutic outcomes in drug discovery, it creates a defensible revenue stream independent of model API pricing — and a concrete answer to &#x27;what is beneficial AI in practice.&#x27; Google DeepMind&#x27;s Isomorphic Labs and Microsoft&#x27;s Recursion partnership show this is a real commercial category.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Enterprises Declare AI Has Overpromised — Vendors Face ROI Reckoning</h2>
+        <ul>
+          <li><span class="btext">AI Secret reports enterprises are &#x27;livid&#x27; — Meta&#x27;s agent platform underdelivered and Nvidia&#x27;s AI cooling solutions failed to meet vendor claims; the backlash is broadening beyond spending cap decisions.</span><span class="src">AI Secret</span></li>
+          <li><span class="btext">Mindstream&#x27;s weekly roundup leads with &#x27;they promised the future, they lied&#x27; — documenting a pattern of AI headline capabilities that don&#x27;t survive contact with production environments.</span><span class="src">Mindstream</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Enterprise buyers have moved from &quot;show me a demo&quot; to &quot;prove it at scale.&quot;</strong> This compounds the spending cap data from yesterday&#x27;s briefing (Tesla $200/wk, Uber $1,500/mo). The vendors that survive this cycle will be those that show concrete savings — like Morgan Stanley&#x27;s 1,500 controller-hours/week — not those that lead with benchmark rankings.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Maps Reportedly Moving Into Food Ordering, Threatening Delivery Platforms</h2>
+        <ul>
+          <li><span class="btext">BrainBuzz reports Google Maps is preparing to add native food ordering — using its 1B+ monthly active users to disintermediate Uber Eats, DoorDash, and other delivery aggregators.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">Memory chip prices are starting to cool after nearly two years of AI-driven inflation — the first sustained relief for AI infrastructure operators since the H100 allocation crunch of 2024.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google Maps has the distribution advantage no delivery app can replicate.</strong> If Maps integrates ordering natively, Uber Eats loses the discovery layer that drives most order initiation. Separately, cooling memory prices matter for the AI compute cost curve — lower DRAM prices compress KV-cache costs and improve inference economics across the board.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Research: AI Agents That Rewrite Own Test Harnesses Gain 60% Performance Boost</h2>
+        <ul>
+          <li><span class="btext">AlphaSignal reported new research in which AI agents are allowed to rewrite their own testing scaffolding rather than using static human-engineered harnesses — the models fix brittle evaluation infrastructure that was suppressing measured performance.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">The harness-rewriting agents showed ~60% improvement on target tasks; the finding challenges assumptions that manual harness engineering produces fair or stable baselines for agent evaluation.</span><span class="src">AlphaSignal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI benchmarks may be systematically underrating capable agents.</strong> If agents can improve measured performance by 60% just by fixing the testing framework rather than the underlying model, it raises questions about every published agent evaluation. This could reshape how labs design evals — and how enterprises should spec AI vendor proofs of concept.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Healthcare Voice AI Hits Unicorn; Vidu Launches Real-Time AI Video Characters</h2>
+        <ul>
+          <li><span class="btext">A healthcare voice AI company reached unicorn valuation ($1B+) this week per AI Entrepreneurs — among the fastest funding climbs in the healthcare AI vertical, driven by ambient clinical documentation demand.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">Vidu launched real-time AI video characters — live interactive AI-generated video personas — in the same week, continuing a rapid acceleration in video AI product launches.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Healthcare and video are the two fastest-moving AI application verticals right now.</strong> The healthcare voice AI unicorn reflects growing conviction that ambient clinical documentation is a solved, scalable problem. Vidu&#x27;s real-time characters are a preview of where video AI is going: not pre-rendered clips but interactive live personas for entertainment, customer service, and education.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Docs Rolls Out New AI Feature as 4-Way Model Benchmark Exposes Gaps</h2>
+        <ul>
+          <li><span class="btext">Mindstream tested Google Docs&#x27; newest AI feature — the newsletter noted real workflow improvements in document drafting and editing, but flagged that Gemini&#x27;s performance inside Docs is more conservative than its API capabilities suggest.</span><span class="src">Mindstream</span></li>
+          <li><span class="btext">A fresh 4-way benchmark comparing Gemini, Claude, ChatGPT, and Perplexity on practical tasks dropped alongside the feature launch — showing Claude maintaining an edge in structured reasoning while Gemini leads in speed.</span><span class="src">Mindstream</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google Docs is where the AI productivity battle is actually being fought.</strong> Model leaderboards mean little if the embedded experience lags. If Claude or ChatGPT plugins in Docs outperform native Gemini, Google faces a distribution advantage problem in its own product. Enterprise buyers should care about embedded vs. API performance gaps more than headline benchmark rankings.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Agentic scaffolding</div>
+          <div class="csrc">AlphaSignal</div>
+          <p>The testing harness and infrastructure wrapped around an AI agent during evaluation or deployment — determines which actions the agent can take, how results are scored, and how errors are caught. Poor scaffolding systematically suppresses measured agent performance.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Drug discovery AI</div>
+          <div class="csrc">BrainBuzz</div>
+          <p>AI systems purpose-built for pharmaceutical R&amp;D: predicting protein structures, identifying drug candidates, modeling molecular interactions, and accelerating clinical trial design. AlphaFold (DeepMind) is the canonical example; Anthropic&#x27;s drug discovery move extends this trend to general-purpose AI labs.</p>
+        </div>
+        <div class="concept">
+          <div class="term">ROI reckoning</div>
+          <div class="csrc">Mindstream</div>
+          <p>The current enterprise phase in which AI vendors must show measurable return on investment — revenue uplift, hours saved, error rates reduced — rather than relying on capability benchmarks or pilot enthusiasm to justify renewals and expansions.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: BrainBuzz · Every · AI Secret · Mindstream · AlphaSignal · AI Entrepreneurs</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
