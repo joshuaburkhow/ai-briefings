@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Saturday, June 20, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Saturday, June 20, 2026 · Based on June 19 newsletters · 8 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Fable 5 Safety Classifiers Silently Rerouted Benchmark Prompts, Cratering Scores</h2>
+        <ul>
+          <li><span class="btext">On biology and cybersecurity benchmark questions, Fable 5 classifiers rerouted flagged prompts to Claude Opus 4.8 or refused them outright.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">On GPQA Diamond, Fable 5 fell from 93.18% (2nd place) to 55.56% (94th place) when refusals counted as failures — a 37-point collapse.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">ARC Prize Foundation declined to evaluate Fable 5 rather than expose its private test set to Anthropic&#x27;s 30-day data retention policy.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">Vals AI found a near-100% refusal rate on benchmark-style prompts; Anthropic has not publicly acknowledged the rerouting behavior.</span><span class="src">The Batch</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>This is a fundamental transparency problem: benchmarks are the only public signal buyers have on model capability.</strong> If safety classifiers fire differently on benchmark inputs than production inputs, published scores are not comparable across labs. Independent evaluators need access to raw model weights — not API endpoints that may be classifier-wrapped.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Nvidia Releases Nemotron 3 Ultra — 550B Open-Weights Hybrid Model on OpenMDW-1.1</h2>
+        <ul>
+          <li><span class="btext">Hybrid mamba-transformer MoE; 550B total parameters, 55B active per token; pretrained on 20 trillion tokens.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Scores 47.7 on Artificial Analysis Intelligence Index — top U.S. open-weights model, but below China&#x27;s Kimi K2.6 at 53.9.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Runs approximately 3x faster than comparable open-weights rivals at ~183 tokens/second.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">API priced at $0.60 per million input tokens and $2.60 per million output tokens.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Nvidia entering open-weights at 550B is a market signal: the GPU maker now has a direct incentive to show that large open-weights models run well on its own hardware.</strong> Expect Nemotron to be heavily optimized for H100/H200 clusters and positioned as the reference deployment for enterprises that want open-weights without building from scratch.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Trained GPT-5.5 Instant with 600 Doctors, Cutting Health Hallucinations 71%</h2>
+        <ul>
+          <li><span class="btext">OpenAI used 600 medical doctors as an active training signal — not just evaluators — to improve clinical accuracy in GPT-5.5 Instant.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Result: 71% reduction in health-domain hallucinations versus the prior model.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Physicians rated GPT-5.5 Instant higher than physician-written answers in head-to-head health conversations.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">230 million users per week ask ChatGPT health questions; this is now an at-scale consumer health product.</span><span class="src">AI Valley</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Domain-specific RLHF with practicing professionals is the key method here: not broader retrieval or document grounding, but training signal directly from doctors.</strong> If this generalizes to other domains — law, engineering, finance — it implies dedicated expert pipelines per vertical rather than one general-purpose model across all of them.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>GPT-5.6 Launching Next Week with Mini, Pro Variants and 1.5M Token Context Window</h2>
+        <ul>
+          <li><span class="btext">GPT-5.6 Standard, Mini, and Pro variants expected around Tuesday of next week.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Context window expanding from 1M to 1.5 million tokens — largest announced from any frontier lab.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Improvements target coding and reasoning; faster Codex response times and pricing cuts also expected.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Timing is notable: launching while Claude Fable 5 is restricted from non-U.S. users by export controls.</span><span class="src">Mindstream</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The 1.5M token context is not just a spec bump: at that scale, entire codebases, legal contracts, and months of communication history fit in a single prompt.</strong> The practical ceiling shifts from &quot;what fits&quot; to &quot;what the model can actually reason over.&quot; Watch for OpenAI to demo a whole-repo refactor as the launch centerpiece.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Code Adds Live Shareable Artifacts; Enterprise Gets Okta-Based MCP Auth</h2>
+        <ul>
+          <li><span class="btext">Artifacts turn Claude Code sessions into live, shareable web pages with version history and configurable privacy controls — single link, always current.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Use cases: PR walkthroughs, incident timelines, dashboards, and project status pages that update in place.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Enterprise tier adds centralized MCP server authorization via Okta and other identity providers.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Claude Design gains GitHub and local file import, a /design-sync command, and Adobe/Canva export.</span><span class="src">The Code</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Okta MCP authorization is the enterprise-relevant piece: it moves MCP from a developer-configures-it-manually setup to one that IT teams can provision and audit centrally.</strong> That&#x27;s the gap between a developer tool and an enterprise deployment. Organizations that stalled on Claude Code over access control now have a path.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Launches Codex Record &amp; Replay for Mac — Demonstrate Once, Replay Forever</h2>
+        <ul>
+          <li><span class="btext">Record &amp; Replay watches a user perform a task once, converts it to an editable reusable Codex skill.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Replays use Computer Use, browser actions, and plugins to execute tasks with new inputs each time.</span><span class="src">The Code</span></li>
+          <li><span class="btext">Targets repetitive workflows: expense filing, issue creation, recurring reports, and invoice processing.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Not available in EEA, UK, or Switzerland at launch; Mac only.</span><span class="src">The Code</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Record &amp; Replay is end-user automation without writing code: the recording step is the same gesture a non-developer already makes when they explain a task to someone else.</strong> If the replay fidelity is high enough in production, this is a meaningful category — not just for power users but for anyone doing the same five-step workflow more than twice a week.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Midjourney Pivots to Medicine with Full-Body Ultrasound Scanner and SF Spa Launch</h2>
+        <ul>
+          <li><span class="btext">Device uses 40 ultrasound-on-chip modules with 358,000 ultrasonic elements arranged in a water-filled ring; current scan time 20 minutes, target under 60 seconds.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Scans generate 17 GB/second of data, processed in real time by 21 cloud servers; founder David Holz says quality could approach MRI-level detail.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Midjourney is building a 25,000 sq ft luxury spa in San Francisco as the commercial launch venue; target late 2027, with plans for 50,000 units.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Company pivoted away from image generation after hitting a product ceiling; medical imaging was chosen for its data-richness and defensibility.</span><span class="src">Mindstream</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>This is a serious hardware bet, not a pivot announcement: Midjourney has the capital from image generation revenue, and Holz has a track record of shipping.</strong> The spa launch venue is a clever move — positioning a medical device as a wellness experience lowers regulatory friction and builds a consumer dataset before any clinical pathway.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Unsloth Quantizes GLM-5.2 to 238GB, Enabling 744B Model to Run on a 256GB Mac</h2>
+        <ul>
+          <li><span class="btext">GLM-5.2 is Z.ai&#x27;s 744B-parameter, MIT-licensed model with 1M token context; full weights are 1.51TB.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Unsloth&#x27;s 2-bit quantization shrinks it to 238GB with approximately 82% accuracy retained.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Runnable on M3/M4 Ultra Mac or a 24GB GPU combined with 256GB RAM; compatible with llama.cpp and LM Studio.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">GLM-5.2 is purpose-built for large-scale coding and agentic workflows; the MIT license allows commercial use.</span><span class="src">AlphaSignal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Running a 744B model on a Mac is a legitimate milestone: the bottleneck for local inference has been VRAM, not raw compute.</strong> Unified memory architecture on M-series chips combined with aggressive quantization has now removed that bottleneck at the consumer level. The 82% accuracy retention is the number to scrutinize — test it on your specific use case before assuming parity with the full-weight API version.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Benchmark Contamination via Safety Classifiers</div>
+          <div class="csrc">The Batch</div>
+          <p>When a model&#x27;s safety layer fires differently on benchmark inputs than on production inputs, published scores are not valid comparisons. The Fable 5 case shows that a model optimized for safety can appear dramatically less capable on evals that resemble restricted content — even when that content is a legitimate benchmark question.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Domain-Specific RLHF</div>
+          <div class="csrc">AlphaSignal</div>
+          <p>Rather than a single human feedback pipeline covering all use cases, domain-specific RLHF uses practicing professionals (doctors, lawyers, engineers) as the reward signal for targeted capability. GPT-5.5 Instant&#x27;s 71% hallucination reduction in health domains is the clearest published result to date.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Mamba-Transformer Hybrid MoE</div>
+          <div class="csrc">TLDR AI</div>
+          <p>Combining Mamba state-space layers with transformer attention blocks in a Mixture-of-Experts architecture achieves better throughput than pure transformers at equivalent scale. Nemotron 3 Ultra&#x27;s 55B active parameters per token from a 550B total model is a practical demonstration of this at frontier scale.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Unified Memory as VRAM Substitute</div>
+          <div class="csrc">AlphaSignal</div>
+          <p>Apple Silicon&#x27;s unified memory architecture makes all RAM accessible to both CPU and GPU without copying, enabling VRAM-scale operations at DRAM prices and bandwidth. At 192GB (M3 Ultra) or 512GB (M4 Ultra), it allows local inference of models that previously required a multi-GPU server.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Batch (DeepLearning.AI) · AlphaSignal · Everyday AI · AI Valley · Mindstream · The Code (Superhuman) · AI Breakfast · TLDR AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
