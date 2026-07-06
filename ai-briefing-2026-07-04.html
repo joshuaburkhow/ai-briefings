@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday, July 4, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday, July 4, 2026 · Based on July 3 newsletters · 10 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Fable 5 Back for Max &amp; Pro Through July 7 — But Safety Classifiers Slash Coding Scores</h2>
+        <ul>
+          <li><span class="btext">Fable 5 restored for Max and Pro subscribers until July 7, then moves to API-only and pay-per-use credits; access triggered by new safety classifiers added after Amazon found a bypass.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Post-reinstatement benchmarks by BridgeMind: debugging fell from 86.2 to 25.9, refactoring from 73.6 to 38.4 — classifiers repeatedly flag routine coding tasks and hand off to Opus 4.8.</span><span class="src">GenAI Works</span></li>
+          <li><span class="btext">Fable 5 now completes 16.1% of professional remote work projects per CASI’s Remote Labor Index — doubling its closest rival; a new cross-industry jailbreak severity framework is being drafted with Amazon, Microsoft, and Google.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Anthropic also cut Claude Code’s system prompt by 80% after discovering Mythos-class models perform better with fewer instructions; Claude Code artifacts now live on claude.ai for Pro and Max users.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Fable 5 returns with a catch.</strong> The safety classifiers that unlocked Fable 5 are also degrading its coding performance for legitimate tasks — the exact use case most Claude Code users care about. If you’re running Fable 5 this week, test your specific workflows before July 7; after that it’s credits-only, and the score drop may make Sonnet 5 the better daily driver until tuning improves.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Exploring Custom Silicon with Samsung to Reduce GPU Dependence</h2>
+        <ul>
+          <li><span class="btext">Anthropic is in early discussions with Samsung to develop a custom AI chip designed by former Tesla and OpenAI engineers, aiming to bypass expensive GPU limits.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Anthropic stated that chips from Google, Amazon, and Nvidia remain central to its hardware strategy — the Samsung talks are exploratory, not a finalized deal.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Separately, Anthropic is reportedly entering early planning for proprietary silicon; the move follows Etched’s $800M raise and OpenAI’s Jalapeño chip as labs race to control inference cost.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is quietly building a chip escape hatch.</strong> Every dollar Anthropic pays Nvidia for inference is margin it can’t reinvest in safety research or competitive pricing. A Samsung partnership — even exploratory — signals Anthropic’s leadership sees custom silicon as a strategic necessity, not a luxury. For enterprises evaluating multi-year Anthropic commitments, this matters: lower inference cost eventually flows through to API pricing.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Science Deep Dive: 60+ Databases, Reproducible Artifacts, 10x Speed for UCSF Team</h2>
+        <ul>
+          <li><span class="btext">Claude Science connects natively to 60+ scientific databases including UniProt, PDB, and ChEMBL; every artifact includes the exact code, environment, and conversation that generated it, plus a reviewer agent that flags incorrect citations.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">A UCSF team reported certain analyses now take roughly one tenth of the previous time; platform scales from a single GPU to hundreds as needed.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Available on macOS and Linux for Pro, Max, Team, and Enterprise plans; can automate CRISPR screen design and orchestrate HPC cluster jobs — positioned as what general AI assistants cannot do.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Claude Science is a real scientific OS, not just a chatbot wrapper.</strong> The reviewer-agent layer — which checks that figures match their underlying code — is the detail that separates Claude Science from prior AI-in-research tools. For anyone doing bioinformatics, cheminformatics, or genomics work, a 10x speedup on pipeline runs is not a marginal improvement; it changes what experiments are economically feasible to run.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Etched’s Sohu Chip Exits Stealth at $5B Valuation — George Hotz’s Theranos Comparison Splits the Room</h2>
+        <ul>
+          <li><span class="btext">Etched unveiled Sohu, a transformer-only inference chip: claims 500,000 tokens/sec for Llama 70B vs. ~25,000 for H100 setup; 80%+ hardware efficiency vs. 20–50% for GPUs; Low Voltage Inference and Cluster-Scale Memory as key innovations.</span><span class="src">Neat Prompts</span></li>
+          <li><span class="btext">$800M raised across rounds capped by a $500M close in Dec 2025 at $5B valuation; backers include Jane Street, Two Sigma, Andrej Karpathy, Geoffrey Hinton, Fei-Fei Li, and Peter Thiel; over $1B in signed customer contracts (no customers named).</span><span class="src">Neat Prompts</span></li>
+          <li><span class="btext">George Hotz posted a single line comparing Etched to Theranos, triggering two days of argument; core risk acknowledged by the CEO: if transformers are superseded, Sohu chips become expensive paperweights.</span><span class="src">Neat Prompts</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Transformer-only silicon is a massive bet on the current AI architecture.</strong> Etched’s economics only work if transformers remain the dominant inference architecture for the next 3–5 years. The Hotz Theranos comparison is not just trolling — it surfaces a real strategic risk. But if the bet pays off, $500K tokens/sec at scale fundamentally changes what always-on AI agents cost to run. Worth watching which named hyperscaler takes the first public contract.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>World Models Challenge LLMs: Three Labs Raise $2B+ Betting Physics Beats Language for AGI</h2>
+        <ul>
+          <li><span class="btext">AMI Labs (Yann LeCun) raised $1B seed at $3.5B valuation; World Labs (Fei-Fei Li) raised $1B at $5B; Runway raised $315M Series E at $5.3B — all building systems that understand physical environments, not just text.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">LeCun’s thesis: “language offers only a limited slice of intelligence”; Runway CTO Anastasis Germanidis: “World models are kind of the only path to AGI”; Nvidia’s Amit Goel: “you cannot just get that from text.”</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Counter-view: only ~16% of people use AI day-to-day (Microsoft study), so LLMs have an enormous capability overhang to exploit before hitting saturation; IBM’s Luis Lastras notes enterprises are still figuring out reliable LLM deployment.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Google DeepMind’s Project Genie (Jan 2026) and Nvidia’s Cosmos (third generation) are the big-lab bets; Niantic sold Pokémon Go for $3.5B and pivoted entirely to a Large Geospatial Model.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The AGI architecture debate is now a capital allocation question.</strong> Three credible labs raised a combined $2B+ in months on the world-model thesis. For practitioners, the near-term implication is not AGI — it’s that spatial and physical reasoning capabilities are coming to production AI faster than most roadmaps assume. Robotics, autonomous vehicles, and any workflow involving the physical world are the early beneficiaries.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta Agents Miss Timeline; Zuckerberg Tells Staff 3–6 Month Payoff Delay on 7,000 Reassignments</h2>
+        <ul>
+          <li><span class="btext">Zuckerberg told employees AI agents have advanced slower than expected, undercutting the rationale behind 7,000 AI-team reassignments; he acknowledged the restructuring “was not clean” and its payoff has not arrived.</span><span class="src">MyClaw</span></li>
+          <li><span class="btext">Alexandr Wang (Meta superintelligence chief) separately promised a Muse Spark upgrade to rescue Meta’s AI agents; Wang also claimed the unreleased Watermelon model has caught up to GPT-5.5 on benchmarks.</span><span class="src">AI Breakfast / TLDR AI</span></li>
+          <li><span class="btext">Watermelon reportedly uses an order of magnitude more compute than Muse Spark; no public timeline given; it is still in training as of July 3.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta’s agentic ambitions are behind schedule by Zuckerberg’s own admission.</strong> This is a meaningful signal for the broader agent market: if Meta — with the largest employee base and one of the largest compute stacks in AI — is struggling to deliver autonomous agents on schedule, the 2026 ‘agents replace workers’ narrative needs a stress test. The Watermelon claim is credible (LeCun-era scale + Alexandr Wang’s track record) but it’s still a benchmark story, not a product story.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Enterprises Hit AI Spending Caps; Tesla $200/wk, Uber $1,500/mo, Palantir Warns of IP Risk</h2>
+        <ul>
+          <li><span class="btext">Tesla capped employee AI spending at $200/week starting Monday; Grok is exempt but engineers prefer Claude. Uber capped at $1,500/month after blowing its AI budget in April; Meta, Amazon, and Walmart have imposed similar limits.</span><span class="src">GenAI Works</span></li>
+          <li><span class="btext">Palantir CEO Alex Karp attacked frontier labs on CNBC: accused them of overselling enterprise value while running up token bills, and warned AI subscriptions could absorb corporate IP and strategic “alpha,” creating a national-security risk.</span><span class="src">MyClaw</span></li>
+          <li><span class="btext">A VentureBeat survey found 67% of enterprises are already hedging by shifting critical workflows to open-weight or self-hosted systems following Fable 5’s sudden suspension.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Enterprise AI costs are forcing a reckoning.</strong> The spending cap wave and open-weight hedging are two faces of the same problem: frontier API pricing is unpredictable and the business case is still fuzzy for many orgs. For Anthropic’s enterprise pipeline, the Fable 5 suspension was costly beyond the safety narrative — 67% of customers hedging after one disruption is a churn signal. Self-hosted open-weight deployment is the scenario that most directly competes with commercial API revenue.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Stanford/Berkeley RoboReward: 8B VL Reward Model Outperforms GPT-5 at Teaching Robots</h2>
+        <ul>
+          <li><span class="btext">RoboReward (Stanford + UC Berkeley) uses a fine-tuned 8B vision-language model to score robot task progress 1–5; on RoboRewardBench (2,831 verified examples), it achieved mean absolute error of 0.665 — beating GPT-5 (0.811) and Gemini Robotics-ER 1.5 (0.906).</span><span class="src">The Batch</span></li>
+          <li><span class="btext">Key insight: successful robot videos are relabeled with wrong commands to generate synthetic failure data; GPT-5 mini assigns progress scores to negative examples; this makes the reward model work across single-arm, dual-arm, and humanoid robots without task-specific engineering.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">WidowX arm live demo: pick-and-place task success rate with RoboReward 8B was 50% vs. 10% with Gemini Robotics-ER 1.5; open drawer 80% vs. 45%.</span><span class="src">The Batch</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Cheap synthetic failure data unlocks general-purpose robot training.</strong> The technique — generating negative examples by relabeling successful videos — is the kind of elegant data-augmentation insight that will propagate quickly across robotics labs. If reward models this small can outperform frontier models at robot evaluation, the cost curve for physical AI training drops sharply. This is the foundational layer that world model labs (LeCun, Fei-Fei Li, Runway) need to actually train robots at scale.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">VL Reward Model</div>
+          <div class="csrc">The Batch</div>
+          <p>A vision-language model trained to score how well a robot completed a task (on a 1-5 progress scale), used as a reward signal during reinforcement learning. Replaces expensive human evaluation with an automated judge that watches the robot act.</p>
+        </div>
+        <div class="concept">
+          <div class="term">World Model</div>
+          <div class="csrc">The Deep View</div>
+          <p>An AI system trained to understand and simulate the physical environment — geometry, physics, and interactive causality — rather than just text sequences. Proponents argue world models are necessary for AGI because language alone cannot represent physical consequence.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Transformer-Only ASIC</div>
+          <div class="csrc">Neat Prompts</div>
+          <p>A chip designed exclusively to accelerate transformer-architecture inference, trading general-purpose flexibility for dramatic speed and efficiency gains. Etched’s Sohu claims 20x the throughput of H100 GPUs for Llama-style models, but becomes obsolete if the dominant architecture changes.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Steganographic Watermarking</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>Hidden patterns embedded in model outputs (such as invisible Unicode markers) to identify the source of training data. Anthropic removed such code from Claude Code after developers found it was being used to detect competitors attempting to distill Claude’s behavior into rival models.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Breakfast · Alpha Signal · TLDR AI · The Batch (DeepLearning.AI) · The Deep View · Neat Prompts · Brain Buzz · MyClaw · The Neuron Daily · GenAI Works</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
