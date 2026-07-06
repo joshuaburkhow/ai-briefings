@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Tuesday, June 30, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Tuesday, June 30, 2026 · Based on June 29 newsletters · 8 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>GPT-5.6 access capped at ~20 orgs by US government; Sol priced at $5/$30 per 1M tokens, general access weeks away</h2>
+        <ul>
+          <li><span class="btext">Three-tier family: Sol (flagship, $5/$30 per 1M tokens), Terra ($2.50/$15), Luna ($1/$6); Sol topped TerminalBench 2.1 beating Claude Mythos 5 on coding tasks.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">US government asked OpenAI to limit initial rollout to approximately 20 trusted partner organizations; general API and ChatGPT access described as coming in the next few weeks.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Sol includes an ultra mode that deploys multiple subagents in parallel for complex tasks; Terra matches GPT-5.5 quality at half the cost; Luna targets high-volume fast tasks.</span><span class="src">Human in the Loop</span></li>
+          <li><span class="btext">System card notes Sol can over-persist on agentic coding tasks when blocked; OpenAI states the model remains below its critical-risk threshold on cybersecurity assessments.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>GPT-5.6 is the most capable OpenAI family to date, but it is launching into an unprecedented government-controlled access bottleneck rather than a standard commercial rollout.</strong> The three-tier pricing targets every budget segment simultaneously, while government gating establishes a new permissioned frontier-model era where regulators, not the market, control first access. This gives Anthropic&#x27;s locked-down competitors a window even as Fable 5 remains offline.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Project Glasswing restores Mythos 5 to ~100 critical infrastructure orgs including Apple, Google, Cisco, Nvidia, Microsoft; Fable 5 remains offline</h2>
+        <ul>
+          <li><span class="btext">Both Mythos 5 and Fable 5 were pulled offline approximately two weeks ago under a US government directive citing national security concerns.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Mythos 5 now authorized for approximately 100 trusted US organizations under Project Glasswing, primarily cybersecurity and critical infrastructure providers; cleared orgs include Apple, Google, Cisco, Nvidia, and Microsoft.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Capabilities cited: Mythos 5 autonomously found thousands of high-severity flaws across major OS and browsers, including a 27-year-old OpenBSD bug and chained Linux kernel exploits.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Fable 5 remains completely offline for all customers including API users and international accounts; Anthropic is suing the Defense Department over being branded a supply chain risk.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic&#x27;s most powerful models are operating under a government clearance framework with no commercial precedent.</strong> Project Glasswing is effectively an export-control regime applied to AI models: a vetted list of approved organizations, not an open API. International customers and the general developer market remain locked out of Fable 5, handing OpenAI a material advantage in the weeks until GPT-5.6 reaches general availability.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic tells Senate Banking Committee that Alibaba ran the largest known model distillation attack: 28.8M Claude interactions across ~25,000 fraudulent accounts</h2>
+        <ul>
+          <li><span class="btext">Attack involved 28.8 million Claude interactions through approximately 25,000 fraudulent accounts between April and June 2026; operators linked to Alibaba and its Qwen AI lab.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Goal was to copy Claude behavior and fine-tune Qwen models to match it without access to training data or weights; Anthropic characterized it as flat-out theft.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Timing: two months after the White House pledged to help labs detect industrial-scale distillation attacks; disclosure made directly to Congress, signaling pursuit of legislative remedies.</span><span class="src">Human in the Loop</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic has publicly accused Alibaba of the largest known AI model distillation attack ever disclosed, creating a geopolitical flashpoint over AI model IP theft.</strong> Distillation attacks sit in a legal gray zone that copyright law was not designed to address. By going to the Senate rather than pursuing only civil litigation, Anthropic is seeking a regulatory response that could reshape how frontier model API access is authenticated and rate-limited industry-wide.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>China&#x27;s LineShine supercomputer tops the TOP500 list at 2,000+ exaflops using only domestic CPUs and no Nvidia hardware -- first Chinese system to lead since 2018</h2>
+        <ul>
+          <li><span class="btext">LineShine overtook the US El Capitan to reach number one on the TOP500 list; first Chinese supercomputer to top the list since 2018.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Exceeds 2,000 exaflops (20% faster than El Capitan); runs on approximately 45,000 domestic LX2 CPUs each with 304 cores, connected via the LingQi network fabric.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Runs entirely on CPUs with no GPUs; power consumption is 42.2 MW versus El Capitan&#x27;s 29.7 MW, making it less energy-efficient despite the compute lead.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>China has reclaimed the top supercomputing rank without any Nvidia hardware, demonstrating that US chip export restrictions have accelerated domestic chip development rather than stopping it.</strong> LineShine&#x27;s all-CPU architecture using domestically-designed processors is a direct answer to the US export control regime. A system crossing 2,000 exaflops sets up an AI training capability that operates entirely outside US supply chains, and changes the premise that export controls can meaningfully cap Chinese frontier AI development.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google unveils four-program AI-for-science strategy with Stanford and Imperial College: Gemini for Science, AI Co-Scientist, AlphaEvolve, and Empirical Research Assistant</h2>
+        <ul>
+          <li><span class="btext">Programs named by Google Research head Yossi Matias: Gemini for Science, AI Co-Scientist, AlphaEvolve, and the Empirical Research Assistant; university partners are Stanford and Imperial College.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Stated capabilities: searching millions of research papers, generating new hypotheses, accelerating experiments, and shortening the path from breakthrough to real-world impact.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Vision framed as giving every researcher a virtual lab in their pocket and potentially creating a golden age of scientific discovery.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google Research is making a coordinated push to position AI as a scientific accelerator, naming four distinct programs and two elite university partners.</strong> The naming of AlphaEvolve alongside the Empirical Research Assistant suggests Google is building a differentiated science stack rather than applying general LLMs to research. Partnerships with Stanford and Imperial College provide credibility and benchmark workflows, competing directly with Microsoft and OpenAI for dominance in research computing.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>IBM&#x27;s 0.7nm nanostack chip packs ~100 billion transistors per die with up to 70% better energy efficiency -- directly relevant to AI inference cost constraints</h2>
+        <ul>
+          <li><span class="btext">IBM&#x27;s new chip uses 0.7nm nanostack technology, pushing chip scaling below 1 nanometer for the first time.</span><span class="src">Human in the Loop</span></li>
+          <li><span class="btext">Packs nearly 100 billion transistors per fingernail-sized die; promises up to 50% more performance or 70% better energy efficiency versus the prior generation.</span><span class="src">Human in the Loop</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>IBM&#x27;s sub-1nm chip marks a significant semiconductor milestone that could materially reshape AI inference economics.</strong> Data center power is the binding constraint on how many tokens can be served per dollar. A 70% energy efficiency gain at the chip level, if delivered to market at scale, changes the cost structure for every inference provider and potentially reopens on-premises AI deployment for enterprises priced out by current power costs.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google loses four named AI researchers to OpenAI and Anthropic -- Shazeer, Nobel laureate Jumper, Adler, and Pritzel -- driven by pre-IPO equity at competitors</h2>
+        <ul>
+          <li><span class="btext">Named departures: Noam Shazeer to OpenAI; Nobel Prize winner John Jumper to Anthropic; Gemini researchers Jonas Adler and Alexander Pritzel both to Anthropic.</span><span class="src">Mind Stream</span></li>
+          <li><span class="btext">Root cause identified as pre-IPO equity: OpenAI filed for IPO in June 2026; Google&#x27;s RSU structure tied to a $4T market cap cannot match the upside of a pre-liquidity stake at OpenAI or Anthropic.</span><span class="src">Mind Stream</span></li>
+          <li><span class="btext">Google engineers at approximately 50% AI assistance for coding versus nearly 100% at Anthropic; Google also missed its promised June deadline for Gemini 3.5 Pro.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is losing its most prominent AI researchers to rivals at an accelerating rate, and the departure of a Nobel laureate alongside key Gemini team members points to structural compensation gaps that public-company equity cannot easily fix.</strong> The pre-IPO equity problem is self-reinforcing: as OpenAI and Anthropic approach liquidity events, the pull on Google talent increases, and each departure compounds the capability gap. The missed Gemini 3.5 Pro deadline adds operational pressure on top of the talent risk.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Project Glasswing</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>The US government framework for selectively restoring access to Anthropic&#x27;s Claude Mythos 5. Named cleared organizations include Apple, Google, Cisco, Nvidia, and Microsoft -- all classified as critical infrastructure operators. Effectively applies export-control-style clearance to an AI model.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Distillation Attack</div>
+          <div class="csrc">Everyday AI</div>
+          <p>A technique where an adversary uses millions of interactions with a target AI model to train their own model to mimic its behavior, copying proprietary capabilities without access to training data or weights. Anthropic accused Alibaba of executing the largest known such attack via 28.8 million Claude interactions through 25,000 fraudulent accounts.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Nanostack (0.7nm)</div>
+          <div class="csrc">Human in the Loop</div>
+          <p>IBM&#x27;s chip architecture pushing transistor density below 1 nanometer, packing nearly 100 billion transistors per chip with up to 70% better energy efficiency -- directly relevant to AI data center power constraints that now cap how many tokens can be served per dollar.</p>
+        </div>
+        <div class="concept">
+          <div class="term">BYO AI (Bring Your Own AI)</div>
+          <div class="csrc">The Deep View</div>
+          <p>A workplace trend where 76% of workers use AI tools they personally found and signed up for rather than employer-provided tools, driven by the fact that more than half of employers either provide no AI tools or rely solely on free public models.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: TLDR AI · Everyday AI · Human in the Loop · The Deep View · Brain Buzz · Alpha Signal · AI Breakfast · Mind Stream</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
