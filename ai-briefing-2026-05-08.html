@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday, May 8, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday, May 8, 2026 · Based on May 7 newsletters · 4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Approaches $1T Valuation; Google Commits Up to $40B in Total Investment</h2>
+        <ul>
+          <li><span class="btext">Anthropic is closing in on a $1 trillion valuation on secondary markets, driven by its &quot;miracle Q1&quot; of 80x annualized growth. VCs are reportedly offering to sell personal assets for access to secondary shares.</span><span class="src">AI Corner</span></li>
+          <li><span class="btext">Google confirmed its commitment to invest up to $40 billion in Anthropic — making it the single largest corporate AI investment ever disclosed. Combined with Amazon&#x27;s prior $4B, Anthropic now has the deepest hyperscaler backing of any frontier lab.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The Algorithmic Bridge: the AI race has structurally tilted in Anthropic&#x27;s favor — not because of a single model win, but because enterprise buyers have shifted preference to Claude for reliability, and the Google/Amazon backing removes infrastructure risk.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Wall Street is aggressively betting on Claude: Goldman Sachs, Morgan Stanley, and multiple hedge funds disclosed Claude usage or investment positions in Q1 filings.</span><span class="src">Future Tools</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The $40B Google commitment is the most consequential capital event in AI this year: it guarantees Anthropic compute access at a scale that removes training cost as a ceiling on model development.</strong> The secondary market frenzy (VCs offering to sell homes for shares) is a sentiment signal, not a fundamental one — the Google deal is the fundamental.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>LlamaIndex Exits Orchestration Scaffolding; OpenAI Former CTO Accuses Altman of Lying in Musk Trial</h2>
+        <ul>
+          <li><span class="btext">LlamaIndex announced it is exiting the orchestration framework layer, signaling that the scaffolding abstraction model is being displaced by native agent runtimes built directly into frontier model APIs.</span><span class="src">VentureBeat</span></li>
+          <li><span class="btext">OpenAI&#x27;s former CTO (Mira Murati) testified in the Musk v. OpenAI trial, reportedly accusing Sam Altman of making false statements about OpenAI&#x27;s mission and governance structure during the period Musk was involved.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">ChatGPT&#x27;s new default model (GPT-5.5 Instant) now features significantly improved memory — it remembers previous conversations across sessions and personalizes responses without explicit instruction.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">OpenAI published how it runs Codex safely at scale: sandboxing, approval gates, network policy, and telemetry — the first detailed safety architecture disclosure for an agent coding product.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>LlamaIndex&#x27;s exit from scaffolding is the most structurally significant developer signal: it means the orchestration framework layer is losing to native agent APIs.</strong> Teams that built on LangChain/LlamaIndex abstractions should audit how much of that logic can now be handled by the model API directly.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google&#x27;s Big AI Health Play: Health App, Gemini AI Coach, Adobe Acrobat Agentic</h2>
+        <ul>
+          <li><span class="btext">Google launched a unified AI health platform integrating Fitbit wearable data, medical records, and a Gemini-powered coach. Target: proactive health management rather than reactive tracking.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Adobe released a major Acrobat update: PDF Spaces adds an AI agent that can answer questions about documents, generate follow-up content, and respond in the user&#x27;s voice — positioning Acrobat as an agentic workspace.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Apple&#x27;s CarPlay now supports voice-based conversational AI apps — a significant step toward embedding third-party AI assistants (Claude, ChatGPT, Gemini) directly into the driving interface.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google&#x27;s health platform is the enterprise AI wedge into healthcare: combining wearable data, medical records, and a reasoning model in one surface is what every health system has been told they need to build.</strong> Google just built it and has the distribution to deploy it at consumer scale.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Notes from China&#x27;s AI Labs: China AI Is Faster, Cheaper, and More Deployment-Focused Than Assumed</h2>
+        <ul>
+          <li><span class="btext">A firsthand account from visits to most leading Chinese AI labs: China&#x27;s frontier model development is faster-moving and more deployment-focused than Western press coverage suggests. Labs are shipping production integrations months before Western equivalents.</span><span class="src">Robotic Newsletter</span></li>
+          <li><span class="btext">Chinese labs have shifted from &quot;catch-up&quot; framing to &quot;different applications&quot; framing — targeting industrial, logistics, and government verticals where data availability and deployment speed matter more than benchmark scores.</span><span class="src">Robotic Newsletter</span></li>
+          <li><span class="btext">A2A vs. MCP protocols: Google&#x27;s Agent-to-Agent (A2A) and Anthropic&#x27;s Model Context Protocol (MCP) are emerging as the two primary standards for how AI systems communicate. A2A governs agent-to-agent task delegation; MCP governs model-to-tool connections.</span><span class="src">Substack AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The China AI lab report is the most underreported story: Western coverage focuses on benchmark comparisons and chip restrictions.</strong> The deployment-speed and vertical-focus dimensions are where Chinese labs are actually running ahead, and those gaps compound faster than model capability gaps.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Wendy&#x27;s Beats Taco Bell at Customer-Facing AI; $700B Capex vs $50B Revenue Gap Widens</h2>
+        <ul>
+          <li><span class="btext">A case study of three QSR (quick-service restaurant) AI rollouts: Wendy&#x27;s chose a constrained, purpose-built voice agent over a general-purpose LLM. Taco Bell&#x27;s general model had higher error rates in noisy drive-through environments.</span><span class="src">AI Adopters</span></li>
+          <li><span class="btext">The AI math problem: industry has committed approximately $700B in capex for AI infrastructure, but AI software revenue remains around $50B annually. The gap implies either a long monetization runway or structural overcapacity.</span><span class="src">Substack AI</span></li>
+          <li><span class="btext">McKinsey Quantum Technology Monitor 2026: quantum computing is reaching a commercial tipping point, with 2-3 year timelines for error-corrected qubits that could impact cryptography and drug discovery.</span><span class="src">McKinsey</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Wendy&#x27;s vs Taco Bell result is the clearest enterprise lesson of the week: purpose-built, domain-constrained agents outperform general-purpose LLMs in noisy, high-volume production environments.</strong> The design decision — constrained vs. general — decided the outcome before a single line of code was written.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Orchestration Framework Displacement</div>
+          <div class="csrc">VentureBeat</div>
+          <p>The pattern where purpose-built agent runtimes inside model APIs replace general orchestration frameworks like LangChain and LlamaIndex. LlamaIndex&#x27;s exit from scaffolding is the clearest signal that this displacement is underway.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Constrained vs. General Agent Architecture</div>
+          <div class="csrc">AI Adopters</div>
+          <p>The design choice between a purpose-built, domain-constrained agent (narrow scope, high accuracy) and a general-purpose LLM agent (broad scope, lower accuracy in specialized domains). QSR case studies show constrained architectures win in noisy, high-volume, real-time production environments.</p>
+        </div>
+        <div class="concept">
+          <div class="term">A2A vs. MCP: Agent Communication Standards</div>
+          <div class="csrc">Substack AI</div>
+          <p>Two emerging open protocols for AI system communication. MCP (Model Context Protocol, Anthropic) governs model-to-tool connections — how a model calls external APIs and data sources. A2A (Agent-to-Agent, Google) governs agent-to-agent task delegation — how one agent assigns subtasks to another.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Adopters · AI Corner · Brain Buzz · Everyday AI · Future Tools · McKinsey · Robotic Newsletter · Substack AI · VentureBeat</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
