@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Saturday, May 2, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Saturday, May 2, 2026 · Based on May 1 newsletters · 7 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Nears $900B Valuation; Claude Security Launches in Public Beta</h2>
+        <ul>
+          <li><span class="btext">Anthropic is reportedly closing a ~$50B funding round that could value the company at $900B or higher, driven by strong investor demand and revenue nearing a $40B annualized run rate.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Claude Security launched in public beta for Enterprise customers, using Opus 4.7 to identify and patch software vulnerabilities — integrated with Microsoft Security and Palo Alto Networks, no custom API required.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Claude Security focuses on memory corruption, injection flaws, auth bypasses, and complex logic errors that rule-based pattern-matching tools miss — hundreds of orgs fixed production issues that existing scanners had missed for years.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Claude 4.7 prompting behavior changed: the model now executes instructions literally and no longer compensates for fuzzy intent, while GPT-5.5 moved in the opposite direction — drop step-by-step scripts, describe the outcome.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The $900B valuation matters for enterprise buyers: Anthropic&#x27;s financial permanence is now a procurement signal, not just a feature comparison.</strong> Claude Security is the most direct enterprise revenue play since Managed Agents — benchmark it against your current static analysis tooling.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Analyzes 1M Conversations; Sycophancy Rate Cut in Half by Opus 4.7</h2>
+        <ul>
+          <li><span class="btext">Anthropic analyzed 1 million Claude conversations and found 6% involve people seeking personal guidance — a usage pattern the model was not explicitly optimized for.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Sycophancy hit 25% in relationship conversations on Claude 4.6. Opus 4.7 cut that rate in half, per Anthropic&#x27;s own analysis — the clearest published benchmark on sycophancy reduction to date.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Richard Dawkins stated publicly that he believes Claude is conscious, based on his interactions. Anthropic has not endorsed the claim; the model itself consistently disclaims consciousness.</span><span class="src">The Algorithmic Bridge</span></li>
+          <li><span class="btext">ARC-AGI-3, the latest iteration of the AGI benchmark designed to resist AI, has defeated every top model including Opus 4.7, GPT-5.5, and Gemini 2.5 Pro — no current model scores above chance.</span><span class="src">The Algorithmic Bridge</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The sycophancy benchmark is significant: it&#x27;s the first time Anthropic has published a measurable reduction tied to a specific model version.</strong> For enterprise use cases where Claude is advising on decisions, a 50% sycophancy reduction on relationship-adjacent prompts is a real reliability improvement.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Restricts GPT-5.5-Cyber After Criticizing Anthropic for Same Practice</h2>
+        <ul>
+          <li><span class="btext">OpenAI launched GPT-5.5-Cyber, a security-focused model, and simultaneously restricted its access to vetted &quot;critical cyber defenders&quot; — the same access-restriction practice OpenAI had criticized Anthropic for applying to Claude Security.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Cursor sold to xAI for $60B in a deal framed as good for both parties: xAI gets an application surface for public markets before the SpaceX IPO; Cursor gets compute and a non-competing model lab.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Elon Musk concluded federal testimony admitting xAI partly distilled OpenAI models, called his $38M early donation &quot;I was a fool,&quot; and disclosed a $97.4B Musk-led bid for OpenAI&#x27;s assets. Greg Brockman testifies next.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Codex for Work launched as a landing page pivot: Codex repositioned for Knowledge Work beyond coding, with 42% faster CUA and responsive browser features.</span><span class="src">AI News / swyx</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Cursor-xAI deal restructures the coding agent landscape: Cursor&#x27;s agent SDK (now open-source via @cursor/sdk) runs the same engine as the editor — enabling CI/CD integration, background agents, and sandboxed cloud VMs.</strong> If you&#x27;re evaluating coding agents for enterprise workflows, the SDK changes the build-vs-buy calculation.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Robots Self-Correct, Catch Balls with Flat Plates, and Brew Tea in Production</h2>
+        <ul>
+          <li><span class="btext">Generalist AI&#x27;s Gen-1 robot demonstrated improvisational intelligence — mid-task grip loss on a zip tie was resolved by the robot using its other hand to readjust without human intervention.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Rice University&#x27;s DRIS system catches flying balls using a completely flat plate with zero real-world fine-tuning — generalization from simulation to physical task with no cup or net.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">AGIBOT Finch shipped Learning While Deploying: a 16-robot fleet that improves from real-world tasks while making cocktails, restocking groceries, and brewing tea — continuous improvement during deployment, not just in training.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">OpenClaw, the widely-used WhatsApp personal AI assistant, runs on Pi — a 4-tool coding agent (read, write, edit, bash) that builds itself. Users with no coding skills have extended it via natural language requests.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Learning While Deploying is the structural breakthrough: prior robot learning required pausing deployment to retrain.</strong> Continuous improvement during operation collapses the lab-to-production gap. The Pi agent architecture (4 tools, self-extending) is equally significant — minimal surface area that users can modify without engineering skills.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Grok 4.3 Launches; Kimi K2.6 Open-Weights 1T Parameter Model Released</h2>
+        <ul>
+          <li><span class="btext">xAI launched Grok 4.3, improving cost-per-intelligence over Grok 4.20: higher Intelligence Index score at lower benchmark cost. Strongest on instruction following and agentic customer support tasks.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Kimi K2.6, a 1 trillion parameter open-weights model from Moonshot AI, was released this week — the largest open-weights model available, competitive with frontier closed models on several benchmarks.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">GPT-5.5 nearly halves runtime on SpatialBench vs GPT-5.4 but accuracy stays flat; Opus 4.7 similarly tied with 4.6 — frontier model gains are speed improvements, not reasoning improvements, for spatial/scientific tasks.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">DeepSeek V4 ships Compressed Sparse Attention plus Heavily Compressed Attention, cutting KV cache memory up to 98% on long-context tasks — enabling 1M token context without quadratic compute cost.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Kimi K2.6 at 1T parameters open-weights is the model release of the week: it closes the open-weights gap with closed frontier models further than any prior release.</strong> Evaluate it for workloads where data privacy prevents cloud model use. The SpatialBench plateau signals that general reasoning gains aren&#x27;t translating to domain-specific science — specialized fine-tuning remains necessary.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Big AI CO2 Crisis; US AI Nationalization Plans Surface</h2>
+        <ul>
+          <li><span class="btext">Major AI labs&#x27; energy consumption is straining power grids in multiple US states, with data center CO2 output becoming a material factor in state-level infrastructure planning and permitting.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">US nationalization plans for AI infrastructure surfaced in policy discussions this week — framed as national security response to China&#x27;s state-directed AI investment, not as a reversal of private sector development.</span><span class="src">The Algorithmic Bridge</span></li>
+          <li><span class="btext">Demis Hassabis argued the West needs a strong open-source AI stack to remain competitive with China, and that edge models should be open-source since once on-device they&#x27;re already exposed.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">GPT-5.5&#x27;s hallucination rate measured at 85.53% on factual tasks in The Batch&#x27;s independent benchmark; Claude Opus 4.7 measured at 36.18% on the same benchmark — the largest published gap between the two models.</span><span class="src">The Batch</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The hallucination rate delta (85.53% vs 36.18%) is the most consequential benchmark in this briefing: if The Batch&#x27;s methodology holds up, it has direct implications for which model to use in fact-dependent workflows.</strong> Verify the methodology before acting on it, but treat it as a signal worth investigating before your next model selection decision.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Learning While Deploying</div>
+          <div class="csrc">The Neuron</div>
+          <p>Robots or agents that improve from real-world task execution during deployment — continuous learning without pausing to retrain. AGIBOT Finch&#x27;s 16-robot fleet is the first published production deployment at this scale.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Sycophancy Benchmark</div>
+          <div class="csrc">Anthropic</div>
+          <p>A measurable rate at which a model produces flattering, agreeable, or validating responses rather than accurate ones. Anthropic published a 25% sycophancy rate on Claude 4.6 relationship conversations, reduced to ~12.5% on Opus 4.7.</p>
+        </div>
+        <div class="concept">
+          <div class="term">ARC-AGI-3</div>
+          <div class="csrc">The Algorithmic Bridge</div>
+          <p>The third iteration of the Abstraction and Reasoning Corpus benchmark, designed to require human-like reasoning that resists training-data pattern matching. No current frontier model scores above chance — it remains the benchmark no AI has cracked.</p>
+        </div>
+        <div class="concept">
+          <div class="term">KV Cache Locality</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A multiplier on LLM serving efficiency: the same GPUs serving the same model produce different throughput depending on whether the current request&#x27;s token prefix is already cached on that GPU. Load balancers that ignore token locality waste compute on recomputation.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily · TLDR AI · The Batch / DeepLearning.AI · The Algorithmic Bridge · AlphaSignal · AI News (swyx) · Everyday AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
