@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, May 7, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, May 7, 2026 · Based on May 6 newsletters · 5 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Releases Claude Managed Agents with Dreaming, Outcomes, Multi-Agent Orchestration</h2>
+        <ul>
+          <li><span class="btext">Anthropic shipped the full Claude Managed Agents release: Dreaming (agents self-improve from past sessions), Outcomes Beta (developer-defined rubrics graded by a separate agent), and Multi-Agent Orchestration (complex tasks split among specialized agents).</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">SpaceX and Anthropic signed a compute partnership — Anthropic will rent infrastructure from SpaceX data centers to handle demand exceeding current AWS and Google Cloud capacity.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">AI Valley: Anthropic unveiled 10 AI finance agent templates — pitch builder, earnings reviewer, KYC screener, month-end closer — available via the Anthropic Financial Services Marketplace on GitHub.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Anthropic is also closing in on a $1 trillion valuation. AI Corner: VCs &quot;offering to sell their homes&quot; for secondary access to Anthropic shares.</span><span class="src">AI Corner</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Claude Managed Agents is the product release that closes the gap between demo and production: Dreaming + Outcomes together give enterprises a self-correcting agent stack where quality improves automatically.</strong> The SpaceX compute deal is significant infrastructure news — it means Anthropic is not solely dependent on hyperscaler capacity as usage scales past current contracts.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Sam Altman and Greg Brockman Give First Joint Interview in 10 Years; OpenAI Ads Expanding</h2>
+        <ul>
+          <li><span class="btext">Sam Altman and Greg Brockman gave their first joint podcast interview in a decade. Key topics: the Musk trial (both denied false statements), OpenAI&#x27;s nonprofit restructure, and their view on AGI timelines. Brockman described the nonprofit board removal in 2023 as &quot;the breaking point.&quot;</span><span class="src">AI Corner</span></li>
+          <li><span class="btext">ChatGPT ads are expanding internationally. OpenAI reports answer quality and trust metrics have remained stable through the pilot. The long-term framing: ads fund free access while enterprise revenue funds model development.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">GPT-5.5 Instant is now the ChatGPT default model. OpenAI reports 52% fewer hallucinated claims vs GPT-5.3 Instant. Already live for all free, Plus, and Pro users.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Altman/Brockman interview is significant for one reason: Brockman describing the board removal as &quot;the breaking point&quot; on the record is the most candid senior OpenAI statement about the governance crisis.</strong> It confirms the company is now in a stable-leadership phase and willing to discuss the crisis publicly — a prerequisite for a credible IPO narrative.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>GPT-5.5 Instant as New Default; Meta and Google Train AI to Take Actions</h2>
+        <ul>
+          <li><span class="btext">Both Meta and Google are now training AI systems specifically to take actions — filling forms, clicking, navigating interfaces — rather than just generating responses. This marks the transition from language models to action models as a distinct product category.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Google&#x27;s approach centers on Gemini-powered agents embedded in Google Workspace products. Meta&#x27;s approach centers on social graph data to personalize agent behavior across Facebook, Instagram, and WhatsApp.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Meta is also using AI for age verification — analyzing behavioral signals and visual cues rather than requiring ID upload, to comply with child safety regulations while reducing friction.</span><span class="src">Mindstream</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Training AI specifically to take actions rather than generate text is the product category shift: it separates language model providers from action model providers.</strong> Google and Meta are building this natively into their existing product surfaces, which gives them a distribution advantage over pure-play agent startups that require users to switch interfaces.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI Inference Is Breaking Unit Economics; Wall Street Bets Big on Claude</h2>
+        <ul>
+          <li><span class="btext">Turing Post: AI inference cost is now the primary threat to AI product unit economics. At current pricing, serving frontier models for high-frequency tasks (customer support, data extraction, real-time analysis) produces negative gross margins unless constrained carefully.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">Cost reduction strategies gaining traction in 2026: model routing (use cheap models for simple queries, frontier for complex), caching (store common completions), distillation (train smaller models on frontier outputs), and MoE (pay only for active parameters).</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">Future Tools: Goldman Sachs, Morgan Stanley, and multiple hedge funds invested in or disclosed usage of Claude in Q1 filings. Wall Street adoption of Claude for research, compliance, and document analysis is accelerating faster than enterprise software adoption.</span><span class="src">Future Tools</span></li>
+          <li><span class="btext">Image AI apps are dominating the App Store top charts globally — AI image generation and editing apps occupy 8 of the top 20 paid apps in the US.</span><span class="src">Future Tools</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The inference unit economics problem is the constraint that determines who survives in AI products: companies with high-frequency use cases (support, search, data extraction) at frontier model prices are running negative gross margins.</strong> The winners will be those who implement routing, caching, and distillation before their burn rate catches up.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Action Models vs. Language Models</div>
+          <div class="csrc">AI Valley</div>
+          <p>A distinct model category trained specifically to take actions in interfaces — clicking, form-filling, navigation — rather than generating text responses. Meta and Google are building these natively into their product surfaces, separate from their language model development.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Inference Cost Reduction Strategies</div>
+          <div class="csrc">Turing Post</div>
+          <p>Four techniques for reducing AI inference costs at scale: (1) Model routing — cheap models for simple queries, frontier for complex. (2) Completion caching — store and reuse common outputs. (3) Distillation — train smaller models on frontier outputs. (4) MoE selection — activate only the parameters needed per query.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agent Self-Improvement Loops</div>
+          <div class="csrc">Everyday AI</div>
+          <p>Systems where AI agents review logs of their own past sessions, identify recurring failure patterns, and generate improvement playbooks applied to future runs — without requiring human review at each iteration. Anthropic&#x27;s Dreaming feature is the first production implementation.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Corner · AI Valley · Brain Buzz · Everyday AI · Future Tools · Mindstream · Turing Post</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
