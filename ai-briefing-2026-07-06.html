@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday, July 6, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday, July 6, 2026  ·  Based on July 5 newsletters  ·  6 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI Agents Rewrite Their Own Evaluation Harness — 60% Performance Gain</h2>
+        <ul>
+          <li><span class="btext">New research shows AI models can identify weaknesses in their own evaluation scaffolding and rewrite it in place of brittle, manually engineered harnesses.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Agents that rewrote their own harness achieved up to 60% better task performance vs. static scaffolding baselines in controlled trials.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">The method treats the harness itself as a first-class optimization target — not just the model weights or its prompts.</span><span class="src">AlphaSignal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Most agent pipelines treat the scaffolding as fixed engineering.</strong> This finding means agents can identify and repair the constraints limiting their own performance — a key step toward self-improving systems that require less human re-engineering between deployments.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Maps Enters Food Delivery — Direct Challenge to Uber Eats and DoorDash</h2>
+        <ul>
+          <li><span class="btext">Google Maps is expanding into on-demand food delivery, leveraging its restaurant graph and 1B+ monthly active users for first-party ordering intent.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">Zero-install distribution on Android and Maps&#x27; dominant restaurant discovery position give Google structural advantages over delivery incumbents who rely on app downloads.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google Maps is where users already discover restaurants.</strong> By embedding food ordering at the point of discovery, Google runs the same playbook it used against Yelp — absorbing transaction volume from DoorDash and Uber Eats without asking users to switch apps.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>Memory Chip Prices Start Cooling After Two-Year Run — First Relief for AI Hardware Buyers</h2>
+        <ul>
+          <li><span class="btext">DRAM and NAND flash prices show the first consistent cooling signal since 2024; analysts project 15–20% normalization across H2 2026.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">Sustained memory shortages were a key hidden bottleneck for consumer AI hardware buildout and local model inference deployments.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>High memory prices were a silent tax on AI hardware adoption.</strong> Lower DRAM costs reduce the bill of materials for local inference rigs and consumer GPUs, unlocking a new affordability tier for on-device model deployment that didn&#x27;t exist 12 months ago.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Targets Drug Discovery: Claude Science Moves Into Pharmaceutical Research</h2>
+        <ul>
+          <li><span class="btext">Anthropic is positioning Claude Science for pharmaceutical drug discovery — identifying candidates, predicting protein-compound interactions, and analyzing clinical datasets.</span><span class="src">Every</span></li>
+          <li><span class="btext">The bet mirrors what Claude Code did for software: make AI the default tool for a high-stakes professional workflow where speed-to-result is worth enormous institutional spend.</span><span class="src">Every</span></li>
+          <li><span class="btext">Drug discovery expands Claude Science&#x27;s beachhead beyond academic research; the platform launched with 60+ scientific databases and a reported 10x productivity gain at UCSF.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Drug discovery is a multi-trillion-dollar industry running on decades of institutional knowledge.</strong> If Claude Science can compress the 12–15 year, $2B+ drug development timeline the way Claude Code compressed software delivery cycles, this positions Anthropic in a category where ROI dwarfs consumer AI.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Fable 5 Requires New Prompting Patterns — Opus-Era Strategies Now Backfire</h2>
+        <ul>
+          <li><span class="btext">Fable 5 exhibits fundamentally different behavior from Opus 4.8: verbose system prompts and heavy chain-of-thought scaffolding that worked for Opus produce worse outputs on Fable.</span><span class="src">Substack</span></li>
+          <li><span class="btext">Practitioners find Fable 5 prefers compact, goal-oriented prompts — the model infers structure rather than requiring it to be spelled out explicitly.</span><span class="src">Substack</span></li>
+          <li><span class="btext">Latent Space and the Substack AI community assembled 14+ analyses of Fable 5 behavioral shifts to guide teams through prompt migration.</span><span class="src">Substack</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Millions of Claude Code and API users have months of Opus-tuned prompts in production.</strong> Prompt regressions from model upgrades are typically found in production, not testing. Teams should audit highest-traffic prompts against Fable 5 before the July 7 rate limit normalization hits.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Docs Gets Embedded AI Writing Layer; Gemini vs Claude vs ChatGPT vs Perplexity Head-to-Head</h2>
+        <ul>
+          <li><span class="btext">Google Docs now includes an AI writing assistant embedded in the editing flow — drafting, rewriting, summarizing, and tone adjustment without leaving the document.</span><span class="src">Mindstream</span></li>
+          <li><span class="btext">Mindstream ran a four-way comparison of Gemini, Claude, ChatGPT, and Perplexity on document tasks; results show different tradeoffs in depth, style-matching, and hallucination rate.</span><span class="src">Mindstream</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google Workspace has 3B+ users and Docs is the default document environment for most knowledge workers.</strong> Embedding Gemini directly in Docs is a structural distribution move: every document edit becomes an AI touchpoint without asking users to switch context to a chat interface. The head-to-head results matter for enterprise tool selection decisions.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>CVS Health Moving Fast on AI Across Pharmacy, Insurance, and Retail Health</h2>
+        <ul>
+          <li><span class="btext">CVS Health is deploying AI for pharmacy drug interaction checks, insurance claims processing, and patient support — across some of the most compliance-sensitive workflows in the US.</span><span class="src">Neatprompts</span></li>
+          <li><span class="btext">CVS is treating healthcare data sensitivity as an engineering constraint to solve, not a reason to slow adoption — building compliant pipelines alongside the AI rollout.</span><span class="src">Neatprompts</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Healthcare AI is often cited as &quot;coming soon&quot; while few actually deploy at scale.</strong> CVS&#x27;s approach — treating regulatory constraints as solvable engineering problems — is the playbook for regulated-industry AI adoption. Directly relevant for Alteryx customers in healthcare, insurance, and financial services exploring similar deployments.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Agent harness</div>
+          <div class="csrc">AlphaSignal</div>
+          <p>The scaffolding framework surrounding an AI agent that governs how it perceives tasks, executes actions, and measures success. Traditionally hand-coded by engineers; new research shows agents can rewrite their own harness to improve performance without human intervention.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Harness self-improvement</div>
+          <div class="csrc">AlphaSignal</div>
+          <p>An agent&#x27;s ability to identify weaknesses in its own evaluation or execution scaffolding and rewrite that scaffolding at runtime — distinct from model weight updates, this is architectural self-repair within a single deployment.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Drug-target interaction prediction</div>
+          <div class="csrc">Every</div>
+          <p>A pharmaceutical AI task where models analyze molecular structures and biological pathways to predict which compounds will bind to disease-relevant proteins — a key early-stage drug discovery bottleneck that Claude Science is now targeting.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AlphaSignal · BrainBuzz · Every · Mindstream · Substack/Latent Space · Neatprompts</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
