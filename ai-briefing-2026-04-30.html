@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday, April 30, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday, April 30, 2026 · Based on April 29 newsletters · 9 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Crosses $1T Valuation; OpenAI Misses Its 2025 Revenue Target</h2>
+        <ul>
+          <li><span class="btext">Anthropic officially crossed a $1 trillion valuation on April 28, becoming the most valuable AI company in the world — surpassing OpenAI on that metric for the first time.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">OpenAI missed its 2025 revenue target of $11.6B and is now projecting $29.4B for 2026, a jump that requires sustained enterprise growth it has not yet demonstrated.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The Musk v. OpenAI civil trial reached day 3 in Oakland. Musk is seeking $150B in damages and removal of Sam Altman, alleging OpenAI abandoned its nonprofit safety mission.</span><span class="src">Human in the Loop</span></li>
+          <li><span class="btext">OpenAI models are now on AWS Bedrock via Bedrock Managed Agents — one day after the Microsoft exclusivity restructure removed the Azure-first launch requirement.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic: Passing OpenAI in valuation is a signal enterprise buyers will notice.</strong> Watch whether procurement decisions follow. The OpenAI revenue miss matters less than the $29.4B projection — miss it again and the narrative changes fast.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude for Creative Work: Adobe, Blender, and Autodesk Connectors Launched</h2>
+        <ul>
+          <li><span class="btext">Anthropic launched native connectors integrating Claude with 50+ Adobe Creative Cloud tools including Photoshop, Premiere, Firefly, and InDesign — enabling natural-language control of professional creative workflows.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Additional connectors launched for Blender, Autodesk Fusion, Ableton, Splice, SketchUp, Resolume, and Canva — covering 3D, audio, architecture, and design in one release.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic joined the Blender Development Fund as a Corporate Patron — the first AI lab to commit to the open-source 3D ecosystem at that level.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">&quot;Workflow depth&quot; was framed as the new competitive moat: benchmark wins now cycle every six weeks, but deep integration into tools people already pay for is far harder to displace.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>For anyone doing document generation or media production: this is the most practically significant Anthropic release in months.</strong> A model inside your tools beats a better model you have to context-switch to reach. Test the Adobe and Canva connectors first.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>MBZUAI Releases PAN Arcadia: Real-Time Interactive World Model</h2>
+        <ul>
+          <li><span class="btext">MBZUAI released PAN Arcadia, a world model for real-time keyboard-controlled navigation through generated environments — distinct from fixed-clip video generation models like Sora or Veo.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Trained on intentional-motion footage — sports, driving, first-person games — and handles hand-drawn images as starting points, not just photographs.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Ships alongside K2 Think, a reasoning model, with the thesis that world models and reasoning models must co-evolve: world model provides training environments; reasoning model learns to act within them.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">MBZUAI positions interactive world models as scalable training environments for physical AI — robots and autonomous vehicles — where real-world data collection is expensive and dangerous.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The world model + reasoning model pairing is the key signal: most frontier labs train reasoning on text.</strong> MBZUAI is betting physical-world reasoning requires physical-world training data. Early research, but the direction matters.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Mistral Launches Medium 3.5 and Cloud Vibe Coding Agents</h2>
+        <ul>
+          <li><span class="btext">Mistral Medium 3.5 is a 128B dense model with a 256K context window, under a modified MIT license, self-hostable on four GPUs — a meaningful threshold for teams with a single workstation.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Vibe cloud agents run in parallel for multi-step coding tasks — Mistral&#x27;s answer to OpenAI Workspace Agents and Claude Code for agentic development workflows.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Medium 3.5 benchmarks competitively with GPT-4o and Claude Sonnet on coding and reasoning at a significantly lower API price point than frontier closed models.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Mistral&#x27;s open-weight foundation is real: Medium 3.5 on four GPUs puts a capable model within reach of teams without cloud budget.</strong> Vibe agents are less proven, but the model underneath them is not.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Shifts Codex to Usage-Based Pricing; Q4 IPO Considered Unlikely</h2>
+        <ul>
+          <li><span class="btext">OpenAI restructured Codex pricing: Business plan dropped to $20/seat/year (from $25), with a $100 usage credit per new Codex user, capped at $500 per team.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">OpenAI&#x27;s CFO has reportedly been excluded from key financial discussions — an unusual signal for a company potentially preparing for a public offering.</span><span class="src">Human in the Loop</span></li>
+          <li><span class="btext">A Q4 2026 IPO is now considered unlikely by people familiar with the timeline, citing restructuring complexity and the ongoing Musk litigation as complicating factors.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The CFO exclusion is the detail worth watching: public companies require tight financial governance.</strong> Excluding the CFO from key discussions is the opposite of IPO-readiness. If Q4 2026 slips, OpenAI needs its current revenue trajectory to hold without a capital infusion from markets.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Warp Terminal Open-Sourced Under AGPL v3; Zed Editor Ships 1.0</h2>
+        <ul>
+          <li><span class="btext">Warp open-sourced its full Rust terminal codebase under AGPL v3, with the UI under MIT, hitting 40K GitHub stars immediately. OpenAI is the founding sponsor.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Warp&#x27;s contribution model is agent-first: Oz cloud agent handles coding and testing; human contributors bring ideas and verification — inverting the traditional open-source model.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Zed 1.0 shipped after five years: GPU-rendered, no Electron, multi-agent parallel support, native Claude/Codex/OpenCode integrations, real-time collaboration on Mac, Windows, and Linux.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Warp&#x27;s agent-first contribution model is a live test: can open-source communities function with AI as the primary contributor?</strong> If it works, it dramatically lowers the barrier to complex Rust codebases. Zed 1.0 is significant for anyone wanting a fast, non-Electron editor with native multi-agent support.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>Qwen3.6-35B Runs at 120 tok/s Locally; Opus 4.7 Tokenizer Increases Costs 12-27%</h2>
+        <ul>
+          <li><span class="btext">Qwen3.6-35B-A3B — a MoE model with 35B total parameters but only 3B active per token — runs at 100-120 tok/s on an RTX 5080 via Unsloth GGUF. Apache 2.0.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Supports 262K native context (1M via YaRN) and scores 51.5 on Terminal-Bench 2.0 versus 41.6 for the previous Qwen3.5-27B — a meaningful jump in agentic coding capability.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Anthropic&#x27;s new Opus 4.7 tokenizer changes input pricing: most prompts become 12-27% more expensive due to how the new tokenizer splits text, though very short prompts become cheaper.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A frontier-class model at 120 tok/s on a single consumer GPU is a practical threshold: fast enough for interactive use, cheap enough without cloud costs.</strong> Benchmark it against your current workflows for latency-sensitive tasks. Audit the Opus 4.7 tokenizer impact before your next billing cycle.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Signs Classified DoD AI Deal; EU Forces Android AI Openness; Goldman Blocks Claude in HK</h2>
+        <ul>
+          <li><span class="btext">Google signed a classified agreement giving the US DoD access to its AI for &quot;any lawful government purpose&quot; — the same broad legal framing that drew criticism in Anthropic&#x27;s DoD situation.</span><span class="src">Human in the Loop</span></li>
+          <li><span class="btext">The EU ordered Google to allow competing AI assistants on Android devices, ruling Gemini&#x27;s preferential placement constitutes an antitrust violation — requiring alternatives during device setup.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Goldman Sachs barred Hong Kong bankers from using Claude for client work, citing regional regulatory concerns about data handling — while allowing continued use in other offices.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Anthropic began requiring photo ID and a selfie for verification of some user accounts, a shift toward identity-based access controls for frontier model access.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Goldman HK ban is the most actionable signal for enterprise AI: financial regulators are making jurisdiction-specific decisions about which models are permissible for which workflows.</strong> Expect differential access by geography and use case to become more common, not less.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Perplexity Comet Launches on iPad; Amazon Adds AI Audio Q&amp;A; to Product Pages</h2>
+        <ul>
+          <li><span class="btext">Perplexity Comet launched on iPad with multi-window support, agentic search, and a side panel for bookings, emails, and purchases — positioning it as an AI-native iPad browser alternative.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Amazon launched &quot;Join the chat&quot; on product pages: real-time audio Q&amp;A; answering questions synthesized from reviews and product data — no typing required.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Amazon&#x27;s audio Q&amp;A; is the more structurally significant move: it turns the review section from passive to active, training customers to expect real-time AI answers in shopping.</strong> If conversion rates improve, every major e-commerce platform ships something similar within 12 months.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Interactive World Models as Training Environments</div>
+          <div class="csrc">The AI Corner</div>
+          <p>World models that support real-time navigation — rather than fixed-clip video — can serve as synthetic training environments for physical AI. MBZUAI&#x27;s PAN Arcadia is the first public demo at interactive speeds, paired with a reasoning model designed to learn within it.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Workflow Depth as Competitive Moat</div>
+          <div class="csrc">The Neuron</div>
+          <p>Benchmark wins between frontier models now cycle every six weeks — capability parity is table stakes. The durable advantage is how deeply a model is embedded in tools people already pay for. A model inside Photoshop or Blender is harder to replace than a better model accessed via API.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agent-First Open Source (Warp/Oz model)</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>Warp&#x27;s contribution model inverts traditional open source: the Oz cloud agent handles all coding and testing while human contributors provide direction and verification. This lowers the bar for non-engineers to contribute to complex Rust codebases.</p>
+        </div>
+        <div class="concept">
+          <div class="term">MoE Efficiency — Local Frontier Inference</div>
+          <div class="csrc">TLDR AI</div>
+          <p>Mixture-of-Experts models activate only a small fraction of total parameters per token — 3B of 35B in Qwen3.6. This makes them dramatically faster and cheaper to run than dense models of equivalent benchmark performance, enabling local inference previously only achievable with cloud infrastructure.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily · Everyday AI · TLDR AI · The Deep View · Brain Buzz · Human in the Loop · AI Breakfast · AI Corner</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
