@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, April 29, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, April 29, 2026 · Based on April 28 newsletters · 9 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Ends Microsoft Exclusivity and Plans Its Own AI Phone</h2>
+        <ul>
+          <li><span class="btext">OpenAI and Microsoft revised their multi-year partnership, ending Microsoft&#x27;s exclusive license. OpenAI signed a $38B AWS deal, confirming it will run on multiple cloud providers rather than Azure alone.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Microsoft will stop paying revenue share to OpenAI, while OpenAI continues paying Microsoft through 2030 with a hard cap. Crucially, the contractual definition of AGI was quietly removed from the agreement.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">OpenAI is developing a smartphone with MediaTek and Qualcomm, targeting 2028 production. The device would replace app-based interfaces with AI agents that have direct access to camera, contacts, location, and payments.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">OpenAI released GPT-5.5, scoring 82.7% on Terminal-Bench 2.0 versus Claude Opus 4.7&#x27;s 69.4%. Priced at $5 input/$30 output per million tokens, it targets agentic workflows rather than conversation.</span><span class="src">The AI Report</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is executing a full-stack play: own model, own cloud distribution, own device.</strong> The Microsoft deal removal of AGI language and the multi-cloud shift mean OpenAI is no longer betting on one partner. For Alteryx, this signals that every major AI vendor is racing to become the operating layer for enterprise work — making Alteryx&#x27;s positioning as the data preparation and analytics layer increasingly strategic.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Misses Its Own Revenue and User Growth Targets</h2>
+        <ul>
+          <li><span class="btext">OpenAI missed internal targets for new users and revenue, raising concern among leadership about whether the company can fund its massive data center commitments. The CFO warned that revenue must grow or future computing contracts become unaffordable.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Board directors have been questioning CEO Sam Altman&#x27;s push to secure more computing infrastructure despite the business slowdown. Leadership is now focused on cost control and operational discipline.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The miss comes as OpenAI faces direct competition from Kimi K2.6, a 1-trillion-parameter open-weight model that matched Claude Opus 4.6 on coding benchmarks at 76% lower cost with a 262K token window.</span><span class="src">The AI Report</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI&#x27;s revenue miss reveals a structural tension: massive infrastructure bets require revenue growth that hasn&#x27;t materialized at the expected rate.</strong> Meanwhile open-weight models from Kimi and DeepSeek continue to compress the price of frontier-level performance. This matters for Alteryx&#x27;s AI narrative — customers evaluating AI costs will increasingly compare open-weight alternatives to closed-model APIs.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Cloud Next: Full-Stack AI Platform vs. OpenAI&#x27;s Product Launch</h2>
+        <ul>
+          <li><span class="btext">At Cloud Next &#x27;26, Google revealed 89% of business teams already run AI agents, with the average organization operating 12 agents across departments. Paid Gemini Enterprise seats grew 40% quarter-over-quarter.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">Google rolled out the Gemini Enterprise Agent Platform, Workspace Intelligence (covering Gmail, Calendar, Drive, Docs, Sheets, Slides), Chrome auto-browse for web-based agent tasks, and 8th-generation TPU chips.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">A $750 million venture fund backs companies building on Google Cloud&#x27;s AI infrastructure. Capcom, Home Depot, Citi, Mars, and Merck are already deploying agentic AI at production scale on Google Cloud.</span><span class="src">The AI Report</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google&#x27;s pitch is platform consolidation: one vendor controls silicon, cloud, productivity apps, and the agent layer.</strong> The same-day clash with OpenAI&#x27;s workspace agents showed a strategic divide — OpenAI ships products, Google ships platforms. For Alteryx&#x27;s enterprise conversations, the Google Workspace Intelligence announcement is directly competitive territory.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>China Vetoes Meta&#x27;s $2B Manus Acquisition; AI Geopolitics Intensifies</h2>
+        <ul>
+          <li><span class="btext">China blocked Meta&#x27;s $2 billion acquisition of agentic AI startup Manus after a year-long regulatory probe — the highest-profile AI deal vetoed on national security grounds since the chip wars began.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">DeepSeek cut V4-Pro prices by 75% and reduced input cache costs by 90%, continuing to pressure US AI labs on pricing. GPU spot prices surged 114% in six weeks as demand from GPT-5.5 and new models drove B200 GPU rates to $4.95/hour.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Former DeepMind researcher David Silver&#x27;s lab Ineffable Intelligence raised $1.1 billion at a $5.1 billion valuation (NVIDIA, Google, Sequoia) to build reinforcement learning-based superlearners trained without human-labeled data.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Manus veto signals that AI acquisitions now carry geopolitical risk at every stage.</strong> The simultaneous dynamic of Chinese models cutting prices while US GPU costs surge 114% creates a bifurcated market: cheap inference from open-weight Chinese models vs. premium closed-model performance. Alteryx customers will increasingly ask where their AI is running and who controls the underlying model.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">OpenAI Symphony</div>
+          <div class="csrc">The Neuron</div>
+          <p>OpenAI&#x27;s open-source multi-agent orchestration framework for Codex. It turns issue trackers into control planes for coding agents, allowing multiple agents to work on parallel coding tasks simultaneously. Internal tests showed up to 5x increases in pull request throughput. Relevant for Alteryx&#x27;s Codex-based workflow automation.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Terminal-Bench 2.0</div>
+          <div class="csrc">The AI Report</div>
+          <p>A benchmark that evaluates AI models on their ability to navigate command-line environments and complete multi-step agentic tasks in a terminal. GPT-5.5 scored 82.7%, beating Claude Opus 4.7&#x27;s 69.4%. This benchmark matters because it measures real-world agent capability, not just text generation quality.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Recursive Language Models (RLMs)</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A new architecture from MIT designed to solve &quot;context rot&quot; — the reasoning degradation that occurs when models process very large context windows. Instead of ingesting an entire document at once, an RLM loads context into runtime memory slots in a Python REPL, processing it recursively. Addresses a core limitation of current long-context models.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Usage-Based AI Billing</div>
+          <div class="csrc">The Neuron</div>
+          <p>The shift from flat-fee subscription pricing to per-token or per-request billing for AI tools. GitHub Copilot, Atlassian, and HubSpot all announced this transition recently. For enterprise buyers, this changes AI from a predictable line item to a consumption cost that scales with usage — creating both risk and optimization opportunity.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily · The AI Report (KDNuggets) · TLDR AI · AI Valley · Alpha Signal · The Rundown AI · Bens Bites · Everyday AI · Data Elixir</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
