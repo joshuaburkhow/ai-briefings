@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday, June 19, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday, June 19, 2026 · Based on June 18 newsletters · 4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>US export controls pull Anthropic Mythos 5 and Fable 5 worldwide; access could return within days</h2>
+        <ul>
+          <li><span class="btext">The US government imposed export controls on Anthropic newest models, Mythos 5 and Fable 5, restricting use outside the country and by foreign nationals over cybersecurity and national security concerns.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Fable 5 had been publicly available for only about three days before being pulled worldwide.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic told reporters in Seoul on Wednesday that access to the restricted frontier models could be restored in the coming days.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A frontier model can vanish overnight.</strong> The episode shows how quickly access to a flagship AI model can be cut by regulators even after a major launch, exposing the geopolitical and compliance risk now baked into building on a single frontier vendor.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>At the G7, top AI leaders push for a US-led coalition to govern advanced models</h2>
+        <ul>
+          <li><span class="btext">At the G7 Summit in Evian-les-Bains, France, Anthropic CEO Dario Amodei and Google DeepMind founder Demis Hassabis called for a US-led international coalition to set AI standards, warning of bioterrorism and cybersecurity risks.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The proposal drew support from OpenAI Sam Altman and Canadian PM Mark Carney, while Amodei urged leaders to resist the temptation to splinter.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">France President Macron warned that if the US can turn off the switch on powerful models the impact could ricochet back on AI companies; India PM Modi said democratic nations need access to leading models.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The rules of AI are being drafted by a handful of people.</strong> The G7 push frames who writes AI governance standards as an open contest between national governments and a small group of labs, with allies already uneasy about US leverage over model access.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Gemini co-lead and Transformer co-author Noam Shazeer leaves Google for OpenAI</h2>
+        <ul>
+          <li><span class="btext">Noam Shazeer, a Google VP of engineering and co-lead of its Gemini models, said Wednesday he is leaving to join IPO-bound OpenAI, per Reuters.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Shazeer joins OpenAI to lead architecture research, taking a co-author of the 2017 Attention Is All You Need Transformer paper back out of Google.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Google had previously paid to bring Shazeer and his Character.AI team back, underscoring how fiercely top labs are fighting for talent.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The talent war just took a marquee scalp.</strong> Losing one of the architects of the Transformer and a Gemini technical lead to OpenAI is both a research and symbolic blow to Google, and signals how aggressively OpenAI is staffing up ahead of its IPO.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI launches LifeSciBench biology benchmark and shows an AI chemist improving a real reaction</h2>
+        <ul>
+          <li><span class="btext">OpenAI introduced LifeSciBench, a 750-task, expert-judged benchmark evaluating AI on end-to-end life-sciences workflows like evidence analysis, experimental design, and scientific reasoning.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">OpenAI also demonstrated an AI chemist using GPT-5.4 to improve a medicinal-chemistry reaction.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">TLDR AI described LifeSciBench as judging systems on full research workflows rather than isolated biology tasks.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI is being pointed straight at drug discovery.</strong> A purpose-built life-sciences benchmark plus a working chemistry demo signals OpenAI intent to make frontier models credible tools for real scientific R and D, not just coding and chat.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Amazon backs Odyssey 310M round to build AI world models on AWS and Trainium</h2>
+        <ul>
+          <li><span class="btext">Amazon joined Odyssey 310M round as the world-model startup chose AWS and Trainium chips to build AI that simulates physical environments.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Odyssey announced the financing as a 310 million dollar Series B.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>World models are the next big-money frontier.</strong> Amazon backing a world-model startup that commits to AWS and Trainium deepens the cloud-and-silicon land grab around AI that can simulate physical environments for robotics, gaming, and simulation.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Snap launches SPECS, a 2,195 dollar AI-powered AR glasses platform</h2>
+        <ul>
+          <li><span class="btext">Snap launched SPECS, 2,195 dollar AR glasses that put an AI assistant and AR lenses into eyewear that can see what the wearer sees, with developer tooling for Lens Studio, Claude Code, Codex, and Cursor.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Snap deliberately calls SPECS a computer rather than AI glasses, capping a 12-year investment in augmented-reality hardware and software.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Snap is betting on life after the smartphone.</strong> By shipping consumer AR glasses with native AI and broad developer support, Snap is making one of tech boldest wearable bets just as smart-glasses competition intensifies.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Cursor teases a 1.5-trillion-parameter coding model trained on 100,000-plus GPUs</h2>
+        <ul>
+          <li><span class="btext">Cursor new model was trained from scratch on over 100,000 GPUs, has more than 1.5 trillion parameters, and is meant to push agentic software development beyond autocomplete and pair programming.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Cursor said the model delivers intelligence beyond coding tasks and will be released in the coming weeks.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Everyday AI also flagged that Cursor is teasing a big new AI model.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A coding tool is now training its own frontier model.</strong> Cursor moving from wrapping other models to training a 1.5T-parameter model on a 100k-GPU cluster shows app-layer startups bidding to own the full stack of agentic software development.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Databricks answers agent chaos with Genie and an open-source agent framework</h2>
+        <ul>
+          <li><span class="btext">At its Data and AI Summit, Databricks launched Genie, an agentic coworker spanning Genie One, Genie Ontology, Genie App Builder, Genie Agent, and Genie Code.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Databricks also pushed an open-source agent framework for building, running, and scaling agents, with chief AI scientist Jonathan Frankle stressing customers face little lock-in.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Openness is the Databricks pitch against agent sprawl.</strong> Databricks is betting that open ecosystems and portability are the antidote to the lock-in, cost, and complexity enterprises face as every vendor ships its own agents.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>ChatGPT market share slips below 50 percent for the first time</h2>
+        <ul>
+          <li><span class="btext">ChatGPT share of the AI assistant market dipped below 50 percent for the first time, with users migrating to Google Gemini, Anthropic Claude, and xAI Grok.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">ChatGPT was the fastest app ever to reach a billion monthly users and remains the most popular AI assistant worldwide, but users are increasingly willing to switch between assistants.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The default assistant is losing its monopoly.</strong> ChatGPT dropping below half the market signals a maturing, multi-assistant landscape where switching costs are low and rivals like Gemini and Claude are pulling real usage.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">World model</div>
+          <div class="csrc">The Neuron</div>
+          <p>An AI system that learns an internal simulation of physical environments, letting it predict and generate how the world behaves over time rather than just processing text or images.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AI export controls</div>
+          <div class="csrc">The Deep View</div>
+          <p>Government restrictions that limit who can access an advanced AI model, including blocking use outside a country or by foreign nationals, on national-security grounds.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Open agent framework</div>
+          <div class="csrc">TLDR AI</div>
+          <p>An open-source toolkit for building, running, and scaling AI agents with built-in production features like durable execution, sandboxed compute, approvals, and evaluations.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Runtime credential exchange</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A security approach that replaces long-lived API tokens with short-lived, task-scoped credentials issued to agents at runtime to reduce the risk of leaked persistent access.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily . Everyday AI . TLDR AI . The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
