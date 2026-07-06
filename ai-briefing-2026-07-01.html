@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, July 1, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, July 1, 2026 · Based on June 30 newsletters · 7 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Sonnet 5 Launches as New Default Across All Tiers at Sonnet Pricing</h2>
+        <ul>
+          <li><span class="btext">Anthropic launched Claude Sonnet 5 on July 1 as the default model for Free, Pro, and API users — and for Claude Code.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Pricing: $3/$15 per million tokens (input/output); intro rate of $2/$10 runs through August 31 before rising.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Performs close to Opus 4.8 on agentic tasks; ships with lower hallucination and sycophancy rates, and cyber safeguards on by default.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Early critique: some users report off-task behavior and added verbosity on long agentic runs — Theo and Rohan Paul flagged per-task cost can exceed Opus 4.8 at scale.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Near-flagship performance at mid-tier pricing is the fastest Anthropic has closed the Sonnet-to-Opus gap.</strong> If you run Claude Code or agentic workflows, Sonnet 5 is the new default effective today. Watch per-task token burn on long jobs before assuming cost savings.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Fable 5 Returns Globally After Trump Administration Deal; Access Rate-Limited Through July 7</h2>
+        <ul>
+          <li><span class="btext">Fable 5 was suspended after Amazon researchers evaded its safeguards; Anthropic negotiated access restoration with the Center for AI Standards and Innovation (CASI).</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">Fable 5 returns globally July 1 at 50% of normal weekly usage limits through July 7; Mythos 5 now cleared for 100+ US organizations including Apple, Google, Cisco, and NVIDIA.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">US Commerce Secretary confirmed Anthropic ‘made significant progress in addressing the risks’ before the agreement was signed.</span><span class="src">The AI Report</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Government-gated access to frontier AI is now the working model for dual-use capability releases.</strong> Fable 5 is available again but throttled this week. If you have API access, limits reset at normal capacity July 8.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta Brain2Qwerty v2: Non-Invasive Brain-to-Text Reaches 78% Accuracy, Code Released</h2>
+        <ul>
+          <li><span class="btext">Meta’s Brain2Qwerty v2 decodes MEG brain recordings into real-time typed text — no surgery. Trained on ~22,000 sentences from 9 volunteers over 10 hours each.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">Best-participant word accuracy: 78%. Overall across participants: 61%. Published in Nature Neuroscience with full training code, data, and tools released publicly.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Target application: restore communication for people who cannot speak or type without requiring brain implants.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Non-invasive BCI at 78% accuracy with open code is a meaningful milestone for accessible neurotechnology.</strong> The full training code being open-sourced matters as much as the accuracy number. Competitors can now iterate on Meta’s baseline directly.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI + Broadcom Unveil “Jalapeño” Custom Inference Chip in Record 9-Month Development</h2>
+        <ul>
+          <li><span class="btext">OpenAI and Broadcom unveiled ‘Jalapeño,’ a custom Intelligence Processor optimized for LLM inference — designed for gigawatt-scale data centers.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">Nine-month design-to-production timeline is described as the fastest ASIC build at this scale on record; positions OpenAI to own models, products, and infrastructure.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">Separately, Qualcomm launched the Dragonfly AI data center brand (C1000 CPU, AI300 accelerator), acquired Modular (open CUDA alternative), and signed Meta as first customer.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Etched also exited stealth with a $5B valuation, $800M raised, and $1B in signed inference chip contracts — signaling intense competition for Nvidia’s ~80–90% GPU market share.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Three major inference chip moves in one day signals that the commodity hardware phase for AI is underway.</strong> Nvidia still dominates with a 12-month order backlog, but every major player is now moving to custom silicon. Watch how Jalapeño affects OpenAI’s pricing competitiveness against AWS and Azure.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Ford Rehires ~350 Veteran Engineers After AI Quality Systems “Couldn’t Deliver’</h2>
+        <ul>
+          <li><span class="btext">Ford brought back ~350 experienced engineers — many previously laid off — after automated quality systems failed to match expert human output in detecting design flaws.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">VP of vehicle hardware engineering Charles Poon: ‘We recognized that for us to enhance our AI tools, we needed to ensure they were trained by the most experienced individuals.’</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Ford is not abandoning AI — the strategy is augmentation: use veteran expertise to train and validate AI, not replace it.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">A Gartner report predicts 50%+ of companies that cut staff due to AI will rehire for similar roles; PwC finds augmentation yields better returns than replacement.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Ford reversion is the clearest high-profile data point yet that AI replacement strategies carry a quality rebound cost.</strong> The lesson generalizes: quality-critical domains need domain experts in the loop to validate AI output, not just approve it. Augmentation is beating replacement on measurable outcomes.</p>
+        </div>
+      </article>
+      <article class="story cat-4">
+        <div class="tag">DEEPSEEK</div>
+        <h2>DeepSeek DSpark Speeds Inference 85% via Speculative Decoding; GLM-5.2 Raises Security Flags</h2>
+        <ul>
+          <li><span class="btext">DeepSeek open-sourced DSpark, a speculative decoding framework that speeds LLM inference up to 85% without changing model output. MIT license, works with DeepSeek-V4.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">DSpark runs a lightweight ‘scout’ model ahead of the main model to pre-compute likely token paths; the main model validates batches, cutting sequential latency sharply.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Separately, Z.ai’s GLM-5.2 — an open-weight model that can be downloaded and run on consumer hardware — claims to match Anthropic’s Mythos in cybersecurity bug-finding.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">Anthropic told Congress that Alibaba ran the ‘largest cloning attack’ on Claude: 28.8 million exchanges via fraudulent accounts, and urged stricter penalties for model theft.</span><span class="src">The AI Report</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>DSpark is an immediate engineering win; GLM-5.2 open-weights for offensive security is a risk vector that the US government is now tracking.</strong> DSpark is drop-in for DeepSeek users and worth testing for inference cost reduction. The GLM-5.2 open-weight security capability is the story worth watching for AI governance implications.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic + California Sign Half-Price Claude Deal for State Agencies; Claude Science Launches in Beta</h2>
+        <ul>
+          <li><span class="btext">Anthropic struck a deal with California Governor Newsom to provide all state agencies Claude access at 50% off list price, plus free AI workforce training programs.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Claude is already used in California for code patching across state government systems; the deal expands access to non-technical agencies.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Anthropic also launched Claude Science in beta: a research workbench with code-traced artifacts, 60+ scientific database connectors, and reproducible computation for researchers.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Salesforce is on track to spend $300M on Anthropic tokens this year and holds ~1% equity stake in Anthropic; Claude Tag inside Slack is now being promoted despite Agentforce competition.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The California deal is the first state-government-scale Claude deployment and a model for public-sector AI procurement.</strong> Claude Science and the California deal together move Anthropic’s addressable market from enterprise SaaS toward government and research institutions — two spaces OpenAI has also been targeting hard.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Speculative Decoding</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A technique where a fast ‘draft’ model generates token candidates ahead of the main model, which then validates them in parallel. Cuts per-token latency without changing output quality. DeepSeek DSpark uses it to achieve 85% inference speed gains.</p>
+        </div>
+        <div class="concept">
+          <div class="term">MEG (Magnetoencephalography)</div>
+          <div class="csrc">AlphaSignal</div>
+          <p>A non-invasive brain imaging method that records magnetic fields produced by electrical activity in neurons. Meta’s Brain2Qwerty v2 uses MEG instead of surgical implants to decode intended typed text at 78% accuracy.</p>
+        </div>
+        <div class="concept">
+          <div class="term">CASI (Center for AI Standards and Innovation)</div>
+          <div class="csrc">The AI Report</div>
+          <p>A US government testing unit under NIST (National Institute of Standards and Technology) that evaluates AI safety and security properties. CASI brokered the agreement that restored Anthropic’s Fable 5 global access after its safeguard breach.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: TLDR AI · The Neuron Daily · The AI Report · AI Entrepreneurs · The Deep View · AlphaSignal · BrainBuzz</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
