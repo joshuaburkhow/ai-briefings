@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Saturday, May 9, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Saturday, May 9, 2026 · Based on May 8 newsletters · 5 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Signs $1.8B Cloud Deal with Akamai; Releases 10 Finance Agent Templates</h2>
+        <ul>
+          <li><span class="btext">Anthropic quietly locked in a $1.8 billion cloud deal with Akamai to meet demand for Claude. The deal is one of the largest infrastructure commitments from an AI lab outside the hyperscalers.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic released 10 prebuilt agent templates for financial services: pitch builder, meeting preparer, earnings reviewer, model builder, market researcher, valuation reviewer, GL reconciler, month-end closer, statement auditor, and KYC screener.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Each template packages skills, connectors, and sub-agents for deployment as plugins inside Claude Cowork or Claude Code. Available through the Anthropic Financial Services Marketplace on GitHub.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic also upgraded its Petri safety toolbox, making it easier and more realistic to test AI models for risky behaviors before deployment.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Akamai deal signals Anthropic is building infrastructure independence: a $1.8B commitment outside AWS/Azure/GCP reduces single-cloud dependency as usage scales.</strong> The finance templates are the more immediate enterprise story — KYC and month-end close are high-frequency, high-stakes workflows where proven templates compress weeks of setup to hours.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Codex Chrome Extension Launches; GPT-5.5 Instant Becomes ChatGPT Default</h2>
+        <ul>
+          <li><span class="btext">OpenAI launched a Chrome extension for Codex that operates inside your existing signed-in Chrome profile, running in parallel across tabs without taking over the browser. Available on Mac and Windows in any paid ChatGPT plan.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">GPT-5.5 Instant replaced GPT-5.3 Instant as the default ChatGPT model. OpenAI reports 52% fewer hallucinated claims and 37% fewer inaccurate claims than 5.3. Already live for free, Plus, and Pro users.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">GPT-5.5-Cyber launched in limited preview for cybersecurity defenders securing critical infrastructure — part of OpenAI&#x27;s Trusted Access for Cyber initiative with verified access controls.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Microsoft 365 Copilot now features GPT-5.5 Instant. Copilot Cowork reached iOS and Android, running in Microsoft&#x27;s cloud so it continues after the phone screen is off.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Codex Chrome extension solves a specific gap: it operates inside your real authenticated browser session — no context loss between tabs, no session timeouts.</strong> The 52% hallucination reduction in GPT-5.5 Instant is the number that matters most at scale: the default model is what 93% of users never change.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Releases Gemini 3.1 Flash-Lite; Gemini Gets Persistent Instructions in Google Docs</h2>
+        <ul>
+          <li><span class="btext">Google released Gemini 3.1 Flash-Lite: the fastest and most cost-efficient model in the Gemini 3 lineup, now GA for developers and enterprises. Designed for ultra-fast, high-volume tasks with low-latency response and budget-friendly pricing.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Gemini added persistent custom instructions inside Google Docs — set rules once, applied to every document going forward. Rolling out gradually, US and English first, for business and enterprise accounts with Gemini alpha features.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Google unveiled a unified AI health app: Google Health, integrating Fitbit data, medical records, and a Gemini-powered AI health coach in one interface.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Persistent Gemini instructions in Google Docs is more significant than it sounds: every organization has style and formatting rules people repeat constantly.</strong> Setting them once and having them applied automatically cuts the editing loop in half for every document. Flash-Lite completes Google&#x27;s tiered Gemini lineup — ultra-fast at the bottom, Gemini 3.1 Pro at the top.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Perplexity Personal Computer Opens to All Paid Mac Users; Adobe Acrobat Goes Agentic</h2>
+        <ul>
+          <li><span class="btext">Perplexity Personal Computer — a locally-running AI agent that controls your Mac, accesses local files, and works across native apps — opened to all paid Mac users with no waitlist.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Adobe turned Acrobat into an AI-powered workspace: PDF Spaces lets agents answer questions, generate content, and follow up in the user&#x27;s voice across documents. Described as &quot;a coworker inside Acrobat.&quot;</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">xAI is building Grok Build — a coding app for Mac, Windows, and Linux with planning mode, plugins, and a built-in browser. Currently in development, no launch date confirmed.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Cloudflare cut approximately 1,100 employees (20% of workforce) despite posting record quarterly revenue, citing massive internal productivity gains from AI as reducing the need for support and development roles.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Cloudflare&#x27;s layoffs are the most structurally important signal of the week: a company at record revenue cutting 20% of staff and attributing it directly to AI productivity is the enterprise case study others will cite when making similar decisions.</strong> It happened at the same time as record performance — this is not restructuring under duress.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Elon Musk Dissolves xAI Board; Apple Pays $250M for Failed AI Acquisition</h2>
+        <ul>
+          <li><span class="btext">Elon Musk dissolved xAI&#x27;s board structure, consolidating control. Grok&#x27;s competitive position is under pressure with GPT-5.5 and Claude Opus dominating head-to-head benchmarks.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Apple reportedly paid $250 million to acquire an AI startup that subsequently failed to deliver its core product. The acquisition was not publicly announced.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Apple and Intel reached a preliminary chipmaking deal — Apple diversifies beyond TSMC, Intel gains a credibility win for its foundry business. Relevant for any hardware-dependent AI product roadmap.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Sam Altman and Greg Brockman gave their first joint podcast interview in 10 years, addressing the Musk trial and OpenAI&#x27;s nonprofit restructure.</span><span class="src">AI Corner</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Apple/Intel chip deal is the most structurally durable story: TSMC concentration is a known single point of failure for the global AI supply chain.</strong> A credible second foundry option for Apple&#x27;s custom silicon changes the risk calculus for every downstream product that depends on Apple chips.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Codex Agent Runtime vs. Coding Assistant</div>
+          <div class="csrc">Everyday AI</div>
+          <p>OpenAI Codex has evolved from a model that completes code to a long-running agent runtime. The Chrome extension enables it to operate inside authenticated browser sessions across tabs indefinitely, combining browser automation with code execution for multi-step web and dashboard workflows.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Persistent Instruction Layers in Productivity Tools</div>
+          <div class="csrc">Everyday AI</div>
+          <p>AI assistants embedded in productivity apps (Google Docs, Copilot Studio) are gaining persistent instruction layers — rules set once that apply to all future sessions. This reduces per-task prompting overhead and enables consistent organizational style and compliance rules at scale.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AI-Attributable Workforce Reduction</div>
+          <div class="csrc">Everyday AI</div>
+          <p>Cloudflare&#x27;s announcement represents a new category of tech layoff: AI-attributable headcount reduction at a company with record revenue, not financial distress. This differs from prior AI-adjacent layoffs which occurred alongside declining performance, making it a cleaner causal signal.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Corner · Brain Buzz · Everyday AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
