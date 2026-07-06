@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday, June 23, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday, June 23, 2026 · 6 stories from 6 sources</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Pauses Fable 5 and Mythos 5; Claude Robots Complete Tasks 18-37x Faster</h2>
+        <ul>
+          <li><span class="btext">Anthropic launched then paused Fable 5 and Mythos 5 just days after release — U.S. national security authorities raised concerns and compliance required disabling the models globally, not just for foreign nationals.</span><span class="src">MindStream</span></li>
+          <li><span class="btext">Anthropic&#x27;s Claude completes shared robot tasks 18-37x faster than earlier human teams, marking a concrete shift from screen-based work to coordinating physical tasks.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Google DeepMind published an AI Control Roadmap treating powerful internal agents as potential &quot;insider threats,&quot; adding system-level security on top of alignment with trusted AI supervisors monitoring agent reasoning.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Key framework metrics: coverage, recall, and time-to-response. Controls scale by risk level — delayed review for low-risk actions to real-time blocking for dangerous ones.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Fable/Mythos pause is a live example of government constraints landing mid-launch: first time a major lab voluntarily disabled a released model for all users due to a government security review.</strong> The robotics speed numbers (18-37x) are not hypothetical — Claude is now faster than human teams on shared physical tasks.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>SpaceX Acquires Cursor for $60B; OpenAI Launches $150M Global Partner Network</h2>
+        <ul>
+          <li><span class="btext">SpaceX acquired AI coding startup Cursor in a $60B all-stock deal, days after Cursor&#x27;s record IPO, betting its $28T market opportunity pitch on tools that can actually build software.</span><span class="src">MindStream</span></li>
+          <li><span class="btext">OpenAI launched a Global Partner Network with $150M investment, targeting certification of 300,000 consultants by end of 2026 to help companies deploy AI.</span><span class="src">MindStream</span></li>
+          <li><span class="btext">Sam Altman predicts AI will surpass human intelligence by 2030; Anthropic CEO Dario Amodei predicts AI beats humans at &quot;almost everything&quot; by 2027.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">OpenAI&#x27;s Stargate project in Texas is cited as the key infrastructure bet underpinning these superintelligence timelines.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>SpaceX + Cursor is the largest AI M&amp;A; signal of 2026: a hardware/space company betting its future on software that builds software.</strong> The OpenAI partner network is less flashy but more operationally significant — 300,000 certified consultants is the deployment surface that turns model capability into enterprise revenue.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Munich Court Rules Google Liable for AI Overview False Claims</h2>
+        <ul>
+          <li><span class="btext">A Munich court ruled Google is legally liable for false claims made by its AI Overviews after its &quot;may contain errors&quot; disclaimer failed as a legal defense — first significant liability ruling against an AI search feature.</span><span class="src">MindStream</span></li>
+          <li><span class="btext">Google Gemini correctly identified a $100 thrift store painting as a $254,000 work by Scottish colorist F.C.B. Cadell, demonstrating real-world AI art appraisal capability.</span><span class="src">MindStream</span></li>
+          <li><span class="btext">Dean Ball joined OpenAI to lead a new Strategic Futures team focused on frontier AI policy.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Munich ruling matters beyond Google: every enterprise deploying AI search or AI-assisted content generation now faces a precedent that boilerplate disclaimers don&#x27;t create a legal shield.</strong> Legal teams should review any AI output that appears authoritative to end users.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Automated Skill Optimization: SkillOpt, GEPA, and EvoSkill Frameworks Emerge</h2>
+        <ul>
+          <li><span class="btext">Microsoft Research&#x27;s SkillOpt treats agent skill .md files like neural network parameters — delivering +23.5pt improvement on GPT-5.5 via structured rollout, evaluation, reflection, and bounded edits, without touching model weights.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">GEPA (Genetic-Pareto) uses evolutionary algorithms with Pareto-based selection to mutate and test instruction artifacts, compatible with DSPy for LLM prompt optimization.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">EvoSkill applies the same genetic approach to multi-agent coding workflows, maintaining multiple skill candidates on parallel Git branches and selecting via Pareto frontier.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">&quot;Loop engineering&quot; is emerging as the successor to prompt engineering: create a repeatable cycle with a verifiable goal and let an AI agent iterate until it achieves optimal performance.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Directly relevant to agentic org work: the manual skill-tuning loop (edit .md file, test on tasks, analyze failures, rewrite) is the current bottleneck for reliable agents.</strong> These frameworks automate exactly that loop. SkillOpt&#x27;s held-out validation approach prevents regressions when fixing one task breaks another. Prioritize reading the SkillOpt paper.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Delta Air Lines AI Playbook: Infrastructure First, Then Operational AI</h2>
+        <ul>
+          <li><span class="btext">APEX predictive engine processes real-time sensor data from ~900 aircraft — engine failure prediction accuracy rose from 60% to 90%+; overhaul time dropped from 150-200 days to under 90 days. Annual savings in the eight figures.</span><span class="src">NeatPrompts</span></li>
+          <li><span class="btext">Baggage AI at Atlanta acts like a ride-sharing app, matching 250 ramp agents to bags in real time and re-optimizing every 2 minutes — improved transfer success rate by 20% at the world&#x27;s busiest airport.</span><span class="src">NeatPrompts</span></li>
+          <li><span class="btext">Fetcherr dynamic AI pricing now covers ~3% of domestic fares (up from 1%), targeting 20% by year-end — uses route-level demand, not personal data, and has been reviewed by Congress.</span><span class="src">NeatPrompts</span></li>
+          <li><span class="btext">Delta migrated 1,300 applications and 32 core systems to hybrid cloud (2021-2024) before scaling any AI, giving it clean data infrastructure that competitors building AI on legacy systems lack.</span><span class="src">NeatPrompts</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Delta pattern is the enterprise AI playbook worth copying: migrate infrastructure first, run phased rollouts with measurable KPIs, maintain public transparency on methodology.</strong> The infrastructure investment (90% of IT costs migrated over 3 years) is what made the 90%+ prediction accuracy possible. AI on bad data still fails.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta&#x27;s $115M Workforce Academy; AI Companion Apps 2x Dating Apps on Time Spent</h2>
+        <ul>
+          <li><span class="btext">Meta launched &quot;America&#x27;s Workforce Academy&quot; with $115M first-year investment — covering tuition, travel, lodging, and stipends for workers training as fiber technicians, electricians, welders, and plumbers for AI data center infrastructure, with guaranteed job offers.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">AI companion apps (Character.AI, Talkie) hit ~700M hours in Q1 2026 in the U.S. vs ~300-400M hours for dating apps (Tinder, Bumble) — more than 2x the time-on-device.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">AI voice agents are now accessible to businesses of all sizes, deployable in days for sales, support, onboarding, bookings, and education — enabling &quot;conversation at scale&quot; for teams that previously relied on chatbots.</span><span class="src">GPT Central</span></li>
+          <li><span class="btext">Anthropic joined the Frontier&#x27;s $1.8B carbon removal group — the first AI lab to do so.</span><span class="src">MindStream</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta&#x27;s workforce play signals the physical constraint on AI scaling: the bottleneck for data center expansion isn&#x27;t capital — it&#x27;s electricians and fiber techs.</strong> By funding training and guaranteeing jobs, Meta is vertically integrating into the talent pipeline for its own infrastructure. The companion app numbers suggest AI is already outcompeting dating for human relationship time.</p>
+        </div>
+      </article>
+
+    </main>
+    <footer class="brief">
+      <div>Generated by Good Morning Routine · June 22, 2026 · Sources: The Neuron Daily, Alpha Signal, MindStream, BrainBuzz, NeatPrompts, GPT Central</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
