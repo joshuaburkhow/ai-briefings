@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday, June 28, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday, June 28, 2026   ·   Based on June 27 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>GPT-5.6 Launches as Three-Tier Family: Sol, Terra, and Luna</h2>
+        <ul>
+          <li><span class="btext">Sol (flagship) priced at $5/$30 per million tokens—half the cost of Claude Fable 5—with ‘ultra’ subagent mode and ‘max’ deep-reasoning; 700K GPU hours of automated red-teaming before release.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Terra (mid-tier) at half Sol’s cost for high-volume tasks; Luna (budget) under half Terra’s for fast everyday use; both share Sol’s safety training.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Rollout is case-by-case under Trump administration oversight; OpenAI stresses this approval model should not become the permanent norm.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Internally, OpenAI Codex output tokens grew 56x in Research, 32x in Customer Support, 27x in Engineering, and 13x in Legal since November 2025—showing agents generating far more tokens per task than chat.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Tiered pricing is the new distribution model for frontier AI.</strong> Sol competes directly with Claude on price while adding agentic tiers—this restructures the enterprise buying decision from capability to cost-per-token at scale. The Codex usage growth validates why OpenAI is investing in agentic infrastructure.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Mythos 5 Cleared for US Cyber Defenders; Fable 5 Public Rollout Still Stalled</h2>
+        <ul>
+          <li><span class="btext">After two weeks of negotiations, the Trump administration approved limited Mythos 5 redeployment for select US cyber defenders and critical infrastructure providers.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Fable 5 (the public-facing model) remains on hold with no rollout timeline; export bans continue to block foreign nationals—including Anthropic staff—from accessing either model.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The access model mirrors OpenAI’s GPT-5.6 pattern: case-by-case government approval, not commercial availability.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Export controls are bifurcating the frontier AI market.</strong> Government-exclusive model access is becoming a pattern, not an exception. As Alteryx’s AI strategy depends on Claude availability for enterprise customers, the export/clearance dynamic is worth tracking for pipeline planning.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Economic Index: Claude Usage Follows Human Daily and Seasonal Rhythms</h2>
+        <ul>
+          <li><span class="btext">Work tasks rise on weekdays; personal prompts spike on weekends. Recipes peak around dinner, sleep advice climbs before dawn, tax questions surge near filing deadlines.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">The pattern holds globally—AI is no longer accessed randomly but follows the cadence of work, life, and deadline cycles.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI has become habitual daily infrastructure.</strong> When usage follows circadian and seasonal rhythms, it signals that AI is embedded in workflows rather than being a novelty. This matters for engagement modeling and for designing AI-native products that meet users where they already are.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>UnitedHealth Commits $3B to AI, Reports 2-to-1 Return Already Running</h2>
+        <ul>
+          <li><span class="btext">AI summarizes charts for nurses, analyzes millions of customer calls, and calls doctors’ offices to schedule patient appointments autonomously.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">$3 billion in AI investment planned across 2026–2027; UnitedHealth says the payoff is already running at a 2:1 return.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">Coverage context: 600+ hospital systems are now deploying LLMs (4x year-over-year growth), primarily for ambient clinical documentation saving 2–3 hours/day per physician.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The largest US health insurer has quantified AI ROI at scale.</strong> A 2:1 return from the industry’s largest player is a forcing function for the rest of healthcare. It also validates the agentic workflow pattern—autonomous scheduling calls, not just text summarization—as the next cost-reduction lever.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Gemini Becomes Adaptive Study Coach via NotebookLM Integration</h2>
+        <ul>
+          <li><span class="btext">Gemini app’s new study notebooks turn uploaded notes, syllabi, and class materials into diagnostic quizzes, bite-sized lessons, progress dashboards, and personalized study plans.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">SAT prep available now; more standardized tests coming. The feature integrates Gemini and NotebookLM into a unified adaptive tutor that tracks gaps and recommends next lessons.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is repositioning Gemini from search replacement to persistent learning companion.</strong> Adding persistent context, gap tracking, and adaptive lesson sequencing moves Gemini into EdTech territory (Khan Academy, Duolingo) with distribution advantages neither can match. Worth watching for enterprise L&amp;D implications.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>SpaceX Borrows $25B for AI After $86B IPO—Colossus Compute Already Sold to Rivals</h2>
+        <ul>
+          <li><span class="btext">SpaceX raised $86B in its IPO then immediately borrowed an additional $25B—capital earmarked for AI infrastructure expansion.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The Colossus supercluster is already renting compute to Anthropic, Google, and Reflection AI, positioning SpaceX as a neutral AI infrastructure provider alongside AWS and Azure.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>SpaceX is converting IPO capital into an AI compute landlord business.</strong> Debt-financing AI infrastructure at this scale after an IPO signals that compute leasing is expected to generate returns fast enough to service the debt. As a major Anthropic compute customer, SpaceX’s infrastructure posture directly affects Claude capacity planning.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Model Family Pricing</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>Structuring a frontier AI model as a tiered family (e.g., Sol/Terra/Luna or Flash/Pro/Ultra) rather than a single flagship allows providers to capture different market segments by cost sensitivity while sharing safety infrastructure across tiers.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AI Export Controls</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>US government restrictions preventing frontier AI models from being used by foreign nationals or deployed internationally without case-by-case approval—creating a two-tier access system between government/defense and commercial customers.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agentic Token Economy</div>
+          <div class="csrc">AINews</div>
+          <p>In agentic workflows, models generate far more output tokens per task than in chat interactions—Codex’s 56x growth in Research output tokens since Nov 2025 illustrates how agents running multi-step tasks dramatically increase per-session token consumption.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Brain Buzz · AI Entrepreneurs · AINews (Latent Space) · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
