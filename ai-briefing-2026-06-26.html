@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday, June 26, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday, June 26, 2026 · Based on June 25 newsletters · 2 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Jalapéño: OpenAI’s First Custom AI Chip Unveiled in Partnership with Broadcom</h2>
+        <ul>
+          <li><span class="btext">Purpose-built LLM inference chip (not a training chip) designed in 9 months from concept to working silicon — OpenAI claims the fastest advanced semiconductor development cycle on record.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Engineering samples are already running GPT-5.3-Codex-Spark workloads; performance per watt is “substantially better than current state-of-the-art.” Full deployment targeted for end of 2026.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Microsoft is buying 40% of the first production batch. OpenAI’s own AI models helped co-design the chip — the company is building a “full-stack advantage” owning models, products, and infrastructure.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Chip architecture limits data movement while balancing compute, memory, and networking. Compatible with all LLMs, not just OpenAI’s.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is vertically integrating the AI stack from chip to product.</strong> By owning the inference chip, the model, and the product layer, OpenAI can price usage far below anyone renting Nvidia GPUs. Inference cost is the ceiling on what’s economically viable to deploy at scale — a lower ceiling means more enterprise use cases unlock.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Gemini 3.5 Flash Gains Computer Use; GPT-5.5 Instant Gets Intent Upgrade</h2>
+        <ul>
+          <li><span class="btext">Google’s Gemini 3.5 Flash flagship model now supports computer use, enabling developers to build agents that interact autonomously across desktop and web platforms.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">OpenAI separately released an updated GPT-5.5 Instant with substantially better understanding of the intent behind questions — not a new model, a targeted capability improvement.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Computer use is becoming a baseline capability, not a differentiator.</strong> Anthropic’s Claude has had computer use for months; Gemini now matching it signals the floor is rising across frontier models. Any agentic workflow designs should now assume computer use availability rather than treating it as a premium feature.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Google Reportedly Losing Two More AI Researchers to Anthropic</h2>
+        <ul>
+          <li><span class="btext">The Deep View reports Google is set to lose two additional senior AI researchers to Anthropic, continuing a high-profile talent drain that has accelerated in 2026.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The move follows John Jumper (AlphaFold, Nobel Prize) departing DeepMind for Anthropic in June 2026, and Noam Shazeer leaving for OpenAI — Google’s research bench is under sustained pressure.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is pulling frontier research talent from Google at an accelerating rate.</strong> For anyone tracking the competitive landscape: Google’s model quality risk is researcher attrition, not model architecture. Two more departures compound the loss of Jumper. Anthropic is assembling a research team that will shape the next generation of frontier models.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>KPMG: 68% of Workers Already Using AI Agents — Only 2% of Tech Leaders Report Pushback</h2>
+        <ul>
+          <li><span class="btext">KPMG survey of tech leaders finds 68% employee adoption of AI agents already achieved; only 2% of leaders report significant worker resistance to deployment.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Where resistance exists, 78% of leaders trace it to skills gaps and job security fears — not ideological objection. More than half also cite trust and safety concerns.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Average AI investment projected at $269M per company over next 12 months. 63% of organizations still require human review of agent outputs.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Adoption is no longer the friction point — skills and trust are.</strong> For Alteryx sales conversations, this reframes the objection: the question isn’t whether employees will use AI, it’s whether they have the skills and trusted tooling to use it well. That’s precisely Alteryx’s positioning.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Figma Config: Code, Motion, and AI Workflows Unified into a Team-First Design Platform</h2>
+        <ul>
+          <li><span class="btext">Figma announces Code Layers (repos + AI-generated directions + design-to-production sync), Motion and Shader tools for near-production-quality animations inside Figma, and Figma Weave (20+ AI tools on the canvas as reusable building blocks).</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">CEO Dylan Field explicitly rejected the AI-as-creative-differentiator narrative: “We do not expect that the creative breakthroughs that will differentiate your company … will come from AI any time soon.”</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Agent skills added for team automation of repetitive tasks; 95% of Fortune 500 companies use Figma, making this a broad-reach shift in how design and engineering collaborate with AI.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Figma is the clearest example of thoughtful AI integration rather than AI theater.</strong> Field’s statement is a stake in the ground: AI as tool, human as differentiator. As the vendor landscape splits between automation-at-all-costs and augmentation-first, Figma’s position is both commercially savvy and likely correct.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Nabla Bio JAM-2: First AI Model to Design Drug-Quality Antibodies Directly from a Computer</h2>
+        <ul>
+          <li><span class="btext">Nabla Bio’s JAM-2 achieves binding success rates for antibody drug candidates that match or beat traditional laboratory discovery — including against hard-to-target cancer-relevant proteins.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Marks the first validated case of end-to-end AI-primary drug design for biologics — not AI-assisted, but AI as the primary discovery mechanism.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI has crossed from scientific assistant to primary discovery tool in drug design.</strong> Pharma timelines for biologics have historically been 10-15 years. If JAM-2 results hold at scale, the discovery phase compresses significantly. Healthcare and biotech companies need to factor this shift into competitive roadmaps now.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Inference chip</div>
+          <div class="csrc">The Neuron Daily / The Deep View</div>
+          <p>A chip optimized for running AI models in response to queries (inference), as opposed to training chips that learn from data. Jalapeño is an inference chip: it makes ChatGPT faster and cheaper to serve, but doesn’t train new models.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Computer use (agents)</div>
+          <div class="csrc">The Deep View</div>
+          <p>The ability for an AI agent to directly control a desktop or browser interface — clicking, typing, navigating — the way a human would. Gemini 3.5 Flash gaining this capability brings it into the mainstream alongside Claude.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Full-stack vertical integration</div>
+          <div class="csrc">The Deep View</div>
+          <p>A strategy where a company controls every layer of its product stack — for AI, this means owning the chip (infrastructure), the model, and the consumer product. OpenAI’s Jalapeño move is a step toward this structure, similar to Apple’s control of silicon, OS, and device.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
