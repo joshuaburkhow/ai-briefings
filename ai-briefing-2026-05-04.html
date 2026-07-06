@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday, May 4, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday, May 4, 2026 · Based on May 3 newsletters · 4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>GPT-5.5 Launches; OpenAI and Microsoft Restructure Exclusivity Deal</h2>
+        <ul>
+          <li><span class="btext">OpenAI launched GPT-5.5 alongside gpt-image-2, and Workspace Agents — a suite of agents embedded in Gmail, Google Drive, and third-party productivity tools via API. GPT-5.5 is positioned as OpenAI&#x27;s most capable released model.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">OpenAI and Microsoft restructured their exclusivity deal: the Azure-first launch requirement was removed. OpenAI models can now launch on AWS Bedrock, Google Cloud, and other platforms simultaneously with Azure.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">OpenAI completed its nonprofit restructure: Sam Altman received an equity stake (exact amount undisclosed). The nonprofit board retains governance authority but commercial operations run as a for-profit benefit corporation.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">OpenAI launched a phone and browser — two consumer products built on GPT-5.5 designed to compete directly with Apple and Google in the device and search markets.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Microsoft exclusivity restructure is the most significant strategic change: removing the Azure-first requirement lets OpenAI move faster and gives enterprise buyers more infrastructure flexibility.</strong> It also signals that OpenAI no longer needs Microsoft&#x27;s distribution to reach enterprise — it has enough direct sales momentum.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Cloud Next 2026: Ironwood TPU, Agentspace, NotebookLM Enterprise</h2>
+        <ul>
+          <li><span class="btext">Google announced Ironwood TPU (6th generation): 2x training throughput over the previous generation, designed for large-scale foundation model training and inference. Available on Google Cloud in H2 2026.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Agentspace launched: an enterprise agent orchestration platform that connects Google Workspace, third-party SaaS, and custom data sources. Includes a marketplace of pre-built agents for common enterprise workflows.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">NotebookLM for Enterprise: organizational memory across all documents, meetings, and email, accessible via API for developer integration. Early access available to Google Workspace Enterprise customers.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Google confirmed AlphaEvolve&#x27;s production role: the Gemini-powered coding agent has been running autonomously on Google&#x27;s internal ML infrastructure for several months, improving training efficiency without human review of each change.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AlphaEvolve running autonomously on Google&#x27;s production infrastructure is the most significant deployment disclosure: an agent modifying ML training infrastructure without per-change human review is qualitatively different from agents completing discrete tasks.</strong> It is the clearest public example of trust-at-scale for an autonomous agent in a high-stakes production system.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Mistral Launches Orchestration Engine; Big Tech Earnings Reveal AI Monetization Gap</h2>
+        <ul>
+          <li><span class="btext">Mistral launched an orchestration engine for multi-agent workflows, alongside Mistral Medium 3.5 (128B dense, 256K context, modified MIT license, self-hostable on 4 GPUs). Positioned as the open-weight alternative to closed enterprise agent stacks.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Q1 2026 earnings: Google cracked AI monetization — Gemini-related revenue grew 47% YoY in Search and Cloud. Meta, Microsoft, and Amazon all reported AI-related revenue below internal targets. The gap is widening between Google&#x27;s native AI integration and cloud-first competitors.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Humanoid robots entered real production lines this week: BMW confirmed operational deployment at one facility. The industry crossed from pilot to production on humanoid robotics.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google cracking AI monetization while competitors miss targets is the earnings story that reshapes investor narratives: if Google is converting Gemini into measurable Search and Cloud revenue while Microsoft/Meta/Amazon lag, the market will reassess who wins the enterprise AI layer.</strong> Google&#x27;s native integration advantage in Search is harder to replicate than any model capability.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>China AI Surge: Manus, ByteDance, and Geopolitical AI Race</h2>
+        <ul>
+          <li><span class="btext">China blocked the Manus acquisition by a US buyer citing national security grounds — the first Chinese government intervention in a private AI company sale to a foreign acquirer.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">ByteDance released multiple AI products simultaneously in global markets, including an enterprise coding agent and a multimodal search product, moving faster to international markets than any prior Chinese AI company.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The US AI security executive order is expected to emphasize collaboration with frontier labs on cyber defense rather than requiring pre-approval of frontier models — a significant policy shift from prior draft language.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Cohere acquired Aleph Alpha — giving Cohere a significant European enterprise AI presence and GDPR-compliant data residency infrastructure.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>China blocking the Manus acquisition is the clearest signal that AI infrastructure is now treated as strategic national infrastructure: this is not the last cross-border AI M&amp;A; deal that will be blocked.</strong> Any product with significant training data or agent capabilities operating in both US and Chinese markets faces acquisition risk from both governments.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Benefit Corporation Structure</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>A legal corporate structure that allows a for-profit company to pursue social or mission-driven goals alongside shareholder returns. OpenAI&#x27;s restructure creates a benefit corporation for commercial operations, preserving the nonprofit&#x27;s governance authority while enabling equity compensation and external investment.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Orchestration Engine vs. Scaffolding Framework</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>An orchestration engine (Mistral, Agentspace) is a managed platform for deploying and connecting multiple agents in production, with built-in routing, memory, and governance. A scaffolding framework (LangChain, LlamaIndex) is a developer library for building agent logic — the lower-level abstraction that orchestration engines are replacing.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agent Trust Escalation</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>The progressive expansion of autonomy granted to AI agents — from supervised discrete tasks to unsupervised multi-step tasks to autonomous production system modifications. AlphaEvolve modifying Google ML infrastructure without per-change human review represents the highest public trust escalation disclosed by any major lab.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Brain Buzz · Everyday AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
