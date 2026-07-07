@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday, May 29, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday, May 29, 2026   ·   Based on May 28 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic launches Claude Opus 4.8 with a 1M-token context and a Fast mode</h2>
+        <ul>
+          <li><span class="btext">Anthropic introduced Claude Opus 4.8, billed as its most intelligent Opus model and best generally available model for coding, agents, and demanding knowledge work, with a 1M-token context.</span><span class="src">Anthropic (official)</span></li>
+          <li><span class="btext">Pricing is $5 per million input tokens and $25 per million output tokens; a Fast mode research preview delivers about 2.5x faster output at 2x standard pricing.</span><span class="src">Anthropic (official)</span></li>
+          <li><span class="btext">The release adds mid-conversation system messages, self-hosted sandboxes for Claude Managed Agents (public beta), and MCP tunnels (research preview), available on Anthropic&#x27;s API, AWS, Google Cloud, and Microsoft Foundry.</span><span class="src">Anthropic (official)</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A new flagship Opus model with a million-token window resets Anthropic&#x27;s position at the coding and agent frontier.</strong> Opus 4.8&#x27;s larger context, faster serving option, and enterprise features like private MCP tunnels and self-hosted agent sandboxes target exactly the long-running autonomous workloads that define the current agent race.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Cognition raises $1B at a $26B valuation as Devin scales fast</h2>
+        <ul>
+          <li><span class="btext">Cognition raised over $1B at a $26B valuation to expand its Devin AI software engineer, with clients cited including Mercedes-Benz and Itau.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The Neuron reported the round as $1B at a $25B pre-money valuation, with Devin reaching a $492M annualized revenue run rate.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">The Rundown said Cognition claimed more than 10x growth since January driven by Devin.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $1B raise at roughly a $26B valuation makes Cognition one of the most valuable AI coding companies.</strong> Devin approaching a half-billion-dollar annualized run rate with 10x growth since January shows autonomous software engineering is converting into real revenue, justifying the steep valuation.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Zuckerberg-backed Biohub releases protein world models that beat AlphaFold</h2>
+        <ul>
+          <li><span class="btext">Biohub released ESMFold2, built on the ESMC protein language model trained on 2.8B sequences, claiming state-of-the-art structure prediction and outperforming AlphaFold.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">The models already designed binders against five cancer and immune targets with hit rates of 36–88%, tied to a $500M Virtual Biology Initiative.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">The open ESM Atlas spans 6.8 billion protein sequences and 1.1 billion predicted structures, with ESMC, ESMFold2, and the atlas all freely available.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Open protein models claiming to beat AlphaFold mark a major moment for AI in biology.</strong> Freely available models that already yield high-hit-rate binders against cancer targets could accelerate drug discovery broadly, and the $500M initiative signals Biohub is betting on AI-driven biology at scale.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Robinhood gives AI agents a wallet with agentic trading and a credit card</h2>
+        <ul>
+          <li><span class="btext">Robinhood launched Agentic Trading in beta, letting users connect AI agents via MCP to a dedicated account with a set budget to trade stocks, plus an Agentic Credit Card for automated purchases.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Robinhood plans to expand agentic trading into options, crypto, futures, event contracts, and prediction markets, with Gold Card users getting agentic virtual cards with spending limits.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">OpenAI&#x27;s Secure MCP Tunnel connects private MCP servers to OpenAI products via outbound HTTPS without exposing them to the internet.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Letting AI agents hold a budget and place real trades pushes agentic AI into high-stakes financial territory.</strong> Giving agents a wallet and a credit card via MCP moves autonomous AI from drafting text to executing money-moving actions, raising both convenience and new risk questions for consumers.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Nvidia to invest $150B a year in Taiwan as Hassabis pulls AGI forward</h2>
+        <ul>
+          <li><span class="btext">Nvidia will invest $150 billion a year in Taiwan, creating a new Taiwan headquarters and expanding its TSMC partnership to keep Taiwan the center of AI manufacturing.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Google DeepMind CEO Demis Hassabis now predicts AGI by 2029–30, accelerating from his earlier 2030–2035 estimate.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Amazon struck a five-year, $6B deal with Snowflake for AWS Graviton CPU chips to power agentic-computing demand.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Nvidia committing $150B a year to Taiwan underscores how central hardware supply is to the AI buildout.</strong> A massive annual investment in Taiwanese manufacturing, alongside Hassabis pulling his AGI timeline forward and multibillion-dollar chip deals, shows the compute race intensifying on both hardware and capability fronts.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Foundation commits $250M as it reshuffles Codex models</h2>
+        <ul>
+          <li><span class="btext">The OpenAI Foundation, the nonprofit arm that owns 26% of OpenAI&#x27;s for-profit business, committed an initial $250M to grants and partnerships to help workers navigate AI-driven disruption.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">OpenAI said GPT-5.2 and GPT-5.3-Codex will be removed from Codex on June 2, with GPT-5.5 becoming the default model for free users.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">OpenAI, Thrive, and Crete built self-improving tax agents that processed more than 7,000 returns at up to 97% accuracy, turning accountant corrections into evals and pull requests.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is pairing model housekeeping with a large philanthropic pledge on AI&#x27;s labor impact.</strong> A $250M foundation commitment acknowledges AI-driven disruption directly, while the Codex model shuffle shows OpenAI consolidating around GPT-5.5 as the default across its coding products.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>AI math provers rack up verified proofs and peer-reviewed acceptances</h2>
+        <ul>
+          <li><span class="btext">AxiomProver AI generated machine-verified Lean proofs for eight arXiv math papers, with five now accepted in peer-reviewed journals.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">YouTube will automatically apply labels to videos containing significant photorealistic AI content, reducing reliance on creator self-disclosure.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Google Cloud introduced AI Threat Defense, combining Wiz scanning, Gemini vulnerability analysis, CodeMender patching, and autonomous agents for cyber remediation.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI-generated formal proofs are now clearing peer review, a milestone for machine reasoning.</strong> Machine-verified proofs being accepted in journals shows AI moving from assisting to producing publishable mathematics, while YouTube&#x27;s auto-labeling and Google&#x27;s threat defense reflect AI reshaping content trust and security.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Fast mode (Claude Opus 4.8)</div>
+          <div class="csrc">Anthropic (official)</div>
+          <p>A research-preview serving option for Opus 4.8 that delivers full model intelligence at roughly 2.5x faster output token generation, priced at 2x standard Opus 4.8 pricing.</p>
+        </div>
+        <div class="concept">
+          <div class="term">MCP tunnels</div>
+          <div class="csrc">Anthropic (official)</div>
+          <p>A research-preview capability that connects AI agents to MCP servers inside a private network without exposing those servers to the public internet, enabling secure enterprise tool access.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agentic trading</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>Robinhood&#x27;s beta feature that lets users connect an AI agent, via the Model Context Protocol, to a dedicated brokerage account with a set budget so the agent can autonomously place stock trades.</p>
+        </div>
+        <div class="concept">
+          <div class="term">ESMFold2 / ESM Atlas</div>
+          <div class="csrc">The Rundown AI</div>
+          <p>Biohub&#x27;s open protein &#x27;world models&#x27; — ESMFold2 predicts 3D protein structures and reportedly outperforms AlphaFold, while the ESM Atlas maps 6.8 billion protein sequences and 1.1 billion predicted structures.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Anthropic (official) · TLDR AI · The Rundown AI · The Neuron Daily</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
