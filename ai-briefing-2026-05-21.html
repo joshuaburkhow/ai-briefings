@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday, May 21, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday, May 21, 2026   ·   Based on May 20 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google I/O 2026: Gemini 3.5 Flash headlines an agent-first slate</h2>
+        <ul>
+          <li><span class="btext">Gemini 3.5 Flash launched as Google&#x27;s &#x27;strongest coding and agent model yet,&#x27; running &#x27;4x faster than rival frontier models,&#x27; scoring 76.2% on Terminal-Bench 2.1 and 83.6% on MCP Atlas, at $1.50/M input and $9/M output tokens.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">It became the default engine for the Gemini app and Search AI Mode globally, with Gemini 3.5 Pro slated for next month.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Google said monthly token usage across its AI systems had grown to more than 3.2 quadrillion.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Gemini 3.5 Flash is also rolling out across Search, enterprise tools, and Android Studio.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google reframed I/O around a fast, cheap, agent-focused Gemini 3.5 Flash—its clearest bid yet to lead the agent era, not just chat.</strong> Strong coding benchmarks at aggressive pricing, made the global default across Search and the app, put direct pressure on OpenAI and Anthropic on both capability and cost.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google unveils Gemini Omni video model, Spark agents, and Antigravity 2.0</h2>
+        <ul>
+          <li><span class="btext">Gemini Omni is an any-to-any multimodal &#x27;world model&#x27;; first iteration Omni Flash edits video through conversation with consistent characters across scenes (clips up to 10 seconds), live in the Gemini app, Google Flow, and YouTube Shorts.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Gemini Spark is a 24/7 cloud agent built on Gemini 3.5 Flash, working across Gmail, Docs, Calendar, and third-party apps via MCP to draft emails, organize files, and run background workflows.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Google Antigravity 2.0 orchestrates parallel coding subagents in isolated Linux environments; a demo used 93 parallel subagents that burned through 2.6 billion tokens to build an operating-system framework from scratch in 12 hours.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Google also previewed Android XR smart glasses launching this fall with Samsung and Qualcomm, frames from Warby Parker and Gentle Monster, plus a tethered Project Aura display pair.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Beyond a new model, Google shipped a full agent stack—video generation, always-on assistants, and massively parallel coding agents.</strong> Omni, Spark, and Antigravity 2.0 together position Google to compete across creative, personal-assistant, and developer-agent workloads in one keynote.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI starts selling multiyear &#x27;Guaranteed Capacity&#x27; compute contracts</h2>
+        <ul>
+          <li><span class="btext">OpenAI began letting customers secure long-term compute via one-, two-, and three-year commitments, with discounts scaling by commitment length.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The offer runs &#x27;until it sells out of its current allocation,&#x27; and was announced May 19 as Sam Altman appeared at the Musk lawsuit courthouse.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">OpenAI also implemented C2PA provenance standards and Google DeepMind&#x27;s SynthID watermarking for AI-generated images.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Selling guaranteed, multiyear compute turns scarce GPU access into a contracted product—and a hedge against supply crunches.</strong> Locking customers into one-to-three-year commitments signals both persistent capacity constraints and OpenAI&#x27;s move to monetize its compute allocation directly.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Companies cut jobs to fund AI as leaders question the logic</h2>
+        <ul>
+          <li><span class="btext">Intuit will cut about 17% of its workforce (roughly 3,000 jobs) to redirect spending into embedding AI across products like TurboTax and QuickBooks.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Meta fired 8,000 workers while reassigning 7,000 into AI engineering roles, and Coinbase shrank engineering teams into one-person &#x27;pods&#x27; run by AI agents.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">DeepMind&#x27;s Demis Hassabis called AI-driven tech layoffs &#x27;a lack of corporate imagination.&#x27;</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">HSBC urged staff to embrace AI while warning it will cut some jobs.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A fresh wave of AI-funded layoffs—led by Intuit&#x27;s ~3,000 cuts—collides with pushback that replacement is the wrong strategy.</strong> The split between firms cutting headcount for AI and leaders like Hassabis calling that shortsighted captures the central tension in AI&#x27;s labor impact.</p>
+        </div>
+      </article>
+      <article class="story cat-4">
+        <div class="tag">DEEPSEEK</div>
+        <h2>DeepSeek forms a team to build a coding &#x27;Code Harness&#x27;</h2>
+        <ul>
+          <li><span class="btext">DeepSeek is forming &#x27;DeepSeek Code,&#x27; a Beijing team building a new Code Harness product, with two roles open now: a Harness Product Manager and an R&amp;D Engineer.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The effort is a team and product being formed—no model name, benchmarks, or pricing were disclosed.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Alpha Signal separately noted DeepSeek built a custom VPN obfuscation plugin in 40 minutes flat as a capability demonstration.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>DeepSeek staffing a dedicated coding-agent team signals China&#x27;s leading open lab intends to challenge Codex and Claude Code head-on.</strong> Even as an early hiring move, a purpose-built &#x27;Code Harness&#x27; effort points to the coding-agent race going global and open-weight.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Dev-agent tooling matures: GitHub Spec Kit, Warp Oz, and new open models</h2>
+        <ul>
+          <li><span class="btext">GitHub open-sourced Spec Kit for &#x27;Spec-Driven Development&#x27; (commands like /specify, /plan, /tasks, /implement), working with 30+ AI agents including Claude Code, Cursor, Copilot, and Gemini CLI, under an MIT license.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Warp released &#x27;Oz,&#x27; a multi-harness control plane supporting Claude Code, Codex, and Warp Agent with cross-harness Agent Memory.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Cohere open-sourced Command A+, a sovereign mixture-of-experts model that can run on-prem for multimodal work.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">A study highlighted in the recap found grep-style text search beats vector search in agentic retrieval across multiple agent setups.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The tooling around coding agents is standardizing fast—spec-driven workflows and multi-harness control planes are becoming the norm.</strong> Spec Kit and Warp Oz show the ecosystem coalescing around structured, cross-tool agent workflows rather than ad-hoc &#x27;vibe coding.&#x27;</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Compute and acquisition deals swirl around the I/O news</h2>
+        <ul>
+          <li><span class="btext">AI Breakfast reported SpaceX plans a $60 billion takeover of coding startup Cursor, roughly 30 days after its IPO (via Bloomberg).</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Google and Blackstone are building a $25B foundation for custom chips, and NVIDIA shipped Vera processors to SpaceX with 1.2 terabytes per second of memory speed.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Google DeepMind spent $90 million to acquihire staff from Contextual AI, and AWS acquired media-creation startup &#x27;fal.&#x27;</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Cerebras pushed a trillion-parameter model (Kimi K2.6) past 1,000 tokens/sec, the fastest frontier-model performance measured by Artificial Analysis.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The week&#x27;s dealmaking—led by a reported $60B SpaceX bid for Cursor—shows compute and coding assets commanding enormous sums.</strong> Custom-chip foundations, acquihires, and record inference speeds all point to an escalating race to own the hardware and talent behind agents.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Guaranteed Capacity</div>
+          <div class="csrc">TLDR AI</div>
+          <p>OpenAI&#x27;s new product letting customers lock in long-term compute via one-, two-, or three-year commitments, with discounts scaling by commitment length, offered until its allocation sells out.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Any-to-any world model</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>A model like Gemini Omni that understands physics and continuity to take any input (text, image, voice) and produce any output (notably video), editing scenes conversationally with consistent characters.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Parallel subagents</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>An architecture (as in Google Antigravity 2.0) where one goal is split across many coding agents running in isolated environments simultaneously; a demo used 93 subagents and 2.6 billion tokens to build an OS framework in 12 hours.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Spec-Driven Development</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>GitHub Spec Kit&#x27;s approach of guiding AI coding agents through explicit spec, plan, and task steps (vs. ad-hoc &#x27;vibe coding&#x27;), compatible with 30+ agents under an MIT license.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Breakfast · Alpha Signal · TLDR AI · Everyday AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
