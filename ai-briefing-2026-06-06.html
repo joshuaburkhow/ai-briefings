@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Saturday, June 6, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Saturday, June 6, 2026   ·   Based on June 5 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic warns on self-improving AI and floats a frontier pause</h2>
+        <ul>
+          <li><span class="btext">Anthropic published a report on recursive self-improving systems, saying such AI is &#x27;not here yet or even inevitable&#x27; but that Claude is advancing AI development faster than expected, and that it would slow or pause frontier development if peer labs did too.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">More than 80% of the code merged into Anthropic&#x27;s codebase was Claude-authored as of May, with engineers shipping 8x as much code per day in Q2 2026 as in 2024.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Co-author Jack Clark said each new version of Claude could be built by the version before it without human involvement.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic publicly warning that its own AI is nearing self-improvement, and floating a pause, is a striking move from a leading lab.</strong> Claude authoring 80% of Anthropic&#x27;s code and an 8x jump in output per engineer are concrete signs of AI accelerating its own development, and a conditional call to pause frontier work escalates the safety debate right as Anthropic heads to an IPO.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI gives ChatGPT a background &#x27;dreaming&#x27; memory system</h2>
+        <ul>
+          <li><span class="btext">OpenAI is rolling out a memory system, internally tied to &#x27;Dreaming V3,&#x27; that turns past chats into a running, category-sorted user profile grouped into areas like travel, work and hobbies, replacing a list of one-off facts.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">In OpenAI&#x27;s evaluations, factual recall rose from 41.5% to 82.8% and preference-following climbed from 31.4% to 71.3% with dreaming.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">It is rolling out to Plus and Pro users in the US first, with Free and Go users and more countries over the next several weeks.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>ChatGPT&#x27;s new memory works like a background process that continually summarizes what it knows, a major shift toward persistent context.</strong> Roughly doubling factual recall and preference-following makes the assistant far more useful across sessions, and sorting memories into a reviewable profile addresses the control and transparency concerns that dogged earlier memory features.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI merges Codex into ChatGPT and opens it to non-coders</h2>
+        <ul>
+          <li><span class="btext">OpenAI is collapsing the wall between ChatGPT and Codex into a single platform and adding non-coder capabilities: drafting and sending messages via connected email or Slack with one approval, calendar briefings, and daily automations run at a chosen cadence.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">It shipped six role-specific Codex plugins for sales, data analytics, product design, creative production, investment banking and public equity investing, bundling 62 apps and 110 skills across Snowflake, Figma, Salesforce and Databricks, included with any ChatGPT subscription.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">OpenAI head of enterprise product Alex Embiricos said the goal is to bring agents that can &#x27;do anything you can do on your computer&#x27; to everyone.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is turning Codex from a coding tool into a general-purpose agent for ChatGPT&#x27;s nearly one billion users.</strong> Bundling role plugins across Salesforce, Snowflake and Figma with every subscription and adding message-sending and daily automations pushes Codex directly at knowledge workers, sharpening its rivalry with Anthropic&#x27;s Claude Code.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic pauses red-teaming after an &#x27;Oceanus&#x27; model leak</h2>
+        <ul>
+          <li><span class="btext">A model checkpoint codenamed Oceanus, surfaced as &#x27;claude-oceanus-v1-p,&#x27; was made available to Anthropic&#x27;s red teams as it gears up to launch a new Mythos version better than Mythos Preview.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The program was paused after an individual in it was reselling the model via a Chinese API proxy, with the launch-date impact unknown.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A leaked next-generation Claude checkpoint being resold through a Chinese proxy forced Anthropic to halt its red-team program.</strong> Red-team access usually precedes a launch by about a week, so the leak both hints Anthropic&#x27;s next model is near and exposes how insider access to frontier checkpoints can be abused.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI lab CEOs sign an open letter on bioweapon risk</h2>
+        <ul>
+          <li><span class="btext">The CEOs of OpenAI, Anthropic, Google DeepMind and Microsoft signed an open letter urging Congress to require synthetic-DNA sellers to vet every buyer and order, with named signees Sam Altman, Dario Amodei, Mustafa Suleyman, Alexandr Wang and Demis Hassabis.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">The letter states AI systems now outperform PhD-level virologists on highly technical lab procedures and warns the knowledge barriers that have prevented bad actors from obtaining biological weapons will meaningfully erode.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A joint letter from the top AI lab leaders warns that models now exceed expert virologists, raising real bioweapon concerns.</strong> Claiming AI already outperforms PhD-level virologists on lab procedures gives the DNA-screening push urgency, and a united front from rival CEOs signals shared alarm over the erosion of safety knowledge barriers.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Washington weighs public stakes in AI companies</h2>
+        <ul>
+          <li><span class="btext">CNBC confirmed Sam Altman and White House officials have discussed for over a year a deal that could give the US public an equity-linked share in OpenAI&#x27;s upside, potentially seeding a &#x27;Public Wealth Fund&#x27; via donated OpenAI equity, with no terms set.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">An internal Microsoft memo obtained by 404 Media said the plan for its Scout AI assistant included a first phase reading &#x27;Make people addicted&#x27;; Scout is already used internally by more than 1,000 employees.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The government exploring an equity stake in OpenAI signals a new model for sharing AI&#x27;s gains with the public.</strong> A public wealth fund seeded with AI equity would be a novel policy response to concentrated AI profits, while the leaked Microsoft &#x27;addiction&#x27; memo shows the engagement pressures shaping how these agents are designed.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Nvidia ships Nemotron 3 Ultra, a 550B open agent model</h2>
+        <ul>
+          <li><span class="btext">Nvidia released Nemotron 3 Ultra, an open 550-billion-parameter model for long-running agents, claiming up to 5x higher throughput and up to 30% lower task-completion cost than comparable open models.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">It also released Nemotron 3.5 Content Safety, a unified model for multimodal, multilingual and customizable enterprise safety enforcement.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Nvidia&#x27;s open 550B Nemotron 3 Ultra targets long-running agents with big throughput and cost advantages.</strong> A 5x throughput gain and 30% lower cost make Nemotron 3 Ultra attractive for sustained agent workloads, and pairing it with a dedicated safety model addresses the guardrails enterprises need to deploy open models.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Generalist raises $400M at a $2B valuation for physical AI</h2>
+        <ul>
+          <li><span class="btext">Robotics firm Generalist raised $400 million to advance physical AGI, at a $2 billion valuation, backed by Radical Ventures and Nvidia.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Governments moved too, with a US-Japan $1 billion AI research partnership and Canada investing $500 million in a strategy projected to create 250,000 AI jobs.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $400M raise for physical AI, alongside billion-dollar national programs, shows capital flooding into robotics and sovereign AI.</strong> Nvidia backing Generalist at a $2B valuation underscores investor conviction in physical AGI, while US-Japan and Canadian commitments show governments treating AI capacity as strategic national infrastructure.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Recursive self-improvement</div>
+          <div class="csrc">The Rundown AI</div>
+          <p>When an AI system can design and build a more capable successor with little or no human involvement; Anthropic warned Claude is nearing this as it authors most of the lab&#x27;s own code.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Dreaming (memory synthesis)</div>
+          <div class="csrc">The Rundown AI</div>
+          <p>A background process where an AI reviews and summarizes past conversations into an organized, refreshed user profile, rather than relying on the user to explicitly flag what to remember.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Red-teaming</div>
+          <div class="csrc">TLDR AI</div>
+          <p>Giving trusted testers early access to a model to probe for flaws and misuse before public launch; Anthropic paused its program after a tester resold the leaked Oceanus checkpoint.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Physical AGI</div>
+          <div class="csrc">The Deep View</div>
+          <p>The goal of building AI general enough to operate in the physical world through robots; the target of Generalist&#x27;s $400M raise backed by Nvidia.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · The Rundown AI · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
