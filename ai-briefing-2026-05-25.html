@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday, May 25, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday, May 25, 2026   ·   Based on May 24 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Cursor hits $3B revenue as SpaceX secures a $60B acquisition right</h2>
+        <ul>
+          <li><span class="btext">Cursor reported $3B in annualized revenue, up from $2B in February, and now has more than 3,000 customers paying at least $100,000 per year each.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">SpaceX secured the right to acquire Cursor for $60B outright, or pay a $10B break fee; Cursor&#x27;s valuation ran from $9B last May to $29.3B in November to $60B now.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Cursor shipped Composer 2.5, a specialized coding model partially trained on a SpaceX data center.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $60B acquisition right on a company that just crossed $3B in revenue marks one of the largest AI deals in play.</strong> Cursor&#x27;s revenue nearly tripling in months, plus SpaceX&#x27;s option to buy it, signals AI coding tools are now core strategic assets rather than developer conveniences.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI confidentially files for an IPO targeting an $852B valuation</h2>
+        <ul>
+          <li><span class="btext">OpenAI confidentially filed for its IPO, targeting a September debut at an $852B valuation, with Goldman Sachs and Morgan Stanley leading.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">OpenAI announced GPT-5.5 Cyber, a cyber-defense model, for Japan&#x27;s government and private sector across 15 critical infrastructure sectors under a program called &#x27;Trusted Access.&#x27;</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">SpaceX&#x27;s S-1 revealed Anthropic is paying SpaceX $1.25B per month through 2029 for data center access.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>An $852B IPO target would make OpenAI one of the largest public offerings ever.</strong> Filing for a September debut at that valuation, alongside a government cyber-defense model, shows OpenAI cementing both its financial scale and its move into national-security-grade deployments.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Gemini 3.5 Flash goes GA and powers a Search redesign past 1 billion users</h2>
+        <ul>
+          <li><span class="btext">Gemini 3.5 Flash is generally available and beats last year&#x27;s Gemini 3.1 Pro on agentic benchmarks — Terminal-Bench 2.1 at 76.2% and MCP Atlas at 83.6% — while running 4x faster at under half the cost of rival frontier models.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Google AI Mode in Search passed 1 billion monthly users and now defaults to Gemini 3.5 Flash, billed as the biggest Search redesign in 25 years.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Google launched Gemini for Science on Google Labs for hypothesis generation and computational discovery, with papers validating two tools published in Nature.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is pushing a faster, cheaper agentic model to a billion Search users at once.</strong> Beating last year&#x27;s Pro tier on agentic benchmarks while cutting cost and latency, then defaulting a billion-user Search product to it, gives Google enormous distribution for its agent stack.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Hark raises over $700M at a $6B valuation before shipping a product</h2>
+        <ul>
+          <li><span class="btext">Hark, Brett Adcock&#x27;s lab, closed an oversubscribed Series A of over $700M at a $6B post-money valuation before shipping any product.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Investors include Nvidia, AMD, Intel, Qualcomm, and Salesforce Ventures; first AI models are planned for this summer, followed by a family of devices.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Manus weighed raising $1B to buy itself back from Meta after China&#x27;s regulators ordered the unwind of Meta&#x27;s $2B-plus acquisition.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A pre-product lab drawing over $700M at a $6B valuation shows how hot AI hardware bets have become.</strong> Backing from every major chipmaker before a single product exists underscores investor appetite for the next AI device platform, while the Manus unwind highlights the geopolitical fault lines in cross-border AI M&amp;A.</p>
+        </div>
+      </article>
+      <article class="story cat-4">
+        <div class="tag">DEEPSEEK</div>
+        <h2>DeepSeek makes its 75% price cut permanent, pricing V4 Pro output at $0.87/M</h2>
+        <ul>
+          <li><span class="btext">DeepSeek made its 75% price cut permanent, pricing V4 Pro at $0.87 per million output tokens, undercutting GPT-5 at $10, Claude at $25, and Gemini at $0.60, with a 1M-token context window.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">AI DRAM demand shifted memory supply from phones to data centers, with LPDDR prices surging up to 250% and iPhone memory costs up 230%.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">India&#x27;s sub-$100 smartphone market collapsed 59% year over year as brands like Oppo, Vivo, and Xiaomi cut shipments amid the memory squeeze.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>DeepSeek&#x27;s permanent price cut resets the cost floor while AI&#x27;s hardware appetite ripples into consumer electronics.</strong> Undercutting Claude by more than 25x on output tokens pressures every premium vendor, and the memory-supply shift shows AI data-center demand is now reshaping the global phone market.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Starbucks retires its AI inventory tool across 11,000+ stores</h2>
+        <ul>
+          <li><span class="btext">Starbucks is retiring Automated Counting, NomadGo&#x27;s computer-vision inventory tool, across more than 11,000 North American stores after nine months, reverting to manual counting due to miscounts confusing milk types.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">The tool had been sold on 99% accuracy and up to 8x faster than manual counting, versus a roughly 85% manual baseline.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Meta used employees&#x27; keystrokes to train AI, then laid off 8,000 of them, per The Neuron.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A nationwide AI rollback at Starbucks shows deployment accuracy still trips up real operations.</strong> Pulling a tool marketed at 99% accuracy from 11,000 stores is a concrete reminder that vendor benchmarks and production reliability can diverge sharply.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Specialized models challenge frontier models on cost, led by Composer 2.5</h2>
+        <ul>
+          <li><span class="btext">Composer 2.5 scores 62 on the Artificial Analysis Coding Agent Index at a $0.07 average per-task cost, versus Claude Opus 4.7 at 66 for $4.10 and GPT-5.5 High Reasoning at 65 for $4.82.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Composer 2.5 was built on the open-weight Kimi K2.5, with Cursor dedicating roughly 85% of its compute budget to reinforcement learning and synthetic data and training on 25x more synthetic coding tasks than its predecessor.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Andrej Karpathy, who coined &#x27;vibe coding,&#x27; joined Anthropic to head frontier R&amp;D.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Cheap specialized models are undercutting frontier models by up to 60x per task on coding.</strong> Near-frontier benchmark scores at a fraction of the cost make model routing and cost-aware orchestration core engineering skills, eroding the idea that the biggest model is always the right default.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Self-distilled fine-tuning (SDFT)</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>A training technique used in Composer 2.5 that inserts a localized textual hint at the exact step where a model deviates from the correct path, teaching it to self-correct without relying on expensive frontier models.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Hybrid model architecture</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>An engineering pattern that routes 80–90% of routine work to cheap specialized models and reserves expensive frontier models for the 10–20% of deeply complex tasks, to control token spend.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AI Mode (Search)</div>
+          <div class="csrc">The Signal</div>
+          <p>Google&#x27;s redesigned Search experience, now defaulting to Gemini 3.5 Flash and serving over 1 billion monthly users, described as the biggest Search redesign in 25 years.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Gemini for Science</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>A Google Labs offering aimed at scientific discovery — hypothesis generation, computational discovery, and literature synthesis — with two of its tools validated in papers published in Nature.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily · The Signal · Brain Buzz · Alpha Signal</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
