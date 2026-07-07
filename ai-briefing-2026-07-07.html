@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Tuesday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Tuesday  ·  Based on July 6 newsletters  ·  10 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft Cuts 4,800 Jobs as AI Reshapes Its Workforce</h2>
+        <ul>
+          <li><span class="btext">Microsoft announced 4,800 job cuts — roughly 2% of its global headcount — as the company accelerates automation of roles it previously staffed with humans.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Simultaneously, Microsoft is embedding AI engineers directly with enterprise customers through its new Frontier Company unit, signaling a shift in where labor value sits.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The cuts follow the $2.5B Frontier Company launch announced July 3 — Microsoft is shedding headcount while upselling AI deployment consulting to the same enterprise clients.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Headcount is a leading indicator.</strong> Microsoft is the largest enterprise software company on Earth. When it restructures 2% of its workforce around AI automation while simultaneously building a $2.5B AI-services unit, it sets the template other enterprises will copy. Watch this number across Q3 earnings.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Rushes GPT-5.6 into Narrow Preview to Recapture Anthropic Users</h2>
+        <ul>
+          <li><span class="btext">OpenAI is moving GPT-5.6 into a narrow preview with three tiers: Sol (frontier), Terra (GPT-5.5 parity at half cost), Luna (high-volume). A reasoning-effort control slider and &#x27;ultra&#x27; mode are included.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Broad access requires US government review approval — the same gate that throttled GPT-5.6 at launch on June 30. AI Breakfast reports OpenAI is rushing the rollout specifically to pull Anthropic users.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Polymarket currently gives OpenAI only 3% odds for best LLM by end of July, with Anthropic still leading. GPT-5.6 Sol topped TerminalBench 2.1.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The competitive window is months, not years.</strong> With Claude Sonnet 5 launching July 1 and Anthropic winning the Polymarket best-LLM bet, OpenAI is under real competitive pressure for the first time in 18 months. GPT-5.6&#x27;s three-tier pricing (Sol/Terra/Luna) mirrors Anthropic&#x27;s Opus/Sonnet/Haiku structure — the frontier model wars are converging on the same architecture.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Alibaba Bans Employees From Claude Code, Classifies It as High-Risk</h2>
+        <ul>
+          <li><span class="btext">Alibaba formally restricted all employees from using Anthropic&#x27;s Claude Code, categorizing it as a high-risk external tool. Employees are directed to use Alibaba&#x27;s internal Qoder tool instead.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The ban follows Anthropic&#x27;s public disclosure to the Senate Banking Committee that Alibaba-linked operators ran a 28.8 million-interaction distillation attack on Claude across ~25,000 fraudulent accounts.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">ByteDance is simultaneously launching Dreamina Seedance 2.5 on July 9 — a video model producing 180-second clips on Dreamina, CapCut, and partner platforms — showing China&#x27;s labs accelerating their own model stack.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The distillation-ban loop is tightening.</strong> Alibaba getting caught in a 28.8M-interaction clone attack and then banning the tool they were cloning is a striking sequence. It confirms that US labs are now actively monitoring for industrial-scale distillation and that Chinese enterprises face real internal compliance pressure around Western AI tools.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Cloudflare Splits AI Web Traffic Into Three Buckets — Training Bots Lose Default Access</h2>
+        <ul>
+          <li><span class="btext">Cloudflare introduced granular AI traffic controls for all customers (including free tier), dividing bots into three categories: Search crawlers (allowed), Agents (AI assistants browsing the web), and Training scrapers.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Starting September 15, 2026, new Cloudflare domains will block Agent and Training bots by default on ad-supported pages. Existing domains can opt in now. Search crawlers remain unaffected.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">The policy creates a structural split: search indexing is preserved as a public good, but AI training scraping now requires explicit operator permission from every new domain on Cloudflare&#x27;s network.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>This is the most consequential web-crawling policy change in a decade.</strong> Cloudflare handles traffic for a meaningful slice of the web. When they make Training bots opt-in by default for all new domains as of September 15, it restructures the economics of training data collection at scale. AI labs currently relying on broad crawling will need to negotiate access or switch to licensed data — compressing a key cost advantage.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic-Pentagon Split Emails Now Public After Court Filing</h2>
+        <ul>
+          <li><span class="btext">Court documents reveal private emails between Anthropic CEO Dario Amodei and DoD&#x27;s Emil Michael. Negotiations collapsed on Feb 26 when Amodei wrote: &#x27;Unfortunately, our read of your proposed language is that it appears to completely remove our redlines... I unfortunately don&#x27;t see a way forward.&#x27;</span><span class="src">Mindstream</span></li>
+          <li><span class="btext">The day after Amodei&#x27;s email, Defense Secretary Pete Hegseth posted publicly labeling Anthropic a &#x27;supply-chain risk,&#x27; blocking Pentagon use of their AI. Anthropic responded with a lawsuit, which made the emails public.</span><span class="src">Mindstream</span></li>
+          <li><span class="btext">Anthropic&#x27;s redlines: no use of its AI for weapons systems or domestic surveillance. DoD&#x27;s position: the Pentagon must retain final authority over how it uses contracted technology.</span><span class="src">Mindstream</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The emails confirm this was a values conflict, not a negotiation failure.</strong> Amodei&#x27;s choice to walk away from a DoD contract over weapons/surveillance redlines — knowing the consequences — is a meaningful data point on Anthropic&#x27;s governance posture. The public nature of the emails now sets a visible standard for what Anthropic will and won&#x27;t accept in government contracts, which matters for enterprise buyers evaluating long-term vendor reliability.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI Detects Hidden Cardiac Risk Pattern That Standard Screening Misses</h2>
+        <ul>
+          <li><span class="btext">UC Berkeley researchers trained an AI on ECG data to identify a hidden electrical pattern that predicts sudden cardiac death risk in patients who appear normal on standard screening protocols.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The model identifies at-risk patients who would have been missed entirely by conventional clinical evaluation, offering a new early-intervention pathway for sudden cardiac arrest — one of the leading causes of death.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Healthcare AI is moving from administrative to diagnostic.</strong> The pattern here — AI finding signal in data that humans look at every day but can&#x27;t parse at scale — is the template for where medical AI creates durable value. ECG analysis is already established; the jump to predictive cardiac risk scoring from the same sensor data is the kind of application that compounds over a large patient population.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Nvidia Launches Revenue-Sharing Program with AI Cloud Providers for Startup Access</h2>
+        <ul>
+          <li><span class="btext">Nvidia started a partnership program giving AI startups access to compute through its cloud provider network. Partner firms will share both product revenue and cloud revenue with Nvidia.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">AI firms are increasingly entering revenue- and equity-sharing arrangements with chip makers to bypass liquidity constraints — Nvidia is now formalizing this into a structured program.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Nvidia also plans to raise at least $20 billion in debt for general corporate purposes, signaling aggressive capital deployment as AI infrastructure demand continues to outpace GPU supply.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Nvidia is moving up the value stack from chip vendor to financial partner.</strong> Revenue sharing with startups means Nvidia captures upside if its compute customers succeed — not just when they buy GPUs. Combined with $20B in new debt capacity, Nvidia is positioning to fund the next wave of AI infrastructure build-out while locking in revenue participation rights. This is an infrastructure bet wrapped in a financial product.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Training Bot vs. Agent Bot</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>Cloudflare&#x27;s new taxonomy distinguishes AI training scrapers (bots that collect web data to train models) from AI agents (bots that browse the web on behalf of users). The two look similar at the network level but serve fundamentally different purposes — and now have different default permissions under Cloudflare policy.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Sol / Terra / Luna Tiers</div>
+          <div class="csrc">TLDR AI / AI Breakfast</div>
+          <p>OpenAI&#x27;s three-tier naming for GPT-5.6: Sol is the frontier-class tier (priced $5/$30 per 1M tokens), Terra matches GPT-5.5 at half the cost, and Luna targets high-volume low-latency workloads. The structure mirrors Anthropic&#x27;s Opus/Sonnet/Haiku tiering — both labs now sell the same model family at three price/capability points.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Model Distillation Attack</div>
+          <div class="csrc">TLDR AI / Everyday AI</div>
+          <p>A distillation attack is when an actor systematically queries a frontier model at scale to harvest its outputs, then uses those outputs as training data to build a cheaper clone. Anthropic disclosed to Congress that Alibaba ran the largest known instance: 28.8 million Claude interactions across ~25,000 fraudulent accounts, with the goal of fine-tuning Qwen to match Claude&#x27;s behavior without paying for training data.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agentic Autonomy Levels</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A framework for classifying how much independent decision-making an AI agent is allowed to exercise before returning control to a human. Low autonomy limits risk and increases reversibility. The current frontier design is a manager agent that delegates to helper agents, verifies their outputs continuously, and only escalates decisions that require human judgment — enabling hundreds or thousands of parallel agents with controlled blast radius.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · AI Breakfast · TLDR AI · TLDR AI (Data) · The Neuron Daily · Brain Buzz · The Deep View · Mindstream · The Rundown</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
