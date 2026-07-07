@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday, May 24, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday, May 24, 2026   ·   Based on May 23 newsletters   ·   3 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google I/O ships 100 updates in 72 hours; Gemini 3.5 becomes the default model</h2>
+        <ul>
+          <li><span class="btext">Google I/O 2026 (May 19–22) shipped 100 product updates in 72 hours.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Gemini 3.5 is now Google&#x27;s default model, replacing all prior versions across Search, Workspace, and the Gemini app.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Gemini app monthly active users jumped from 400 million to over 900 million in six months.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Alphabet plans up to $190 billion in AI capital spending this year.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google&#x27;s I/O barrage reset the competitive baseline for the entire model field in a single week.</strong> Making Gemini 3.5 the default across Search and Workspace pushes it to nearly a billion users, and a $190B capex commitment signals Alphabet is spending to win the frontier.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Gemini Spark enters beta as an always-on personal AI running in the cloud</h2>
+        <ul>
+          <li><span class="btext">Gemini Spark entered beta — a personal AI that runs 24/7 in the cloud while your laptop is closed, triaging inbox, drafting reports, and flagging hidden fees.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Google declared &#x27;the era of ten blue links is over&#x27; and began rolling out an AI-agent search box that runs agents 24/7 and builds mini-apps on the fly.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Google tripled Gemini Antigravity&#x27;s usage limits twice in one week, though quotas still remain below previous levels.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is moving from chatbot answers to always-on agents that act without the user present.</strong> Spark and the agentic search box mark a shift from query-response search toward persistent background agents, the clearest sign yet that the &#x27;app era&#x27; framing is giving way to autonomous assistants.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Q1 2026 revenue nears $6 billion; ChatGPT adds form-filling</h2>
+        <ul>
+          <li><span class="btext">OpenAI Q1 2026 revenue hit nearly $6 billion, holding roughly a $1B revenue lead over Anthropic in the quarter (per The Information).</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">ChatGPT now fills out forms via Images plus Voice Mode — upload a form, dictate, and get it completed; the demo tweet hit 810K views in 24 hours.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI&#x27;s revenue scale and consumer-feature velocity keep it ahead of Anthropic on top-line growth.</strong> A near-$6B quarter with a ~$1B lead over Anthropic shows the commercial gap is real, while multimodal form-filling pushes ChatGPT further into everyday task automation.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Starbucks scraps its AI inventory tool across North America after miscounts</h2>
+        <ul>
+          <li><span class="btext">Starbucks scrapped its AI inventory tool across North America (launched Sept 2025) after it miscounted items like milk types and syrups, reverting to manual counts and daily replenishment.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Microsoft internal reports show AI adoption is proving more expensive than employing human workers due to token and agent costs.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">CNN cited AI reducing US payroll growth by roughly 16,000 jobs per month, with engineers, lawyers, and accountants most exposed.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A high-profile enterprise AI rollback is a reminder that deployment economics and accuracy still bite.</strong> Starbucks pulling a live nationwide tool, plus Microsoft&#x27;s cost findings, complicate the narrative that AI is straightforwardly cheaper than human labor even as it dents white-collar hiring.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>White House postpones its AI executive order amid internal disputes</h2>
+        <ul>
+          <li><span class="btext">The White House postponed its AI executive order (May 21); the order would have created a voluntary 90-day pre-launch review for frontier models.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">The postponement stems from an innovation-first vs. security-first internal dispute, with no new signing date set.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Anthropic co-founder Jack Clark said at Oxford (May 21) that AI will collaborate on a Nobel-winning discovery within 12 months.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>US frontier-model policy is stalled just as capabilities accelerate.</strong> Shelving a pre-launch review order leaves frontier oversight unresolved, while Clark&#x27;s Nobel prediction underscores how fast labs believe the science frontier is moving.</p>
+        </div>
+      </article>
+      <article class="story cat-4">
+        <div class="tag">DEEPSEEK</div>
+        <h2>DeepSeek makes its 75% V4-Pro discount permanent and advances a $10.29B round</h2>
+        <ul>
+          <li><span class="btext">DeepSeek made its 75% DeepSeek-V4-Pro discount permanent, with first-party pricing pegged at $0.435/M input and $0.87/M output (roughly $0.18/M blended).</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">That pricing places V4 Pro on the Pareto frontier — estimated ~3x cheaper than Gemini 3.1 Pro Preview, ~12x cheaper than GPT-5.5, and ~19x cheaper than Claude Opus 4.7.</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">DeepSeek is advancing a $10.29 billion financing round, with founder Liang Wenfeng committing to keep releasing open-source models over near-term commercialization (per Bloomberg).</span><span class="src">AINews / Latent Space</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>DeepSeek is using radical price cuts to reset the cost floor for frontier-class inference.</strong> A permanent 75% discount plus a $10B+ raise signals DeepSeek intends to compete on economics and open weights rather than chase premium pricing, pressuring every closed-model vendor.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>&#x27;All model labs are now agent labs&#x27; as the field pivots from models to harnesses</h2>
+        <ul>
+          <li><span class="btext">OpenAI&#x27;s Greg Brockman said &#x27;the model alone is no longer the product&#x27;; AI21 shuttered its model team to pivot to agents; DeepSeek is building a &#x27;Harness team&#x27; for the first time.</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">Anthropic&#x27;s Project Glasswing found more than 10,000 high/critical-severity software vulnerabilities within a month using Claude Mythos Preview.</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">Cartesia Sonic-3.5 ranked as the new #1 TTS model on ArtificialAnalysis Speech Arena — Elo 1218, 42 languages, and a claimed 82ms end-to-end first audio.</span><span class="src">AINews / Latent Space</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The industry&#x27;s center of gravity is shifting from raw model quality to the agent scaffolding around it.</strong> When labs reorganize around &#x27;harness&#x27; and agent teams, the durable advantage moves to orchestration, safety tooling like Glasswing, and specialized systems rather than the base model alone.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Gemini Spark</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>Google&#x27;s beta always-on personal AI that runs continuously in the cloud even while your device is off, handling tasks like inbox triage and report drafting without the user present.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agent lab</div>
+          <div class="csrc">AINews / Latent Space</div>
+          <p>A framing that model developers have become agent developers — building the harness, tools, and orchestration around a model rather than treating the model itself as the finished product.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Pareto frontier (pricing)</div>
+          <div class="csrc">AINews / Latent Space</div>
+          <p>The set of models offering the best available trade-off between capability and cost; DeepSeek V4-Pro&#x27;s permanent discount is cited as putting it on this frontier versus far pricier rivals.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Pre-launch review (frontier models)</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>A proposed voluntary 90-day government evaluation of frontier AI models before public release, central to the now-postponed US AI executive order.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The AI Entrepreneurs · Brain Buzz · AINews / Latent Space</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
