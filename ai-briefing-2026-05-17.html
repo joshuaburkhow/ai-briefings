@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday, May 17, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday, May 17, 2026   ·   Based on May 16 newsletters   ·   3 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Cerebras goes public at a $60B market cap after its OpenAI megadeal</h2>
+        <ul>
+          <li><span class="btext">Cerebras completed its IPO after previously pulling an S-1; the stock (ticker $CBRS) ended the day at $280, a market cap of $60 billion.</span><span class="src">AINews</span></li>
+          <li><span class="btext">The offering followed a 750MW partnership and a $10–$20B stake/deal with OpenAI struck earlier in the week.</span><span class="src">AINews</span></li>
+          <li><span class="btext">CFO Bob Komin said Cerebras is &#x27;currently serving trillion-parameter models,&#x27; naming internal OpenAI 5.4 and 5.5 workloads.</span><span class="src">AINews</span></li>
+          <li><span class="btext">AINews framed the debut against NVIDIA&#x27;s roughly $20B &#x27;execuhire&#x27; of Groq six months prior.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $60B AI-chip IPO tied directly to OpenAI compute is the clearest signal yet that the inference-hardware market has become a top-tier financial story.</strong> Cerebras&#x27; valuation is now underwritten by a concrete OpenAI supply relationship, reframing the neocloud/accelerator race as an investable, revenue-backed layer rather than a speculative one.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>ChatGPT adds personal finance tools and lets Pro users link bank accounts</h2>
+        <ul>
+          <li><span class="btext">OpenAI introduced personal finance tools for U.S. ChatGPT Pro users, powered by Plaid across 12,000+ institutions (Chase, Fidelity, AmEx named).</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The dashboard shows portfolio, spending, subscriptions and upcoming payments; accounts connect via a &#x27;Finances&#x27; sidebar option or chat command.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The launch follows OpenAI&#x27;s April acquisition of finance startup Hiro; Intuit support for tax and credit analysis is &#x27;coming soon.&#x27;</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">OpenAI cited internal benchmarks of GPT-5.5 Thinking scoring 79/100 and GPT-5.5 Pro 82.5/100 on complex personal-finance tasks; disconnected data is deleted within 30 days.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>ChatGPT reaching directly into users&#x27; bank data pushes the assistant from advice into custody of sensitive financial accounts.</strong> Tying GPT-5.5 reasoning to live account data (via Plaid, with Intuit tax analysis pending) is a major expansion of the assistant&#x27;s surface area—and its privacy stakes.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Anthropic reportedly valued at $900B with $45B ARR; Claude limits reset</h2>
+        <ul>
+          <li><span class="btext">FT numbers cited in the recap put Anthropic&#x27;s valuation at $900B and ARR at $45B by end of May, up sharply from earlier checkpoints.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Anthropic reset everyone&#x27;s 5-hour and weekly Claude rate limits, read as a competitive move after securing added GPU capacity.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Hyperscaler capex is described as &#x27;crossing $600B,&#x27; with a large gap between AI infrastructure spending and AI revenue.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $900B Anthropic valuation alongside $600B+ hyperscaler capex frames the scale—and the spend-versus-revenue gap—of the current build-out.</strong> The rate-limit reset signals Anthropic feels it has enough compute headroom to loosen constraints, a small but telling competitive tell against OpenAI.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>OpenAI&#x27;s Codex hits 4M+ weekly users a week after its multi-surface launch</h2>
+        <ul>
+          <li><span class="btext">OpenAI&#x27;s dev team reported Codex reached &#x27;4M+ weekly active users, 5x more messages per user, and 1M+ app downloads in the first week.&#x27;</span><span class="src">AINews</span></li>
+          <li><span class="btext">Codex expanded into a multi-surface agent platform spanning mobile, iPad/VPS, and Telegram/home-server.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Ecosystem support grew: Ollama added Codex app support and Zed now supports ChatGPT subscription access in its agent.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Brain Buzz separately noted GitHub unveiled a standalone Copilot desktop app, expanding its coding assistant beyond the IDE.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Codex&#x27;s fast adoption and GitHub&#x27;s new desktop app show the coding-agent battle moving from the terminal into standalone, cross-device apps.</strong> With Codex on mobile and Copilot on the desktop, the agentic-coding fight is now over always-available surfaces, not just editor plug-ins.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Lambda executive says sub-$20K home robots are near—and compute is &#x27;not a commodity&#x27;</h2>
+        <ul>
+          <li><span class="btext">Lambda CCO Robert Brooks IV said the firm bought a Unitree robot for around $40,000 about 18 months ago, and 1X&#x27;s Neo is &#x27;rumored to land around $20,000.&#x27;</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Brooks argued compute is not a commodity: one of Lambda&#x27;s larger data-center build-outs had 3,000 people working concurrently, and the firm only uses tier 2 and tier 3 facilities.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">He compared choosing a neocloud to choosing an airline—buyers should ask which data center, what tier, and whether it&#x27;s a retrofit of a former crypto mine.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A founding Lambda executive putting a ~$20K price tag on a capable home robot marks how close consumer humanoids are getting.</strong> Brooks&#x27; &#x27;compute is not a commodity&#x27; argument is a direct counter to the race-to-the-bottom pricing narrative, tying reliability on multi-year contracts to physical data-center quality.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Grep-style search rivals vector databases for coding-agent retrieval</h2>
+        <ul>
+          <li><span class="btext">A paper highlighted in the recap showed grep-style text search, in the right agent harness, can match or beat embedding-based retrieval on coding-agent tasks.</span><span class="src">AINews</span></li>
+          <li><span class="btext">A related comparison on monday.com&#x27;s GraphQL API found an SDK approach used 1 step / 15k tokens versus 4 steps / 158k tokens for a real MCP server—8.4x token cost for the same output.</span><span class="src">AINews</span></li>
+          <li><span class="btext">vLLM shipped day-0 support for Intern-S2-Preview, an open-source scientific multimodal model with early material crystal-structure generation.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Evidence that plain text search can beat vector databases challenges a core assumption of how AI coding agents retrieve context.</strong> If grep-in-a-harness matches embeddings and SDKs cut token costs ~8x over MCP servers, teams may rethink expensive retrieval stacks for agents.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>Local-inference gains: Qwen MTP speedups and new Gemma 4 edge builds</h2>
+        <ul>
+          <li><span class="btext">A llama.cpp fork adding Multi-Token Prediction for Qwen 3.6 models reported MacBook Pro M5 Max throughput rising from 21 tok/s to 34 tok/s (~+62%) at a 90% MTP acceptance rate.</span><span class="src">AINews</span></li>
+          <li><span class="btext">A vLLM study (arXiv:2604.19528) found FP8 KV-cache quantization remains the best production default—roughly 2x KV-cache capacity with negligible accuracy loss.</span><span class="src">AINews</span></li>
+          <li><span class="btext">&#x27;Sparky,&#x27; a fully offline suitcase robot on a Jetson Orin NX SUPER 16GB running Gemma 4 E4B, reported ~200ms cached TTFT and 14–15 tok/s.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A wave of quantization and multi-token-prediction tricks is squeezing far more performance out of consumer and edge hardware.</strong> These open-source gains keep pushing capable models onto laptops and offline robots, widening who can run modern LLMs without cloud compute.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Multi-Token Prediction (MTP)</div>
+          <div class="csrc">AINews</div>
+          <p>A decoding technique where a model predicts several tokens at once and accepts them if they pass a check; a llama.cpp fork reported ~+62% throughput on Qwen 3.6 with a 90% acceptance rate.</p>
+        </div>
+        <div class="concept">
+          <div class="term">FP8 KV-cache quantization</div>
+          <div class="csrc">AINews</div>
+          <p>Storing the attention key/value cache in 8-bit floating point; a vLLM study found it roughly doubles KV-cache capacity with negligible accuracy loss, making it a strong production default.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Neocloud</div>
+          <div class="csrc">The Deep View</div>
+          <p>A specialized GPU cloud provider (like Lambda) built specifically for AI training and inference, distinct from the general-purpose hyperscalers.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AI likeness detection</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>YouTube&#x27;s system that scans uploads for AI-generated content imitating a creator&#x27;s face, letting verified creators review flagged videos and request removal—now expanding to all creators over 18.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AINews (Latent Space) · Brain Buzz · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
