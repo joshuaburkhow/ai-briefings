@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Tuesday, May 26, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Tuesday, May 26, 2026   ·   Based on May 25 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>DeepMind&#x27;s AlphaProof Nexus autonomously solves nine open Erdos problems</h2>
+        <ul>
+          <li><span class="btext">Google DeepMind&#x27;s AlphaProof Nexus autonomously solved nine open Erdos problems — two unsolved for 56 years — at a few hundred dollars per problem, one day after OpenAI&#x27;s own Erdos claim.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">The system pairs an LLM with the Lean proof assistant and also proved 44 open OEIS conjectures (out of 492).</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">AI Breakfast framed it as solving 9 of 353 open Erdos problems and 44 of 492 open OEIS conjectures.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>An AI autonomously closing decades-old open math problems is a landmark for automated reasoning.</strong> Solving problems unsolved for over half a century, cheaply and one day after OpenAI&#x27;s rival claim, signals AI-driven mathematical discovery has arrived and is now a competitive frontier between the top labs.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Project Glasswing finds over 10,000 critical vulnerabilities in a month</h2>
+        <ul>
+          <li><span class="btext">Anthropic&#x27;s Project Glasswing, using Claude Mythos Preview with about 50 partners, found more than 10,000 high or critical-severity vulnerabilities in one month.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Scanning 1,000-plus open-source projects, Mythos flagged 6,202 high or critical issues with 62% (~3,900) surviving triage; one partner bank used it to block a $1.5M fraudulent wire transfer.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Anthropic is moving Claude Mythos 1 toward broader availability for Claude Code and Claude Security, with a release described as imminent, and Claude Opus 4.8 rumored in the works.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is turning frontier models into an at-scale vulnerability-discovery engine for real institutions.</strong> Finding 10,000-plus critical bugs in a month and blocking a live $1.5M fraud shows AI security tooling moving from research demos to production defense, with Glasswing set to expand to US and allied governments.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI creates a $445K role to prepare for self-improving AI as Codex passes 4M users</h2>
+        <ul>
+          <li><span class="btext">OpenAI created a Preparedness safety role paying up to $445,000 to prepare for self-improving AI, studying AI-generated cyberattacks, hidden model behavior, and automation of technical work.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">OpenAI&#x27;s GPT-5.5-powered Codex has passed 4 million weekly users, with Sam Altman&#x27;s benchmark being an automated AI research intern by September 2026.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Gartner named OpenAI a Leader in its Magic Quadrant for Enterprise AI Coding Agents.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is staffing up specifically for the risks of AI that improves itself.</strong> A nearly half-million-dollar role focused on recursive self-improvement, alongside Codex crossing 4 million weekly users, shows OpenAI treating self-improving systems as a near-term operational concern rather than a distant hypothetical.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Bezos&#x27;s $38B Project Prometheus builds toward an &#x27;artificial general engineer&#x27;</h2>
+        <ul>
+          <li><span class="btext">Jeff Bezos&#x27;s startup Project Prometheus, valued around $38 billion, is building an &#x27;artificial general engineer&#x27; for advanced next-generation CAD, not robots.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">It launched in late 2025 with $6.2 billion from Bezos and co-CEO Vik Bajaj, and recently closed a $10 billion round backed by JPMorgan and BlackRock.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The company poached roughly 120 engineers from OpenAI, DeepMind, Meta, and xAI.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>One of the largest AI startups ever is aiming AI at engineering and design rather than chatbots.</strong> A $38B valuation and $10B round to build an &#x27;artificial general engineer&#x27; signals major capital flowing toward applying frontier AI to physical-world design work, and the 120-engineer talent raid shows how aggressively it is competing for the top labs&#x27; people.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Polsia raises $30M at a $250M valuation claiming zero human employees</h2>
+        <ul>
+          <li><span class="btext">Polsia raised $30 million at a $250 million valuation, claiming zero human employees.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Its AI agents run more than 8,000 businesses, and it is nearing a $10 million ARR run rate.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Hyperagent launched a $10 million initiative to back 500 AI founders.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A fully agent-run company raising at a $250M valuation tests how far the &#x27;no employees&#x27; model can scale.</strong> Polsia&#x27;s claim of running 8,000-plus businesses with no human staff, while approaching $10M ARR, is an early data point on whether autonomous agent companies can command real venture valuations.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>SpaceX rents AI data centers to Anthropic for $15B a year as buildout balloons</h2>
+        <ul>
+          <li><span class="btext">SpaceX bought xAI, took the two Colossus data centers Elon built, and is renting them to Anthropic for $15 billion a year; SpaceX did $18.7 billion in total revenue last year.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The broader AI buildout is projected at $7.5 trillion of spend over the next 4.5 years, roughly 5% of US GDP.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The White House approved $9 billion to help US spy agencies acquire advanced AI chips.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI compute contracts are now large enough to rival the revenue of major aerospace companies.</strong> A single $15B/year rental deal approaching SpaceX&#x27;s entire annual revenue, plus a projected $7.5T buildout, underscores how AI infrastructure spending is reshaping the economics of the largest tech and defense players.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic tracks toward $10.9B Q2 revenue and an October IPO</h2>
+        <ul>
+          <li><span class="btext">Anthropic is on track for $10.9 billion in Q2 revenue, up from $4.8 billion in Q1, with compute cost falling from 71 cents to 56 cents per revenue dollar.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Claude Code alone is at $2.5 billion in revenue, and Anthropic expects $559 million in profit ahead of an October IPO.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Trump backtracked on a planned AI executive order after David Sacks warned it could impose mandatory regulations slowing US industry versus China, saying he would not sign it.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic&#x27;s revenue more than doubling in a quarter puts it on a clear path to a major IPO.</strong> Reaching $10.9B in quarterly revenue with improving unit economics and a $2.5B Claude Code line shows Anthropic scaling fast into an October public offering, while the shelved executive order keeps US frontier-AI regulation loose.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>MCP ships its largest revision with a stateless core and OAuth-aligned auth</h2>
+        <ul>
+          <li><span class="btext">The next MCP specification release candidate — the largest revision since launch — introduces a stateless core over ordinary HTTP, OAuth/OpenID-aligned authorization, a formal deprecation policy, and breaking changes, with the final spec shipping July 28.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">ByteDance Research released Lance on Hugging Face, a native unified multimodal model with just 3B active parameters, trained from scratch on a 128-A100-GPU budget.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Perplexity open-sourced Bumblebee, a read-only security scanner for risky packages, extensions, and AI tool configs on developer machines.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The MCP standard underpinning AI agents is getting its biggest overhaul yet.</strong> A stateless HTTP core and OAuth-aligned auth make MCP far more deployable in enterprise settings, and the breaking changes plus July 28 final date mean agent developers must plan migrations now.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">AlphaProof Nexus</div>
+          <div class="csrc">The Rundown AI</div>
+          <p>Google DeepMind&#x27;s system that pairs a large language model with the Lean proof assistant to autonomously prove open mathematical problems, credited with solving nine open Erdos problems and dozens of OEIS conjectures.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Project Glasswing</div>
+          <div class="csrc">The Rundown AI</div>
+          <p>Anthropic&#x27;s program using Claude Mythos Preview with roughly 50 partners to find software vulnerabilities at scale, reporting over 10,000 high or critical-severity findings in a single month.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Recursive self-improvement</div>
+          <div class="csrc">AI Valley</div>
+          <p>The scenario in which an AI system improves its own capabilities, which OpenAI&#x27;s new $445K Preparedness role is specifically staffed to study and prepare for.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Model Context Protocol (MCP)</div>
+          <div class="csrc">TLDR AI</div>
+          <p>The open standard for connecting AI models to tools and data; its largest revision adds a stateless core over ordinary HTTP and OAuth/OpenID-aligned authorization, with the final spec due July 28.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: TLDR AI · The Rundown AI · AI Valley · AI Breakfast</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
