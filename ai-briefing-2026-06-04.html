@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday, June 4, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday, June 4, 2026   ·   Based on June 3 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI turns Codex into an enterprise app builder with Sites and role plugins</h2>
+        <ul>
+          <li><span class="btext">OpenAI launched Codex Sites in preview, letting business and enterprise users create interactive, hosted, shareable websites and apps, with launch partners Wix, Base44, Replit, Lovable, Figma, Webflow and Emergent.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">It added six role-specific plugins for data analytics, product design, creative production, sales, public equity investing and investment banking, with more roles coming.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Annotations now extend to any user-created docs, spreadsheets and slides, and non-developers make up about 20% of Codex users, growing more than 3x faster than developers.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is pushing Codex well beyond coding into a hosted app-building and role-based work platform for the whole enterprise.</strong> Codex Sites with partners like Wix and Figma turns Codex into a rival to app builders, and non-developers growing 3x faster than developers shows OpenAI capturing business users, not just engineers.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft previews Solara, an operating system for agent-first devices</h2>
+        <ul>
+          <li><span class="btext">Microsoft introduced Solara, an Android-based operating system for cloud-managed devices designed around AI agents instead of traditional apps.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Devices respond to natural-language commands and reshape their screens automatically rather than using fixed menus, icons and app layouts.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The Deep View described Project Solara as Microsoft&#x27;s answer to the &#x27;Mac mini agent craze,&#x27; with hardware concepts including a badge and a desk companion.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Microsoft is reimagining the operating system itself around agents, not apps, in its Solara platform.</strong> An agent-first OS that reshapes its own interface challenges the app-and-icon model that has defined computing, and betting on new device form factors signals Microsoft wants to own the hardware layer of the agent era.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft ships seven MAI models and touts a 2029 quantum timeline</h2>
+        <ul>
+          <li><span class="btext">Microsoft unveiled seven in-house MAI models via Foundry, including MAI-Thinking-1, its first reasoning model at 35B parameters and 128K context, plus MAI-Image-2.5, MAI-Transcribe-1.5, MAI-Voice-2 and MAI-Code-1 tuned for GitHub.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Its Majorana 2 quantum chip, redesigned with AI-developed lead-based materials, claims a 1,000x reliability improvement, and Microsoft now expects commercially useful quantum machines as soon as 2029.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Microsoft also announced a Mayo Clinic collaboration to build an advanced healthcare model, deploying first within Mayo before wider distribution via Azure Foundry.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Microsoft is building out a full in-house model family and pointing to a 2029 quantum milestone as it reduces reliance on partners.</strong> Seven MAI models plus tunable weights give Microsoft control over the AI in its products, while a claimed 1,000x quantum reliability gain and a 2029 target keep it in the race with IBM, Google and Amazon.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta takes its Business Agent worldwide on WhatsApp</h2>
+        <ul>
+          <li><span class="btext">Meta is rolling out its customer-support bot, now called Meta Business Agent, globally on WhatsApp after nearly two years of testing in markets including India and Mexico.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The agent answers customer questions, recommends products, books appointments, qualifies leads and hands chats to a human, with support also coming to Instagram DMs.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta is turning WhatsApp into a global customer-service agent platform for businesses.</strong> Putting an autonomous sales-and-support agent inside WhatsApp reaches billions of users and gives Meta a commerce-agent foothold that ties directly into its messaging dominance.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google tests letting UK publishers opt out of AI search</h2>
+        <ul>
+          <li><span class="btext">Google is testing Search Console controls letting a small group of UK publishers decide whether their content appears in AI Overviews and AI Mode.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Opting out costs AI-feature traffic and impressions but does not affect ranking in regular non-AI search.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is offering publishers a first opt-out from AI search features, addressing a core grievance over lost traffic.</strong> Separating AI-feature visibility from normal ranking is Google&#x27;s attempt to defuse publisher anger over AI Overviews, though opting out still means giving up AI-driven traffic.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic heads to IPO amid a backlash over AI costs</h2>
+        <ul>
+          <li><span class="btext">Anthropic filed for an IPO amid corporate scrutiny over high AI costs, with a survey finding 40% of businesses saw cost savings below 10%.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Anthropic has surpassed OpenAI in number of business clients, but a shift toward cheaper and open-source models is a stated risk.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">It expanded Project Glasswing, giving Mythos-model access to 150 additional partners across 15-plus countries, including Apple, Nvidia, Microsoft, CrowdStrike and Palo Alto Networks, who have found more than 10,000 high or critical security flaws.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic approaches its IPO just as customers question whether pricey AI is delivering the promised savings.</strong> A survey showing 40% of businesses saw under 10% savings undercuts the ROI story ahead of a listing, even as Anthropic&#x27;s lead in business clients and its Glasswing security wins strengthen the case.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Alphabet plans up to $190B in AI spending, funded by an $80B raise</h2>
+        <ul>
+          <li><span class="btext">Alphabet is selling $80B in stock to fund AI infrastructure, with planned spending of up to $190B this year.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Alphabet&#x27;s planned $190B in AI spending shows the sheer scale of capital now committed to the buildout.</strong> Raising $80B in equity to support up to $190B in annual spend signals Alphabet views compute capacity as an existential priority worth diluting shareholders to secure.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Trump&#x27;s AI order trims frontier review to a voluntary 30 days</h2>
+        <ul>
+          <li><span class="btext">Trump signed an executive order asking labs to voluntarily submit frontier models for a 30-day government security review before release, down from an expected 90-day requirement.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">A 90-day draft was scrapped hours before a planned May 21 ceremony, with Trump saying it would &#x27;get in the way of&#x27; the US-China AI race; the order rules out mandatory licensing and directs the DOJ to pursue AI-powered hacking of computer systems.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The final AI order settles on a light, voluntary 30-day review, prioritizing speed against China over stricter controls.</strong> Cutting the review to a voluntary 30 days and dropping licensing reflects an administration wary of slowing US labs, while directing the DOJ toward offensive AI hacking marks a notable security posture.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Snowflake reframes its platform around autonomous agents at Summit</h2>
+        <ul>
+          <li><span class="btext">Snowflake launched CoWork, a personal AI agent formerly called Snowflake Intelligence, adding Cortex Sense, User Memory with Gmail and Slack actions, and a Skill Catalog.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">It introduced Horizon Catalog, an AI governance hub with verified agent identities, continuous posture management and auto-defense against jailbreaks and zero-days, plus CoCo, which runs tasks autonomously, and Datastream to remove data brokers and connectors.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Snowflake is rebuilding its data platform around autonomous agents, governance and memory rather than dashboards.</strong> Adding verified agent identities and jailbreak auto-defense shows the data layer racing to make agents safe for regulated enterprises, and a deepened Claude partnership ties Anthropic further into the stack.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Agent-first operating system</div>
+          <div class="csrc">Everyday AI</div>
+          <p>An OS designed around AI agents rather than fixed apps and icons, responding to natural language and reshaping its interface dynamically; Microsoft&#x27;s Solara is one example.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Frontier Tuning</div>
+          <div class="csrc">The Deep View</div>
+          <p>Microsoft&#x27;s technique of using reinforcement-learning environments to adapt models to a specific organization&#x27;s workflows and compliance policies, letting developers tune the model weights themselves.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AI Overviews opt-out</div>
+          <div class="csrc">Everyday AI</div>
+          <p>A Search Console control Google is testing that lets publishers choose whether their content appears in AI-generated search summaries, separate from their normal search ranking.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Verified agent identity</div>
+          <div class="csrc">The Deep View</div>
+          <p>A governance mechanism that authenticates which AI agent is acting and under whose authority, used in Snowflake&#x27;s Horizon Catalog to keep autonomous agents accountable and secure.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · The Rundown AI · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
