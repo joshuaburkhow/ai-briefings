@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday, June 15, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday, June 15, 2026   ·   Based on June 14 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>US export-control directive forces Anthropic to disable Fable 5 and Mythos 5 for all users</h2>
+        <ul>
+          <li><span class="btext">Anthropic received a US government export-control directive at 5:21 p.m. ET on Friday, June 12, blocking any foreign national, including those inside the US and Anthropic&#x27;s own foreign-national employees, from using Fable 5 or Mythos 5.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Because Anthropic says it cannot separate users by nationality in real time, it disabled both models for all customers; the order cited national security without specifics.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">The Wall Street Journal reported that Amazon researchers flagged the underlying issue, a narrow Fable 5 jailbreak, to US officials; Anthropic says the demo found only known minor software flaws other models can also identify.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>This is described as the first time the US government has blocked an AI model after its public launch.</strong> Using export-control authority to gate a model by user nationality creates a compliance problem that forced a full worldwide shutdown.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Genspark raises $100M at a $2.6B valuation as agent funding stays hot</h2>
+        <ul>
+          <li><span class="btext">Genspark raised $100M at a $2.6B valuation for its agentic workplace platform, bringing total funding above $645M.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Parallel, co-founded by Travers Nisbet and former Twitter CEO Parag Agrawal to build web infrastructure for agents, raised $230M.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Jeff Bezos-backed industrial AI startup Prometheus, focused on speeding the idea-to-prototype-to-manufacturing loop, reached what Axios called a huge valuation, though no figure was given.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Capital is pouring into companies building the infrastructure and platforms for autonomous agents.</strong> The Genspark and Parallel rounds show investors betting on agent orchestration and web-for-agents as the next layer of the stack.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta unwinds its $2B Manus acquisition under Chinese regulatory pressure</h2>
+        <ul>
+          <li><span class="btext">Meta is unwinding its $2B acquisition of Chinese AI startup Manus after Beijing issued a divestiture order on national security grounds, halting data sharing and cutting Manus off from internal systems.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Manus co-founders are reportedly exploring a $1B fundraising to regain control, possibly via a Hong Kong listing.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The Neuron reported Meta split operations from Manus and began unwinding the deal, with founders exploring a buyback.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A rare forced divestiture shows how geopolitics is now directly reshaping cross-border AI M&amp;A.</strong> Beijing blocking a US acquirer from holding a Chinese AI startup signals both governments are treating frontier AI as a strategic asset.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI launches a robotics division to build its own robots</h2>
+        <ul>
+          <li><span class="btext">Sam Altman announced OpenAI is hiring engineers to build robots, setting up direct competition with Tesla&#x27;s Optimus, which Tesla plans to sell as a humanoid by late 2027.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">OpenAI already backs robotics startups 1X Technologies and Figure AI.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI moving from investing in robotics to building robots itself is a major expansion of its ambitions.</strong> It positions OpenAI to compete for the physical-embodiment layer of AI against Tesla and its own portfolio companies.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft tests Copilot+ AI on discrete GPUs, loosening the NPU requirement</h2>
+        <ul>
+          <li><span class="btext">Microsoft is testing Copilot+ AI features on discrete GPUs via an experimental Windows App SDK, letting AI APIs run on cards such as Nvidia RTX 30-series with at least 6GB of VRAM instead of requiring an NPU.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">It requires the Windows Insider Experimental Channel and Developer Mode, and not all Copilot+ features are supported yet.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Decoupling Copilot+ from NPUs would dramatically widen the base of PCs that can run on-device AI.</strong> Millions of existing gaming and workstation PCs with discrete GPUs could gain Copilot+ features without new hardware.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>New agent products and a China world model land as the ecosystem builds out</h2>
+        <ul>
+          <li><span class="btext">Coinbase debuted MCP agent infrastructure letting agents trade crypto and pay via the x402 protocol, and Linear launched agent-run coding sessions that turn bug reports into fixes and pull requests.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Xiaomi released MiMo Code, an open-source terminal coding agent with persistent memory, Compose workflows, voice input, and Claude Code compatibility.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">China unveiled Physis-v0.1 at the 8th Beijing Academy of Artificial Intelligence Conference, described as the world&#x27;s first general world foundation model.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Agent tooling is spreading into payments, developer workflows, and embodied world models simultaneously.</strong> MCP-based crypto agents and coding agents show the protocol layer maturing, while China&#x27;s world model targets robotics and simulation.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Export-control directive</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>A government order restricting who can access a technology; here it barred foreign nationals from Anthropic&#x27;s models, which forced a global shutdown because access could not be filtered by nationality.</p>
+        </div>
+        <div class="concept">
+          <div class="term">x402 protocol</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>A payment protocol that lets software agents autonomously pay for services; Coinbase used it in new MCP infrastructure so agents can trade crypto and settle transactions.</p>
+        </div>
+        <div class="concept">
+          <div class="term">NPU (Neural Processing Unit)</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>A dedicated chip for AI workloads that Microsoft has required for Copilot+ features; its new SDK lets those features run on discrete GPUs instead, widening hardware support.</p>
+        </div>
+        <div class="concept">
+          <div class="term">World foundation model</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>A model trained to simulate and predict the physical world rather than just language; China&#x27;s Physis-v0.1 is billed as the first general one, useful for robotics and simulation.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily · Brain Buzz · Alpha Signal · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
