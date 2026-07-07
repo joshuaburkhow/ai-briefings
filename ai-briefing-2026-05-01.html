@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday, May 1, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday, May 1, 2026   ·   Based on April 30 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Big Tech pours $130B into AI in Q1 as hyperscaler backlogs balloon</h2>
+        <ul>
+          <li><span class="btext">Microsoft, Google, Meta and Amazon spent a combined $130B on AI in Q1 2026.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Microsoft&#x27;s AI business hit a $37B annual run rate, up 123% year over year, with 20M paid M365 Copilot enterprise seats and a $627B remaining-performance-obligations backlog.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Google Cloud grew 63% to $20B and its backlog doubled in one quarter to roughly $462B; Alphabet raised 2026 capex guidance to as much as $190B and shares rose about 7% after hours.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Meta grew revenue 33% to $56.3B and lifted 2026 capex guidance to $125–145B, but shares fell about 7% after hours.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The quarter made clear that AI spending is now the defining line item across every hyperscaler&#x27;s earnings.</strong> Signed but unbilled enterprise commitments across the group now exceed a trillion dollars, a forward demand signal that reframes AI from experiment to committed backlog. The market rewarded Google and Microsoft&#x27;s monetization but punished Meta&#x27;s heavier spend-to-return gap.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Alphabet will sell its TPUs for customers to run in their own data centers</h2>
+        <ul>
+          <li><span class="btext">Alphabet plans to sell its custom Tensor Processing Units to select customers to install in their own data centers, and announced two new TPUs for training and inference.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Google already has TPU deals with Anthropic and Meta, escalating direct competition with Nvidia.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Selling TPUs externally is Google&#x27;s most direct challenge yet to Nvidia&#x27;s grip on AI hardware.</strong> Moving from renting TPU capacity in Google Cloud to shipping the chips into third-party data centers opens a new front in the AI chip war, alongside Amazon&#x27;s Trainium push.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Open-weight coding and reasoning models land from Poolside, Xiaomi and IBM</h2>
+        <ul>
+          <li><span class="btext">Poolside released its first open-weight 33B coding model that runs on a single GPU.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Xiaomi released MiMo-V2.5-Pro, an open-source 1-trillion-parameter reasoning model.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">IBM released Granite 4.1 dense LLMs at 3B, 8B and 30B parameters, trained on 15 trillion tokens; the 8B model matches IBM&#x27;s previous 32B mixture-of-experts model.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A wave of capable open-weight models keeps compressing the gap with proprietary frontier systems.</strong> Single-GPU and small-dense models that match far larger predecessors push serious capability toward teams that cannot afford frontier-scale infrastructure.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Dev tooling is being rebuilt around agents: Warp, Cursor and Mistral Vibe</h2>
+        <ul>
+          <li><span class="btext">Warp open-sourced its AI terminal; the full Rust codebase crossed 37k stars on GitHub, with OpenAI as founding sponsor and GPT models powering the agent workflows.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Cursor released an open-source TypeScript SDK to build and deploy coding agents outside the editor, running locally or on Cursor&#x27;s cloud with its own VM per agent; early users include Rippling, Notion, Faire and C3 AI.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Mistral released Medium 3.5, a 128B dense model with 256k context, powering &#x27;Vibe&#x27; remote coding agents that run long asynchronous tasks and ship GitHub pull requests, plus a new Le Chat &#x27;Work mode&#x27;.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Terminals, IDEs and CI are being re-architected so autonomous agents, not humans, are the primary users.</strong> The common thread is asynchronous, long-running agents that clone repos, run in their own environments and open pull requests, shifting the developer&#x27;s job toward orchestration and review.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI leans on leased compute and ships GPT-5.5-Cyber to defenders</h2>
+        <ul>
+          <li><span class="btext">OpenAI has effectively abandoned first-party Stargate data centers in favor of leasing compute, after partners could not agree on ultimate control of the planned 20 data centers.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">OpenAI rolled out GPT-5.5-Cyber to critical cyber defenders through a &#x27;Trusted Access for Cyber&#x27; program, with no technical details or wider-availability timeline released yet.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI&#x27;s infrastructure strategy is shifting from owning mega-clusters to renting them.</strong> The Stargate retreat signals how hard control and governance of massive compute build-outs have become, while GPT-5.5-Cyber shows OpenAI gating a specialized model behind vetted access.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft makes M365 Copilot multi-model, auto-routing GPT and Claude</h2>
+        <ul>
+          <li><span class="btext">Microsoft made M365 Copilot multi-model, auto-routing between OpenAI&#x27;s GPT and Anthropic&#x27;s Claude.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Gemini added in-app creation, generating Google Docs, Sheets, Slides, PDFs, Word, Excel and CSV files directly from prompts.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The biggest productivity suites are quietly becoming model-agnostic routing layers.</strong> Copilot picking between GPT and Claude per task, and Gemini producing finished office files, both move assistants from chat toward doing the work inside the tools people already use.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Musk seeks $150B from OpenAI as White House moves to ease an Anthropic block</h2>
+        <ul>
+          <li><span class="btext">At an Oakland trial, Elon Musk accused OpenAI of abandoning its nonprofit mission and is seeking roughly $150 billion in damages plus a return to nonprofit status; OpenAI is now valued around $800 billion.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The White House is reportedly drafting executive guidance to ease or bypass an Anthropic supply-chain risk label for federal agencies, even as the NSA already uses Anthropic&#x27;s &#x27;Mythos&#x27;.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">U.S. House committees probed Anysphere (Cursor&#x27;s parent) and Airbnb over use of Chinese AI models such as Moonshot&#x27;s Kimi and Alibaba&#x27;s Qwen.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI&#x27;s biggest players are now fighting as much in courtrooms and Washington as in the lab.</strong> Governance, national-security scrutiny of Chinese models, and the fight over OpenAI&#x27;s for-profit conversion are shaping who can sell to the government and on what terms.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Abstract Chain-of-Thought cuts reasoning tokens roughly 11x</h2>
+        <ul>
+          <li><span class="btext">A new training method, Abstract Chain-of-Thought, cuts LLM reasoning tokens by about 11.6x by reasoning through short sequences of special reserved tokens instead of English.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">It matches or beats standard verbal reasoning on math, multi-hop QA and instruction-following, and works across model families using two-stage training.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Cutting reasoning tokens by an order of magnitude directly attacks the cost of inference-heavy models.</strong> As reasoning models drive up inference bills, compressing the chain of thought into abstract tokens could make advanced reasoning far cheaper to run at scale.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Remaining performance obligations (RPO)</div>
+          <div class="csrc">The Neuron</div>
+          <p>Signed commercial contracts that have not yet been billed or delivered; hyperscalers cite RPO backlogs (Microsoft $627B, Google roughly $462B) as a forward signal of committed AI and cloud demand.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agent-native tooling</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>Developer tools—terminals, IDEs, CI—redesigned so autonomous multi-step agents, rather than humans, are the primary users, with tool use and long-running tasks treated as the default.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Abstract Chain-of-Thought</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>A reasoning technique where a model thinks through a short sequence of special reserved &#x27;abstract&#x27; tokens instead of plain-English steps, cutting reasoning token cost by roughly 11x while preserving accuracy.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Dark agent sprawl</div>
+          <div class="csrc">Everyday AI</div>
+          <p>The unmonitored proliferation of AI agents inside an organization—for example an employee spinning up dozens of coding-agent instances unseen by IT—an escalation of the &#x27;shadow AI&#x27; problem.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Alpha Signal · TLDR AI · The Neuron · Everyday AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
