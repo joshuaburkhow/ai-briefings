@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday, May 31, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday, May 31, 2026   ·   Based on May 30 newsletters   ·   3 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic ships Claude Opus 4.8, betting on calibrated honesty</h2>
+        <ul>
+          <li><span class="btext">Claude Opus 4.8 launched at the same price as Claude 4.7, with pricing held flat.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">The model flags its own doubts, breaks down where its confidence drops, and refuses to fabricate unverifiable answers.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Anthropic reports the model is 4x less likely to let flawed code pass unremarked, and it pairs with dynamic workflows that run hundreds of parallel subagents for codebase-scale migrations.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic&#x27;s newest frontier model reframes the race around trustworthiness rather than raw capability, and it holds pricing flat.</strong> Calibrated honesty and a 4x reduction in unflagged flawed code target the biggest enterprise objection to coding agents. Holding price at the 4.7 level makes the upgrade an easy call for existing users.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI&#x27;s Codex computer-use expands to Windows PCs</h2>
+        <ul>
+          <li><span class="btext">OpenAI&#x27;s Codex &#x27;computer-use&#x27; feature expanded from Mac to Windows, letting it see the screen, simulate mouse clicks in the background, and operate directly inside other apps&#x27; GUIs.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Users can review and manage Codex jobs remotely through the ChatGPT app.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Codex can now drive a full Windows desktop, putting an autonomous agent on the OS used by most enterprise workers.</strong> Extending computer-use from Mac to Windows meaningfully widens the addressable base for agentic desktop automation and sets up a direct contest with Microsoft&#x27;s own Copilot ambitions.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft rebuilds 365 Copilot as an &#x27;operating system for work&#x27;</h2>
+        <ul>
+          <li><span class="btext">Microsoft redesigned Microsoft 365 Copilot into a &#x27;task-aware workspace&#x27; with a dynamic prompt surface and context-aware tools.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">A new &#x27;Work IQ&#x27; layer pulls relevant outputs from a user&#x27;s emails, documents, meetings, and chats.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Microsoft is repositioning Copilot from a chat sidebar into the central surface for knowledge work.</strong> The &#x27;Work IQ&#x27; context layer is Microsoft&#x27;s answer to agents that need organizational memory, and it lands the same week rivals push desktop automation of their own.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Amazon opens its agentic shopping assistant to every retailer</h2>
+        <ul>
+          <li><span class="btext">AWS made its Agentic Shopping Assistant publicly available; the underlying tech drove roughly $12B in extra Amazon sales last year.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Any retailer can now deploy a conversational store in 60 days, and conversational sessions convert 3.5x better than keyword search.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Kate Spade is running a gift concierge powered by Claude Haiku.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Amazon is turning a proven $12B internal sales engine into a product any store can rent.</strong> A 3.5x conversion lift over keyword search and a 60-day deployment window make conversational commerce a near-term revenue lever, and Kate Spade&#x27;s use of Claude Haiku shows Anthropic reaching into retail.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Bloomberg leaks Gemini-powered &#x27;Siri 2.0&#x27; a week before WWDC</h2>
+        <ul>
+          <li><span class="btext">Bloomberg published the first look at Apple&#x27;s revamped Siri one week before WWDC, showing a chatbot-style app with conversation history and Dynamic Island integration.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">An Extensions system routes queries to Claude, Gemini, or OpenAI, with Gemini reportedly powering the new Siri under the hood.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">The overhaul, tied to iOS 27, is targeted across roughly 2 billion iPhones.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Apple&#x27;s long-delayed Siri rebuild reportedly leans on Google&#x27;s Gemini, a landmark distribution win for Google.</strong> Powering Siri across ~2 billion devices would be one of the largest AI distribution deals ever, and the multi-model Extensions system shows Apple hedging across Claude, Gemini, and OpenAI.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google adds Gemini chat sharing through Google Drive</h2>
+        <ul>
+          <li><span class="btext">Google Workspace users can now share Gemini chats via Google Drive, with only a snapshot shared and edits spawning new chats.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Drive access controls govern sharing and admins can manage or disable it; rollout to admins begins now, with end-users seeing it starting June 3.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is wiring Gemini conversations into Drive&#x27;s existing permission model, making AI chats a shareable work artifact.</strong> Treating a chat like a Drive file, with the same access controls, is how Google embeds Gemini deeper into collaborative workflows rather than leaving it a personal tool.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta builds a recording AI pendant as Reality Labs bleeds cash</h2>
+        <ul>
+          <li><span class="btext">Meta is developing an AI-powered pendant, worn on a shirt or as a necklace, to record conversations, built on its 2025 acquisition of AI-pendant startup Limitless.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Meta also plans AI glasses and a &#x27;Wearables for Work&#x27; subscription; Reality Labs lost $4B in Q1.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta is pushing always-on recording wearables to try to turn around a division that lost $4B in a single quarter.</strong> An always-listening pendant raises obvious privacy questions, and the &#x27;Wearables for Work&#x27; subscription signals Meta wants recurring hardware revenue to offset Reality Labs losses.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>CMU and Cleveland Clinic cardiac AI hits 99% accuracy</h2>
+        <ul>
+          <li><span class="btext">A Carnegie Mellon and Cleveland Clinic model called CMR-CLIP was trained on more than 13,000 cardiac MRI scans.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">CMR-CLIP reached 99% accuracy on key conditions and outperformed general-purpose models by 35%.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A specialized cardiac-imaging model beat general-purpose AI by 35%, underscoring the edge of domain-specific medical models.</strong> The 35% gap over general models is the practical argument for purpose-built clinical AI, and a 99% accuracy figure on cardiac MRI is a notable research result for a narrow diagnostic task.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Computer-use</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>An agent capability that lets an AI see the screen and control a computer directly through its graphical interface, simulating mouse clicks and keystrokes rather than calling an API.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Calibrated honesty</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>A model design goal where the AI accurately signals its own uncertainty, flags where confidence drops, and declines to fabricate answers it cannot verify.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Work IQ</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>Microsoft&#x27;s context layer for 365 Copilot that surfaces relevant material from a user&#x27;s emails, documents, meetings, and chats to give the assistant organizational memory.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agentic shopping assistant</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>A conversational commerce agent that guides a shopper through a store in natural language; Amazon&#x27;s version reportedly converts 3.5x better than keyword search.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Brain Buzz · The AI Entrepreneurs · Alpha Signal</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
