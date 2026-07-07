@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday, June 5, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday, June 5, 2026   ·   Based on June 4 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google releases Gemma 4, a laptop-class open multimodal model</h2>
+        <ul>
+          <li><span class="btext">Google DeepMind introduced Gemma 4 12B, an open multimodal model handling text, image and native audio that runs locally on consumer laptops with 16GB of memory.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">It feeds vision and audio inputs straight into the core language system instead of using separate encoders, and Google claims it is almost as capable as the larger Gemma 4 26B mixture-of-experts model.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Released under an Apache 2.0 license on Hugging Face and Kaggle, with support for Ollama, LM Studio, MLX, vLLM and llama.cpp.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Gemma 4 puts near-frontier multimodal ability on an ordinary 16GB laptop, accelerating the shift of AI from cloud to device.</strong> A 12B open model that runs offline with native audio and an Apache 2.0 license gives developers a capable local option, and folding vision and audio directly into the language core is what makes on-device speed possible.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>SpaceX prices the largest IPO ever at a $1.77 trillion valuation</h2>
+        <ul>
+          <li><span class="btext">SpaceX priced its IPO at $135 per share for an implied valuation of $1.77 trillion, raising $74.4 billion, the largest IPO ever.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">It begins trading on Nasdaq next week under ticker SPCX, with proceeds funding moonshots including AI data centers in orbit, a lunar factory and humans to Mars.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>SpaceX&#x27;s $1.77T pricing sets a record IPO and earmarks proceeds partly for orbital AI infrastructure.</strong> Raising $74.4B in a single offering dwarfs prior IPOs, and dedicating funds to AI data centers in orbit signals how central compute has become even to a space company&#x27;s ambitions.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>SafeBreach shows Gemini can be hijacked through a WhatsApp message</h2>
+        <ul>
+          <li><span class="btext">SafeBreach Labs demonstrated an indirect prompt-injection attack where Gemini&#x27;s Android agent reads a normal-looking WhatsApp notification, follows hidden instructions inside it and silently exfiltrates data with no clicks or alerts.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">A novel &#x27;Fake Context Alignment&#x27; technique disguises attacker instructions as part of the user&#x27;s own conversation, and the attack works across WhatsApp, Slack, Signal, SMS, Instagram and Messenger.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Researchers demonstrated five threat categories including data theft, account-takeover prep and silent surveillance, and disclosed it to Google before publishing.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A zero-click prompt injection that turns Gemini against its own user exposes a core security flaw in messaging-connected AI agents.</strong> Because the agent acts on hidden instructions with no user interaction, the attack shows how connecting assistants to messaging apps opens a silent data-exfiltration path across nearly every major platform.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta rolls out business AI agents across its messaging apps</h2>
+        <ul>
+          <li><span class="btext">Meta launched business AI agents across WhatsApp, Instagram and Messenger that answer customer questions, book appointments and close sales, with an eventual goal of running whole businesses.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The agents are free for now but will move to paid subscription tiers, and Meta is reportedly weighing up to $200 per month for a consumer agent called Hatch.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Meta was forced to stop tracking employee keystrokes and clicks to train AI after more than 1,500 workers signed a petition calling it an &#x27;Employee Data Extraction Factory.&#x27;</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta is turning its messaging apps into a commerce-agent platform while facing internal revolt over its AI training practices.</strong> Free-then-paid business agents across WhatsApp, Instagram and Messenger give Meta a vast commerce surface, but the employee petition over keystroke tracking shows the human cost of feeding those models data.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI CEOs urge Congress to screen DNA synthesis orders</h2>
+        <ul>
+          <li><span class="btext">Sam Altman, Demis Hassabis, Dario Amodei and Mustafa Suleyman are urging Congress to require DNA and RNA synthesis companies to screen customers and orders, citing bioweapon risk.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic separately warned that attackers are using AI deeper into cyberattacks, mapping the behavior to the MITRE ATT&amp;CK framework.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The heads of the four leading AI labs jointly pressing Congress on DNA screening signals shared alarm over AI-enabled bioweapon risk.</strong> A rare united front from OpenAI, DeepMind, Anthropic and Microsoft AI lends weight to the biosecurity concern, arriving as Anthropic warns AI is already deepening real-world cyberattacks.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Big AI deals and a Broadcom stumble mark the day</h2>
+        <ul>
+          <li><span class="btext">Pinterest signed a $4 billion AI infrastructure deal with AWS to serve its 600 million users, and Generalist AI reached a $2 billion valuation after raising $400 million.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Broadcom shares fell more than 15%, its worst one-day drop since January 2025, after projecting $16B in Q3 AI chip sales against analysts&#x27; $17.2B target.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">US employers announced 97,006 job cuts in May, led by tech at 38,242 with AI cited as the top reason, up 66% year over year.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A day of multibillion-dollar AI deals sat alongside a sharp Broadcom drop and mounting AI-linked layoffs.</strong> Pinterest&#x27;s $4B AWS commitment shows infrastructure demand, yet Broadcom missing chip-sales expectations and 38,242 tech job cuts signal investors and workers questioning where the AI spending actually pays off.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Reve and Ideogram push image models from prompts to editable layouts</h2>
+        <ul>
+          <li><span class="btext">Reve 2.0 turns prompts into editable layouts and generates 4K images where every object and region is segmented, labeled and editable, making images behave more like code.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Ideogram 4.0 offers dense text rendering, native 2K images, transparent backgrounds and tighter layout control, trained with bounding boxes tied to region descriptions.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>New image models are shifting from one-shot prompts toward structured, editable layouts aimed at real design work.</strong> Making every region of an image segmentable and editable turns generation into something closer to a design tool, targeting logos, posters and product visuals rather than novelty images.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>IBM and Google Cloud partner to scale enterprise AI agents</h2>
+        <ul>
+          <li><span class="btext">IBM and Google Cloud formed a global Google Cloud Practice and strategic partnership, deploying thousands of IBM consultants and industry-specific agents optimized for Gemini Enterprise.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The partnership targets banking, government, retail, telecom, energy, insurance and life sciences.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>IBM aligning its consulting force behind Gemini Enterprise gives Google a major enterprise distribution channel.</strong> Thousands of IBM consultants building Gemini-optimized agents for regulated industries is exactly the go-to-market muscle Google needs to compete with Microsoft and OpenAI in the enterprise.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Indirect prompt injection</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>An attack where malicious instructions are hidden in content an AI agent reads, such as a message or webpage, causing the agent to act on them without the user&#x27;s knowledge or interaction.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Mixture-of-experts</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A model architecture that activates only a subset of specialized sub-networks per input, letting a large model run efficiently; Gemma 4 12B is claimed to nearly match the larger 26B MoE version.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Native audio</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>A model&#x27;s ability to process sound directly through its core system rather than converting it with a separate encoder first, enabling faster offline transcription and translation on-device.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Editable image layout</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>An image-generation approach where each object or region is segmented and labeled so it can be individually edited after the fact, making a generated image behave more like editable code than a fixed picture.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · The Neuron Daily · The AI Entrepreneurs</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
