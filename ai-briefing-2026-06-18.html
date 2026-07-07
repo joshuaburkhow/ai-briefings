@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday, June 18, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday, June 18, 2026   ·   Based on June 17 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>SpaceX&#x27;s $60B all-stock acquisition of Cursor is official</h2>
+        <ul>
+          <li><span class="btext">SpaceX will acquire Anysphere, Cursor&#x27;s parent, in a $60 billion all-stock deal paid in SpaceX shares, expected to close in Q3, just days after SpaceX&#x27;s record IPO.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Cursor reportedly raised $3.38 billion since its 2022 founding from Thrive, a16z, the OpenAI Startup Fund, and Nvidia, and passed $1 billion in annualized revenue after 10x growth in under a year.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Event posts said Cursor is preparing Composer 3, reportedly a 1.5-trillion-parameter model retrained on more than 100,000 GPUs and built with 10 to 20 times the compute of Composer 1.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $60 billion all-stock deal makes Cursor one of the most valuable AI acquisitions ever.</strong> SpaceX using its freshly public stock to buy the fastest-growing coding tool signals how IPO wealth is being recycled into AI consolidation.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>DeepSeek raises over $7.4B to become China&#x27;s most valuable AI startup</h2>
+        <ul>
+          <li><span class="btext">DeepSeek raised more than $7.4 billion at a valuation above $50 billion, with founder Liang Wenfeng investing about $3 billion himself and a government-backed fund adding around $150 million.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The deal structure was designed to preserve founder control, and capital is earmarked for R&amp;D and computing infrastructure.</span><span class="src">TLDR AI / The Neuron Daily</span></li>
+          <li><span class="btext">The Neuron reported DeepSeek V4 Pro runs agentic workloads over 20 times cheaper than GPT-5.5.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $7.4 billion round crowns DeepSeek China&#x27;s most valuable AI startup amid US export restrictions.</strong> Domestic mega-funding plus far cheaper inference strengthens China&#x27;s open-model challenge to US frontier labs.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Z.ai&#x27;s GLM-5.2 launches as a top coding model with a 1M-token context</h2>
+        <ul>
+          <li><span class="btext">GLM-5.2 shipped with a 1-million-token context window, a 5x jump from GLM-5.1&#x27;s 200K, two reasoning modes, and an MIT license.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">It scored 81.0 on Terminal-Bench 2.1, up from GLM-5.1&#x27;s 62.0, and is priced at $1.40 per million input tokens, roughly one-sixth of GPT-5.5.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Weibo&#x27;s 3B-parameter VibeThinker-3B posted coding benchmark scores in the same league as Claude Opus 4.5, showing small models closing the gap.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>An openly licensed model matching frontier coding at a sixth of the cost reshapes the price ceiling.</strong> Big context, strong Terminal-Bench results, and low pricing make GLM-5.2 a direct threat to closed coding APIs.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI readies GPT-Bidi voice as its financials come into focus</h2>
+        <ul>
+          <li><span class="btext">OpenAI is preparing GPT-Bidi-1, a bidirectional audio architecture for ChatGPT Voice that listens and speaks at once, absorbs interruptions, and adjusts mid-sentence, with High, Medium, and Instant intelligence tiers.</span><span class="src">TLDR AI / AI Breakfast</span></li>
+          <li><span class="btext">AI Breakfast reported OpenAI burned $34 billion over the past year, $19B on R&amp;D and $6B on marketing, against roughly $13B in revenue, with operational losses around $8B after a one-time accounting adjustment, while prepping a $1 trillion IPO.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Sensor Tower reported ChatGPT hit 1 billion mobile monthly active users, even as its overall market share slipped below 50% for the first time, to 46.4%.</span><span class="src">The Neuron Daily / AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is pushing real-time voice while its spending and market share draw fresh scrutiny.</strong> Full-duplex voice is a major UX leap, but the financials show how much cash the lead is costing to hold.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Cursor launches Origin git platform as agents commit at machine speed</h2>
+        <ul>
+          <li><span class="btext">Cursor launched Origin, its own Git hosting platform aimed at GitHub, after acquiring code-review tool Graphite; a live demo showed 22.6 commits per second inside a single repo, with automatic agent-handled merge-conflict resolution and API and MCP extensibility.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Google&#x27;s Android 17 introduced AppFunctions and Android MCP, letting apps expose tools that on-device agents can discover and execute.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Nous Research&#x27;s Hermes agent gained three official Stripe skills letting it buy on the open web, pay per-call APIs, and spin up and bill its own SaaS, with credentials kept out of conversation history.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Tooling is being rebuilt around agents committing and transacting at machine speed rather than human pace.</strong> Origin, Android MCP, and agent payment skills together show the developer and OS stack reorganizing for autonomous agents.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Alibaba&#x27;s Qwen moves into physical AI as China plans 10,000 humanoids in real jobs</h2>
+        <ul>
+          <li><span class="btext">Alibaba launched a Qwen Robot Suite with models for robot navigation, object manipulation, and world prediction, plus Qwen-RobotWorld, a language-conditioned video world model using natural language as a unified action interface.</span><span class="src">The Neuron Daily / TLDR AI</span></li>
+          <li><span class="btext">China set a 2026 plan to move more than 10,000 humanoid robots into real jobs across factories, logistics, retail, healthcare, inspection, and emergency response.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">CoreWeave set a new MLPerf record training DeepSeek-V3 671B in about two minutes on 8,192 NVIDIA GB300 GPUs.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>China is pairing new robot foundation models with a concrete plan to deploy thousands of humanoids.</strong> Qwen&#x27;s push into world models plus a 10,000-robot deployment target signals an aggressive move into embodied AI at scale.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">All-stock deal</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>An acquisition paid entirely in the buyer&#x27;s shares rather than cash; SpaceX is buying Cursor with $60 billion of SpaceX stock, tying Cursor&#x27;s value to SpaceX&#x27;s.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Bidirectional (full-duplex) audio</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>A voice architecture that lets a model listen and speak at the same time and handle interruptions naturally, as in OpenAI&#x27;s planned GPT-Bidi-1, unlike turn-based voice systems.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Android MCP / AppFunctions</div>
+          <div class="csrc">TLDR AI</div>
+          <p>New Android 17 interfaces that let apps expose callable tools which on-device AI agents can discover and orchestrate, turning the phone into an agent-executable platform.</p>
+        </div>
+        <div class="concept">
+          <div class="term">World model</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>A model that learns to predict how an environment changes in response to actions; Qwen-RobotWorld uses one so robots can plan navigation and manipulation from natural-language commands.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: TLDR AI · The Neuron Daily · Alpha Signal · AI Breakfast</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
