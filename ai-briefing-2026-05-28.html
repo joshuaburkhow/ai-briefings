@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday, May 28, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday, May 28, 2026   ·   Based on May 27 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>AI infrastructure decacorns emerge: Fireworks, Baseten, and OpenRouter raise big</h2>
+        <ul>
+          <li><span class="btext">Fireworks is in talks for a $15B round, a 3.75x jump in 7 months, and Baseten is raising an $11B round, up 2.2x in 3 months.</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">OpenRouter raised a $113M Series B led by CapitalG, doubling its valuation to $1.3B in a year, with access to over 400 models and 100 trillion tokens processed monthly.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">OpenRouter&#x27;s weekly volume grew from 5 trillion to 25 trillion tokens over six months, on the way to a 1.5 quadrillion-token annual run rate across 8M developers.</span><span class="src">AINews / Latent Space</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A wave of multibillion-dollar rounds is minting a new class of AI infrastructure decacorns.</strong> Fireworks near $15B, Baseten near $11B, and OpenRouter doubling to $1.3B show investors are betting heavily on the plumbing layer, as token volumes scale into the quadrillions.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Demis Hassabis says AGI is on track for 2030, plus or minus a year</h2>
+        <ul>
+          <li><span class="btext">Google DeepMind CEO Demis Hassabis said AGI is on track for 2030, plus or minus a year, citing remaining gaps in world physics, memory, consistency, and continual learning.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Hassabis said DeepMind&#x27;s drug-discovery focus is on oncology and immunology first.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Nvidia CEO Jensen Huang called the AI-job-loss narrative &#x27;lazy,&#x27; saying students should not chase &#x27;AI-proof&#x27; subjects.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The head of one of the leading labs putting a concrete 2030 timeline on AGI sharpens the industry&#x27;s central debate.</strong> Hassabis naming specific unsolved gaps rather than declaring AGI imminent frames the remaining work realistically, while Huang&#x27;s pushback on job-loss fears reflects the split among top leaders on AI&#x27;s labor impact.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI prepares to file for an IPO at roughly a $730B valuation</h2>
+        <ul>
+          <li><span class="btext">OpenAI is preparing to IPO, possibly filing as early as Friday, at around a $730B valuation, after Elon Musk&#x27;s lawsuit was dismissed.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Ramp AI Index data shows Anthropic overtaking OpenAI in corporate AI adoption.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">SpaceX&#x27;s S-1 disclosed it signed Anthropic as a data-center customer in a deal worth $1.25B per month through May 2029.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI moving toward a ~$730B public offering would be a defining moment for the AI market.</strong> Filing so soon after the Musk suit was dismissed, even as Ramp data shows Anthropic gaining in corporate adoption, sets up a high-stakes contest between the two labs heading into public markets.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Stanford study finds AI hiring tools create clear racial disparities</h2>
+        <ul>
+          <li><span class="btext">A Stanford study of 4 million job applications across 156 employers found AI hiring tools create &#x27;clear racial disparities.&#x27;</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">10.62% of positions showed adverse impact against Black applicants and 5.32% against Asian applicants, with 42 models shared across employers.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">4% of applicants who applied to 10 positions were rejected from all of them, with data spanning 2018–2022 from Pymetrics.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Large-scale evidence of bias in AI hiring tools raises immediate legal and ethical exposure for employers.</strong> Quantified adverse impact across millions of applications and shared models suggests systematic discrimination risk, likely to draw regulatory and litigation attention to automated hiring.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft&#x27;s MAI-Image-2.5 debuts at No. 3 on the image leaderboard</h2>
+        <ul>
+          <li><span class="btext">Microsoft&#x27;s MAI-Image-2.5 launched at No. 3 on Arena&#x27;s text-to-image leaderboard, with a 1,254 score, breaking a top-5 club previously dominated by OpenAI and Google.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">ElevenLabs released Music v2 with better vocals, instrumentation, multilingual support, and track-level inpainting.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Tencent released Z-Image 6B, a 1024px pixel-space image generator with no VAE.</span><span class="src">AINews / Latent Space</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Microsoft cracking the image-model top tier signals broader competition in generative media.</strong> MAI-Image-2.5 breaking the OpenAI and Google duopoly on the image leaderboard, alongside new music and image models, shows the frontier widening beyond text into every modality.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>China expands overseas travel restrictions to top private-sector AI talent</h2>
+        <ul>
+          <li><span class="btext">China expanded overseas travel restrictions to top AI talent at private firms, requiring founders, researchers, and executives to get government approval to travel abroad.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Xiaomi cut MiMo-V2.5 series API pricing by up to 99% and increased token allowances 5–8x.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">xAI&#x27;s top lawyer warned staff to limit contact with Cursor employees to protect the acquisition deal from co-mingling accusations.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Beijing is treating AI researchers as strategic assets to be kept inside the country.</strong> Requiring government approval for private-sector AI talent to travel signals China&#x27;s intent to protect its AI human capital, mirroring how it has previously guarded chip and defense expertise.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic to grade users&#x27; prompting with an AI Fluency scorecard</h2>
+        <ul>
+          <li><span class="btext">Anthropic is introducing an AI Fluency scorecard in Claude that evaluates users across 11 behavioral indicators, built from roughly 10,000 interactions.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Anthropic&#x27;s Claude Mythos solved the Erdos unit-distance conjecture from 1946 via a multi-agent Claude Code framework, with a simpler proof than OpenAI&#x27;s earlier one.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">On the Harvey Legal Agent Benchmark&#x27;s all-pass standard, Claude Opus 4.7 led at just 7.1%, ahead of GPT-5.5 at 2.1% and Gemini 3.5 Flash at 0.8%.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic scoring how well users prompt reframes the human as part of the evaluated system.</strong> An AI Fluency scorecard shifts the product toward coaching user behavior, and the low all-pass rates on the Harvey legal benchmark show even the best models remain far from reliable on hard professional tasks.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">AI infrastructure decacorn</div>
+          <div class="csrc">AINews / Latent Space</div>
+          <p>A private AI infrastructure company valued at over $10 billion; Fireworks (near $15B) and Baseten (near $11B) are cited as newly emerging examples driven by surging token demand.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AI Fluency scorecard</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>An Anthropic feature that evaluates a Claude user&#x27;s prompting and collaboration across 11 behavioral indicators, built from roughly 10,000 interactions to coach more effective use.</p>
+        </div>
+        <div class="concept">
+          <div class="term">DeepSWE</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A new contamination-free agentic coding benchmark spanning 91 repositories across 5 languages, designed to give sharper model separation than earlier benchmarks like SWE-Bench Pro.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Adverse impact (AI hiring)</div>
+          <div class="csrc">The Rundown AI</div>
+          <p>A measurable disparity in outcomes for a protected group from an automated hiring tool; a Stanford study found adverse impact against Black applicants in 10.62% of positions studied.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: TLDR AI · The Rundown AI · AI Breakfast · AINews / Latent Space</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
