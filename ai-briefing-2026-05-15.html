@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday, May 15, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday, May 15, 2026   ·   Based on May 14 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic passes OpenAI in paid business adoption for the first time</h2>
+        <ul>
+          <li><span class="btext">The May 2026 Ramp AI Index showed more businesses used Anthropic than OpenAI in April, the first time Anthropic passed OpenAI in paid business adoption.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Anthropic quadrupled business adoption over the past year while OpenAI&#x27;s business adoption leveled off, with OpenAI&#x27;s share falling 2.9% to 32.3% as overall AI use climbed to 50.6%.</span><span class="src">The Rundown</span></li>
+          <li><span class="btext">Everyday AI cautioned that Microsoft belongs in the conversation, citing 450 million paid Microsoft 365 seats and more than $37 billion in AI annual recurring revenue.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The enterprise AI leaderboard flipped, with Anthropic overtaking OpenAI among paying businesses.</strong> After OpenAI reportedly declared a &#x27;code red&#x27; over Anthropic&#x27;s enterprise rise, the spend data now shows the crossover, though overlapping incentives among the data providers and Microsoft&#x27;s scale complicate the picture.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic pushes into small business and legal with new Claude packages</h2>
+        <ul>
+          <li><span class="btext">Anthropic launched Claude for Small Business, a package of connectors and workflows embedding Claude into QuickBooks, PayPal, HubSpot, Google Workspace and Microsoft 365.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">It shipped claude-for-legal, a free open-source plugin suite turning Claude into a legal assistant across 10-plus practice areas, with every output framed as a draft for attorney review.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Claude Code weekly limits were raised 50% for all paid users through July 13, and paid plans get a dedicated monthly credit for programmatic usage starting June 15.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is packaging Claude into specific verticals and loosening usage limits to widen adoption.</strong> Purpose-built bundles for small business and legal work, plus higher Claude Code limits, show Anthropic converting its enterprise momentum into ready-to-use workflows for non-technical customers.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Cerebras raises $5.55B in the year&#x27;s biggest IPO as Nvidia hits $5.5T</h2>
+        <ul>
+          <li><span class="btext">Cerebras raised $5.55 billion in its US IPO at a valuation of about $40 billion, the largest IPO this year, drawing orders for more than 20 times the shares available.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Recursive Superintelligence, led by ex-OpenAI and DeepMind leaders, raised more than $650 million at a valuation above $4 billion to build self-improving AI.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Nvidia became the first company to hit a $5.5 trillion market cap as CEO Jensen Huang arrived in China to join President Trump in meetings with Xi Jinping.</span><span class="src">The Rundown</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI hardware and self-improving-AI bets are drawing historic sums from public and private markets.</strong> Cerebras&#x27; blockbuster IPO, a multibillion-dollar valuation for a self-improvement startup, and Nvidia&#x27;s record market cap show capital still flooding into compute and the next model paradigm.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft&#x27;s MDASH surpasses Anthropic&#x27;s Mythos on a cyber benchmark</h2>
+        <ul>
+          <li><span class="btext">Microsoft&#x27;s MDASH, a multi-model agentic security system chaining more than 100 specialized agents to find real-world software vulnerabilities, caught 16 flaws across Windows.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">MDASH surpassed Anthropic&#x27;s Mythos model on the CyberGym benchmark, which measures how well AI reproduces real-world vulnerabilities.</span><span class="src">The Rundown</span></li>
+          <li><span class="btext">The UK&#x27;s AI Safety Institute reported AI&#x27;s ability to complete cyberattacks is doubling every few months, with Mythos Preview and GPT-5.5 finishing its simulated breaches.</span><span class="src">The Rundown</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Agentic security systems are now benchmarked head to head, and the ceiling for AI cyber capability is rising fast.</strong> A hundred-agent Microsoft system beating a frontier model on a vulnerability benchmark, plus a doubling in AI attack capability every few months, underscores how quickly automated security is escalating on both offense and defense.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Amazon, Google and Apple race to put agents into their platforms</h2>
+        <ul>
+          <li><span class="btext">Amazon launched &#x27;Alexa for Shopping,&#x27; folding its standalone shopping chatbot Rufus into Alexa.</span><span class="src">The Rundown</span></li>
+          <li><span class="btext">Google&#x27;s &#x27;Gemini Spark&#x27; agent platform quietly appeared inside the Gemini web app, and Google plans to announce a new Gemini model at its I/O conference expected to be roughly on par with GPT-5.5.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Apple is working to incorporate AI agents into the App Store while maintaining its privacy and security standards.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The largest consumer platforms are all embedding agents directly into their core products.</strong> Shopping assistants, a new Gemini agent surface and App Store agents show the platform giants moving from standalone chatbots toward agents woven into the apps and stores people already use.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>OpenAI backs a global AI oversight body that could include China</h2>
+        <ul>
+          <li><span class="btext">OpenAI is backing the creation of a US-led global AI governance and oversight body that could include China as a member, framed as President Trump arrives in Beijing for talks.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic and the Gates Foundation announced $200 million in grants, AI credits and support over four years to boost health, education and economic mobility worldwide.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Accenture Federal Services partnered with OpenAI to accelerate secure AI adoption across the US federal government.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI&#x27;s biggest players are shaping global governance and public-interest deployment as much as products.</strong> A proposed international oversight body, a major philanthropic AI commitment, and a federal government partnership show the leading labs positioning around policy, trust and access at a global scale.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Nous cuts pretraining 2.5x and RuView turns any router into through-wall radar</h2>
+        <ul>
+          <li><span class="btext">Nous Research released a training technique that cuts LLM pretraining time by 2.5x without touching a single line of model code.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">The open-source project RuView passed 50,000 GitHub stars; it turns any WiFi router into a through-wall human radar by reading radio-wave disturbances, running fully local on roughly $9 ESP32-S3 boards with no cameras.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">DeepSeek V4 Pro scored 77 out of 100 on the FlowGraph spec for $2.25, landing between Claude Opus 4.7 and Kimi K2.6 in performance.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Open-source work is delivering big efficiency gains and striking new sensing capabilities on cheap hardware.</strong> A training speedup with no model-code changes, capable low-cost open models, and a viral WiFi-sensing project show how much the open ecosystem is advancing efficiency and reach at the edge.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Business adoption share</div>
+          <div class="csrc">The Rundown</div>
+          <p>The metric tracked by Ramp&#x27;s AI Index, measuring the percentage of businesses using a given AI provider; it is the basis for the finding that Anthropic passed OpenAI, whose share fell to 32.3% as overall AI use reached 50.6%.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Multi-agent security system</div>
+          <div class="csrc">TLDR AI</div>
+          <p>An architecture where many specialized AI agents collaborate, one group scanning code, another debating whether findings are exploitable, and a final stage building proof-of-concept attacks, as in Microsoft&#x27;s 100-plus-agent MDASH.</p>
+        </div>
+        <div class="concept">
+          <div class="term">CyberGym benchmark</div>
+          <div class="csrc">The Rundown</div>
+          <p>A benchmark that measures how well an AI system can reproduce real-world software vulnerabilities, used to compare Microsoft&#x27;s MDASH against Anthropic&#x27;s Mythos model.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Self-improving AI</div>
+          <div class="csrc">Everyday AI</div>
+          <p>Models that experiment on and upgrade themselves with little human input; the thesis behind Recursive Superintelligence&#x27;s raise of more than $650 million at a valuation above $4 billion.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · The Rundown · Alpha Signal</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
