@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday, June 8, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday, June 8, 2026   ·   Based on June 7 newsletters   ·   3 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI overhauls ChatGPT memory with &#x27;Dreaming V3,&#x27; recall jumps to 82.8%</h2>
+        <ul>
+          <li><span class="btext">A new background process called Dreaming V3 synthesizes conversation history automatically, with no commands needed.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Factual recall jumped from 41.5% in 2024 to 82.8% in 2026 in OpenAI&#x27;s internal tests; preference adherence improved from 55.3% to 71.3%.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Compute costs dropped 5x, letting free users get memory for the first time, and storage for Plus and Pro users doubled.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">It is rolling out to US Plus and Pro users now, with free users in a few weeks.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A near-doubling of ChatGPT&#x27;s factual recall directly changes how reliably the assistant remembers users day to day.</strong> Memory has been ChatGPT&#x27;s weakest link; a 5x cost drop that extends it to free users signals OpenAI is making personalization a default rather than a premium feature.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic calls for a global pause on frontier AI development</h2>
+        <ul>
+          <li><span class="btext">Anthropic warned that models are approaching the ability to improve themselves without human oversight.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">It said a credible pause would require the US and China to stop simultaneously under verifiable conditions.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Anthropic admits no one has figured out how to verify such a pause yet.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A leading lab publicly urging a development pause is a striking signal about how fast recursive self-improvement is approaching.</strong> The call frames AI safety as a geopolitical coordination problem between the US and China rather than a purely technical one, with no verification mechanism yet in place.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>MIT/Wharton study: humans are the real bottleneck in AI coding</h2>
+        <ul>
+          <li><span class="btext">Analyzing over 100,000 active GitHub developers with Microsoft telemetry, researchers found async agents produce up to 17x more code than human developers.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Sync agents drove a 741% increase in raw lines of code and 65% more pull requests, yet only a 20% increase in actual software releases.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Async agents boosted pull request creation by 71.8% autonomously, but a human must still review and merge, making the reviewer the absolute bottleneck.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">90% of tech professionals use AI tools, but 30% still lack trust in the generated code.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Hard data shows AI coding gains largely evaporate at the review-and-release stage, puncturing the &#x27;10x engineer&#x27; narrative.</strong> The study argues the industry is shifting from a traditional software development lifecycle to an &#x27;Agentic Development Lifecycle&#x27; where developers orchestrate, validate, and discard code rather than write it.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Bots now generate 51% of internet traffic, outnumbering humans online</h2>
+        <ul>
+          <li><span class="btext">For the first time, bots generate 51% of all internet traffic, making humans a minority online.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">AI shopping agents are hitting thousands of retail sites per second.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Apple&#x27;s App Store data shows AI-powered titles now make up more than 40% of the top 100 apps.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The web crossing a majority-bot threshold reshapes assumptions behind traffic, security, and commerce infrastructure.</strong> As autonomous shopping and browsing agents proliferate, retailers and publishers face traffic that behaves nothing like human visitors, straining detection and monetization systems.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft and Snowflake unveil enterprise agent-governance layers</h2>
+        <ul>
+          <li><span class="btext">Snowflake introduced Horizon Catalog, a trust and data-governance layer giving agents auditable identities and continuous monitoring, plus Horizon Context.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Microsoft unveiled Agent Control Specification, an open-source standard applying controls within the agent loop, and Project MDASH, which uses agents to hunt exploitable bugs.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Microsoft debuted Microsoft Scout, a personal work agent integrating with Teams and Outlook; Snowflake updated its Cowork agent with Cortex Sense, User Memory, and Skills.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Both enterprise vendors are racing to make autonomous agents governable, the precondition for wide corporate deployment.</strong> The launches signal that the enterprise AI fight is moving from raw model capability toward identity, auditing, and control of agents operating inside company data.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>US and Japan announce $1 billion AI research partnership</h2>
+        <ul>
+          <li><span class="btext">The US and Japan announced a $1 billion AI research partnership under Trump&#x27;s Genesis Mission, making Japan the first international partner in the program.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Meta paused its Samsung custom AI chip project, following a similar OpenAI move; the chip had been in development since last year at Samsung&#x27;s System LSI division.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A billion-dollar bilateral AI pact marks the internationalization of the US government&#x27;s flagship AI initiative.</strong> Pairing a new alliance with Meta pausing custom silicon shows how national strategy and chip-supply bets are intertwining across the AI industry.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Apple: App Store drove $1.4 trillion in 2025 billings as AI apps surge</h2>
+        <ul>
+          <li><span class="btext">Apple said its App Store facilitated over $1.4 trillion in developer billings and sales in 2025.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">More than 40 of the top 100 apps featured consumer-facing AI, and those apps saw four times the billings growth of other top 100 apps.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">ChatGPT, Claude, and Gemini are currently dominating the iOS App Store charts.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Apple&#x27;s data quantifies how quickly AI apps are capturing the most valuable slots in the mobile economy.</strong> With AI assistants topping the charts and outgrowing peers 4-to-1, the App Store is becoming a primary distribution battleground for the major model providers.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Agentic Development Lifecycle (ADLC)</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>A reframing of software development where AI agents generate most code and human developers act as orchestrators who validate architecture, define tests, and decide which code to keep or discard.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Recursive self-improvement</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>When an AI system becomes capable of improving its own design or training without human oversight, potentially accelerating capability gains rapidly; cited by Anthropic as the risk behind its pause call.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Proof of personhood</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>Cryptographic or biometric methods to verify that an online actor is a real, unique human rather than a bot, becoming urgent now that bots generate a majority of internet traffic.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily · The Deep View · Alpha Signal</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
