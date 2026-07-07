@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, June 3, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, June 3, 2026   ·   Based on June 2 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Microsoft debuts its own MAI-Thinking-1 model and Scout agent at Build</h2>
+        <ul>
+          <li><span class="btext">Microsoft debuted MAI-Thinking-1, a medium-sized in-house reasoning model trained from scratch on clean data, which Microsoft says matches top models on key software-engineering tests.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">It also rolled out in-house models for image generation, transcription, voice and coding to gain more control over the AI behind GitHub Copilot and Visual Studio Code.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Microsoft launched Scout, a cloud-based Autopilot agent built on the OpenClaw framework for GitHub Copilot subscribers, working across Microsoft 365, desktop apps and the browser with policy checks and audit trails.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Microsoft building its own frontier-class reasoning model marks a decisive step in reducing its dependence on OpenAI.</strong> A from-scratch reasoning model plus in-house image, voice and coding models gives Microsoft control over the AI powering Copilot, and Scout turns that stack into a persistent agent embedded across its productivity suite.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI brings frontier models and Codex to AWS, expands Codex plugins</h2>
+        <ul>
+          <li><span class="btext">OpenAI&#x27;s frontier models and Codex became generally available on AWS, folding security reviews, procurement, billing and governance into the AWS workflow.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">A major Codex update added Annotations for precise edits inside documents and spreadsheets, Sites for hosted internal web apps, and role-specific plugins connecting to Salesforce, Snowflake, Figma, Tableau and FactSet.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Codex also gained Windows 11 support, letting it operate PCs directly, with tasks startable and monitorable remotely from the ChatGPT mobile app.</span><span class="src">AI Valley</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is meeting enterprises where they already buy, putting its models and Codex directly inside AWS and major business tools.</strong> Selling through AWS procurement removes a big adoption hurdle for regulated buyers, and role-specific plugins into Salesforce, Snowflake and Tableau push Codex from a coding tool toward a general enterprise operator.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Nvidia unveils RTX Spark PCs built specifically for AI agents</h2>
+        <ul>
+          <li><span class="btext">Nvidia unveiled a new generation of PCs designed for AI agents, powered by its RTX Spark chip, with laptops from Dell, Lenovo, HP, Asus, MSI and others and more than 40 models already planned.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">The chips carry enough power to run AI agents locally on-device rather than sending every task to the cloud.</span><span class="src">AI Valley</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Nvidia is turning the PC itself into an AI-agent platform, with 40-plus laptop models already lined up.</strong> Running agents locally cuts cloud costs and latency and keeps data on-device, and lining up every major OEM signals Nvidia wants on-device agents to become a default PC capability.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Nvidia releases Nemotron 3 Ultra and the open Cosmos 3 world model</h2>
+        <ul>
+          <li><span class="btext">Nvidia released Nemotron 3 Ultra, a 550B-parameter model with 55B active, billed as the most intelligent US open-weights model, scoring 48 on the Artificial Analysis Intelligence Index ahead of Gemma 4 31B at 39.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">It also launched Cosmos 3, a fully open world foundation model trained on 20 trillion tokens, 1 billion images and 400 million videos, using a mixture-of-transformers architecture pairing a reasoning transformer with a generation transformer.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Cosmos 3 reasons and generates across text, image, video, ambient sound and action, and comes in Super and Nano sizes now with an Edge version coming.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Nvidia is releasing top-tier open models spanning both language and physical AI, seeding the ecosystem it sells hardware into.</strong> Nemotron 3 Ultra topping the open-weights intelligence index gives US developers a strong open frontier option, while an open, omnimodal Cosmos 3 aims squarely at the robotics generalization problem.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic files confidentially for a fall IPO and expands Glasswing</h2>
+        <ul>
+          <li><span class="btext">Anthropic confidentially submitted a draft S-1 to the SEC for a proposed IPO, with no pricing or share counts set and a listing possible as early as this fall.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The filing follows a raise at a $965B valuation and a reported revenue run rate of more than $47B; it could become one of the largest tech IPOs in history.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Anthropic expanded Project Glasswing, giving 150 additional partners in 15-plus countries access to its Mythos model to find serious software flaws across power, water, healthcare, communications and hardware sectors.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic&#x27;s confidential IPO filing puts a possible fall listing, potentially one of the largest ever, into motion.</strong> A $47B-plus run rate underpins the case for a near-trillion-dollar public debut, and the Glasswing expansion shows Anthropic monetizing security use cases across critical-infrastructure sectors as it heads to market.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Alphabet plans to raise $80B for AI compute infrastructure</h2>
+        <ul>
+          <li><span class="btext">Alphabet plans to raise $80B from stock sales to fund AI compute infrastructure: $10B from Berkshire Hathaway, $30B in an underwritten offering and $40B via an at-the-market program expected to begin in the third quarter.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Goldman Sachs, JPMorgan Chase and Morgan Stanley are joint book-running managers.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Alphabet raising $80B in equity to fund AI compute underscores the staggering capital now flowing into infrastructure.</strong> A cash-rich company tapping equity markets, including $10B from Berkshire, signals AI datacenter spending has reached a scale where even Alphabet chooses to raise rather than fund it all internally.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Trump signs a scaled-back AI and cybersecurity executive order</h2>
+        <ul>
+          <li><span class="btext">President Trump signed a scaled-back AI and cybersecurity executive order after scrapping a stricter version, directing national security agencies to strengthen cyber defenses and build a cybersecurity clearinghouse.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">It creates a classified process within 60 days to judge when advanced AI models pose major cyber risks, but avoids mandatory licensing or broad pre-release controls.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The White House chose a light-touch AI order, prioritizing cyber defense over the licensing and pre-release controls it considered.</strong> Dropping mandatory licensing signals the administration is siding with speed and industry flexibility, while the 60-day classified risk process keeps a national-security check on the most capable models.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Florida sues OpenAI and Altman over child-safety claims</h2>
+        <ul>
+          <li><span class="btext">Florida sued OpenAI and Sam Altman, claiming ChatGPT is marketed as safe for kids but poses serious risks.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">OpenAI is reportedly preparing to launch GPT-5.6 this week, with leaks pointing to gains in reasoning, coding, frontend generation and long-running agent workflows at lower cost.</span><span class="src">AI Valley</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A state lawsuit over child safety opens a new legal front for OpenAI even as it readies its next model.</strong> A state attorney general targeting how ChatGPT is marketed to minors raises the regulatory stakes on consumer AI, landing the same week OpenAI reportedly lines up a GPT-5.6 release.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Perplexity ships &#x27;Search as Code&#x27; to hand models the search process</h2>
+        <ul>
+          <li><span class="btext">Perplexity introduced Search as Code, an SDK letting AI models take direct control of the search process.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Perplexity says it outperformed competitors in benchmarks, especially on complex tasks such as WANDR.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Perplexity is repackaging search as programmable infrastructure that agents can drive directly.</strong> Giving models direct control of the search loop via an SDK positions Perplexity as a retrieval layer for agentic systems rather than just a consumer search app.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Reasoning model</div>
+          <div class="csrc">Everyday AI</div>
+          <p>A model trained to work through problems step by step before answering, improving performance on complex tasks like software engineering; Microsoft&#x27;s MAI-Thinking-1 is one example.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Mixture-of-transformers</div>
+          <div class="csrc">The Deep View</div>
+          <p>An architecture that pairs separate transformers for different jobs, such as one for reasoning and one for generation, used in Nvidia&#x27;s Cosmos 3 world model.</p>
+        </div>
+        <div class="concept">
+          <div class="term">At-the-market offering</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A way for a public company to sell new shares gradually into the open market at prevailing prices; Alphabet plans a $40B ATM program as part of raising $80B for AI compute.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Search as Code</div>
+          <div class="csrc">TLDR AI</div>
+          <p>Perplexity&#x27;s approach of exposing search as a programmable interface, via an SDK, so an AI model can directly control how it queries and retrieves information.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · AI Valley · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
