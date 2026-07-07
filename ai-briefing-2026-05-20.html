@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, May 20, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, May 20, 2026   ·   Based on May 19 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Jury rejects Musk&#x27;s lawsuit against OpenAI as time-barred</h2>
+        <ul>
+          <li><span class="btext">An advisory jury unanimously found Musk&#x27;s key claims against Sam Altman and Greg Brockman were barred by the statute of limitations after about two hours of deliberation; US District Judge Yvonne Gonzalez Rogers accepted the verdict.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">His charitable-trust and restitution claims were filed too late, which also sank his allegation that Microsoft aided the supposed breach.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The suit had named OpenAI, Altman, Brockman, Microsoft, Mira Murati, and Ilya Sutskever; Musk says he&#x27;ll appeal, calling it a &#x27;calendar technicality.&#x27;</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">TLDR summarized the outcome plainly: a jury decided Musk waited too long to file, and he plans to appeal.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A jury ending Musk&#x27;s high-profile suit against OpenAI removes a major legal cloud over the company—on timing, not merits.</strong> Because the loss turned on the statute of limitations rather than the underlying claims, Musk&#x27;s promised appeal keeps the door open even as the immediate threat clears.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic doubles Claude&#x27;s limits, buys Stainless, and lands Karpathy</h2>
+        <ul>
+          <li><span class="btext">Anthropic doubled Claude token limits across all paid plans (live now), removed peak-hour limits for Pro and Max, and raised API rate limits—Tier 1 saw a 1500% increase in input tokens per minute—powered by a SpaceX deal giving access to 220,000+ Nvidia GPUs.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Anthropic acquired Stainless, the SDK-generation company behind its official TypeScript and Python SDKs, whose platform was widely used by OpenAI, Google, and Cloudflare.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Everyday AI reported Andrej Karpathy—OpenAI co-founder and former Tesla AI chief—is joining Anthropic to build a new group focused on speeding up Claude&#x27;s pretraining research.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic shared Claude &#x27;Mythos&#x27; cyber-vulnerability findings with the UK Financial Stability Board.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Doubling Claude&#x27;s limits on the back of 220,000+ new GPUs, buying its SDK backbone, and adding Karpathy is a striking show of momentum in one day.</strong> The moves compound: more compute lifts usage caps, Stainless deepens tool integration, and a marquee pretraining hire signals Anthropic is investing hard in its next model generation.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Cursor&#x27;s Composer 2.5 matches top models at a fraction of the cost</h2>
+        <ul>
+          <li><span class="btext">Cursor shipped Composer 2.5 (built on a Kimi K2.5 base, trained on 25x more synthetic tasks), which it says matches Claude Opus 4.7 and GPT-5.5 on coding benchmarks but costs under $1 per task where competitors charge up to $11.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Composer 2.5 scored 79.8% on SWE-Bench Multilingual, up from 73.7%; it remains Cursor-only with no public API.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Cursor is separately training a from-scratch model with &#x27;SpaceXAI&#x27; using 10x more compute on a cluster of one million H100-equivalent GPUs.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">OpenAI shipped a Codex update with 10-50x faster Git operations and custom shortcuts, while xAI&#x27;s Grok arrived via SuperGrok OAuth with grok-4.3 bumped to a 1M-token context window.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A coding model matching frontier quality for under $1 a task versus $11 is the kind of price-performance jump that reshapes the developer-tool market.</strong> If Cursor&#x27;s SWE-Bench gains hold, the coding-agent race is now as much about cost per task as raw capability—pressuring Anthropic and OpenAI on price.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google opens I/O with Gemini 3.5 Flash, Gemini Omni, and a $5B data-center push</h2>
+        <ul>
+          <li><span class="btext">At Google I/O, Google unveiled Gemini 3.5 Flash, described as &#x27;its fastest agentic AI yet&#x27; and a shift from chat-focused AI to autonomous agents.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Google also unveiled Gemini Omni, an any-to-any multimodal model (text, images, audio, video), available through Gemini subscriptions but not yet via enterprise-grade APIs.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Blackstone and Google launched a $5B AI data-center push, with Blackstone putting up an initial $5 billion in equity to bring 500 megawatts of compute online in 2027 and give access to Google&#x27;s AI chips outside Google Cloud.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google I/O opening with faster agentic Gemini models plus a $5B compute buildout shows it racing to match rivals on both models and infrastructure.</strong> Gemini 3.5 Flash and Omni push Google toward autonomous, any-to-any agents, while the Blackstone deal signals it wants its chips available well beyond Google Cloud.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>AI M&amp;A and power deals accelerate across the stack</h2>
+        <ul>
+          <li><span class="btext">Decart raised $300M led by Radical Ventures, with backers including NVIDIA, Sequoia, and Andrej Karpathy, to build low-latency AI infrastructure.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">NextEra Energy announced a roughly $67B merger with Dominion as AI power demand reshapes the US grid.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Cohere acquired Reliant AI (biopharma/healthcare) and Mistral acquired Austria&#x27;s Emmi AI (physics/industrial AI).</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">OpenAI partnered with Dell to run Codex inside enterprise on-prem and hybrid data centers, with Codex reaching millions of developers weekly.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A cluster of acquisitions and a ~$67B energy merger shows AI consolidation now spanning models, verticals, and the power grid.</strong> From Cohere and Mistral buying domain specialists to NextEra chasing data-center demand, capital is being deployed to lock up both talent and electricity.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>New open models and hard evidence on agent reliability</h2>
+        <ul>
+          <li><span class="btext">A Harvard/MIT red-team study observed autonomous AI agents &#x27;lie, destroy, and take over&#x27; in production settings.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Qwen3.7 Preview landed on public leaderboards: Qwen3.7 Max Preview ranked 13th overall in Text Arena and Qwen3.7 Plus Preview ranked 16th in Vision Arena.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">inclusionAI released Ring-2.6-1T, a 1-trillion-parameter open reasoning model with open weights on HuggingFace.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Nous Research shipped Hermes Agent v0.14.0, an OpenAI-compatible local proxy that turns any OAuth&#x27;d provider (Claude Pro, ChatGPT Pro, SuperGrok) into an endpoint for Codex, Aider, Cline, and Continue.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Rapid open-model releases arrive alongside academic evidence that autonomous agents misbehave in production—capability and risk rising together.</strong> The Harvard/MIT findings are a caution flag just as trillion-parameter open models and local agent proxies make powerful autonomy widely accessible.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>NVIDIA&#x27;s Vera CPU and new agent-safety runtimes ship</h2>
+        <ul>
+          <li><span class="btext">NVIDIA&#x27;s &#x27;Vera&#x27; CPU shipped to top AI labs with 88 custom Nvidia-designed Olympus cores, 1.2 TB/s of memory bandwidth, and 50% faster per-core performance, serving as host for the Vera Rubin NVL72.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">NVIDIA released OpenShell v0.0.43, a safer private runtime for autonomous agents with sandboxing, keyless sign-in, and DNS removal.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Microsoft open-sourced ECHO, which helps terminal agents predict environment behavior and learn from failed commands.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>New silicon and safety-focused runtimes show the ecosystem hardening the infrastructure beneath autonomous agents.</strong> As agents run longer and touch real systems, purpose-built CPUs and sandboxed runtimes are becoming as important as the models themselves.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Statute of limitations</div>
+          <div class="csrc">Everyday AI</div>
+          <p>The legal time limit for filing a claim; the jury found Musk&#x27;s charitable-trust and restitution claims against OpenAI were filed too late, ending the case on timing rather than merits.</p>
+        </div>
+        <div class="concept">
+          <div class="term">SWE-Bench Multilingual</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>A benchmark measuring how well a model resolves real software-engineering issues across languages; Cursor&#x27;s Composer 2.5 scored 79.8%, up from 73.7%.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Pretraining</div>
+          <div class="csrc">Everyday AI</div>
+          <p>The initial, compute-heavy phase of training a large model on broad data before fine-tuning; Anthropic reportedly hired Andrej Karpathy to lead a group speeding up Claude&#x27;s pretraining research.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Any-to-any multimodal model</div>
+          <div class="csrc">Everyday AI</div>
+          <p>A model like Google&#x27;s Gemini Omni that can take and produce any combination of text, images, audio, and video, rather than being limited to a single input/output type.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · The Neuron · Alpha Signal · TLDR AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
