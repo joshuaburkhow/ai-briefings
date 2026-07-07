@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Saturday, May 16, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Saturday, May 16, 2026   ·   Based on May 15 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI brings Codex to mobile, escalating the coding-agent fight with Anthropic</h2>
+        <ul>
+          <li><span class="btext">Codex is now inside the ChatGPT mobile app on iOS and Android in preview, letting users connect to and control any machine running Codex, with terminal output, code diffs, screenshots and approvals streaming back in real time.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Work still runs on the host machine and files and credentials stay there; Codex is available on all plans including free, with Windows support coming soon.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">OpenAI also added Remote SSH, hooks, programmatic access tokens for Business and Enterprise, and HIPAA-compliant local use for eligible enterprise healthcare workspaces.</span><span class="src">The Rundown</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Putting Codex on the phone lets developers manage coding agents from anywhere and takes direct aim at Anthropic&#x27;s Claude Code.</strong> The Rundown frames Codex mobile as OpenAI&#x27;s answer as it battles Anthropic for the coding-tool market, with The Neuron noting OpenAI pointedly said it offers more than remote-controlling a single task.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>xAI ships Grok Build as terminal coding agents proliferate</h2>
+        <ul>
+          <li><span class="btext">xAI launched Grok Build, a terminal-first coding agent now in early beta for SuperGrok Heavy subscribers, supporting subagents, deep worktree integrations and a headless mode for running inside scripts.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">AGENTS.md, plugins, hooks, skills and MCP servers all work out of the box in Grok Build.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Cursor detailed a new system for configuring cloud dev environments for autonomous coding agents, with multi-repo support, environment-config-as-code and governance controls for fleets of parallel agents.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Every major lab now ships a terminal-first, scriptable coding agent, making the CLI the new battleground.</strong> Subagents, worktrees and headless modes across Grok Build, Codex and Cursor point to a common design where autonomous agents run in isolated environments and are managed like infrastructure.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI launches GPT-Realtime-2, a voice model with GPT-5-class reasoning</h2>
+        <ul>
+          <li><span class="btext">OpenAI&#x27;s GPT-Realtime-2 is its first voice model with &#x27;GPT-5 class reasoning,&#x27; collapsing transcription, reasoning and synthesis into a single audio-in, audio-out model with a 128,000-token context window, four times its predecessor.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">It shipped with GPT-Realtime-Translate, handling 70-plus input languages and 13 output languages, and GPT-Realtime-Whisper for streaming transcription.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">All three are live in the API now and coming to ChatGPT soon.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Folding reasoning directly into a real-time voice model closes the gap between spoken conversation and full model capability.</strong> A single audio-to-audio model with a much larger context window and broad live translation moves voice from a bolt-on transcription layer toward a first-class, reasoning-capable interface.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic launches Claude for Small Business and reworks agent credits</h2>
+        <ul>
+          <li><span class="btext">Anthropic launched Claude for Small Business, a toggle inside Claude Cowork connecting to QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace and Microsoft 365, with 15 ready-to-run workflows and 15 skills that require user approval before acting.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic changed its agent credit structure, giving Pro users $20 a month in agentic credits, Max 5x $100 and Max 20x $200, which reset each cycle and do not roll over.</span><span class="src">The Rundown</span></li>
+          <li><span class="btext">The change reverses Anthropic&#x27;s April ban on third-party agents like OpenClaw but removes the subsidy that gave plans more compute value, drawing backlash from power users.</span><span class="src">The Rundown</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is packaging Claude for small business while tightening the economics of agent usage.</strong> A ready-made SMB toolkit broadens Claude&#x27;s reach, but capping and metering agent credits, even as third-party agents are re-allowed, shifts more compute cost onto heavy users.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>US and China open formal AI-governance talks at the Beijing summit</h2>
+        <ul>
+          <li><span class="btext">Washington and Beijing began formal talks on AI governance timed to President Trump&#x27;s Beijing summit with Xi Jinping, with the two countries setting up an AI safety protocol focused on keeping frontier models from reaching nonstate actors.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Treasury Secretary Bessent pointed to Anthropic&#x27;s new Mythos model as a reason Washington is nervous about AI cyber capabilities, and Nvidia CEO Jensen Huang joined the delegation.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The US quietly cleared Alibaba, Tencent and others to buy Nvidia chips.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The two AI superpowers are negotiating shared safety guardrails even as they compete on chips and models.</strong> A proposed protocol to keep advanced models from criminal and extremist groups, framed around a specific frontier model&#x27;s cyber capability, shows AI safety becoming a formal item in US-China diplomacy alongside chip-export decisions.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Cerebras swings wildly post-IPO as Microsoft shops for an OpenAI alternative</h2>
+        <ul>
+          <li><span class="btext">Cerebras shares dropped 10% Friday after an IPO that briefly sent the stock up 68% and valued the chipmaker around $95 billion, having raised $5.55 billion, the largest US tech IPO since 2019.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Microsoft is reportedly looking to purchase Inception, a company that builds diffusion-based language models, even after keeping its $135 billion OpenAI arrangement through 2032.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Nvidia announced a partnership with Ineffable Intelligence, a superintelligence startup founded by former DeepMind reinforcement-learning lead David Silver, backed by Jensen Huang.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Investors and Microsoft are both hedging their AI bets even as capital pours into new hardware and labs.</strong> Cerebras&#x27; volatile debut, Microsoft quietly eyeing a diffusion-model maker despite its OpenAI deal, and Nvidia backing a new superintelligence startup all show the industry diversifying away from single dependencies.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>OpenAI weighs legal action against Apple as Siri opens to rivals</h2>
+        <ul>
+          <li><span class="btext">OpenAI reportedly enlisted a law firm to explore options including a breach-of-contract notice over its 2024 ChatGPT-Siri deal, arguing Apple limited ChatGPT&#x27;s iOS role and it saw limited subscriber growth.</span><span class="src">The Rundown</span></li>
+          <li><span class="btext">Apple plans to open Siri to rivals such as Anthropic&#x27;s Claude and Google Gemini in iOS 27, reportedly debuting at WWDC on June 8.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">PwC expanded its alliance with Anthropic and plans to train 30,000 US employees in Claude Code.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The OpenAI-Apple partnership is fraying just as Apple prepares to let competitors power Siri.</strong> A potential breach-of-contract fight, Apple opening Siri to Claude and Gemini, and PwC&#x27;s large Claude Code rollout all point to a reshuffling of which models sit inside the biggest platforms and enterprises.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Terminal-first coding agent</div>
+          <div class="csrc">TLDR AI</div>
+          <p>An AI coding agent that runs from the command line and can operate headlessly inside scripts and automations, the defining form factor of Grok Build and Codex, often supporting subagents that work in isolated git worktrees.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Hooks and goals</div>
+          <div class="csrc">The Neuron</div>
+          <p>Emerging agent patterns where &#x27;hooks&#x27; are scripted rules that fire at set points in an agent&#x27;s loop, such as scanning for secrets or running validators, and &#x27;goals&#x27; define a testable success condition that an evaluator model checks each turn.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Diffusion-based language model</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A text model generated through a diffusion process rather than autoregression; the technology of Inception, the startup Microsoft is reportedly looking to acquire as an alternative to OpenAI.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Distillation attack</div>
+          <div class="csrc">TLDR AI</div>
+          <p>Extracting a leading model&#x27;s capabilities into a cheaper copy, cited by Anthropic as a loophole the US must restrict to preserve its AI lead over China.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · The Rundown · The Neuron</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
