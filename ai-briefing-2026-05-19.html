@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Tuesday, May 19, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Tuesday, May 19, 2026   ·   Based on May 18 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI reorganizes under Greg Brockman into a unified AI platform</h2>
+        <ul>
+          <li><span class="btext">Greg Brockman was put in charge of product strategy as OpenAI reorganizes to combine ChatGPT, Codex, and developer APIs into one unified platform.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Codex chief Thibault Sottiaux will oversee core platform teams; Nick Turley shifts to enterprise products, anchoring a desktop &#x27;super app&#x27; integrating ChatGPT, Codex, and the Atlas browser.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">OpenAI launched a personal finance preview for US ChatGPT Pro users, powered by GPT-5.5 Thinking and using Plaid to connect over 12,000 financial institutions.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">OpenAI acquired six-person voice-cloning startup Weights.gg, then shut it down and dispersed the team across OpenAI groups.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Consolidating ChatGPT, Codex, and APIs under Brockman signals OpenAI is reorganizing around a single platform and a desktop &#x27;super app.&#x27;</strong> The reshuffle, plus the finance preview and Weights.gg tuck-in, shows OpenAI aligning products for an integrated, agentic consumer-and-developer stack.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Data show AI-driven layoffs are hurting stocks, not returns</h2>
+        <ul>
+          <li><span class="btext">Across 23 S&amp;P 500 companies with AI-linked layoffs, 56% saw their stock decline afterward, averaging a 25% drop; Nike (cut 800) is down 35%, Salesforce (4,000) fell 32%, Fiverr (30% of staff) dropped 54%.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">A Gartner survey of 350 executives found companies cutting for AI reasons weren&#x27;t outperforming those that didn&#x27;t; the highest-ROI firms used AI for &#x27;people amplification,&#x27; not replacement.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">49,135 workers have lost jobs to AI attribution so far in 2026, nearly matching all of last year.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Meta planned roughly 8,000 job cuts (about 10% of its workforce) while planning to spend up to $145 billion on AI infrastructure.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Hard market data undercutting the &#x27;cut jobs for AI&#x27; thesis is a counter-narrative that reframes how leaders should deploy AI.</strong> With nearly 49,000 AI-attributed job losses and stocks punishing the cutters, the evidence favors augmentation over replacement—a direct challenge to the automation rush.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google adds a Gemini &#x27;Thinking level&#x27; and preps a Gemini laptop class ahead of I/O</h2>
+        <ul>
+          <li><span class="btext">Google is rolling out a Gemini &#x27;Thinking level&#x27; toggle (Standard vs. Extended reasoning), appearing for some users on Fast or Gemini 3.1 Pro, with Canva, Instacart, and OpenTable integrations coming.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Google unveiled &#x27;Googlebooks,&#x27; a new laptop class combining Android and ChromeOS with Gemini (Magic Pointer, Create Your Widget), with fall devices from Acer, ASUS, Dell, HP, and Lenovo expected near Apple&#x27;s ~$600 MacBook Neo.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Google I/O leaks point to Gemini 3.2 (including a Flash Live variant), Gemini Spark (a persistent 24/7 agent), Android XR glasses previews with Samsung and XREAL, and Gemini in Chrome.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>On the eve of I/O, Google is pushing Gemini into deeper reasoning, a new laptop category, and always-on agents.</strong> A user-facing reasoning toggle plus a Gemini-native laptop line shows Google trying to embed its model across the OS and hardware, not just the app.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Cerebras&#x27; blockbuster IPO and a wave of AI-infrastructure deals</h2>
+        <ul>
+          <li><span class="btext">Cerebras went public Thursday; shares jumped 68% on day one to a $95 billion market cap, tied to a multiyear OpenAI contract worth more than $20 billion plus an AWS partnership.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Decart hit a $4 billion valuation after raising $300 million to help developers switch between Nvidia, Amazon, and Google chips, with Nvidia as a new investor.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">NextEra is buying Dominion Energy for $66.8 billion to meet surging power demand from AI data centers.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Runway has raised $860 million to date as it pivots from AI video generation toward video/world models against OpenAI and Google.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A 68% Cerebras pop and multibillion-dollar chip and power deals show capital cascading through every layer of AI infrastructure.</strong> From wafer-scale chips to a $66.8B utility acquisition for data-center power, investors are funding the full physical stack behind AI demand.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>US–China summit ends with no chip deal as tech tensions persist</h2>
+        <ul>
+          <li><span class="btext">A Trump state visit to China concluded with no semiconductor or AI trade agreement; global chip stocks sold off, and Nvidia&#x27;s H200 clearance stalled as Beijing refused to formally approve purchases.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Separate US–China talks in Beijing led by Treasury Secretary Scott Bessent, with Jensen Huang attending, reached no agreement on easing US export controls on advanced NVIDIA chips; model distillation stayed unresolved.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">OpenAI is reportedly preparing possible legal action against Apple over ChatGPT&#x27;s placement in Apple Intelligence, weighing a formal breach-of-contract notice after Apple&#x27;s Gemini deal.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A high-profile summit ending without a chip agreement keeps the US–China AI-hardware standoff—and its market impact—firmly in place.</strong> With H200 approvals stalled and export controls unchanged, the geopolitical constraint on advanced-chip flows remains a central risk for the whole AI supply chain.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic launches a $200M Gates health partnership as usage-pricing backlash brews</h2>
+        <ul>
+          <li><span class="btext">Anthropic formed a $200 million Gates Foundation partnership for global health, life sciences, education, and economic mobility, using Claude credits and grants.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Starting June 15, paid Claude users&#x27; programmatic usage will no longer count against normal subscription limits, moving to a separate monthly Agent SDK credit of $20–$200 by plan—affecting claude -p, the Agent SDK, GitHub Actions, and third-party tools.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Anthropic published Claude Code at-scale best practices, noting production use across monorepos with millions of lines, decades-old legacy systems, and thousands of developers.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Anthropic will brief the Financial Stability Board on cyber flaws found by its Mythos model.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $200M Gates health partnership alongside a contested developer-pricing change captures Anthropic pushing into both public good and monetization.</strong> The June 15 Agent SDK credit shift drew developer backlash even as Anthropic touts enterprise-scale Claude Code adoption—two sides of its commercialization push.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI coding agents draw record hacker bounties and eye-popping run costs</h2>
+        <ul>
+          <li><span class="btext">Pwn2Own Berlin 2026 paid hackers nearly $1.3 million for 47 vulnerabilities, including exploits of Codex, Cursor, Claude Code, and LM Studio.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">OpenClaw founder Peter Steinberger reportedly burned $1.3 million in one month running 100 autonomous coding agents for code review, PRs, and bug finding.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">OpenAI is adding remote Computer Use to Codex, letting the agent operate macOS apps even when a laptop is locked or asleep, with monitoring/control now in the ChatGPT mobile app; more than four million people use Codex weekly.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Coding agents are simultaneously the target of record exploit bounties and the source of seven-figure monthly bills—showing how central and costly they&#x27;ve become.</strong> As Codex gains always-on remote control of desktops, the security surface and spend around autonomous coding agents are both climbing fast.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Gemini &#x27;Thinking level&#x27; toggle</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A user-facing control Google is rolling out that lets people choose Standard or Extended reasoning depth in the Gemini app, trading speed for deeper multi-step thinking.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agent SDK credit</div>
+          <div class="csrc">Everyday AI</div>
+          <p>Anthropic&#x27;s new billing model (from June 15) that separates programmatic Claude usage from normal subscription limits into a monthly $20–$200 credit pool, covering the Agent SDK, GitHub Actions, and similar automated use.</p>
+        </div>
+        <div class="concept">
+          <div class="term">People amplification</div>
+          <div class="csrc">The Neuron</div>
+          <p>Gartner&#x27;s term for using AI to augment employees rather than replace them; its survey found firms taking this approach saw higher AI ROI than those doing AI-driven layoffs.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Remote Computer Use</div>
+          <div class="csrc">Everyday AI</div>
+          <p>An OpenAI Codex capability that lets the agent operate desktop apps on another machine even when it&#x27;s locked or asleep, monitored and approved from the ChatGPT mobile app.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Breakfast · The Neuron · Everyday AI · TLDR AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
