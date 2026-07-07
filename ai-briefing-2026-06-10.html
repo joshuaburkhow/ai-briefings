@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, June 10, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, June 10, 2026   ·   Based on June 9 newsletters   ·   3 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Apple rebuilds Siri at WWDC, powered by custom Google Gemini models</h2>
+        <ul>
+          <li><span class="btext">Apple introduced Siri AI, a rebuilt assistant that can hold richer conversations, search messages, emails, photos, and files, and take action inside apps.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Apple said its next-gen Apple Foundation Models were custom-built with Google using Gemini technologies, then adapted for on-device use and Private Cloud Compute; AI-edited images carry SynthID watermarks.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">iOS 27 features a &#x27;Liquid Glass&#x27; interface for iPhone 11 and newer, with full features on iPhone 15 Pro; watchOS 27 drops Series 7 and 8; early glitchy demos caused a nearly 5% drop in Apple&#x27;s market cap.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Public betas arrive next month with Siri AI in beta later this year in English first; it will be delayed on iPhone and iPad in the EU due to the DMA.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Apple&#x27;s biggest Siri overhaul since launch, built on Google&#x27;s Gemini, marks its most serious move yet to catch up in consumer AI.</strong> Relying on a custom Google model for its flagship assistant is a major admission about Apple&#x27;s in-house AI, and the market-cap dip shows how much scrutiny the delayed, glitch-prone rollout drew.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI confidentially files for IPO at an $850B+ valuation</h2>
+        <ul>
+          <li><span class="btext">OpenAI filed a confidential S-1 with the SEC, then announced it because it expected the filing to leak, though no IPO timing has been decided.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Valued at more than $850 billion, the filing came just days after Anthropic submitted its own IPO paperwork and as SpaceX reportedly prepares a public offering.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Altman and Jakub Pachocki published a plan for OpenAI&#x27;s &#x27;third phase,&#x27; aiming to build steerable AI researchers by March 2028, with a significant share of its own research done by AI.</span><span class="src">The Neuron Daily, AI Valley</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A confidential OpenAI S-1 signals the biggest AI lab is moving toward public markets in a wave alongside Anthropic and SpaceX.</strong> The filing turns AI&#x27;s private funding frenzy into a public-market event, while the &#x27;third phase&#x27; plan stakes OpenAI&#x27;s future on AI that can automate its own research.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic&#x27;s Mythos can exploit newly disclosed software flaws in hours</h2>
+        <ul>
+          <li><span class="btext">Anthropic showed its Mythos model can exploit newly disclosed software flaws within hours.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Its N-day research measured how models accelerate attacks against already-known vulnerabilities.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Separately, Microsoft shut down more than 70 GitHub repos after the &#x27;Miasma worm&#x27; targeted Claude and Gemini coding-agent users.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A frontier model weaponizing fresh vulnerability disclosures within hours sharply compresses defenders&#x27; patching window.</strong> Paired with a worm spreading through AI coding agents, the findings show AI cutting both ways in security — accelerating exploitation faster than most organizations can respond.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Mayo Clinic and Microsoft to build a healthcare-specific frontier model</h2>
+        <ul>
+          <li><span class="btext">Mayo Clinic and Microsoft announced a partnership to build a frontier AI model made specifically for healthcare.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">The model would be trained on Mayo&#x27;s de-identified patient records and decades of clinical expertise.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Related health-AI news included an AI-designed vaccine passing its first human test and new WHO rules for health AI.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A frontier model trained on one of the world&#x27;s top clinics&#x27; records signals AI moving deep into regulated clinical medicine.</strong> Domain-specific medical models trained on proprietary clinical data could outperform general assistants in healthcare, but raise fresh questions on privacy, validation, and the WHO&#x27;s emerging rules.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Cognition launches FrontierCode benchmark for real-world code quality</h2>
+        <ul>
+          <li><span class="btext">Cognition launched FrontierCode, a coding benchmark that asks whether real maintainers would actually merge AI-written code.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Google&#x27;s Gemma 4 MTP was merged into llama.cpp, letting developers pair it with Gemma 4 QAT for a faster, lighter local setup.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Google upgraded NotebookLM with agentic chat, stronger reasoning, and editable output formats including charts, reports, spreadsheets, slides, CSVs, and JSON.</span><span class="src">The Neuron Daily, The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A benchmark judging whether humans would merge AI code targets the gap between raw output and mergeable, maintainable software.</strong> As open models like Gemma 4 spread into local toolchains, evaluating real code quality rather than pass rates becomes the metric that matters for production use.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI plans a ChatGPT superapp redesign centered on Codex</h2>
+        <ul>
+          <li><span class="btext">OpenAI is preparing its biggest ChatGPT redesign, giving greater prominence to Codex and steering users toward coding tools, image generation, and partners like Canva and Booking.com.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">Business customers already account for roughly 40% of OpenAI&#x27;s revenue, per Reuters.</span><span class="src">AI Valley</span></li>
+          <li><span class="btext">OpenAI is hosting a Codex Lab on June 24 focused on goal mode, plan mode, worktrees, and plugins.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Reorganizing ChatGPT around Codex and partner services shows OpenAI reframing its consumer app as an agentic, enterprise-oriented platform.</strong> With businesses already contributing ~40% of revenue, the redesign aligns the product with where OpenAI&#x27;s money is, ahead of its IPO.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Kimi Work ships 300 parallel desktop agents; NVIDIA anchors South Korea AI push</h2>
+        <ul>
+          <li><span class="btext">Kimi Work launched a local agent that runs up to 300 desktop agents in parallel, automating files and workflows and outputting PPTX, Word, PDF, or Excel.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">NVIDIA and LG anchored South Korea&#x27;s AI factory push, with SK hynix memory work and NAVER scaling toward gigawatt infrastructure.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Nearly half of employers now say they&#x27;d rather invest in AI than hire a 2026 grad.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Consumer-grade agents running hundreds of tasks in parallel, alongside gigawatt-scale national buildouts, show AI scaling on both the desktop and the grid.</strong> Massively parallel local agents change what one worker can do, while South Korea&#x27;s factory push underscores that the constraint on AI is increasingly physical infrastructure.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Private Cloud Compute</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>Apple&#x27;s system for running larger AI models on its own servers with privacy guarantees when a request is too heavy for on-device processing, used to power the new Siri AI.</p>
+        </div>
+        <div class="concept">
+          <div class="term">N-day vulnerability</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>A software flaw that has already been publicly disclosed but not yet patched everywhere; Anthropic&#x27;s research measured how fast AI models can exploit these known-but-unpatched bugs.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Confidential S-1</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>A draft IPO registration filed privately with the SEC, letting a company begin the going-public process without immediately revealing financials to the public; OpenAI filed one this week.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily · The AI Entrepreneurs · AI Valley</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
