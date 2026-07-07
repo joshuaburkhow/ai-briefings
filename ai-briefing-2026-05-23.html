@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Saturday, May 23, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Saturday, May 23, 2026   ·   Based on May 22 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Alibaba&#x27;s Qwen3.7-Max runs 35 hours of continuous autonomous reasoning</h2>
+        <ul>
+          <li><span class="btext">Qwen3.7-Max is a proprietary flagship capable of 35 hours of continuous autonomous execution; in one run it made 1,158 tool calls to achieve a 10.0x kernel-optimization speedup on unfamiliar hardware.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">It offers a 1-million-token context window, plugs natively into external tools like Claude Code, and &#x27;beats Claude Opus-4.6 Max on key math benchmarks.&#x27;</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">TLDR reported it posts top scores on Terminal-Bench 2.0-Terminus, SWE-Pro, SciCode, MCP-Mark, GPQA Diamond, and IMOAnswerBench, with consistent performance across Claude Code, OpenClaw, and custom harnesses.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Alibaba is pivoting from its open-source roots, restricting this release to a paid API tier as an affordable enterprise alternative to Western frontier models.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A model sustaining 35 hours of autonomous work is a major leap in long-horizon agent capability—and it comes from China&#x27;s Alibaba, not a Western lab.</strong> Cross-harness generalization and strong benchmarks make Qwen3.7-Max a serious frontier competitor, signaling the agent race is now genuinely global.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic nears first profit while scrambling for compute across xAI and Microsoft</h2>
+        <ul>
+          <li><span class="btext">Anthropic projected $10.9 billion in Q2 2026 revenue (a 130% surge over Q1) and its first operating profit of $559 million, with compute overhead down to 56 cents per revenue dollar and valuation talks nearing $900 billion.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">To handle capacity shortages, Anthropic is spending $1.25 billion a month through May 2029 to rent 300 megawatts from xAI&#x27;s Colossus facility while negotiating early access to Microsoft&#x27;s Maia 200 inference chips.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">TLDR noted Microsoft plans to supply its Maia AI chips (a claimed 30% performance improvement) to Anthropic, strengthened by Microsoft&#x27;s $5 billion November investment.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">OpenAI&#x27;s Q1 revenue was $5.7 billion, ahead of Anthropic, as compute constraints pushed Anthropic into multi-provider deals.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic reaching a first operating profit while committing billions across xAI and Microsoft shows both its momentum and its compute crunch.</strong> The multi-provider scramble—renting from xAI and courting Microsoft&#x27;s Maia chips—reveals how severe capacity shortages have become even for a top lab.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Trump halts his AI executive order as the Pentagon tests Claude alternatives</h2>
+        <ul>
+          <li><span class="btext">Trump delayed a planned signing ceremony for a long-awaited AI executive order, saying he wasn&#x27;t satisfied with parts of it and wanted to avoid slowing the industry; the order would let the government review AI models before release.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The Pentagon is testing AI models from other major vendors to replace Anthropic&#x27;s Claude after the Defense Department cut ties over a supply-chain risk designation, with 25 power users evaluating tools since early March.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">OpenAI and Google models are under review for classified systems like the Maven Smart System, with prompt tuning expected to be a key part of usage.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A last-minute halt to the federal AI order, plus the Pentagon dropping Claude, marks real turbulence at the government-AI intersection.</strong> The pre-release-review order stalling and a major defense customer swapping suppliers show policy and procurement moving unpredictably around the frontier labs.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI&#x27;s Codex gains &#x27;Goal mode&#x27; and remote control of a locked Mac</h2>
+        <ul>
+          <li><span class="btext">Codex&#x27;s Goal mode graduated from experimental to the desktop app, IDE extension, and CLI, letting users set an objective and have Codex work toward it &#x27;for hours or even days.&#x27;</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">New &#x27;app shots&#x27; capture the frontmost app window as a screenshot plus full text, including offscreen content, via a double-Command press.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Remote computer use lets Codex operate desktop apps after a Mac locks, controllable from a phone, with a safeguard that instantly relocks the Mac if someone touches the keyboard or mouse and blocks sensitive actions like Terminal.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Cursor&#x27;s Composer 2.5 (built on Kimi K2.5) undercut Opus 4.7 pricing by ~90%—$0.50 vs $5 per million input tokens—running neck and neck with Opus 4.7 on SWE-Bench multilingual.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Codex working for days and controlling a locked Mac from a phone pushes coding agents toward genuinely unattended operation.</strong> With Cursor slashing comparable pricing by ~90%, the coding-agent race is now advancing on both autonomy and cost at once.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google ships one-call managed agents with built-in Linux sandboxes</h2>
+        <ul>
+          <li><span class="btext">Google launched Managed Agents on the Gemini API: a single call spins up an agent that reasons, uses tools, and executes code in an isolated Linux environment that Google hosts and runs.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">The agent can execute code, run Google searches, read URLs, manage files, and browse the web, retaining files and state between calls; sandbox compute is free during preview with standard token billing.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Google also tripled Antigravity paid-plan weekly quotas after demand overwhelmed limits and released the open-source Agent Executor runtime, built on Kubernetes, to pause and recover broken multi-agent loops.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Gemini 3.5 Flash became Google&#x27;s new best model, outperforming Gemini 3.1 Pro on coding and agentic benchmarks while running four times faster and silently upgrading AI Mode in Search.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Turning a full sandboxed coding agent into a single API call lowers the bar for building autonomous agents dramatically.</strong> Managed Linux environments plus a durable Agent Executor runtime show Google racing to own the infrastructure layer beneath long-running agents.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Cursor hits $3B ARR as DeepSeek nears a ~$10B raise</h2>
+        <ul>
+          <li><span class="btext">Cursor&#x27;s annualized revenue reached $3 billion in late April, with more than 3,000 customers each paying at least $100,000/year; SpaceX holds a right to buy Cursor for $60 billion in a window opening soon after SpaceX begins trading around June 12.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">DeepSeek is in the final stretch of a roughly $10 billion (70 billion yuan) round that could value it at about $45 billion pre-money, with interest from Tencent, IDG Capital, NetEase, and JD.com.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Brett Adcock landed a $6 billion valuation for a personalized AI hardware venture, and China&#x27;s regulators told Manus to unwind its Meta acquisition, forcing founders to weigh raising $1 billion to buy it back.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Cursor&#x27;s $3B ARR and DeepSeek&#x27;s ~$10B raise show both Western tooling and Chinese labs commanding extraordinary capital.</strong> A $60B option on Cursor and a forced unwind of Manus&#x27;s Meta deal underscore how fast—and how politically fraught—AI dealmaking has become.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Tiny open models and new agent infrastructure keep advancing</h2>
+        <ul>
+          <li><span class="btext">KAIST&#x27;s 10-million-parameter reasoning model GRAM hit 97% on Sudoku and 52% on ARC-AGI-1, outperforming much larger models on hard reasoning.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Meta released SAM3 open-source, which tracks any object in video from a text description, and Tencent released open-source translation models that fit in 440 MB on-device.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Cohere released Command A+, its first full Apache-2.0 open model with lossless quantization and native citations; ByteDance released Lance, a 3B multimodal model.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">NVIDIA shipped verified agent skills with built-in security cards for Claude, Codex, and Cursor.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A 10M-parameter model beating far larger ones on reasoning, alongside new open vision and translation models, shows small and open AI still advancing fast.</strong> These releases keep powerful capabilities cheap and local, while NVIDIA&#x27;s verified agent skills point to a maturing safety layer around them.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Environment scaling</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>A training approach used for Qwen3.7-Max that emphasizes learning to act across many tool environments, enabling long-horizon autonomous execution (up to 35 hours) without falling into logic loops.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Managed Agents</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>Google&#x27;s Gemini API feature that spins up, via a single call, a hosted agent running in an isolated Linux sandbox that can execute code, browse, and retain state between calls.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Goal mode</div>
+          <div class="csrc">Everyday AI</div>
+          <p>An OpenAI Codex mode (now generally available) where a user sets an objective and Codex works toward it autonomously for hours or days, with periodic check-ins.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Maia 200</div>
+          <div class="csrc">TLDR AI</div>
+          <p>Microsoft&#x27;s custom AI inference chip, reportedly offering a 30% performance improvement, that Microsoft plans to supply to Anthropic to ease its compute constraints.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Breakfast · TLDR AI · Everyday AI · Alpha Signal</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
