@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday, June 7, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday, June 7, 2026   ·   Based on June 6 newsletters   ·   2 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google to pay SpaceX $920M a month for GPU compute through 2029</h2>
+        <ul>
+          <li><span class="btext">Google will pay SpaceX $920M per month from October 2026 to June 2029 for roughly 110,000 NVIDIA GPUs and related hardware.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Google cites unexpected demand for its Gemini Enterprise AI platform as the driver; either party can cancel with 90 days&#x27; notice after December 2026.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The deal echoes Anthropic&#x27;s $1.25B/month arrangement with SpaceX for Colossus 1 compute.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The announcement lands a week before SpaceX&#x27;s IPO, which targets a $75B raise at a $1.75T valuation; the companies are also exploring orbital data centers.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A near-billion-dollar monthly compute contract signals how far the cloud giants will go to secure GPUs for frontier AI.</strong> Google, Anthropic, and SpaceX are increasingly locked together on compute, tying model roadmaps to space-launch economics and an imminent mega-IPO.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic tests Claude Opus 4.7 on reading NMR chemistry spectra</h2>
+        <ul>
+          <li><span class="btext">Anthropic found Opus 4.7 performed as well as or better than ChemDraw and MestReNova on average for routine NMR peak prediction, with no chemistry-specific fine-tuning.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Opus 4.7 had the best hydrogen NMR accuracy; carbon prediction was close to MestReNova.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Run in reverse, it recovered all 8 simpler inverse structures across every attempt and solved most harder structures when given starting-material context.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A general model matching specialized chemistry software on a daily lab task hints at how far frontier LLMs now reach into science.</strong> Reading NMR spectra is one of chemistry&#x27;s slowest routine chores; a general-purpose model doing it without fine-tuning suggests broad scientific utility beyond code and text.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Apple approves Poke, its first third-party AI agent for Messages</h2>
+        <ul>
+          <li><span class="btext">Apple approved Poke, a startup AI agent, to run on Messages for Business — the first third-party AI agent integrated into Apple&#x27;s messaging ecosystem.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Poke has already processed 100M+ messages across SMS, Telegram, and WhatsApp.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Backed by Spark Capital and General Catalyst, Poke is valued at $300M after raising an additional $10M; the launch comes just before WWDC.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Apple opening Messages to an outside AI agent is a notable shift ahead of its expected Siri overhaul.</strong> Letting a third-party agent into iMessage business channels signals Apple may lean on partners rather than build all conversational AI in-house.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Amazon debuts Proteus warehouse robot amid AI-driven job cuts</h2>
+        <ul>
+          <li><span class="btext">Amazon introduced Proteus, a next-generation warehouse robot capable of responding to natural language commands.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The rollout is framed against Amazon&#x27;s ongoing AI-related workforce reductions.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Amazon also announced an AI feature that generates product images in its shopping app based on user search queries.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A language-controllable warehouse robot moving into Amazon&#x27;s fulfillment network shows physical AI reaching operational scale.</strong> Pairing new robots with AI job cuts sharpens the automation-versus-labor story at the largest logistics employer in the US.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google releases Magenta RealTime 2 for on-device music generation</h2>
+        <ul>
+          <li><span class="btext">Google introduced Magenta RealTime 2, an open model for low-latency music synthesis that runs natively on MacBook.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Musicians can control it live with MIDI, text, and audio inputs.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Separately, a Higgsfield mod for Minecraft turns the game into an AI creative sandbox for prompting buildings, restyling views, and generating videos.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>An open, locally-runnable real-time music model lowers the barrier for live AI-assisted performance.</strong> On-device generation with live MIDI control moves generative audio from batch rendering toward interactive, latency-sensitive creative use.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>New York passes one-year moratorium on large data centers</h2>
+        <ul>
+          <li><span class="btext">New York lawmakers approved a one-year moratorium on large data centers to study their environmental and energy impact.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Governor Hochul must decide by December whether to sign it.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">OpenAI updated ChatGPT&#x27;s Gmail connector so users can draft, edit, and send emails directly from the web chat.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A state-level pause on data centers is an early sign of political friction over AI&#x27;s energy footprint.</strong> As compute deals balloon, local energy and environmental pushback is becoming a real constraint on where AI infrastructure can be built.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Stanford study finds AI hiring tools show adverse impact on Black applicants</h2>
+        <ul>
+          <li><span class="btext">A Stanford analysis of 4M applications found roughly 25% of Black applications showed adverse impact under federal hiring rules, with disparities also affecting Asian applicants.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">Meta pulled an AI-generated &#x27;For You&#x27; article feed from its AI app after The Verge questioned its quality and purpose.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Fresh evidence of bias in AI hiring screens keeps regulatory and legal scrutiny of automated recruiting alive.</strong> A large-scale study tying AI hiring tools to federal adverse-impact thresholds gives employers concrete legal exposure to weigh.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">NMR spectra</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>Nuclear magnetic resonance readings that chemists use to identify molecular structure by matching signal peaks to atoms; interpreting them is a slow, routine lab task.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Adverse impact</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>A US legal standard where a hiring practice disproportionately screens out a protected group, triggering scrutiny under federal employment rules even without intent to discriminate.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Data center moratorium</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>A temporary government freeze on building or expanding large data centers, used to study their energy and environmental effects before allowing more.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Brain Buzz · The AI Entrepreneurs</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
