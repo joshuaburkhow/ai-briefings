@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Saturday, May 30, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Saturday, May 30, 2026   ·   Based on May 29 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic raises $65B at a $965B valuation on a $47B run rate</h2>
+        <ul>
+          <li><span class="btext">Anthropic raised $65B in a Series H at a $965B post-money valuation, citing $47B in run-rate revenue, up from $9B in December.</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">The round was led by Altimeter, Dragoneer, Greenoaks, and Sequoia, and included $15B from hyperscalers; Altimeter called it its largest investment to date.</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">The Rundown framed the raise as pushing Anthropic past OpenAI and closing in on a $1 trillion valuation, making it the most valuable AI lab.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $65B raise at a $965B valuation vaults Anthropic to the front of the AI-lab race by market value.</strong> Run-rate revenue jumping from $9B in December to $47B, funded by the largest check some of its investors have ever written, signals Anthropic is scaling revenue and compute fast enough to rival OpenAI for the lead.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Opus 4.8 posts frontier benchmarks led by 69.2% on SWE-Bench Pro</h2>
+        <ul>
+          <li><span class="btext">Opus 4.8 scored 69.2% on SWE-Bench Pro, described as 10 points higher than GPT-5.5, ranked #1 on FrontierSWE, and hit 45.3% Pass@1 on APEX-SWE.</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">It reached 1890 Elo on GDPval-AA (+137 versus Opus 4.7) and topped the Artificial Analysis Intelligence Index at 61.4, while using 15% fewer turns and 35% fewer output tokens per task than Opus 4.7.</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">The Rundown said Opus 4.8 beats GPT-5.5 and Gemini 3.1 Pro on agentic coding, computer use, financial analysis, and Humanity&#x27;s Last Exam, at the same price as Opus 4.7.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Opus 4.8&#x27;s benchmark sweep backs Anthropic&#x27;s claim to the coding and agent frontier.</strong> Leading SWE-Bench Pro by 10 points and topping the intelligence index while getting more efficient per task gives Anthropic concrete evidence for the flagship&#x27;s positioning against GPT-5.5 and Gemini.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Code&#x27;s Dynamic Workflows rewrites Bun&#x27;s codebase with parallel agents</h2>
+        <ul>
+          <li><span class="btext">Dynamic Workflows, also called &#x27;ultracode,&#x27; lets Claude Code write an orchestration script and spawn hundreds of parallel subagents, available on Max, Team, Enterprise, API, Bedrock, Vertex AI, and Foundry.</span><span class="src">AINews / Latent Space</span></li>
+          <li><span class="btext">Jarred Sumner used it to rewrite Bun from Zig to Rust — 750,000 lines of Rust at 99.8% test-suite success in 11 days, using hundreds of parallel agents plus two reviewers per file.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Anthropic signaled a Mythos-class model with higher intelligence than Opus is coming &#x27;in the coming weeks,&#x27; gated behind stronger cyber safeguards.</span><span class="src">AINews / Latent Space</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Massively parallel agent orchestration is turning multi-week engineering rewrites into days.</strong> A 750,000-line language rewrite in 11 days with near-perfect tests demonstrates that Dynamic Workflows moves agentic coding from single-file assistance to whole-codebase transformation.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>The EU AI Act is weakened and its high-risk rules delayed to 2027</h2>
+        <ul>
+          <li><span class="btext">The EU Parliament and member states agreed to amend the AI Act, delaying high-risk system requirements to December 2027 from August 2026, with the supervised-sandbox deadline pushed to August 2027.</span><span class="src">The Batch (DeepLearning.ai)</span></li>
+          <li><span class="btext">A new provision bans the generation of sexually explicit images of children and non-consensual intimate imagery.</span><span class="src">The Batch (DeepLearning.ai)</span></li>
+          <li><span class="btext">Anthropic published no policy change, but OpenAI released a Frontier Governance Framework covering risk management, model reporting, incident response, and oversight.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Europe softening and delaying its flagship AI law shifts the global regulatory timeline.</strong> Pushing high-risk requirements to late 2027 gives industry more runway, and pairing that relief with a hard ban on abusive imagery shows regulators recalibrating toward the clearest harms.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI-driven web traffic nearly triples, with OpenAI at 69% of automated traffic</h2>
+        <ul>
+          <li><span class="btext">A Human Security report based on over 1 quadrillion internet interactions in 2025 found AI-driven traffic nearly tripled, with browser-task agents growing about 80x year over year to 1.7% of AI-driven traffic in December.</span><span class="src">The Batch (DeepLearning.ai)</span></li>
+          <li><span class="btext">OpenAI accounted for roughly 69% of automated traffic, followed by Meta at 16% and Anthropic at about 11%.</span><span class="src">The Batch (DeepLearning.ai)</span></li>
+          <li><span class="btext">An enterprise reportedly spent nearly $500M in one month on Claude licenses after failing to set employee usage limits.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI agents are rapidly becoming a major share of internet activity, dominated by a few players.</strong> With automated traffic tripling and OpenAI driving over two-thirds of it, the web is being reshaped by AI crawlers and agents, while runaway enterprise spend shows the cost side scaling just as fast.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Gemini 3.5 Flash posts strong benchmarks but sheds its low-cost positioning</h2>
+        <ul>
+          <li><span class="btext">Gemini 3.5 Flash scored 84% on MMMU-Pro, the highest recorded, and 47.1% on APEX-Agents-AA, about 10 points ahead of GPT-5.5 at 37.7%.</span><span class="src">The Batch (DeepLearning.ai)</span></li>
+          <li><span class="btext">Its API price rose to $1.50 per million input and $9.00 per million output tokens, a substantial increase for the &#x27;Flash&#x27; tier, at up to 1M-token input and 204 tokens per second.</span><span class="src">The Batch (DeepLearning.ai)</span></li>
+          <li><span class="btext">Apple&#x27;s revamped AI Siri is being rebuilt on Google Gemini, with a ChatGPT-style app and third-party agent support, per Bloomberg.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google&#x27;s fast tier is getting more capable and notably more expensive at once.</strong> Record multimodal scores paired with a big price jump signal Google repositioning Flash as a premium agentic model, while Apple building Siri on Gemini extends Google&#x27;s reach into hundreds of millions of devices.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Chipmaking ambitions spread as Microsoft, Mistral, and ByteDance move on silicon</h2>
+        <ul>
+          <li><span class="btext">Microsoft is developing a new in-house AI coding model to re-enter the AI coding race.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Mistral AI is exploring designing its own custom chips as it expands European data centers, and ByteDance is moving to design its own AI chips.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Mistral also reported production deployments with Airbus, BMW, and EDF and shipped Mistral Vibe, an agent with Work and Code modes plus a CLI and VS Code extension.</span><span class="src">AINews / Latent Space</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>More AI companies are pushing into custom silicon to control cost and supply.</strong> Mistral and ByteDance pursuing their own chips, alongside Microsoft building a new coding model, shows leading players trying to own more of the stack rather than depend on Nvidia and third-party models.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Series H</div>
+          <div class="csrc">AINews / Latent Space</div>
+          <p>Anthropic&#x27;s eighth priced venture round, raising $65B at a $965B post-money valuation, led by Altimeter, Dragoneer, Greenoaks, and Sequoia with $15B from hyperscalers.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Dynamic Workflows (ultracode)</div>
+          <div class="csrc">AINews / Latent Space</div>
+          <p>A Claude Code research-preview feature in which Claude writes an orchestration script and spawns hundreds of parallel subagents to break large tasks into subtasks that run until results converge.</p>
+        </div>
+        <div class="concept">
+          <div class="term">SWE-Bench Pro</div>
+          <div class="csrc">AINews / Latent Space</div>
+          <p>A software-engineering benchmark measuring a model&#x27;s ability to resolve real repository issues; Claude Opus 4.8 scored 69.2%, reported as 10 points ahead of GPT-5.5.</p>
+        </div>
+        <div class="concept">
+          <div class="term">EU AI Act high-risk requirements</div>
+          <div class="csrc">The Batch (DeepLearning.ai)</div>
+          <p>The tier of EU rules governing AI systems in sensitive uses; their compliance deadline was delayed to December 2027 from August 2026 as the Act was amended and softened.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: TLDR AI · AINews / Latent Space · The Rundown AI · The Batch (DeepLearning.ai)</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
