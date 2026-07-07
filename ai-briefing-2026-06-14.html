@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday, June 14, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday, June 14, 2026   ·   Based on June 13 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>US government orders Anthropic to pull Claude Fable 5 and Mythos 5 three days after launch</h2>
+        <ul>
+          <li><span class="btext">Anthropic revoked Claude Fable 5 and Mythos 5 for all customers worldwide following a US government directive citing a possible jailbreak deemed a national cybersecurity risk, just three days after release.</span><span class="src">AINews/Latent Space</span></li>
+          <li><span class="btext">Anthropic disputed the capability report, calling it a &#x27;misunderstanding&#x27; and saying the government &#x27;has only given us verbal evidence of a potential narrow, non-universal jailbreak,&#x27; noting similar capabilities are widely available in other models including GPT-5.5.</span><span class="src">AINews/Latent Space</span></li>
+          <li><span class="btext">Artificial Analysis said it was the first time its Intelligence Frontier chart had moved backward; the suspension triggered downstream removals at Cognition/Devin and Agent Arena.</span><span class="src">AINews/Latent Space</span></li>
+          <li><span class="btext">Brain Buzz cited a Guardian report that the order directed suspension of access for foreign nationals over national-security risk, with the government giving no specific explanation.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A government-forced takedown of a frontier model days after launch is an unprecedented policy event.</strong> It sets a precedent for state intervention in commercial model availability and rattled benchmark leaderboards and downstream products that depended on the models.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Fable 5 launched as Anthropic&#x27;s first public Mythos-class model at $10/$50 per million tokens</h2>
+        <ul>
+          <li><span class="btext">Fable 5 topped nearly every tested benchmark, with the widest margins on long multi-step reasoning and autonomous task completion, and posted state-of-the-art on Cognition&#x27;s FrontierCode.</span><span class="src">AI Agents Weekly</span></li>
+          <li><span class="btext">Stripe reported Fable 5 compressed a 50-million-line codebase migration from two months of human work into a single day.</span><span class="src">AI Agents Weekly</span></li>
+          <li><span class="btext">Pricing is $10 per million input tokens and $50 per million output tokens, with rollout across plans through June 22.</span><span class="src">AI Agents Weekly</span></li>
+          <li><span class="btext">Safeguards route cybersecurity, biology, and chemistry requests to Claude Opus 4.8 instead of refusing, triggering in under 5% of sessions; the restricted Mythos 5 was limited to &#x27;Project Glasswing&#x27; partners.</span><span class="src">AI Agents Weekly</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The launch numbers behind the model that was then pulled define why it was considered so capable.</strong> The Stripe migration claim and FrontierCode results frame Fable 5 as a step change in autonomous coding, which is precisely what drew government scrutiny.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Moonshot open-sources Kimi-K2.7-Code with double-digit benchmark gains</h2>
+        <ul>
+          <li><span class="btext">Kimi-K2.7-Code reported gains over K2.6 of +21.8% on Kimi Code Bench v2, +11.0% on Program Bench, +31.5% on MLS Bench Lite, and 30% fewer reasoning tokens.</span><span class="src">AINews/Latent Space</span></li>
+          <li><span class="btext">The architecture is a 1-trillion-parameter mixture-of-experts model with 32B active parameters, MLA attention, and a 256K context window.</span><span class="src">AINews/Latent Space</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>An open 1T-parameter coding model with sharp efficiency gains keeps pressure on closed frontier labs.</strong> Fewer reasoning tokens at higher accuracy directly lowers inference cost for agentic coding workloads.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>MiniMax releases open-weight M3 multimodal model with 1M-token context</h2>
+        <ul>
+          <li><span class="btext">MiniMax M3 has roughly 428B total parameters with about 23B active and a 1M-token context window, using MiniMax Sparse Attention claimed to cut per-token attention compute to 1/20.</span><span class="src">AINews/Latent Space</span></li>
+          <li><span class="btext">It claimed 9x prefill and 15x decode improvement over M2 at 1M context, with day-zero support from SGLang, vLLM, Together, Baseten, and Fireworks.</span><span class="src">AINews/Latent Space</span></li>
+          <li><span class="btext">The license is free non-commercial, with commercial use free for individuals and companies under $20M/year revenue and negotiated above that.</span><span class="src">AINews/Latent Space</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Long-context open models with sparse attention are becoming viable for production at a fraction of the compute.</strong> The tiered revenue-based license and broad day-zero serving support lower the barrier for startups to adopt it.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI gives Codex live browser access and moves to acquire Ona for persistent cloud workspaces</h2>
+        <ul>
+          <li><span class="btext">OpenAI shipped a Codex &#x27;developer mode&#x27; that grants controlled access to the Chrome DevTools Protocol, letting Codex profile live JavaScript performance, inspect console and network traffic in real time, and do DOM inspection, requiring explicit user approval.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">OpenAI agreed to acquire Ona, a cloud execution and orchestration company, to give Codex a persistent cloud workspace so agents can keep working over hours or days in customer-controlled environments; no dollar amount was disclosed.</span><span class="src">The AI Entrepreneurs</span></li>
+          <li><span class="btext">OpenAI is rolling out &#x27;saved rate limit resets&#x27; for Codex on Go, Plus, Pro, and Business plans, letting users bank a reset for later use.</span><span class="src">The AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Codex is moving from a code assistant to a long-running autonomous agent with real browser and cloud access.</strong> Live CDP access plus persistent cloud execution is the infrastructure needed for multi-hour agentic engineering tasks.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>NVIDIA ships NVFP4-quantized DiffusionGemma as diffusion coding trades speed for accuracy</h2>
+        <ul>
+          <li><span class="btext">NVIDIA released diffusiongemma-26B-A4B-it-NVFP4, an NVFP4-quantized version of Google DeepMind&#x27;s DiffusionGemma 26B A4B, claiming over 1,100 tokens/second at low batch on an H100 in FP8.</span><span class="src">AINews/Latent Space</span></li>
+          <li><span class="btext">A community single-H100 benchmark found DiffusionGemma roughly 3.5-4x faster than autoregressive Gemma4 (763 vs 218 tok/s) but far less accurate, scoring 33 correct and 28 wrong versus Gemma4&#x27;s 45 correct and 5 wrong.</span><span class="src">AINews/Latent Space</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Diffusion-based text generation is now fast enough to benchmark against autoregressive models on real hardware.</strong> The &#x27;four times faster, six times more mistakes&#x27; result shows the accuracy gap that still limits diffusion LLMs for coding.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Apple&#x27;s rebuilt Siri AI arrives in iOS 27 beta ahead of a fall launch</h2>
+        <ul>
+          <li><span class="btext">Apple&#x27;s new Siri AI ships in iOS 27, alongside a macOS release codenamed &#x27;Golden Gate&#x27; and watchOS 27, currently in beta with a public launch this fall.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The most advanced features, including a customizable Siri voice and the most powerful on-device AI, require the newest hardware such as iPhone 17 Pro, M4-class iPads, and M3-class Macs.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Meta is donating AI-powered Ray-Ban Meta glasses to more than 130,000 blind US veterans, with training, distributed via the Blinded Veterans Association and TechSoup.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Apple&#x27;s long-delayed Siri overhaul finally has a shipping vehicle and hardware requirements.</strong> Gating the best features to the newest devices signals Apple is using on-device AI as an upgrade driver.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Chrome DevTools Protocol (CDP)</div>
+          <div class="csrc">The AI Entrepreneurs</div>
+          <p>A low-level interface for programmatically controlling and inspecting Chrome; OpenAI&#x27;s Codex developer mode uses it to read a live browser&#x27;s console, network, and DOM.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Mixture-of-experts (MoE)</div>
+          <div class="csrc">AINews/Latent Space</div>
+          <p>A model architecture where only a subset of parameters (the &#x27;active&#x27; experts) run per token, letting models like Kimi-K2.7-Code hold 1T total parameters but activate just 32B at inference for lower cost.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Sparse attention</div>
+          <div class="csrc">AINews/Latent Space</div>
+          <p>An attention scheme that computes only a fraction of token-to-token interactions; MiniMax&#x27;s MSA claims to cut per-token attention compute to one-twentieth, enabling million-token context windows.</p>
+        </div>
+        <div class="concept">
+          <div class="term">NVFP4 quantization</div>
+          <div class="csrc">AINews/Latent Space</div>
+          <p>An NVIDIA 4-bit floating-point format used to shrink models like DiffusionGemma for faster, cheaper inference on GPUs while trying to preserve accuracy.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AINews/Latent Space · AI Agents Weekly · The AI Entrepreneurs · Brain Buzz</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
