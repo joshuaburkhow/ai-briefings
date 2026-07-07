@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday, June 25, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday, June 25, 2026   ·   Based on June 24 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI unveils Jalapeño, its first in-house AI chip, with Broadcom</h2>
+        <ul>
+          <li><span class="btext">OpenAI announced Jalapeño, its first in-house Intelligence Processor, an accelerator for AI inference designed with Broadcom and Celestica in just nine months.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Early tests suggest it could outperform current top systems on performance-per-watt, tuned for today&#x27;s and future large language models.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">IBM joined OpenAI&#x27;s Daybreak Cyber Partner Program, launching a security service that uses OpenAI&#x27;s models to find and validate software vulnerabilities faster.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI building its own inference chip is a direct move to cut dependence on Nvidia and control its compute costs.</strong> A performance-per-watt edge from custom silicon would reshape the economics of running frontier models at scale.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta launches AI glasses starting at $299, powered by its Muse Spark model</h2>
+        <ul>
+          <li><span class="btext">Meta introduced a new line of AI glasses with EssilorLuxottica starting at $299, at least $80 cheaper than Ray-Ban Meta and nearly $500 less than Snap&#x27;s $2,195 AR Specs, with 26 launch variants and prescription support.</span><span class="src">Everyday AI / The Neuron Daily</span></li>
+          <li><span class="btext">The glasses offer 8-plus hours of battery, 40 hours with the case, hands-free Meta AI, open-ear audio, and live translation coming in 14 new languages, powered by Muse Spark, Meta&#x27;s first model from its new Superintelligence Labs.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Smart-glasses shipments surged 167% in Q1 2026, with Meta owning 69% of that market and daily users tripling year-over-year.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta is pushing AI glasses toward mass-market pricing while it dominates the category.</strong> A $299 entry point plus its own foundation model gives Meta a hardware channel for AI that rivals lack.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic launches Claude Tag to turn Claude into a Slack coworker</h2>
+        <ul>
+          <li><span class="btext">Anthropic introduced Claude Tag, a Slack workflow where teams @mention Claude to delegate tasks with full thread context, connect it to tools and codebases, and get results posted in-thread; it runs on Opus 4.8.</span><span class="src">TLDR AI / Alpha Signal</span></li>
+          <li><span class="btext">Anthropic said 65% of its product team&#x27;s code is now created by their internal version, and it is in beta for Team and Enterprise plans, with existing Claude-in-Slack integrations switching over on August 3.</span><span class="src">Alpha Signal / The Neuron Daily</span></li>
+          <li><span class="btext">A real bug-fix test on the Cline repo had GLM-5.2 fix the issue for $0.41 versus Opus at $0.81, though Opus was faster at 1.6 minutes and 12 tool calls.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Positioning Claude as a Slack teammate reframes the assistant from chatbot to embedded coworker.</strong> The claim that 65% of Anthropic&#x27;s own product code comes from Claude Tag is a strong signal of how far agentic coding has moved into daily work.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Reflection AI signs a $6.3B compute deal with SpaceX as AI capital keeps flowing</h2>
+        <ul>
+          <li><span class="btext">Reflection AI agreed to pay SpaceX about $150 million a month for Nvidia GB300 compute at the Colossus 2 data center in Memphis, a multibillion-dollar contract running from July 2026 through 2029, worth roughly $6.3 billion.</span><span class="src">Everyday AI / The Neuron Daily</span></li>
+          <li><span class="btext">Groq raised $650 million to expand its AI inference cloud after Nvidia licensed its chip technology, and MGX is lining up a $50 billion raise, one of the biggest AI funds ever.</span><span class="src">The Neuron Daily / Everyday AI</span></li>
+          <li><span class="btext">Nvidia now powers 81% of the TOP500 supercomputers, delivering more than double the AI training and nearly triple the inference throughput of every other platform combined.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $6.3 billion compute contract shows startups locking up multi-year GPU capacity at massive scale.</strong> With Nvidia on both sides of the Reflection deal, the arrangement highlights how tightly compute, chips, and capital are now intertwined.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>ByteDance&#x27;s Seedance 2.5 generates 30-second 4K video in a single pass</h2>
+        <ul>
+          <li><span class="btext">ByteDance&#x27;s Seedance 2.5 generates 30-second, 4K videos from a single prompt in one pass, versus the typical 10-to-15-second cap, and can take up to 50 images, videos, or audio clips as references.</span><span class="src">TLDR AI / The Neuron Daily</span></li>
+          <li><span class="btext">ByteDance also dropped a new flagship language model, an image model, and an audio model in the same keynote, with benchmarks claiming Seedance rivals Google&#x27;s Veo 3 at a fraction of the price; a wider release is targeted for early July.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Mistral OCR 4 launched with structured extraction across 170 languages and a claimed 4x speed advantage, while Google is investing about $75 million into A24 to build AI filmmaking tools with DeepMind.</span><span class="src">TLDR AI / Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A leap to 30-second 4K single-pass video narrows the gap with the best Western video models at lower cost.</strong> Cheaper high-quality generation plus new document and film tooling shows generative media maturing fast across modalities.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Sakana&#x27;s Fugu auto-routes across models through one API endpoint</h2>
+        <ul>
+          <li><span class="btext">Sakana AI released Fugu, a small model that learned to call other AI models, pick the right one per step, and stitch results through a single OpenAI-compatible API endpoint, with a Fugu Ultra version for deeper expert pools.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Fugu hits top scores on SWE-Pro, GPQA-D, and ALE-Bench, and is framed as an export-control workaround, swapping in another model with no code changes if one is blocked.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">NVIDIA launched BioNeMo Agent Toolkit for autonomous scientific work in biology, chemistry, genomics, and drug discovery, plus Halos, a full-stack safety system for humanoid robots, with Agility Robotics as first adopter.</span><span class="src">Everyday AI / The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Model routing is emerging as a defense against export controls and single-vendor lock-in.</strong> A model that automatically swaps providers, paired with new science and robotics toolkits, shows the stack routing around both policy and hardware constraints.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Performance-per-watt</div>
+          <div class="csrc">Everyday AI</div>
+          <p>A measure of how much AI computation a chip does per unit of energy; OpenAI&#x27;s Jalapeño reportedly leads on it, which matters because power is the main limit on scaling inference.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Model routing / orchestration</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>Automatically selecting and combining different AI models for each step of a task; Sakana&#x27;s Fugu does this through one endpoint and can swap models to sidestep export controls.</p>
+        </div>
+        <div class="concept">
+          <div class="term">OCR (optical character recognition)</div>
+          <div class="csrc">TLDR AI</div>
+          <p>Technology that extracts text and structure from documents and images; Mistral OCR 4 does it across 170 languages with bounding boxes and confidence scores at claimed 4x speed.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Post-quantum encryption</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>Cryptography designed to resist future quantum computers; Trump&#x27;s executive orders require federal agencies to migrate to it by 2030-2031 to protect against &#x27;harvest now, decrypt later&#x27; threats.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · The Neuron Daily · Alpha Signal</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
