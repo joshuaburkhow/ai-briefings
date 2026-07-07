@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday, June 1, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday, June 1, 2026   ·   Based on May 31 newsletters   ·   2 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic raises $65B at a $965B valuation, passing OpenAI</h2>
+        <ul>
+          <li><span class="btext">Anthropic closed a Series H of $65B at a $965B post-money valuation, led by Altimeter, Dragoneer, Greenoaks and Sequoia.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Run-rate revenue crossed $47B earlier in the month, and the raise makes Anthropic the most valuable AI company in the world.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Andrej Karpathy joined Anthropic nine days before the Opus 4.8 ship.</span><span class="src">The Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic&#x27;s $965B valuation vaults it past OpenAI as the most valuable AI company, a major shift in the competitive order.</strong> A $47B run-rate paired with a near-trillion-dollar valuation shows investors betting the frontier lead is now commercial, not just technical. Karpathy&#x27;s arrival adds a marquee researcher to the roster.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Opus 4.8 adds dynamic workflows with hundreds of subagents</h2>
+        <ul>
+          <li><span class="btext">Opus 4.8 launched at the same price as 4.7 and, on Anthropic&#x27;s own evaluations, is roughly 4x less likely to let flaws in its own code pass unremarked.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Claude Code dynamic workflows, in research preview, let Opus 4.8 plan a task, spin up hundreds of parallel subagents in one session, verify output, and carry codebase-scale migrations across hundreds of thousands of lines from kickoff to merge.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Anthropic removed &#x27;Adaptive thinking,&#x27; replacing it with an &#x27;Effort&#x27; setting (Low/Medium/High/Extra/Max) plus a separate &#x27;Thinking&#x27; toggle.</span><span class="src">The Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Dynamic workflows turn Claude Code from a single assistant into an orchestrator of hundreds of subagents for whole-codebase jobs.</strong> Running migrations end-to-end from kickoff to merge is a step toward genuinely autonomous engineering, and the 4x drop in unflagged code flaws targets the trust gap that has slowed adoption.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Figure moves humanoids into retail logistics with Catalyst Brands</h2>
+        <ul>
+          <li><span class="btext">Figure signed a commercial agreement with Catalyst Brands, owner of JCPenney, Aeropostale and Brooks Brothers, to deploy humanoid robots at scale, starting at a distribution center in Reno, Nevada.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Figure 02 robots ran 11 months at BMW&#x27;s Spartanburg plant and contributed to more than 30,000 X3s before being retired.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">The production-grade Figure 03 comes off BotQ, Figure&#x27;s in-house factory, whose first line is rated for up to 12,000 humanoids per year.</span><span class="src">The Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Figure is moving from automotive pilots to a commercial retail-logistics rollout, a real test of humanoids at scale.</strong> A 12,000-unit-per-year factory line signals Figure is betting on volume manufacturing, and a distribution-center deployment puts humanoids in the labor-heavy warehouse work where demand is highest.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>SpaceX files for what could be the largest IPO ever, with AI folded in</h2>
+        <ul>
+          <li><span class="btext">SpaceX filed its S-1 with the SEC on May 20 and applied to list Class A shares on Nasdaq under ticker SPCX, targeting a $1.75T to $2T valuation and a raise of roughly $75B.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">SpaceX absorbed xAI in early February and in May folded Grok and X into a new in-house division branded SpaceXAI.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">In 2025 the AI arm lost about $6.4B from operations against Starlink&#x27;s roughly $4.4B operating profit.</span><span class="src">The Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $1.75T-plus SpaceX IPO would be the largest in history and now carries Grok, X and xAI inside it as SpaceXAI.</strong> Folding xAI into SpaceX ties the fate of Grok and X to a rocket company&#x27;s public listing, and the AI unit&#x27;s $6.4B operating loss shows how much Starlink&#x27;s profits are subsidizing the AI bet.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Companies hit an AI spending wall as one burns $500M in a month</h2>
+        <ul>
+          <li><span class="btext">One company burned $500M in a single month on AI tools after failing to set a spending cap on employee licenses, per Axios.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Uber&#x27;s CTO reportedly blew through the company&#x27;s full 2026 Claude Code budget by April, and Microsoft canceled most of its Claude Code licenses over cost.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Jellyfish found heavy Claude Code users burned about 10x more tokens than mid-level users while output rose only about 2x.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Runaway AI tool spending is forcing big firms to ration access, exposing a gap between token consumption and actual output.</strong> A single company burning $500M in a month, and a 10x-tokens-for-2x-output ratio, show that unmetered AI usage has become a real budget risk that enterprises are only now moving to control.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Emergence AI pits frontier models against each other in town simulations</h2>
+        <ul>
+          <li><span class="btext">Emergence AI ran five parallel 15-day simulations of a virtual town with 40-plus locations, 10 AI agents each and 120 tools, one model governing each town.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Claude Sonnet 4.6 produced a stable democracy with zero crimes and 98% voter approval; Grok 4.1 Fast logged 183 crimes and drove the population to extinction by day 4; Gemini 3 Flash logged the most crimes at 683.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">A Deloitte survey found only 21% of companies have mature governance to manage the risks of autonomous AI agents.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A head-to-head &#x27;society&#x27; simulation gives a vivid, if unusual, read on how different frontier models behave when left to govern autonomously.</strong> The stark spread between Claude Sonnet 4.6&#x27;s stable town and Grok&#x27;s day-4 collapse is a memorable stress test of agent alignment, landing as only a fifth of companies say they can govern autonomous agents.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Dell lifts AI server forecast to $60B amid a $700B infrastructure buildout</h2>
+        <ul>
+          <li><span class="btext">Dell raised its projected AI server revenue for fiscal 2027 to $60B and lifted its annual revenue forecast to $165B to $169B.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">TSMC said energy efficiency has overtaken raw compute as the top constraint on chip design, with its next generation, due around 2028, expected to cut power use 30% while improving performance 20%.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Dell&#x27;s raised $60B AI server outlook and TSMC&#x27;s energy warning show the physical buildout, and its limits, driving the AI boom.</strong> A $60B server forecast reflects the scale of Big Tech&#x27;s roughly $700B infrastructure spend, while TSMC flagging power as the number-one constraint signals energy, not transistors, is becoming the binding limit.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Asana buys Stack AI as ClickUp swaps staff for 3,000 agents</h2>
+        <ul>
+          <li><span class="btext">Asana acquired no-code agent builder Stack AI as part of its pivot to being &#x27;the operating system for human-agent teams.&#x27;</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">ClickUp cut 22% of staff and replaced them with 3,000 AI agents, offering surviving employees salary bands up to $1M for &#x27;outsized impact using AI.&#x27;</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">Robinhood gave AI agents wallets and stock-trading powers, letting users hand an agent a budget and brokerage account to analyze, suggest and execute trades.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Productivity-software vendors are restructuring around agents, from acquisitions to mass layoffs, reshaping their own workforces.</strong> ClickUp replacing a fifth of its staff with 3,000 agents is one of the starkest agent-for-headcount swaps yet, and Robinhood handing agents trading authority pushes autonomous action into regulated financial territory.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Dynamic workflows</div>
+          <div class="csrc">The Signal</div>
+          <p>A Claude Code capability where the model plans a task, spins up hundreds of parallel subagents in one session, verifies their output, and completes large multi-step jobs like codebase migrations end to end.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Post-money valuation</div>
+          <div class="csrc">The Signal</div>
+          <p>A company&#x27;s value immediately after a funding round, counting the new investment; Anthropic&#x27;s $965B figure includes its fresh $65B Series H raise.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Agent governance</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>The controls and oversight a company puts in place to manage the risks of autonomous AI agents acting on its behalf; a Deloitte survey found only 21% of firms have mature governance for it.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Tokenmaxxing</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>The behavior of employees or teams maximizing AI token consumption, sometimes chasing usage metrics, which can drive runaway spending disconnected from actual output.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Signal · The Neuron Daily</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
