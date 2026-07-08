@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, July 8, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, July 8, 2026   ·   Based on July 7 newsletters   ·   22 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Discovers J-Space -- Claude&#x27;s Hidden Internal Reasoning Layer</h2>
+        <ul>
+          <li><span class="btext">Anthropic published &#x27;A Global Workspace in Language Models&#x27; -- J-space is a latent neural workspace that emerged without being explicitly designed. Swapping an internal &#x27;spider&#x27; concept for &#x27;ant&#x27; flipped Claude&#x27;s legs answer from 8 to 6.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">When J-space was deleted, Claude retained factual recall but multi-step reasoning collapsed -- confirming it as the locus of harder thinking. The paper mirrors neuroscience theories of human conscious access.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">J-space representations are never shown on screen but actively steer outputs. The structure can be monitored for AI misbehavior -- a potential safety tool.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The most concrete mechanistic evidence yet of an undesigned, brain-like reasoning structure inside a frontier model.</strong> This shifts the interpretability and safety debate with hard mechanistic proof. Understanding hidden model reasoning is directly relevant to Alteryx&#x27;s AI evangelism narrative and AI training content around how models actually work.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Fable 5 and Mythos 5 Clear US Government Safety Testing -- Global Release Now Live</h2>
+        <ul>
+          <li><span class="btext">US lifted export restrictions on Fable 5 (now cleared for global release) and Mythos 5 (restored for US orgs) after national security safety testing triggered by Trump-era review.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">Anthropic&#x27;s &#x27;Glasswing&#x27; program -- a framework for assessing AI jailbreak risks -- is now a formal public-private partnership condition. Tradeoff: some benign coding prompts are now blocked by enhanced safeguards.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">This establishes a US government process for vetting AI models before global deployment -- a precedent-setting regulatory moment for the industry.</span><span class="src">Human in the Loop</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The first formal US government model clearance process is now live, with Anthropic as the pilot case.</strong> Directly relevant to Alteryx&#x27;s enterprise AI positioning: customers asking about AI governance and model vetting now have a concrete government-approved framework to reference.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Tencent Releases Hy3 Open-Source -- 295B MoE Parameters, Apache 2.0, Free on OpenRouter Through July 21</h2>
+        <ul>
+          <li><span class="btext">Hy3 is a 295B Mixture-of-Experts model with only 21B active parameters per request. Runs on under half the hardware of GLM-5.2. Beats GLM-5.2 on web research and tool use, but GLM-5.2 still wins on coding.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Apache 2.0 license avoids the EU/UK/South Korea regional bans that hit earlier Chinese open-weight releases. Full weights on Hugging Face.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">Dario Amodei said Chinese models are 6-12 months behind frontier. Hy3 does not challenge that timeline but demonstrates significant efficiency gains for enterprise inference cost.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>An open-weight 295B MoE model with Apache 2.0 licensing at near-zero inference cost through July 21.</strong> Efficiency at 7% active parameters per token changes enterprise cost math for agent orchestration. Relevant for Alteryx&#x27;s Designer Cloud AI features and customer ROI conversations.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Considers Offering Trump Administration a 5% AI Stake to Pre-Empt Regulation</h2>
+        <ul>
+          <li><span class="btext">OpenAI reportedly floated giving the Trump administration a 5% stake to align government and corporate interests ahead of anticipated AI regulation.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">The proposal gives the federal government a direct financial interest in OpenAI&#x27;s commercial success -- creating a structural conflict in any future AI oversight role.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">Analysts frame this as OpenAI treating regulatory risk as a top-tier strategic threat, consistent with its broader pattern of preemptive government partnership moves.</span><span class="src">The AI Report</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI may hand the US government a financial stake in its success -- creating unprecedented regulatory conflict of interest.</strong> Sets a precedent that could reshape how all frontier AI labs are regulated. Enterprise customers asking about AI governance and federal AI policy need to understand this dynamic.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>SpaceX Acquires Cursor AI Coding IDE for $60 Billion</h2>
+        <ul>
+          <li><span class="btext">SpaceX is acquiring Cursor for $60B -- raising questions about whether it will remain a neutral platform supporting Anthropic, OpenAI, and Google models.</span><span class="src">The AI Report</span></li>
+          <li><span class="btext">Follows the xAI/SpaceX merger valued at $250B. Combined with the Grok model suite, SpaceX is assembling a vertically integrated AI coding stack.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">If Cursor prioritizes Grok at the expense of Claude/GPT access, enterprise teams using Cursor as a multi-model IDE will face a difficult platform choice.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $60B bet turns Cursor from a neutral coding IDE into a potential SpaceX-AI distribution channel.</strong> If Cursor shifts away from Claude, it changes the recommended AI coding setup for Alteryx workflow automation and technical evangelism.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Illinois Signs First US State Law Requiring Annual AI Safety Audits</h2>
+        <ul>
+          <li><span class="btext">Gov. JB Pritzker signed Illinois HB 3506 -- the first US state law mandating that large AI developers undergo annual third-party safety audits.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Both Anthropic and OpenAI publicly backed the bill -- a notable departure from the industry&#x27;s typical resistance to AI legislation.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">The law applies above a defined capability threshold. Audit standards are still being defined, with the first audits due 2027.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The first binding US AI safety audit law is real -- and both major frontier labs supported it.</strong> This is the regulatory floor. Expect other states to follow. Alteryx enterprise sales conversations about AI governance now have a concrete state-level mandate to cite.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>Apple and Broadcom Extend Custom Chip Partnership Through 2031, AI Servers Targeting 2027</h2>
+        <ul>
+          <li><span class="btext">Apple and Broadcom expanded their ASIC chip partnership through 2031. Apple plans to deploy advanced AI servers built on this silicon as early as 2027.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Apple&#x27;s strategy is to own the compute layer rather than rely on Nvidia or AMD for server-side AI -- a direct challenge to cloud hyperscalers.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Locks in Apple&#x27;s custom AI chip supply chain for 5+ years, putting Apple on a collision course with AWS, Azure, and Google Cloud for on-premise AI workloads.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Apple&#x27;s custom AI server silicon is a confirmed 2027 product -- not a roadmap item.</strong> When enterprise customers evaluate where AI workloads will run in 3 years, Apple-native compute is entering the conversation alongside AWS and Azure.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">J-Space (Global Workspace)</div>
+          <div class="csrc">The Rundown AI / Anthropic Research</div>
+          <p>A latent internal representation layer in language models, analogous to the Global Workspace theory of human consciousness. In Claude, J-space acts as a neural scratchpad for multi-step reasoning -- it exists in the weights, not in chain-of-thought text, and was never explicitly trained to exist.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Mixture-of-Experts (MoE)</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A neural network architecture where only a fraction of the total parameters activate per input token. Tencent&#x27;s Hy3 has 295B total parameters but activates only ~21B per request -- achieving the quality of a large model at the inference cost of a small one.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AI Safety Audit</div>
+          <div class="csrc">The Rundown AI</div>
+          <p>A structured third-party evaluation of an AI system&#x27;s risks, misuse potential, and safety controls. Illinois HB 3506 requires annual audits for large AI developers -- the first US law to mandate this, setting the template other states may adopt.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Rundown AI · The AI Report · TLDR AI · Alpha Signal · Human in the Loop · Mindstream</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
