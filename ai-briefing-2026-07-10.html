@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday, July 10, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday, July 10, 2026   ·   Based on July 9 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>GPT-Live Brings Full-Duplex Voice — Interruptions, Live Translation, No More Turn-Taking</h2>
+        <ul>
+          <li><span class="btext">OpenAI launched GPT-Live with a full-duplex architecture: the model listens and speaks simultaneously, enabling natural interruptions, filler acknowledgments (&#x27;mhmm&#x27;), and pauses without dropping context.</span><span class="src">TLDR AI / The Neuron</span></li>
+          <li><span class="btext">GPT-Live-1 rolls out to Go, Plus, and Pro users; GPT-Live-1 mini goes to free users. For hard queries requiring web search or reasoning, the model silently hands off to GPT-5.5 in the background and keeps the conversation going.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Available now on iOS, Android, and ChatGPT.com; works with search, memory, and visual widgets. API access coming soon. Business and Enterprise tiers excluded at launch.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Voice is crossing from novelty to actual interface.</strong> Real-time translation, live tutoring, and interview prep all become practical when the AI can hear you without waiting for a pause. If voice latency disappears, the surface area for AI in daily life expands dramatically.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Grok 4.5 Launches as SpaceXAI&#x27;s Coding Flagship, Trained Alongside Cursor</h2>
+        <ul>
+          <li><span class="btext">SpaceXAI released Grok 4.5 as its strongest model for coding, agentic tasks, and knowledge work. The model was co-developed alongside Cursor, which SpaceX acquired in June.</span><span class="src">TLDR AI / The Neuron</span></li>
+          <li><span class="btext">Grok 4.5 is priced at $2 per million input tokens and $6 per million output tokens via API. Free trial access available in Grok Build for a limited time.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Cursor acquisition is now paying off in model quality.</strong> Training on real developer workflows gives Grok 4.5 a data advantage for coding tasks. The tight SpaceX/Cursor loop could make this a serious competitor to Claude Code and Copilot for agentic dev work.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Managed Agents Hit 96% of Frontier Performance at 46% of the Cost</h2>
+        <ul>
+          <li><span class="btext">Anthropic published two multi-agent cost patterns. Advisor pattern: Sonnet 5 handles all work and calls Fable 5 only at key decision points — scores 92% of Fable 5 on SWE-bench Pro at 63% of the cost.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">Orchestrator pattern: Fable 5 plans the task, Sonnet 5 workers execute in parallel — reaches 96% of Fable 5&#x27;s performance at 46% of the price. Real example: verifying 20 facts cost $1.61 vs. $4.00 solo.</span><span class="src">AlphaSignal / The Neuron</span></li>
+          <li><span class="btext">Each sub-agent maintains its own prompt cache, so repeated context is not billed twice. Working code for both patterns is in the Claude Cookbooks repo.</span><span class="src">AlphaSignal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Running Fable 5 on every token is now wasteful by design.</strong> For anyone building production Claude agents, switching to the Orchestrator or Advisor pattern should be the immediate next step. The 46%-cost result on BrowseComp is the headline, but the per-agent caching bonus compounds on long workflows.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>OpenAI Audits SWE-Bench Pro, Finds 27.4% of Tasks Broken — Retracts Recommendation</h2>
+        <ul>
+          <li><span class="btext">OpenAI examined SWE-Bench Pro&#x27;s task set and flagged 200 tasks (27.4%) as broken; human reviewers found issues in 249 tasks (34.1%). Problems include hidden requirements, contradictory instructions, and tests that reject valid code.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Frontier model scores on the benchmark surged from 23.3% to 80.3% in just eight months — a pace that now looks inflated. The benchmark hit a 70% noise ceiling where broken tasks, not model quality, drive the ceiling.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">OpenAI has formally retracted its recommendation to use SWE-Bench Pro as a coding evaluation. Better benchmarks are in development.</span><span class="src">AlphaSignal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The benchmark we used to rank AI coding progress just snapped in half.</strong> Any claims about coding model superiority that cite SWE-Bench Pro scores from the past eight months should be treated skeptically. More rigorous evaluation standards are coming, but in the interim the leaderboard is unreliable.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Prime Intellect Raises $130M at $1B Valuation to Build Open Frontier Model Training Stack</h2>
+        <ul>
+          <li><span class="btext">Prime Intellect closed a $130M round at a $1B valuation. The company&#x27;s mission is to build an open stack that lets organizations train their own agentic and frontier-scale models.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">The raise comes as enterprise frustration with proprietary model dependencies grows. Prime Intellect targets teams that want frontier-class capability without vendor lock-in.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A $1B bet that open infrastructure wins the agentic era.</strong> As enterprises hit spending caps and governance concerns around closed models grow, the appetite for &#x27;train your own&#x27; frontier infrastructure is real. Prime Intellect joining the $1B valuation club signals investors agree.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Commits $50B to US Data Center Build-Out — Texas and New York First</h2>
+        <ul>
+          <li><span class="btext">Anthropic announced a $50B commitment to new U.S. data centers, citing surging Claude demand. Custom facilities are planned in Texas and New York, built in partnership with Fluidstack.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">The announcement accompanies accelerating Claude usage across enterprise and consumer tiers. Anthropic is competing directly with OpenAI and Google on infrastructure capacity as a strategic differentiator.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is treating compute infrastructure as a competitive moat.</strong> A $50B infrastructure commitment signals Anthropic expects demand to compound well past current capacity. For enterprise customers, this is a reliability signal — Anthropic is building for scale, not just model quality.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Nvidia Loses Roughly $1 Trillion in Market Cap in Under Two Months</h2>
+        <ul>
+          <li><span class="btext">Nvidia shed approximately $1T in market value in fewer than two months, dragging its valuation back to pre-AI-boom levels according to Bloomberg data.</span><span class="src">The Neuron Daily</span></li>
+          <li><span class="btext">The drop coincides with AI companies accelerating their shift toward custom chips, while fab, memory, and packaging bottlenecks continue to constrain the broader AI hardware supply chain.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The Nvidia premium is correcting as the custom-chip era begins.</strong> Hyperscalers (Google, Amazon, Microsoft) and model labs (Anthropic, OpenAI) are all investing in custom silicon, reducing long-term dependence on Nvidia GPUs. The correction may reflect markets pricing in a more competitive hardware landscape rather than a slowdown in AI spend.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Full-duplex voice</div>
+          <div class="csrc">TLDR AI / The Deep View</div>
+          <p>A voice architecture where a model can listen and speak at the same time — like a phone call rather than a walkie-talkie. Eliminates the awkward turn-taking pause of previous voice assistants and enables real-time interruption, live translation, and continuous conversation flow.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Claude Managed Agents</div>
+          <div class="csrc">AlphaSignal</div>
+          <p>Anthropic&#x27;s framework for running multi-agent workflows where Fable 5 orchestrates and cheaper submodels (Sonnet 5) execute tasks. Each sub-agent maintains its own prompt cache, cutting repeated-context billing. Enables near-frontier quality at significantly lower cost per task.</p>
+        </div>
+        <div class="concept">
+          <div class="term">SWE-Bench Pro noise ceiling</div>
+          <div class="csrc">AlphaSignal / TLDR AI</div>
+          <p>The point at which a benchmark&#x27;s broken or ambiguous tasks set a hard upper bound on scores regardless of model quality. OpenAI&#x27;s audit found SWE-Bench Pro hits this ceiling around 70%, meaning frontier models may score near 70% even if every solvable task is solved correctly — making rankings above that level unreliable.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Orchestrator pattern</div>
+          <div class="csrc">AlphaSignal</div>
+          <p>A multi-agent design where a capable (expensive) model plans and delegates, while cheaper worker models run tasks in parallel. Anthropic&#x27;s implementation reaches 96% of Fable 5&#x27;s solo performance at 46% of the cost by having Fable 5 orchestrate and Sonnet 5 workers execute.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: TLDR AI · The Neuron Daily · AlphaSignal · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
