@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday, July 12, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday, July 12, 2026   ·   Based on July 11 newsletters   ·   2 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Apple Files Suit Against OpenAI, Alleging Trade Secret Theft</h2>
+        <ul>
+          <li><span class="btext">Apple sued OpenAI in federal court, alleging staff including ex-Apple VP Tang Tan coached candidates to share confidential hardware secrets.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">One employee allegedly stole an Apple laptop; OpenAI denies wrongdoing and says it focuses on innovation.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">The partnership that brought ChatGPT to iPhones in 2024 soured after OpenAI acquired Jony Ive&#x27;s hardware startup.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">Apple is now shifting its next-generation Siri to Google&#x27;s Gemini rather than OpenAI technology.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The lawsuit adds substantial legal and reputational risk to OpenAI&#x27;s historic IPO preparation.</strong> A trade secret case from Apple — one of the world&#x27;s most litigious and secretive hardware companies — is not a routine dispute. If the allegations hold, they could trigger injunctions that constrain OpenAI&#x27;s hardware ambitions and signal that the era of easy AI platform partnerships is over.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Code Becomes a Full Desktop Workspace With Parallel Sessions and Remote Tasks</h2>
+        <ul>
+          <li><span class="btext">Anthropic expanded Claude Code inside the desktop app with parallel sessions, isolated Git worktrees, an integrated terminal and file editor, and visual diff review.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">New capabilities include app previews, computer use integration, and remote tasks that continue running after the user closes the desktop app.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI coding tools are moving from terminal assistants to complete development environments where agents can build, test, review, and ship software alongside developers.</strong> The addition of persistent remote tasks is particularly significant — work no longer pauses when you close the IDE. Combined with Git worktrees and visual diff review, Claude Code is now closer to a parallel engineering team than a smart autocomplete.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Offers $50K to Researchers Who Can Break Its Biosafety Guardrails</h2>
+        <ul>
+          <li><span class="btext">OpenAI expanded its Bio Bounty Program, paying up to $50,000 for universal jailbreaks that defeat biosafety protections in GPT-5.6 and GPT-5.5.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">The program invites outside security researchers to find failure modes before bad actors do, moving AI safety testing from internal red-teaming to external bounty hunting.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI safety is evolving from internal testing to structured adversarial programs modeled on cybersecurity bug bounties.</strong> Paying $50K for biosafety exploits acknowledges that internal red teams have blind spots. The program also implicitly confirms that biosafety in frontier models is still an unsolved problem — the question is who finds the gaps first.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta Disables Instagram AI Feature That Generated Deepfakes From Public Accounts</h2>
+        <ul>
+          <li><span class="btext">Meta launched and then quickly removed an AI tool allowing users to generate images by tagging any public Instagram account, with only an opt-out rather than opt-in consent.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">Advocacy groups warned of sextortion and likeness exploitation risks; the Screen Actors Guild advised all members to opt out before Meta pulled the feature entirely.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta&#x27;s rapid reversal shows that AI product teams are shipping features whose consent model is legally and ethically untenable in the current regulatory climate.</strong> An opt-out default for generating synthetic images of real people is the kind of design choice that produces congressional hearings. The speed of removal — before any regulator acted — suggests Meta&#x27;s own legal team flagged the exposure.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Will Automatically Label AI-Generated Ads Across Search, YouTube, and Discover</h2>
+        <ul>
+          <li><span class="btext">Google will now apply &quot;created or edited with AI&quot; disclosures to ads made with its generative AI tools, visible in Search, Discover, and YouTube via the ad info button.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">Labels are automatic for Google&#x27;s own AI tools; advertisers using third-party AI must disclose manually, following Meta&#x27;s existing &quot;AI info&quot; label approach.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The ad industry is moving toward mandatory disclosure of AI-generated creative, with Google and Meta now both labeling synthetic ad content.</strong> Automatic labeling for first-party tools is a significant step, but the manual-disclosure gap for third-party AI creates an uneven playing field. Regulators in the EU and FTC are watching — expect mandatory third-party disclosure to follow.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>McKinsey: US Data Center Investment Up 200% Since 2022 While China Adds $4.4T in Productive Assets Per Year</h2>
+        <ul>
+          <li><span class="btext">US data center investment has roughly doubled since late 2022, but non-AI capital spending is mostly flat — AI infrastructure is now the primary driver of US capacity growth.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">China is adding approximately $4.4 trillion in net productive assets annually, about four times the US rate, with investment spread across manufacturing, energy, and infrastructure — not just AI.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The US is winning the AI data center race but losing the broader productive-capacity race to China.</strong> Concentrating capital formation in AI infrastructure while non-AI investment stagnates is a strategic bet that AI productivity gains compensate for gaps elsewhere. McKinsey&#x27;s numbers suggest that bet is not yet reflected in aggregate output — and that China&#x27;s diversified investment approach may compound over the next decade in ways the current AI boom does not offset.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Cerebras Runs Solar 31B at 2,000 Tokens Per Second in Partnership With Upstage</h2>
+        <ul>
+          <li><span class="btext">Cerebras partnered with Korean AI company Upstage to serve Solar 31B at speeds up to 2,000 tokens per second, including deep-research tasks spanning hundreds of sources.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">The deployment demonstrates that inference speed — not just model capability — is becoming a competitive differentiator as agentic workflows run for hours at a time.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI inference competition is shifting from &quot;can the model do it?&quot; to &quot;how fast can it finish complex multi-step work?&quot;</strong> 2,000 tokens per second is fast enough to make real-time agentic reasoning feel instantaneous to the user. As ChatGPT Work and similar agents run for hours autonomously, the models that can iterate fastest within a budget window will win the agentic layer — and Cerebras&#x27;s wafer-scale approach may have a structural advantage here.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Bio Bounty Program</div>
+          <div class="csrc">AI Entrepreneurs</div>
+          <p>A structured security program where AI labs pay external researchers cash rewards to find exploits in biosafety guardrails — modeled on cybersecurity bug bounties — before adversarial actors discover and weaponize them.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Persistent Remote Tasks</div>
+          <div class="csrc">AI Entrepreneurs</div>
+          <p>A coding agent capability where long-running AI tasks execute on remote compute and continue after the user&#x27;s local application is closed, enabling asynchronous autonomous development work.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Wafer-Scale Inference</div>
+          <div class="csrc">AI Entrepreneurs</div>
+          <p>An approach to AI inference hardware where an entire silicon wafer functions as a single large chip (as in Cerebras&#x27;s architecture), enabling significantly higher memory bandwidth and inter-core communication speeds than conventional GPU clusters.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: BrainBuzz · AI Entrepreneurs</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
