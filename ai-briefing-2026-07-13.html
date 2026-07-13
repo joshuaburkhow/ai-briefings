@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday, July 13, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday, July 13, 2026   ·   Based on July 12 newsletters   ·   4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Fable 5 Free Access Extended Until July 19</h2>
+        <ul>
+          <li><span class="btext">Anthropic is keeping Claude Fable 5 — its most powerful model — free for all Claude users through July 19, extending the trial window beyond the original launch period.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">The extension lands during the week when OpenAI&#x27;s GPT-5.6 Sol is gaining traction, positioning Fable 5 as directly available to anyone evaluating frontier models.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is using free access to its most capable model as a competitive counter during the highest-stakes model comparison window of 2026.</strong> Giving away frontier access is costly but strategically logical: users who build workflows on Fable 5 during the free window are far more likely to convert and stay than users who never experience the top tier. The timing directly targets undecided teams weighing GPT-5.6 against Claude.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI&#x27;s Head of Safety Departs — Second Senior Safety Exit in Weeks</h2>
+        <ul>
+          <li><span class="btext">OpenAI&#x27;s Head of Safety is leaving the company, the second departure of a senior safety-focused leader in a short period.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">The exit follows concerns over how OpenAI balances commercial acceleration with its stated safety commitments as it moves toward IPO.</span><span class="src">BrainBuzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A pattern of safety leadership exits at OpenAI signals internal tension between the pace of product deployment and the organization&#x27;s original safety culture.</strong> Individual departures can be coincidental; two in rapid succession is a trend. Investors, regulators, and enterprise customers paying attention to AI governance now have a data point about how OpenAI is prioritizing safety talent at a critical growth phase.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Expanding Into Family-Focused AI Features With Dedicated Hiring Push</h2>
+        <ul>
+          <li><span class="btext">OpenAI is actively recruiting for family-oriented AI product roles, signaling a deliberate expansion into household and parenting use cases beyond professional productivity.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The move broadens OpenAI&#x27;s addressable market from knowledge workers and developers toward mass-market consumer segments.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is running a two-track strategy: maintaining frontier technical leadership while simultaneously pursuing mass consumer adoption through family-oriented features.</strong> Family use cases — homework help, parenting support, household management — have a very different trust and safety profile than enterprise software. Entering this segment requires different guardrails, different UX design, and different regulatory exposure than OpenAI&#x27;s current product surface.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Multi-Model Routing Emerges as the Essential Middleware for Production AI</h2>
+        <ul>
+          <li><span class="btext">Routing every request to frontier models like Claude Fable 5 or GPT-5.6 creates cost and latency bottlenecks; open-weight models (GLM-5.2, DeepSeek-v4, Kimi-K2.7) can handle 70-80% of routine workloads at a fraction of the price.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Four routing architectures: heuristic rules (regex matching), learned classifiers (embedding-based intent), cascades (cheap model first, escalate on failure), and ensembles (run multiple, synthesize results).</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">OpenRouter Fusion scored 64.7% on Perplexity&#x27;s DRACO benchmark using a budget panel — beating standalone GPT-5.5 (60%) and Claude Opus 4.8 (58.8%) at roughly half the token cost.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">NadirClaw, an open-source router, cuts raw API bills up to 70% by routing 60-70% of developer prompts (file reads, formatting) via a 10ms embedding classifier.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Production AI engineering is now about orchestrating model ecosystems intelligently — the teams winning on cost and latency are the ones who route, not those who just pick the best single model.</strong> This is the shift from &#x27;which model do I use?&#x27; to &#x27;how do I route between models?&#x27; The gap between a naive single-model stack and a well-tuned router can be 50-70% in cost and meaningful in quality. For teams at scale, routing is becoming table stakes.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI Scribes Risk Dulling Clinical Judgment, Not Just Recording It</h2>
+        <ul>
+          <li><span class="btext">Every.to reports that AI scribes — tools that automatically transcribe and document doctor-patient conversations — may reduce physicians&#x27; active mental engagement with cases during visits.</span><span class="src">Every.to</span></li>
+          <li><span class="btext">Concern: when documentation is handled by AI, doctors may stop synthesizing patient information in real-time, trading active reasoning for passive narration.</span><span class="src">Every.to</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Automating knowledge work documentation may create hidden cognitive costs that only become visible when the safety net is removed.</strong> The pattern generalizes far beyond medicine: any knowledge domain where AI takes over documentation creates the risk that practitioners stop building the mental models the documentation was helping them form. The efficiency gain is real; the judgment atrophy is slower and harder to measure.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Grok 4.5 Practical Assessment: Genuine Coding Strength, Uneven Elsewhere</h2>
+        <ul>
+          <li><span class="btext">Every.to&#x27;s mini-Vibe Check of Grok 4.5 finds it delivers genuinely strong results on coding tasks, consistent with its co-development alongside Cursor following the SpaceX acquisition.</span><span class="src">Every.to</span></li>
+          <li><span class="btext">Performance is more variable on open-ended reasoning, creative writing, and tasks requiring contextual nuance — areas where Claude and GPT-5.6 maintain clearer leads.</span><span class="src">Every.to</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Grok 4.5 establishes SpaceXAI as a credible coding model competitor without yet threatening the general-purpose frontier leaders.</strong> Cursor&#x27;s 60B acquisition price makes more sense when you see the result: a model trained specifically on code-generation workflows that performs at the top tier for its target use case. The playbook of building domain-specific frontier capability is now proven — expect more specialized model families targeting high-value professional workflows.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Model Router</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>An intelligent proxy layer that intercepts LLM requests and dispatches each one to the optimal model based on cost budget, latency requirements, and task complexity — rather than routing all requests to a single frontier model.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Cascade Routing</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>A model routing pattern that starts with a low-cost model and escalates to a premium model only when the cheap model&#x27;s output fails a verification check (e.g., invalid JSON, failed unit test). Preserves accuracy for edge cases while dramatically reducing average cost.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Clinical Judgment Atrophy</div>
+          <div class="csrc">Every.to</div>
+          <p>The risk that automating cognitive support tasks — such as documentation or transcription — gradually reduces practitioners&#x27; capacity to perform those cognitive tasks themselves, because the mental exercise that maintained the skill is no longer required.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: BrainBuzz · The Neuron · Alpha Signal · Every.to</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
