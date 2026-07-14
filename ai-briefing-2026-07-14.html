@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday · July 14, 2026  ·  Based on July 13 newsletters  ·  12 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Fable 5 Briefly Pulled After Amazon Found Cyber Safeguard Bypass; Returned July 1 With New Classifiers</h2>
+        <ul>
+          <li><span class="btext">Fable 5 was pulled from the market 3 days after its June 9 launch after Amazon researchers discovered a method to bypass its cyber safeguards; the US government applied export controls while Anthropic took the model offline.</span><span class="src">Human in the Loop</span></li>
+          <li><span class="btext">Anthropic added new safety classifiers and redeployed Fable 5 on July 1; benchmark results show it at 80.3% vs GPT-5.5&#x27;s 58.6% on Anthropic&#x27;s internal suite, though OpenAI points to Terminal-Bench where GPT-5.6 scores higher.</span><span class="src">Human in the Loop</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A frontier model being pulled from the market over a safety exploit is no longer hypothetical — it happened.</strong> Amazon&#x27;s researchers found the bypass before any public adversary did — this time. The export controls, new classifiers, and staged return demonstrate that the US government and AI labs now have a live safety-recall loop. The question is how many such incidents the ecosystem absorbs before mandatory frameworks arrive.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Shuts Down New AI Image Generator Within 72 Hours Over Consent Failure on Public Instagram Profiles</h2>
+        <ul>
+          <li><span class="btext">OpenAI launched an AI image generator that could create likenesses of real people from their public Instagram profiles — with opt-out default consent, meaning every public account was included unless the person actively removed themselves.</span><span class="src">Your Everyday AI</span></li>
+          <li><span class="btext">The feature was pulled within 72 hours after public backlash; per Reuters, the complaint was the absence of affirmative consent for generating synthetic images of real people from passively public accounts.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Opt-out consent for synthetic image generation of real people is legally and ethically untenable — and OpenAI now knows it from direct experience.</strong> This is OpenAI&#x27;s second rapid-reversal product launch in 2026. The pattern is consistent: launch with passive consent, face public and legal pressure, retract before any regulator acts. Eventually a regulator will move faster than the retraction — and the default-public-profile approach will be the example in the enforcement action.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Removes 5-Hour Session Cap for Plus, Business, and Pro — Timed to ChatGPT Work&#x27;s Launch</h2>
+        <ul>
+          <li><span class="btext">OpenAI removed the 5-hour usage cap that had limited extended ChatGPT sessions for Plus, Business, and Pro subscribers, timing the change to coincide with ChatGPT Work&#x27;s launch for long-running autonomous agent tasks.</span><span class="src">Your Everyday AI</span></li>
+          <li><span class="btext">The removal directly mirrors Anthropic&#x27;s reset of all five-hour and weekly usage caps across Claude the prior week — the two companies are now matching each other&#x27;s unlimited-access moves in near real time.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Session limits are no longer acceptable infrastructure for agentic AI workflows that run for hours.</strong> When both OpenAI and Anthropic remove usage caps within days of each other, it signals a structural shift: the competitive benchmark is no longer how much context a model can hold, but how long it can run uninterrupted. Agents that have to stop and restart lose state, lose context, and lose trust.</p>
+        </div>
+      </article>
+      <article class="story cat-4">
+        <div class="tag">DEEPSEEK</div>
+        <h2>DeepSeek Cuts API Prices 75% — But Agentic Workflows Consume Tokens at 100x Scale, Breaking Enterprise Economics</h2>
+        <ul>
+          <li><span class="btext">DeepSeek cut its model API prices by 75%, making it the cheapest major inference endpoint — but enterprises running agentic workflows report token consumption at roughly 100x the rate of single-turn queries, erasing the savings entirely.</span><span class="src">BrainBuzz</span></li>
+          <li><span class="btext">The &#x27;100x token problem&#x27; is forcing enterprises to rethink AI unit economics: per-query SaaS pricing collapses when agents loop autonomously for hours, and even a 75% price cut cannot offset 100x usage expansion in production agentic systems.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Cheap inference and expensive outcomes are not contradictions — they are the default state of production agentic AI.</strong> The real cost of agentic AI is not the per-token rate; it is the total tokens generated per task. A 75% price cut on a 100x usage multiplier produces a 25x cost increase — and that math is landing on enterprise budgets right now, quietly. The companies that solve this through architecture (caching, routing, task decomposition) will hold a durable cost advantage over those relying on sticker-price comparisons.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>&quot;We Must Act Now&quot;: 200+ Economists and AI Researchers Including 16 Nobel Laureates Warn of AI Economic Disruption</h2>
+        <ul>
+          <li><span class="btext">Over 200 signatories — including 16 Nobel laureates and researchers from OpenAI, Anthropic, and Google — published &#x27;We Must Act Now&#x27; (wemustactnow.ai), warning AI could transform the economy faster than the Industrial Revolution while giving society less time to adapt.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">The statement does not call for slowing AI development; it calls for deeper institutional research into distributional effects, restructured incentives, and proactive policy frameworks before large-scale job displacement outpaces social adaptation.</span><span class="src">Turing Post</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>When the people building AI and the economists measuring its effects sign the same document, the concern crosses from advocacy to institutional consensus.</strong> The signatories include people actively building these systems and economists who study labor markets — a combination that is harder to dismiss than either group alone. The statement&#x27;s framing is significant: it does not oppose AI, it demands preparation. This positions it as a wedge in the debate, separating responsible acceleration from the position that all economic concern is technophobia.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Big Tech Borrowed $350 Billion Over Five Years to Fund AI Infrastructure — Largest Corporate Tech Debt Buildout in History</h2>
+        <ul>
+          <li><span class="btext">Alphabet, Amazon, Meta, Microsoft, and Oracle collectively added approximately $350 billion in net debt over five years, primarily to fund AI data center expansion — the largest corporate debt-financed technology buildout ever recorded, per Bloomberg.</span><span class="src">Your Everyday AI</span></li>
+          <li><span class="btext">The underlying bet is that AI productivity gains will compound faster than interest payments; non-AI capital investment at most of these companies has remained flat over the same period, concentrating risk in a single technology category.</span><span class="src">Your Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The AI infrastructure arms race is now a balance-sheet story: $350 billion in new debt financing productivity gains that have not yet been measured at scale.</strong> The parallel to the 2000 fiber-optic overbuild is imperfect but instructive. Then, as now, the infrastructure was real and the belief in adoption was rational — what was wrong was the timeline and the distribution of who captured the value. The difference this time is that the five companies betting are also the ones most likely to capture it. But $350 billion in aggregate new debt with flat non-AI capex leaves limited buffer if AI productivity gains prove slower to materialize than the interest clock.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">100x Token Problem</div>
+          <div class="csrc">BrainBuzz / AI Breakfast</div>
+          <p>The phenomenon where agentic AI workflows — agents looping, calling tools, re-reading context, retrying — consume tokens at roughly 100 times the rate of a single-turn query, making per-token pricing an unreliable proxy for actual AI infrastructure cost in production.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Cyber Safeguard Bypass</div>
+          <div class="csrc">Human in the Loop</div>
+          <p>A jailbreak targeting an AI model&#x27;s safety controls around cybersecurity tasks specifically — distinct from general content policy violations. The Amazon-discovered bypass in Fable 5 was severe enough to trigger US export controls on the model pending Anthropic&#x27;s remediation.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Terminal-Bench</div>
+          <div class="csrc">Human in the Loop</div>
+          <p>A benchmark suite testing AI agents on long-horizon terminal tasks with dense reward-based grading. Unlike single-shot coding tests, it measures sustained autonomous operation across multi-step command-line workflows — the battleground both OpenAI and Anthropic now cite for competing benchmark claims.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Human in the Loop · Your Everyday AI · AI Breakfast · BrainBuzz · Turing Post · TLDR AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
