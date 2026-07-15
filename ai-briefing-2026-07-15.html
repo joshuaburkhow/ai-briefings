@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday · July 15, 2026  ·  Based on July 14 newsletters  ·  12 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Grok Build CLI Found Silently Uploading Full Git Repositories to xAI Cloud Buckets</h2>
+        <ul>
+          <li><span class="btext">Security researcher confirmed xAI&#x27;s Grok Build CLI uploads entire repos verbatim and unredacted to a Google Cloud Storage bucket — including untracked files and full commit history; in one test 5.1 GB left the repository even though the coding task required only ~192 KB.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Disabling the &#x27;Improve the model&#x27; privacy setting did not stop the uploads; xAI deployed a silent server-side fix the following day with no security advisory and no statement on whether already-uploaded data would be deleted.</span><span class="src">Your Everyday AI</span></li>
+          <li><span class="btext">SpaceXAI then tweeted &#x27;We care deeply about your privacy&#x27; and shipped a /privacy deletion command — prompting immediate industry ridicule given the prior silence.</span><span class="src">GenAI.works</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Every developer organization using Grok Build has potentially already sent their entire codebase — credentials, commit history, and all — to xAI servers without knowing it.</strong> The exfiltration continued regardless of privacy settings, meaning the consent toggle was essentially decorative. The concern is not only model training: proprietary business logic, API keys, and unreleased product code may now sit in a cloud bucket controlled by a direct AI-race competitor. Security teams should treat any AI CLI tool as a potential data conduit and audit network traffic before deployment.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Study of 309K Conversations Finds Claude Has 3,307 Values That Vary by Language in Unintended Ways</h2>
+        <ul>
+          <li><span class="btext">Anthropic analyzed 309,815 real Claude conversations across three models and 20 languages, cataloguing 3,307 distinct values and mapping them onto four behavioral axes: warmth vs. rigor, candor vs. execution, depth vs. brevity, and deference vs. caution.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">Model versions diverge sharply: Sonnet 4.6 skews warm and brief; Opus 4.7 skews cautious and willing to challenge users unprompted on risks they didn&#x27;t ask about.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Language consistently shapes responses — Hindi and Arabic conversations yield warmer, more encouraging replies; English and Russian conversations yield more analytical, risk-flagging outputs for the same underlying question; Anthropic&#x27;s own report states the values &#x27;vary in ways we didn&#x27;t deliberately choose&#x27; and the company does not yet know why.</span><span class="src">GenAI.works</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic&#x27;s own research reveals that the same Claude model gives meaningfully different professional advice depending on what language you ask in — a finding the company admits it cannot yet explain or control.</strong> The study has direct implications for multinational enterprise deployments: a global team querying Claude in different languages may receive inconsistent risk assessments, warmth levels, and willingness to challenge flawed assumptions. The four-axis behavioral framework Anthropic developed is now their primary tool for catching unintended value drift before future models ship — signaling that alignment is a moving target that varies not just by model version but by language context.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>26 Meta Employees Sue Alleging AI Monitoring System Targeted Protected-Leave Workers for Layoffs</h2>
+        <ul>
+          <li><span class="btext">Twenty-six current and former Meta employees filed suit alleging Meta used AI-driven performance monitoring to select workers for a recent 10% workforce reduction, with the complaint specifically targeting employees who took protected medical, family, disability, or pregnancy-related leave.</span><span class="src">Your Everyday AI</span></li>
+          <li><span class="btext">The allegation: the AI performance system weighed productivity data without adjusting for legally protected time away, producing discriminatory output not through deliberate intent but through unexamined training assumptions.</span><span class="src">Your Everyday AI</span></li>
+          <li><span class="btext">If courts find the AI constitutes unlawful discrimination, enterprises across industries would be required to audit fairness assumptions in their workforce analytics tools — a precedent with industry-wide implications.</span><span class="src">Your Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The suit sets up a direct legal test of whether AI-assisted HR decisions violate employment protection laws when the model has no mechanism to account for legally protected absences.</strong> AI-driven performance management is now widespread across enterprise HR, and the datasets these systems train on rarely flag legally protected time off as a confounding variable. Meta&#x27;s case is likely the first of many: a ruling against the company could force a broad audit of how AI performance scores interact with FMLA, ADA, and comparable leave protections globally.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Nous Research Raises $75M at $1.5B Valuation for Hermes Enterprise AI Agent Platform</h2>
+        <ul>
+          <li><span class="btext">Nous Research, maker of the Hermes AI agent platform for complex enterprise workflows, is raising at least $75 million at a $1.5 billion valuation — achieving unicorn status.</span><span class="src">MyClaw</span></li>
+          <li><span class="btext">The round is led by Robot Ventures with participation from Union Square Ventures; the raise signals institutional investors are now placing large bets on agent orchestration infrastructure as the durable moat above the volatile foundation-model layer.</span><span class="src">MyClaw</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Nous Research&#x27;s unicorn raise signals that enterprise AI investment is shifting from foundation models to purpose-built agent orchestration platforms designed to outlast model churn.</strong> The Hermes platform bets that enterprises need a stable coordination layer above the constantly changing model landscape — one that routes tasks, maintains state, and integrates with existing business systems without rebuilding whenever a new model ships. Robot Ventures and Union Square Ventures backing at $1.5B suggests the agent infrastructure category is consolidating around a small number of production-ready platforms.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Satya Nadella Warns Enterprises Are Paying for AI Twice — in Money and in Leaked Trade Secrets</h2>
+        <ul>
+          <li><span class="btext">Microsoft CEO Satya Nadella coined the &#x27;Reverse Information Paradox&#x27;: companies pay for AI in cash, then pay again by feeding proprietary prompts, corrections, and evals to model vendors who can use that behavioral exhaust to learn how the business operates.</span><span class="src">GenAI.works</span></li>
+          <li><span class="btext">His direct quote: &#x27;It&#x27;s the kind of knowledge a competitor could never buy, and the kind that leaks almost imperceptibly: trace by trace, correction by correction, eval by eval&#x27; — with Nadella&#x27;s prescribed solution mapping directly to Microsoft Azure AI Foundry products.</span><span class="src">AI Secret</span></li>
+          <li><span class="btext">Databricks argued the same day that AI should be priced by task-completion cost rather than token price, because a cheaper model that fails more often destroys total value — a direct counter to per-token pricing comparisons.</span><span class="src">AI Secret</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Nadella&#x27;s essay is a strategic shot across the bow at OpenAI and Anthropic — and a tacit admission that enterprise AI adoption creates a data-liability risk most organizations haven&#x27;t modeled.</strong> Every AI interaction containing proprietary context — customer data, competitive strategy, internal processes — potentially teaches the model provider how a business works. The practical prescription for enterprises is to distinguish between third-party model API calls (high leakage risk) and inference on privately deployed or edge-hosted models (low leakage risk), and to treat prompt design as a data-governance decision.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Perplexity Computer Agent Gains Persistent Cross-Task Memory, Claude Fable 5 Orchestration, and One-Click Website Publishing</h2>
+        <ul>
+          <li><span class="btext">Perplexity&#x27;s Computer agent now maintains persistent, source-linked memory across separate task sessions — lessons, files, and prior decisions carry forward automatically without re-prompting.</span><span class="src">Your Everyday AI</span></li>
+          <li><span class="btext">The update added Claude Opus 4.8 and Claude Fable 5 as orchestrator options; users can switch the orchestrator model midway through a task already in progress; computer-built websites can now be published to Perplexity-hosted URLs or Vercel in one click.</span><span class="src">Your Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Perplexity&#x27;s Computer agent is evolving from a single-session task runner into a persistent AI co-worker that learns and accumulates context across every interaction.</strong> Persistent cross-session memory is the most strategically significant feature: it removes the re-briefing overhead that makes AI agents impractical for ongoing business workflows. The ability to swap orchestrator models mid-task — escalating from faster to more capable models as complexity increases — signals where agent platforms are heading: heterogeneous model routing baked into the product rather than left for users to configure.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Tsinghua&#x27;s Task Graph Method Makes 8B Llama Beat GPT-4 on Agent Benchmarks — No Extra Training Required</h2>
+        <ul>
+          <li><span class="btext">Tsinghua University researchers used a task graph decomposition method to enable an 8B Llama model to outperform GPT-4 on agentic benchmarks with zero additional model training.</span><span class="src">Alpha Signal</span></li>
+          <li><span class="btext">The approach breaks complex multi-step tasks into structured sub-graphs matched to a smaller model&#x27;s working-memory capacity, eliminating the context overload that causes compact models to fail on long-horizon tasks — &#x27;architecture beats size&#x27; with immediate applicability to existing open-source models.</span><span class="src">Alpha Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A Tsinghua team demonstrated that reaching GPT-4-level agent performance doesn&#x27;t require GPT-4 — it requires smarter task structure, which costs nothing to implement.</strong> The practical implication is significant cost compression: if task graph methods can be packaged into agent frameworks, organizations could route most workloads to small, locally-deployable models while reserving expensive frontier API calls for the minority of tasks that genuinely require them. The no-retraining requirement means the method applies to existing open-source models immediately.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>FDA Clears Zeta Surgical AI Robot That Maintains Precise TMS Coil Alignment During Depression Treatment Sessions</h2>
+        <ul>
+          <li><span class="btext">Zeta Surgical received FDA 510(k) clearance for its AI-guided robot designed to position and stabilize the transcranial magnetic stimulation (TMS) coil during therapy sessions for treatment-resistant depression — tracking patient head movement in real time to keep the coil aligned throughout treatment.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">TMS is an established non-drug therapy for treatment-resistant depression; the Zeta clearance improves delivery consistency, and the FDA&#x27;s willingness to clear this device signals regulatory comfort with AI in high-stakes therapeutic contexts beyond diagnostics.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Zeta Surgical&#x27;s FDA clearance marks one of the first AI systems approved specifically to improve the physical precision of a psychiatric treatment — a step toward AI-hardware integration in mental health care.</strong> Treatment-resistant depression affects tens of millions globally with limited pharmacological options. TMS is an approved alternative, but outcomes vary significantly with coil positioning accuracy. An AI system that maintains alignment through natural patient movement brings TMS closer to reproducible, position-normalized results — the same way surgical robotics improved consistency in orthopedic procedures.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Reverse Information Paradox</div>
+          <div class="csrc">GenAI.works / AI Secret</div>
+          <p>Satya Nadella&#x27;s term for a structural data-liability risk in enterprise AI adoption: organizations pay for intelligence in cash, then pay again by feeding proprietary prompts, evaluations, and corrections to model vendors who can use that behavioral exhaust to learn how the business operates. The more effectively a company uses AI, the more competitive knowledge it inadvertently transfers to its AI provider.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Task Graph Decomposition</div>
+          <div class="csrc">Alpha Signal</div>
+          <p>A method for breaking complex multi-step AI agent tasks into structured dependency graphs whose sub-tasks each fit within a smaller model&#x27;s effective working-memory window. Instead of asking one model to maintain a long reasoning chain in context — where compact models typically fail — the approach parcels work into bounded sub-problems, enabling 8B-parameter models to match GPT-4-scale performance on agent benchmarks without any additional training.</p>
+        </div>
+        <div class="concept">
+          <div class="term">HBM (High Bandwidth Memory)</div>
+          <div class="csrc">AI Secret</div>
+          <p>The specialized memory architecture inside AI accelerators like Nvidia&#x27;s H100 and H200 GPUs. HBM stacks multiple memory die directly atop the processor using through-silicon vias, delivering memory bandwidth far higher than conventional DRAM. HBM supply — dominated by SK Hynix and Samsung — is one of the primary bottlenecks in AI infrastructure scaling, making HBM chip stocks a closely watched proxy for AI industry health.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Your Everyday AI · TLDR AI · Alpha Signal · AI Entrepreneurs · The Rundown AI · GenAI.works · MyClaw · AI Secret · Brain Buzz · The Deep View</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
