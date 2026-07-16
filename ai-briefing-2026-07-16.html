@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday · July 16, 2026  ·  Based on July 15 newsletters  ·  25 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Reportedly Plans a Mobile, Screen-Free AI Speaker With Cameras and Sensors</h2>
+        <ul>
+          <li><span class="btext">Bloomberg reports that OpenAI and Jony Ive&#x27;s LoveFrom are developing a removable smart-home speaker designed to move between rooms and handle media, messages, household tasks, and ChatGPT features.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The device would use cameras, sensors, and moving mechanical parts to learn household habits; it is one of roughly five AI hardware products in development.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Everyday AI says the speaker is intended to draw on personal data such as email and behave more like a household companion than a conventional smart speaker.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The first OpenAI hardware bet is not a phone or wearable; it is an ambient computer designed to observe and act inside the home.</strong> That makes privacy, permission boundaries, and reliability central product questions rather than later policy details. Apple’s trade-secret lawsuit could also delay the roadmap through injunctions or design reviews.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Demis Hassabis Proposes a US Frontier-AI Watchdog With Pre-Release Model Audits</h2>
+        <ul>
+          <li><span class="btext">The DeepMind chief wants a FINRA-style body to test frontier models for cyber, biological, and deceptive capabilities before public release.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Labs would initially submit models voluntarily up to 30 days before launch, with approval eventually becoming mandatory in the US; Hassabis wants the body operating before year-end.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">AI Breakfast contrasts this industry-funded model with Dario Amodei&#x27;s preferred FAA-style regulator that would have direct legal power to block releases.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The safety debate is moving from voluntary lab promises toward institutions with repeatable tests and launch authority.</strong> The unresolved issue is governance: an industry-funded referee could move quickly, but it must prove it can reject unsafe models from the companies financing it.</p>
+        </div>
+      </article>
+      <article class="story cat-4">
+        <div class="tag">DEEPSEEK</div>
+        <h2>DeepSeek Explores a $1.5B Raise at a $71B Valuation Ahead of a Possible IPO</h2>
+        <ul>
+          <li><span class="btext">DeepSeek reportedly considered raising $1.5 billion at a $71 billion valuation before an IPO in late 2026 or 2027.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The Neuron says the company is preparing for a possible 2027 listing and needs new capital only weeks after closing a $7 billion round.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>DeepSeek is shifting from a cost-disruptor narrative to a capital-markets story on the scale of the largest private AI labs.</strong> A public listing would test whether investors believe low-cost model economics can support the infrastructure spending and sustained research required at frontier scale.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>Phone-Scale AI Jumps to 27B Parameters as Google Optimizes Gemma 4 for Pixel 10</h2>
+        <ul>
+          <li><span class="btext">PrismML says Bonsai 27B uses one-bit and ternary weights to shrink a 27-billion-parameter model to 3.9 GB or 5.9 GB while retaining multi-step reasoning and tool use.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Google&#x27;s Gemma 4 E2B is optimized for the Pixel 10 TPU and supports offline conversation, image identification, audio transcription, and private voice or text control of phone functions.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Everyday AI reports Apple is evaluating PrismML compression that can reduce a roughly 54 GB model to under 4 GB, trading some factual accuracy for speed, privacy, and lower power use.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>High-capability models are crossing the threshold from cloud-only services to private, always-available phone software.</strong> That changes product economics and privacy: more inference can happen without network calls, but aggressive compression makes evaluation of accuracy loss essential.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>New York Pauses New Hyperscale Data Centers While It Rewrites Siting Rules</h2>
+        <ul>
+          <li><span class="btext">Gov. Kathy Hochul signed an executive order pausing new data centers that use at least 50 megawatts for up to one year.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The pause is intended to give officials time to address grid strain, water use, local siting, cleaner power, and household utility costs.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The Neuron describes New York as the first US state to impose a statewide pause on new hyperscale data-center permits.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI infrastructure is now large enough to trigger statewide industrial policy, not just local permitting disputes.</strong> States that cannot align power generation, transmission, water, and consumer protections may lose projects even as they try to shield residents from the costs of rapid data-center growth.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Compiling Stable Agent Skills Into Code Cut Token Use by 94%</h2>
+        <ul>
+          <li><span class="btext">A recurring content workflow replaced natural-language instructions for deterministic steps with conventional code and reduced token consumption by 94%.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The design reserves language models for judgment-heavy decisions while software handles stable repetition.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The cheapest agent optimization may be removing the model from work that never required judgment.</strong> Teams should treat repeated successful instructions as candidates for compilation. This lowers cost and variance while keeping the model focused on ambiguity, synthesis, and exceptions.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>US Launches GOLD EAGLE Hub to Speed Cybersecurity Patching With Frontier AI</h2>
+        <ul>
+          <li><span class="btext">The new federal-industry clearinghouse brings Treasury, DHS and CISA, defense agencies, open-source partners, and infrastructure operators into one vulnerability-response system.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Created under a June 2 executive order, GOLD EAGLE will use frontier AI to verify urgent flaws faster and reduce duplicated scanning across critical infrastructure.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The program treats AI as shared defensive infrastructure rather than a standalone agency tool.</strong> Its value will depend on whether participants can exchange vulnerability evidence quickly without creating a new concentration of sensitive security data.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Frontier-model audit</div>
+          <div class="csrc">The Neuron / AI Breakfast</div>
+          <p>A structured pre-release evaluation of an advanced model for dangerous cyber, biological, deceptive, or autonomous capabilities. Hassabis proposes a 30-day submission window and an independent industry-funded testing body.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Ternary weights</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A model-compression approach where weights use three values, usually negative, zero, and positive. It can shrink memory requirements enough for much larger models to run on phones, with accuracy and hardware-support tradeoffs.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Compute forward curve</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A market view of expected future GPU-rental prices. Kalshi plans to derive one from weekly and monthly prediction contracts, treating compute capacity more like a traded commodity.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · AI Breakfast · The Neuron</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
