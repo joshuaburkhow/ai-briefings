@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday · July 17, 2026  ·  Based on July 16 newsletters  ·  4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Thinking Machines Releases Inkling, a 975B Open-Weight Model Built for Customization</h2>
+        <ul>
+          <li><span class="btext">Inkling is a 975-billion-parameter mixture-of-experts model that activates about 41 billion parameters per task and supports text, image, audio, and video inputs.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The model adds a one-million-token context window and is available for customization through Thinking Machines&#x27; Tinker platform.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The Neuron describes a customization-first design with controllable reasoning effort rather than a benchmark-only release.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The release gives US enterprises an open-weight option designed for tuning, routing, and deployment control.</strong> Its practical value will depend less on headline parameter count than on whether teams can tune smaller active capacity for repeatable work without sacrificing governance or quality.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Trains GPT-Red to Automate Prompt-Injection Attacks and Harden Models</h2>
+        <ul>
+          <li><span class="btext">GPT-Red is an automated red-teaming system that uses iterative self-play to uncover prompt-injection weaknesses at scale.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">OpenAI says adding GPT-Red attacks to training reduced failures on a difficult prompt-injection benchmark sixfold for GPT-5.6 Sol.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Everyday AI notes the system targets the growing risk created when agents consume outside email, websites, files, and tools.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Agent security is becoming a continuous model-training problem rather than a one-time penetration test.</strong> Automated adversaries can explore more attack variants than human testers, but teams still need independent evaluation to confirm that benchmark gains transfer to real workflows.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Perplexity Introduces SPACE, Ephemeral Sandboxes for Long-Running AI Agents</h2>
+        <ul>
+          <li><span class="btext">SPACE runs agents in short-lived isolated environments and destroys each sandbox after the task is complete.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Rolling snapshots let agents pause, resume, or branch work without leaving a persistent execution environment online.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Credential isolation, encrypted storage, and support for on-premise or offline operation are built into the platform&#x27;s security model.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The product treats execution isolation and resumability as core infrastructure for agents that touch sensitive systems.</strong> This is the right design direction for enterprise automation: temporary compute, narrowly scoped credentials, and durable state that does not require a permanently exposed sandbox.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Codex Micro Turns Agent Controls Into a $230 Physical Keyboard</h2>
+        <ul>
+          <li><span class="btext">OpenAI and Work Louder opened pre-orders for a compact keyboard that gives Codex users tactile controls for coding-agent workflows.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The device includes RGB agent-status keys, command buttons, a joystick, and a dial for adjusting reasoning intensity.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The Neuron frames it as a near-term test of moving AI controls out of menus and chat windows and directly under a user&#x27;s fingers.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI interfaces are beginning to expose agent state and control as dedicated hardware rather than hidden software settings.</strong> A physical control surface may be niche, but it tests whether visible status, quick intervention, and effort controls make multi-agent work easier to supervise.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Renames NotebookLM to Gemini Notebook and Adds a Secure Cloud Computer</h2>
+        <ul>
+          <li><span class="btext">Gemini Notebook can write and run code for source-grounded data analysis inside a secure cloud computer for select paid users.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Google is connecting notebooks across Gemini and its standalone app, with Search integration planned next.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The cloud-computing feature is expected to reach Pro web users in the coming weeks.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>NotebookLM is expanding from a focused research notebook into a connected analysis surface across Google&#x27;s AI products.</strong> The useful change is not the name. Executable, source-grounded analysis can shorten the path from collected evidence to calculations, charts, and decisions.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>GPT-5.6 Sol Jumps to First Place on Design Arena</h2>
+        <ul>
+          <li><span class="btext">GPT-5.6 Sol ranks first overall on Design Arena&#x27;s Web Design Arena, while GPT-5.5 ranks 18 places lower.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Reviewers credit the model with avoiding common AI design patterns while combining strong templates with unusually high personalization.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Visual quality is becoming a measurable model capability rather than a thin layer added after code generation.</strong> If the result holds across real products, design-aware coding models could reduce the amount of cleanup required to turn a functional prototype into a credible interface.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Begins Investor Meetings Ahead of a Possible Public Offering</h2>
+        <ul>
+          <li><span class="btext">Anthropic is reportedly preparing investor meetings with Goldman Sachs, Morgan Stanley, and JPMorgan Chase leading the effort.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The company recently closed a $65 billion funding round at a reported $965 billion valuation and could pursue an IPO later this year.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A listing would become a major public-market test of frontier-model economics and investor tolerance for extreme infrastructure spending.</strong> The central question is whether fast revenue growth can support the capital intensity, safety obligations, and research costs required to stay at the frontier.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Mixture of experts</div>
+          <div class="csrc">Everyday AI / TLDR AI</div>
+          <p>A model design that activates only part of a much larger network for each request. Inkling has 975 billion total parameters but uses about 41 billion per task, aiming to combine capacity with lower inference cost.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Automated red teaming</div>
+          <div class="csrc">The Neuron / TLDR AI</div>
+          <p>The use of an AI system to generate and refine adversarial attacks against another model. GPT-Red applies this approach to prompt injection so defenses can be trained against a broader set of failures.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Ephemeral sandbox</div>
+          <div class="csrc">Everyday AI / TLDR AI</div>
+          <p>A temporary, isolated execution environment created for a task and destroyed afterward. Snapshots can preserve useful state without keeping the original environment exposed.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · The Deep View · The Neuron</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
