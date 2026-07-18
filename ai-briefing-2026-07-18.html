@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Saturday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Saturday · July 18, 2026  ·  Based on July 17 newsletters  ·  5 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Kimi K3 Pushes Open Models Near the Frontier With 2.8 Trillion Parameters</h2>
+        <ul>
+          <li><span class="btext">Moonshot launched Kimi K3 with 2.8 trillion parameters, native vision, and a one-million-token context window.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Artificial Analysis ranked K3 third behind Claude Fable 5 and GPT-5.6 Sol while Moonshot says full weights arrive July 27.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Moonshot says sparse experts reduce runtime cost, though serious self-hosting still requires at least 64 accelerators.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Open weights are moving closer to frontier capability while preserving deployment and customization control.</strong> K3 increases pricing pressure on closed labs but its scale means open access does not equal cheap operation. Teams should compare total serving cost as closely as benchmark rank.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>1Password Gives Claude Task-Scoped Credentials Without Exposing Passwords</h2>
+        <ul>
+          <li><span class="btext">1Password for Claude inserts credentials without exposing them to the model, memory, or Anthropic.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Users approve each credential request with biometrics and Agentic Mode locks the rest of the vault during browser control.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The integration is available to business, family, and individual users on Mac and is designed to extend to other browser agents.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Credential isolation removes a major barrier to useful agents while keeping access narrow and reviewable.</strong> The important pattern is session-specific authority. Agents can complete authenticated work without receiving reusable secrets or broad vault access.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>EU Orders Google to Open Android and Search Data to AI Rivals</h2>
+        <ul>
+          <li><span class="btext">The European Commission ordered Google to give rival assistants access to 11 Android features including voice activation.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Eligible search and AI competitors will also receive anonymized search data under Digital Markets Act rules.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Search-data access begins in January 2027 and the Android changes follow with the July 2027 release.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The ruling could reduce Gemini default advantage on Android and improve the data available to competing search assistants.</strong> The practical impact depends on security requirements and whether Google applies the European changes globally. It still creates a concrete route for smaller assistants to compete at the operating-system layer.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Fireworks Reaches a $17.5B Valuation as Open-Model Demand Accelerates</h2>
+        <ul>
+          <li><span class="btext">Nvidia-backed Fireworks raised $1.505 billion at a $17.5 billion valuation.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The company crossed $1 billion in annualized revenue while processing roughly 40 trillion tokens each day.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Demand is being driven by companies seeking lower-cost access to open models.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Capital is following the infrastructure layer that makes open models practical to serve at enterprise scale.</strong> The valuation suggests model hosting and routing can capture meaningful value even when the underlying weights are open. Revenue quality and hardware efficiency will determine whether that value persists.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>GPT-Live Keeps Talking While a Separate Model Reasons in the Background</h2>
+        <ul>
+          <li><span class="btext">GPT-Live-1 and GPT-Live-1 mini process incoming and outgoing speech continuously instead of waiting for turns to end.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">Hard questions are handed to GPT-5.5 while the voice model keeps the conversation moving and later weaves in the result.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">At high reasoning GPT-Live-1 scored 84.2 percent on GPQA compared with 45.3 percent for Advanced Voice Mode.</span><span class="src">The Batch</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Separating a responsive interface from a slower reasoning model removes the tradeoff between conversational flow and deeper work.</strong> This orchestration pattern matters beyond voice. Fast foreground agents can handle interaction while specialized background models perform search planning or analysis.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>German Court Holds Google Responsible for False AI Overview Claims</h2>
+        <ul>
+          <li><span class="btext">A Munich court ruled that Google can be liable for defamatory statements generated by AI Overview.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">The system falsely described two publishers as engaging in fraudulent practices after confusing them with other companies.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">Google must remove the statements immediately or face fines of up to $285,000 while its appeal proceeds.</span><span class="src">The Batch</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The ruling treats generated summaries as Google speech rather than neutral links to outside information.</strong> If upheld it could force stronger grounding review and correction mechanisms across AI search products. It also raises the cost of confidently synthesized errors.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Robin Agent Finds Two Existing Drugs That Improve a Target Eye-Cell Process</h2>
+        <ul>
+          <li><span class="btext">FutureHouse released Robin as an open-source agent that proposes existing drugs for a named disease and designs supporting experiments.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">Robin identified Y-27632 and Ripasudil as candidates for dry age-related macular degeneration and human-run cell tests showed roughly 1.9x gains in the target process.</span><span class="src">The Batch</span></li>
+          <li><span class="btext">The drugs were tested on isolated eye cells rather than patients so clinical effectiveness remains unknown.</span><span class="src">The Batch</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The work shows a useful human-in-the-loop research pattern in which agents plan and analyze while people run physical experiments.</strong> The result is promising evidence of faster drug repurposing rather than a medical treatment claim. Patient trials and independent replication remain essential.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Sparse mixture of experts</div>
+          <div class="csrc">TLDR AI / The Neuron</div>
+          <p>A model design that activates only selected specialist components for each request. Kimi K3 uses sparse experts to reduce runtime work despite its very large total parameter count.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Task-scoped credentials</div>
+          <div class="csrc">The Deep View</div>
+          <p>Authentication authority granted only for one approved task and session. The agent can complete a login without reading or retaining the underlying secret.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Everyday AI · TLDR AI · The Deep View · The Neuron · The Batch</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
