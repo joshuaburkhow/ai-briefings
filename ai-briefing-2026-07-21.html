@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Tuesday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Tuesday · July 21, 2026  ·  Based on July 20 newsletters  ·  4 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Alibaba Previews a 2.4T-Parameter Qwen3.8 for Open-Weight Release</h2>
+        <ul>
+          <li><span class="btext">Alibaba previewed Qwen3.8-Max with 2.4 trillion parameters and said the full model will be released with downloadable weights.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The preview is available through Token Plan plus Qoder plus QoderWork while benchmark data and a model card remain unpublished.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Alibaba says the multimodal model trails only Claude Fable 5 and is compatible with OpenAI and Anthropic API protocols.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Another Chinese lab is pairing frontier-scale ambition with a promise of deployable weights.</strong> The release could expand model choice and data control. The practical question is whether companies can afford to serve a model this large and whether independent tests support Alibaba&#x27;s claims.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Rations Fable 5 While Exploring a $10B Meta Compute Lease</h2>
+        <ul>
+          <li><span class="btext">Anthropic is limiting Fable 5 access as demand outpaces its current infrastructure capacity.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The company is discussing a two-year Meta infrastructure lease worth up to $10 billion with flexible exit terms.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The proposed capacity would use Meta&#x27;s Nvidia GPU clusters and could reduce pressure to rewrite workloads for custom hardware.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Model demand is turning access policy and compute procurement into the same product decision.</strong> Capacity limits can shape who gets frontier features and at what price. A deal between nominal rivals also shows that infrastructure scarcity can produce partnerships that model competition alone would not predict.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Plans a Gemini Server Chip as Gemini 3.5 Pro Slips Again</h2>
+        <ul>
+          <li><span class="btext">Google is reportedly developing Frozen v2 as a server chip dedicated to faster Gemini inference with a possible 2028 arrival.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The chip would complement Google&#x27;s existing TPUs rather than replace them.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Gemini 3.5 Pro has reportedly slipped beyond its promised June launch while Google works to improve coding performance.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is trying to improve the model and the infrastructure beneath it at the same time.</strong> Owning more of the serving stack can lower cost and improve performance over time. The near-term delay still leaves Google exposed while competitors ship stronger coding models.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Netflix Details the Tradeoffs Behind Its In-House LLM Serving Stack</h2>
+        <ul>
+          <li><span class="btext">Netflix described how it selected an inference engine and packaged models inside its existing production infrastructure.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The deployment covers API design plus rollout strategy plus output constraints under real workloads.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The case study emphasizes operational tradeoffs rather than treating model hosting as a standalone benchmark problem.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Production LLM systems are becoming conventional platform engineering with unusual cost and reliability constraints.</strong> The useful lesson is to design around the existing deployment environment and observable workloads. Model quality matters but packaging plus interfaces plus constraints determine whether a service behaves reliably in production.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Current AI Raises $400M to Build Public AI Infrastructure</h2>
+        <ul>
+          <li><span class="btext">The nonprofit Current AI has $400 million in committed funding for infrastructure that communities can use plus modify plus control for free.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Its early work includes offline tools for Indigenous communities and datasets covering more than 50 African languages.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">It is also backing a pocket-sized device that works in 22 Indian languages without an internet connection.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Open AI infrastructure can target languages and environments that commercial cloud products often underserve.</strong> The initiative will be judged by whether funding turns into maintained public tools and durable community governance. Offline deployment is especially valuable where connectivity and data sovereignty are hard constraints.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>Apple Sends Preservation Letters to Dozens of OpenAI Employees</h2>
+        <ul>
+          <li><span class="btext">Apple reportedly sent legal preservation letters to dozens of former employees now working at OpenAI.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Apple says its trade-secret case involves proprietary designs plus manufacturing processes plus other confidential information.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">More than 400 former Apple employees now work at OpenAI while OpenAI says it has seen no evidence supporting the complaint.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The dispute raises the cost of hiring across the boundary between AI hardware and established device companies.</strong> Preservation letters are not proof of wrongdoing. They do show how quickly talent movement can become litigation when AI products depend on specialized hardware and manufacturing knowledge.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Open-weight model</div>
+          <div class="csrc">The Neuron / AI Breakfast</div>
+          <p>A model whose trained parameters can be downloaded and run outside the vendor&#x27;s hosted service. Open weights improve control but do not guarantee low serving cost or full training transparency.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Inference stack</div>
+          <div class="csrc">TLDR AI</div>
+          <p>The software and infrastructure that package a trained model and serve responses through production APIs. It includes the engine plus deployment design plus constraints plus monitoring.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Compute lease</div>
+          <div class="csrc">AI Breakfast / Everyday AI</div>
+          <p>A contract for access to another company&#x27;s data-center capacity. Frontier labs use these arrangements to add accelerators faster than they can build their own facilities.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: TLDR AI · Everyday AI · AI Breakfast · The Neuron</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
