@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI MORNING BRIEFING — Wednesday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI MORNING BRIEFING</h1>
+      <div class="sub">Wednesday · Based on July 21 newsletters · 5 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Washington Backs Away From a Ban on Chinese Open Models</h2>
+        <ul>
+          <li><span class="btext">Officials explored restrictions on advanced Chinese models including government procurement pressure and hosting rules.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Commerce later said it was not moving forward with a ban at this time.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The newsletter documented a cyber-defense case where commercial safety filters blocked analysis but a self-hosted Chinese model completed the legitimate work.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The immediate ban receded but the policy question remains open.</strong> Audits and evidence-based thresholds would preserve model choice and security research while addressing demonstrated risks more precisely than a blanket restriction.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>AMD Helios Wins Backing From Microsoft Meta and OpenAI</h2>
+        <ul>
+          <li><span class="btext">Microsoft plans to deploy AMD&#x27;s full-stack Helios rack system on Azure for frontier-model training and large-scale inference.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Meta OpenAI Oracle and Tata also plan Helios deployments.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">AMD says the rack combines its CPUs GPUs Pensando networking and ROCm software for workloads where agents depend heavily on both CPU and GPU capacity.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Helios is the clearest rack-scale alternative yet to Nvidia&#x27;s Vera Rubin platform.</strong> The market has enough unmet demand for a second supplier. The real test is total operating cost because Helios hardware is expected to cost more upfront while promising efficiency gains over time.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>US Tech Leads Global Layoffs Before AI Efficiency Is Proven</h2>
+        <ul>
+          <li><span class="btext">US companies accounted for about 82 percent of 156975 global tech job cuts in the first half of 2026.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Almost half of the cuts were linked to restructuring around AI and automation.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Companies investing most heavily in AI grew headcount by 10 percent over two years while Ford rehired workers after automated quality systems could not operate alone.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Layoffs are easier to announce than durable productivity gains are to prove.</strong> The stronger operating pattern is augmentation first. Measure whether AI improves output quality cycle time and cost before removing the people who understand the work and its exceptions.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI Sexual Content Reaches Teens Mostly by Accident</h2>
+        <ul>
+          <li><span class="btext">A survey of more than 1300 teenagers found that 44 percent believed they had seen AI-generated sexual content.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Among those exposed 79 percent said the encounter was accidental and one quarter had seen depictions of themselves or people they knew.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Two thirds said the content distorted peer body-image beliefs and 60 percent of exposed teens said it warped their view of real bodies.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Distribution controls are failing even when young users are not seeking this material.</strong> Detection age assurance app-store enforcement and rapid removal need to become default platform safeguards rather than complaint-driven cleanup after harm occurs.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Produces a One-Line Counterexample to an 87-Year Math Conjecture</h2>
+        <ul>
+          <li><span class="btext">Claude Fable 5 generated a one-line formula that breaks the Jacobian conjecture posed in 1939.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">Anthropic mathematician Levent Alpöge checked the counterexample and published the result.</span><span class="src">The Rundown AI</span></li>
+          <li><span class="btext">The result follows other frontier-model progress on open Erdős problems during 2026.</span><span class="src">The Rundown AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Frontier models are becoming useful generators of candidate proofs and counterexamples.</strong> The scientific value comes from pairing rapid model exploration with expert verification. A concise answer can still require rigorous checking before a longstanding conjecture is considered resolved.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Open weights</div>
+          <div class="csrc">The Neuron</div>
+          <p>Model parameters that can be downloaded and run on infrastructure chosen by the user. This improves control and can preserve legitimate workflows blocked by hosted-model policies.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Rack-scale AI system</div>
+          <div class="csrc">The Deep View</div>
+          <p>A tightly integrated unit of CPUs GPUs memory networking and software designed to train and serve large models as one platform.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Counterexample</div>
+          <div class="csrc">The Rundown AI</div>
+          <p>A single valid case that disproves a universal mathematical claim. Expert verification is essential even when a model produces a very short candidate.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron · The Deep View · The Rundown AI · TLDR · Generative AI</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
