@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday · July 26, 2026  ·  Based on July 25 newsletters  ·  9 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>AI Assistant Competition Is Shifting From Answers to Actions</h2>
+        <ul>
+          <li><span class="btext">Local platforms are connecting assistants to maps payments commerce and identity systems.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">The surrounding ecosystem increasingly determines which real-world tasks an assistant can complete.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">The model race still matters but no longer describes the whole product.</span><span class="src">Turing Post</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Distribution and service access are becoming part of AI capability.</strong> A slightly weaker model may be more useful when it can reliably complete a local task. Product evaluation should include completion quality and user control instead of benchmark scores alone.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>South Korea Shows the Power of an Embedded Domestic Ecosystem</h2>
+        <ul>
+          <li><span class="btext">Naver combines search maps shopping payments content and local services inside one domestic platform.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">A local assistant can use those relationships to act within familiar Korean workflows.</span><span class="src">Turing Post</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Local context can become a durable advantage when services already share one platform.</strong> Teams entering a market should map the service graph around the user. Model quality alone may not overcome a competitor that owns the transaction path.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>China Supports Several Competing AI Ecosystems at Once</h2>
+        <ul>
+          <li><span class="btext">Alibaba ByteDance and Baidu each control different combinations of commerce content cloud and search.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">China shows that several large domestic ecosystems can compete without one universal assistant.</span><span class="src">Turing Post</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The local AI market may fragment by ecosystem rather than consolidate around one model.</strong> Applications should expect users to move among assistants based on the task. Interoperability and clear handoffs may matter more than trying to own every workflow.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>India May Favor Shared Infrastructure Over One Dominant Assistant</h2>
+        <ul>
+          <li><span class="btext">India has strong telecom payments public infrastructure startups and regional-language services.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">Those capabilities remain spread across many organizations and no single domestic assistant dominates consumer usage.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">The market may develop through shared rails and specialized interfaces.</span><span class="src">Turing Post</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Large demand does not guarantee one vertically integrated winner.</strong> Builders can design around shared identity payment and language infrastructure. A focused assistant may win a workflow without controlling the whole ecosystem.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Transactional Assistants Need Better Success Metrics</h2>
+        <ul>
+          <li><span class="btext">Useful evaluation should separate intent recognition factual accuracy completion rate option quality and user control.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">Accuracy scores can hide differences in answer coverage abstention retries and time to completion.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">A platform may complete more purchases because it controls checkout rather than because it recommended the best option.</span><span class="src">Turing Post</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Benchmarks do not measure whether an agent completed the right task in the right way.</strong> Operational reviews should track task success errors retries reversibility and self-preferencing. Those measures reveal product risk that a single model score cannot.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Embedded ecosystem</div>
+          <div class="csrc">Turing Post</div>
+          <p>A set of connected services such as identity maps payments and commerce that an assistant can use to complete tasks.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Transactional assistant</div>
+          <div class="csrc">Turing Post</div>
+          <p>An AI product that moves beyond giving information and performs actions such as booking buying or managing a service.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Self-preferencing</div>
+          <div class="csrc">Turing Post</div>
+          <p>The risk that a platform favors its own products or partners when ranking options or completing a task.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: Turing Post</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
