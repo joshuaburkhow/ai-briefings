@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday · July 27, 2026  ·  Based on July 26 newsletters  ·  2 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Technology Coalition Pushes Washington to Protect Open-Weight AI</h2>
+        <ul>
+          <li><span class="btext">More than 20 organizations including Nvidia Microsoft Meta IBM Palantir Hugging Face Mistral Mozilla and Y Combinator urged Washington to avoid premature restrictions on open-weight models.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The coalition argued that open weights support local control lower costs and independent innovation while acknowledging that released weights cannot be recalled.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Industry leaders also warned policymakers not to treat model distillation as automatic evidence of intellectual-property theft.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Open-weight policy is becoming an infrastructure decision.</strong> Rules written now could determine whether smaller companies can build on frontier capabilities without depending on a few hosted APIs. The coalition also makes clear that openness carries irreversible distribution risk.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>FRONTIER Act Would Require Transparency Reports and Critical-Incident Disclosure</h2>
+        <ul>
+          <li><span class="btext">A bipartisan House group introduced the FRONTIER Act for the largest model developers.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The proposal would require transparency reports critical-incident reporting and independent audits.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The proposal favors continuing oversight over a one-time model approval.</strong> Companies developing or deploying frontier models should expect documentation incident response and audit readiness to become operating requirements even if the final law changes.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Alphabet Signals Up to $205 Billion in 2026 Capital Spending</h2>
+        <ul>
+          <li><span class="btext">Alphabet ended June with $811 billion in future spending commitments according to the newsletter report.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The company raised its 2026 capital-expenditure guidance to as much as $205 billion.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI demand is translating into long-duration infrastructure commitments.</strong> The size of the buildout suggests that compute power and data-center capacity will remain strategic constraints. It also raises the execution bar for turning infrastructure spending into durable revenue.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Alibaba Previews Qwen 3.8 as a 2.4-Trillion-Parameter Open-Weight Model</h2>
+        <ul>
+          <li><span class="btext">Alibaba described Qwen 3.8 as a 2.4-trillion-parameter model that works across text images video and documents.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Alibaba promised open weights and preview access through Token Plan Qoder and QoderWork at ten percent of standard pricing.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">The newsletter repeated Alibaba&#x27;s claim that the model ranks behind only Claude Fable 5 but noted that the result was not independently verified.</span><span class="src">The Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Large multimodal open-weight models are competing on access as well as capability.</strong> Low preview pricing can accelerate developer testing. Independent evaluation will still be necessary before teams treat vendor benchmark claims as production evidence.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Midjourney Acquires Co-Star and Adds Its CEO as Chief Design Officer</h2>
+        <ul>
+          <li><span class="btext">Midjourney acquired astrology application Co-Star.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Co-Star&#x27;s chief executive will become Midjourney&#x27;s chief design officer.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The acquisition points toward consumer experience and design rather than model research alone.</strong> Midjourney may be strengthening product leadership as generative media competition shifts from raw output quality toward distinctive consumer experiences.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Wispr Creates a Lab for Proactive Voice Interfaces</h2>
+        <ul>
+          <li><span class="btext">Wispr launched an advanced interfaces laboratory focused on proactive voice AI.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The company plans to invest hundreds of millions of dollars in the effort.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Voice products are moving from transcription toward continuous assistance.</strong> Proactive systems could reduce interaction friction. They also require stricter consent context and interruption controls because the assistant decides when to act.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Unitree Adds Wheel-Legs to Its AS2-W Robot Dog</h2>
+        <ul>
+          <li><span class="btext">Unitree&#x27;s AS2-W uses wheel-legs that can roll or step across terrain.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">The company reported speeds up to six meters per second and an unloaded range of 30 kilometers.</span><span class="src">The Signal</span></li>
+          <li><span class="btext">Unitree listed a 16-kilogram continuous payload and a 150-kilogram static load capacity.</span><span class="src">The Signal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Hybrid locomotion can make mobile robots useful across more real environments.</strong> Rolling improves efficiency on smooth surfaces while legs preserve obstacle handling. The design could widen inspection logistics and industrial use cases if real-world reliability matches the specifications.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Open weights</div>
+          <div class="csrc">The Neuron</div>
+          <p>Published model parameters that developers can download inspect and run outside the original provider&#x27;s hosted service.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Model distillation</div>
+          <div class="csrc">The Neuron</div>
+          <p>A technique that trains a smaller model to reproduce useful behavior from a larger model. Its use can raise policy and intellectual-property questions.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Critical-incident reporting</div>
+          <div class="csrc">The Neuron</div>
+          <p>A proposed requirement for major model developers to disclose serious safety or security failures to oversight bodies.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Wheel-legs</div>
+          <div class="csrc">The Signal</div>
+          <p>A hybrid robot design that combines efficient rolling with the obstacle handling of articulated legs.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron · The Signal</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
