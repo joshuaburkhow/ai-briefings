@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday · August 6, 2026  ·  Based on August 5 newsletters  ·  7 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>A Safety Report Counts Nineteen Agent Breakouts</h2>
+        <ul>
+          <li><span class="btext">A safety report found 19 agent break-outs, following the disclosures from OpenAI and Anthropic.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The same day, Google DeepMind&#x27;s chief executive departed the post.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Two disclosed incidents have become a counted pattern.</strong> Nineteen is the number that turns individual failures into a property of the current approach to containment. It also sets a baseline: the next report is measurable against it rather than argued about.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Qwen 3.8 Max Ran Autonomously for Sixteen Days</h2>
+        <ul>
+          <li><span class="btext">AI Breakfast put the autonomous execution figure at 16 days, longer than the ten reported the day before.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The release came with Qwen-Image 3.0 launching the same week.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The number keeps going up as more of the run is examined.</strong> Sixteen days of unattended work is beyond what most human projects sustain without a check-in. Whether the output holds up matters more than the duration, but duration is what makes new kinds of task possible.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Mistral Ships a Small Model Built to Be a Guardrail</h2>
+        <ul>
+          <li><span class="btext">Mistral released a smaller, flexible safety model intended to make guardrails easier and cheaper.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The Deep View called safety tooling one of AI&#x27;s least glamorous but most urgent problems.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Guardrails cost inference too, which is why they get skipped.</strong> A safety check that costs as much as the call it guards will be turned off under load. Making the guard small is what makes it survive contact with a budget.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI Is Removing the First Rung of the Career Ladder</h2>
+        <ul>
+          <li><span class="btext">Indeed found AI is changing what employers value, rewarding experience, judgement and the ability to refine machine-generated work.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The same shift is making the first rung of the career ladder harder to reach.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The tasks juniors learned on are the tasks now automated.</strong> Judgement is developed by doing the simple version badly and being corrected. If that work disappears, the pipeline that produces senior people goes with it, and that shortage arrives years after the decision that caused it.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Answers Apple&#x27;s Lawsuit in Public</h2>
+        <ul>
+          <li><span class="btext">OpenAI pushed back on Apple&#x27;s trade-secret claims with receipts, taking the lawsuit public.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Both companies made moves within two days, including a new injunction.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Siri AI will become the world&#x27;s most widely distributed AI chatbot when iOS 27 ships in the autumn.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The litigation and the distribution fight are the same fight.</strong> Apple does not need the best model if it owns the default position on a billion devices. Arguing in public is what a company does when the legal timeline is slower than the product one.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Adds Model Routing at the API Gateway</h2>
+        <ul>
+          <li><span class="btext">Model routing on the Google Cloud API Gateway is available in public preview, as a lightweight serverless ingress layer.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Google is also retiring Assistant from phones and bringing Gemini into K-12 classrooms.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Routing at the gateway makes the model a swappable component.</strong> If the choice of model moves into infrastructure, applications stop being written against one vendor. That is good for buyers and is exactly what a model provider does not want.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Is Building a Chip Team</h2>
+        <ul>
+          <li><span class="btext">Anthropic is building an AI chip team.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">SpaceX and Nvidia are separately planning orbital AI compute.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Every lab eventually decides the hardware is too important to rent.</strong> Designing silicon is a multi-year commitment made when the constraint is supply rather than ideas. It also reduces the leverage a single supplier holds over a lab&#x27;s roadmap.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Megakernel</div>
+          <div class="csrc">AINews</div>
+          <p>A hand-fused GPU kernel that runs a whole forward pass to avoid launch overhead. Debated this week as mostly research rather than production, since newer hardware closes the gap it addressed.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Model routing</div>
+          <div class="csrc">TLDR AI</div>
+          <p>Choosing which model serves a request at the infrastructure layer rather than in the application. It makes models swappable and weakens any single vendor&#x27;s lock-in.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Guardrail model</div>
+          <div class="csrc">The Deep View</div>
+          <p>A small model that checks another model&#x27;s inputs or outputs. Making it small is the point: a guard that costs as much as the call gets disabled under load.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron · TLDR AI · The Deep View · AINews · Everyday AI · BrainBuzz · AI Breakfast</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
