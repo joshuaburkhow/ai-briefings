@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday · August 5, 2026  ·  Based on August 4 newsletters  ·  7 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Qwen 3.8 Max Runs Unattended for Ten Days and Beats a Paper&#x27;s Benchmark</h2>
+        <ul>
+          <li><span class="btext">Qwen 3.8 Max is a 2.4 trillion parameter model that AINews said would be the top open model in the world but for Kimi K3.</span><span class="src">AINews</span></li>
+          <li><span class="btext">It built a self-evolving coding harness from scratch over a multi-week autonomous run of more than ten days unattended.</span><span class="src">AINews</span></li>
+          <li><span class="btext">It rebuilt a research paper&#x27;s pipeline from scratch, then ran an iterative research loop for 125 hours to invent a data selection method beating the original paper by 2.71 points.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Ten days unattended is a different category from a long session.</strong> Autonomy is usually limited by drift rather than by capability. A run measured in days that ends ahead of a published result suggests the loop is now stable enough to be left alone, which is what changes who can use it.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>GPT-Live Listens and Speaks at the Same Time</h2>
+        <ul>
+          <li><span class="btext">OpenAI revealed GPT-Live, a full-duplex voice system that listens and speaks simultaneously instead of waiting for a turn detector.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">It delivers sub-second responses and keeps slow tool calls off the live audio path, delegating reasoning and search to frontier models in the background.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">It was built in six months.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The architecture is the achievement: fast conversation in front, slow thinking behind.</strong> Turn-taking is what makes voice assistants feel mechanical. Splitting the responsive layer from the reasoning layer is the same pattern that made interfaces feel fast long before AI, applied where it had not been.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Recursive Self-Improvement Becomes the Week&#x27;s Organising Story</h2>
+        <ul>
+          <li><span class="btext">Everyday AI devoted its episode to recursive self-improvement, calling it one of AI&#x27;s biggest stories.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">Its framing was that OpenAI used AI to make AI cheaper, connecting the price cuts to the same loop.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">The White House met AI leaders and is launching AI cyberattack tests.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The thing the slowdown letter warned about is now the marketing.</strong> Self-improvement is being described as a safety risk and a cost advantage in the same week, by the same companies. Both are true, which is what makes the pacing argument hard.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AI Collapses the Time From Disclosure to Exploit</h2>
+        <ul>
+          <li><span class="btext">Frontier models are collapsing the time between vulnerability disclosure and exploit creation from weeks to hours, while producing a flood of new vulnerabilities.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Manual triage and traditional patch cycles cannot keep up.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Patch windows were sized for human attackers.</strong> If exploitation takes hours, a monthly patch cycle is not slow, it is irrelevant. The response has to be prioritisation by exploitability rather than by severity score, because the queue no longer drains.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Europe&#x27;s AI Rules Take Effect and Deepfake Labels Become Required</h2>
+        <ul>
+          <li><span class="btext">Europe&#x27;s AI rules are now in effect.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The EU is requiring AI deepfake labels.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">BrainBuzz also reported an AI baby scam capable of fooling family members.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The labelling requirement and the scam it exists for arrived together.</strong> A voice convincing enough to fool a relative is the case labelling cannot address, because a scam call carries no label. The rules constrain platforms while the harm moves through channels they do not control.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Apple Fixes Siri as Alibaba Presses America&#x27;s Lead</h2>
+        <ul>
+          <li><span class="btext">BrainBuzz led with Apple finally fixing Siri and Alibaba challenging America&#x27;s AI lead.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Gemini Spark is getting Chrome integration and Gemini Notebook reached all Pro users.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The assistant layer is being rebuilt across every platform at once.</strong> Assistants are where most people will meet these models, and the platform owners have distribution the labs do not. Whoever gets the default position gets the usage regardless of which model is best.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Full duplex</div>
+          <div class="csrc">AI Entrepreneurs</div>
+          <p>Listening and speaking at the same time, as people do. It removes the turn detector that makes voice assistants feel like radios.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Recursive self-improvement</div>
+          <div class="csrc">Everyday AI</div>
+          <p>A system improving its own ability to improve. Described this week as both the main safety risk and the reason inference got cheaper.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Exploitability-based prioritisation</div>
+          <div class="csrc">TLDR AI</div>
+          <p>Ranking vulnerabilities by whether they can actually be exploited rather than by severity. It is the only triage that works when exploits appear in hours.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron · TLDR AI · The Deep View · AINews · Everyday AI · BrainBuzz · AI Entrepreneurs</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
