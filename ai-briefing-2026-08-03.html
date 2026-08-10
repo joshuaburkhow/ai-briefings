@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday · August 3, 2026  ·  Based on August 2 newsletters  ·  2 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-4">
+        <div class="tag">DEEPSEEK</div>
+        <h2>DeepSeek V4-Flash Brings Frontier Agent Work to Cents</h2>
+        <ul>
+          <li><span class="btext">DeepSeek unveiled V4 Flash, a coding model rivalling Anthropic&#x27;s Claude Opus 4.8, at what BrainBuzz described as 99 percent lower cost.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">It outperformed rivals on Arena.ai&#x27;s coding leaderboard.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The Neuron called it a 28-cent agent model and the most important upgrade of the week, with API prices kept near pennies.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A near-frontier coding model at cents an agent-run resets the floor.</strong> Agent work is priced per attempt, and attempts are how agents succeed. At this cost the economics favour running many and discarding most, which is a different engineering style from optimising one careful call.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Big Tech&#x27;s AI Buildout Passes $1.1 Trillion and Squeezes Cash Flow</h2>
+        <ul>
+          <li><span class="btext">The Neuron reported the AI buildout has passed 1.1 trillion dollars and is squeezing cash flow.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Nvidia plans a 750 billion dollar AI investment and Zuckerberg is betting up to 145 billion.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The spending is now large enough to show up in cash flow rather than in capex footnotes.</strong> Commitments of this size are made years before the revenue that justifies them. The question shifts from whether the demand exists to whether it arrives on the schedule the financing assumed.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Europe&#x27;s AI Labels and Watermarks Become Enforceable</h2>
+        <ul>
+          <li><span class="btext">Europe&#x27;s AI labelling and watermarking requirements became enforceable on August 2.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The first hard compliance date for generated content has arrived.</strong> Labelling is the least contested part of the AI Act and the first to bite. It puts an obligation on the tool that generates rather than the person who posts, which is where enforcement is actually practical.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude Opus 5 Builds a Playable Game in a Twelve-Hour Run</h2>
+        <ul>
+          <li><span class="btext">A demo ran roughly 12 hours on Ultracode using a multi-agent loop and produced a playable monster-catching game with a 3D world, battles and characters.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The Neuron noted the character designs are visibly derivative, and that AI game demos have graduated from browser toys to projects that hold together for hours.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Twelve hours of coherent work is the result, not the game.</strong> Holding a goal across a long multi-agent run is the capability that has been missing. What it built matters less than that it did not lose the thread, which is what makes longer autonomous work plausible.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>xAI Loses Its Fight Over a Nudify App Ban</h2>
+        <ul>
+          <li><span class="btext">xAI lost its legal fight over the ban of a nudify application.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The same issue reported an AI critic taking a job at OpenAI and OpenAI&#x27;s lead coming under threat.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Courts are settling what platforms would not.</strong> Non-consensual imagery is the clearest case in generative media and therefore the first to produce enforceable precedent. It sets the boundary that harder cases will be argued against.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Agent run</div>
+          <div class="csrc">The Neuron</div>
+          <p>One attempt by an agent at a task, often involving many model calls. Pricing agents by the run rather than the token is why a cheap model changes the design rather than the bill.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Watermarking</div>
+          <div class="csrc">The Neuron</div>
+          <p>Embedding a machine-detectable signal in generated content. Enforceable in Europe from 2 August, and an obligation on the generator rather than the publisher.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Multi-agent loop</div>
+          <div class="csrc">The Neuron</div>
+          <p>Several agents working in turn on one goal, each handing state to the next. It is what let a twelve-hour run stay coherent rather than drifting.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron · BrainBuzz</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
