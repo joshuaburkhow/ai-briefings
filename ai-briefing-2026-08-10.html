@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday · August 10, 2026  ·  Based on August 9 newsletters  ·  2 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Seventy Percent of Voters Oppose a Data Centre Near Them</h2>
+        <ul>
+          <li><span class="btext">The Neuron reported 70 percent of voters oppose AI data centres being built nearby.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">It described the data centre revolt as becoming a major political issue.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The buildout needs land and power in places that vote.</strong> A trillion dollars of announced capacity assumes planning permission that is now contested locally. Opposition at this level does not stop construction but it decides where, and where determines cost and timeline.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Slowed Astra Over Critical Cyber Capability</h2>
+        <ul>
+          <li><span class="btext">OpenAI slowed Astra research over potentially Critical cyber capabilities.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">SpaceX&#x27;s reported 60 billion dollar acquisition of Cursor could close next week.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A voluntary delay, described in the language of a risk threshold.</strong> Naming a Critical rating means the decision was made against a written scale rather than a judgement call. That is the part worth keeping: a threshold can be argued about, audited, and applied to someone else.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>The Job Data Is Behind What Is Actually Happening</h2>
+        <ul>
+          <li><span class="btext">BrainBuzz reported AI is moving faster than the job data can measure.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The same issue covered which jobs could outlast AI, and YouTube&#x27;s AI crackdown backfiring.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Employment statistics arrive months after the decisions they describe.</strong> Hiring freezes and unbackfilled roles do not appear as job losses, so the effect shows up as an absence of openings rather than as a number. That is invisible to the series most policy responds to.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>No AI Becomes a Selling Point</h2>
+        <ul>
+          <li><span class="btext">DuckDuckGo sold out of 35 dollar sunglasses with no camera, microphone, AI or battery, marketed on being just sunglasses.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">BrainBuzz ran a guide on turning AI off in Gmail and Docs.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Absence is now a feature people will pay for.</strong> When a capability is in everything by default, opting out becomes the differentiated product. A how-to on disabling AI in office software is the same signal from the other direction.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>DeepMind Enters a New Era After the Departures</h2>
+        <ul>
+          <li><span class="btext">BrainBuzz described DeepMind entering a new AI era following the leadership changes.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The reshuffle followed Jeff Dean, Sanjay Ghemawat, Quoc Le and Oriol Vinyals leaving to found Discovery Loop.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The transition is now being written about as a period rather than an event.</strong> Institutions absorb this kind of departure over quarters, not weeks. What Gemini 4 looks like is the first real evidence of whether the bench was deeper than the four who left.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Critical capability rating</div>
+          <div class="csrc">The Neuron</div>
+          <p>A written threshold at which a lab restricts or delays a model. OpenAI applying one to Astra makes the decision auditable rather than a matter of judgement.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Data centre revolt</div>
+          <div class="csrc">The Neuron</div>
+          <p>Organised local opposition to AI infrastructure. It does not stop the buildout but decides where it happens, which drives both cost and schedule.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Unbackfilled role</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>A job left empty after someone leaves rather than cut. It does not appear in layoff figures, which is why employment data lags what is happening.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron · BrainBuzz</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
