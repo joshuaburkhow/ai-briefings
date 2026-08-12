@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday, August 12, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday, August 12, 2026   ·   Based on August 11 newsletters   ·   7 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>An unreleased Claude model pushed a 37-year-old Riemann Hypothesis bound from 41.6% to 67.2%, the biggest single jump in the problem&#x27;s history.</h2>
+        <ul>
+          <li><span class="btext">Told to take a real stab at the Riemann Hypothesis, Claude failed to solve it but improved the proven lower bound on zeros that satisfy it from 41.6% to 67.2% — a 25-point leap after the field had gained under one point in 37 years.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">It ran roughly 60 subagents in parallel inside Claude Code, tried about 650 failed ideas, and executed 2,400 shell commands over a day and a half, burning 31 million output tokens.</span><span class="src">genai.works</span></li>
+          <li><span class="btext">The proof was rewritten in Lean 4 for machine verification and reviewed by two external mathematicians, including Brian Conrey, who set the 1989 record it beat.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The prompt author, Anthropic&#x27;s Jarred Sumner, is not a mathematician and mostly typed encouragement like &#x27;keep going&#x27;; the model stays unreleased but the proof code and logs are public.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI is starting to extend, not just recite, human research.</strong> A general-purpose model coordinating subagents advanced a frontier math result that specialists had barely moved in decades, hinting that agentic setups can do real discovery work today even before a model ships.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic will embed invisible watermarks in Claude-generated text and C2PA metadata in Claude images to comply with EU transparency rules.</h2>
+        <ul>
+          <li><span class="btext">Claude&#x27;s text output will carry imperceptible watermarks and its images will use C2PA provenance metadata, designed to let platforms detect AI-generated content without affecting readability.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The move is framed as meeting the EU AI Act&#x27;s transparency requirements, with new Claude models watermarked from launch and older models updated later.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The plan drew immediate developer backlash, with users questioning why a paid plan would insert hidden marks into their own code and content.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Provenance is becoming a default, not an option.</strong> If a frontier lab hard-codes detectable signatures into everything it generates, AI-content labeling shifts from voluntary experiment to shipped feature — with real friction for developers who treat model output as their own.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI shipped GPT-5.6-Cyber, a specialized security model that found real zero-day bugs in Chrome&#x27;s V8 engine, gated behind a two-tier Daybreak program.</h2>
+        <ul>
+          <li><span class="btext">GPT-5.6-Cyber is trained for vulnerability research, exploit development and attack validation, completing 95% of advanced security tasks in testing versus 1.5% for the standard GPT-5.6.</span><span class="src">AlphaSignal</span></li>
+          <li><span class="btext">OpenAI says it already surfaced previously unknown flaws in Chrome&#x27;s V8 JavaScript engine, a popular database, and an OS kernel.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Access is split into Daybreak Blue (loosened guardrails for defensive work) and Daybreak Red (full zero-day and exploit tooling for approved defenders), released days after OpenAI paused a model for being too capable at hacking.</span><span class="src">genai.works</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Offensive-grade AI is now a shipping product.</strong> A model that autonomously finds zero-days changes the defender-attacker balance overnight, and OpenAI&#x27;s tiered gating is an early template for how labs try to hand dangerous capability only to vetted users.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>xAI launched Grok Bot, AI &#x27;coworkers&#x27; that get their own cloud computer and run tasks end-to-end across a company&#x27;s tools.</h2>
+        <ul>
+          <li><span class="btext">Grok Bots sign into apps, work 24/7, finish jobs end-to-end and only return to a human for approvals, learning workflows they can later repeat on their own.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Multiple Bots can coordinate in parallel, message each other and manage projects, with early teams using them for sales, marketing, operations, bug fixes and engineering.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">It launched in beta for SuperGrok Heavy, Cursor Ultra and Cursor Teams Premium subscribers, with an enterprise waitlist open.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The pitch is moving from assistant to employee.</strong> Giving each agent its own persistent computer and standing access to company tools is a concrete bid to replace headcount, and it raises the same oversight and breakout questions security teams are already flagging.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Startup Pathway unveiled a 150M-parameter post-transformer model that approaches frontier reasoning at a fraction of the cost, challenging AI&#x27;s scaling economics.</h2>
+        <ul>
+          <li><span class="btext">BDH-CQ scored 29.5% pass@2 on the ARC-AGI-1 benchmark at an inference cost of $0.0007 per task — versus OpenAI&#x27;s discounted GPT-5.6 Luna at 34.5% but roughly 11 times the cost.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The model needs no chain-of-thought and less training data thanks to improved built-in memory, and its architecture descends from Pathway&#x27;s &#x27;Dragon Hatchling&#x27; post-transformer paper.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Advisers include Transformer co-author Łukasz Kaiser, a former Gemini group PM, and Databricks chief AI scientist Jonathan Frankle; the team calls it a &#x27;PageRank moment for intelligence.&#x27;</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Cheaper intelligence could break the data-center arms race.</strong> If a tiny post-transformer model can deliver near-frontier reasoning for a thousandth of the compute, the economics that justify hundred-billion-dollar buildouts start to look shakier.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Nvidia released Nemotron 3.5 Lightning, its first open-source model since Jensen Huang backed free AI, running on a single GPU.</h2>
+        <ul>
+          <li><span class="btext">Nemotron 3.5 Lightning is a lightweight open model companies can download, modify and run without permission or fees, even on laptops and desktops.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Nvidia positions the roughly 30B open release as running about 4x faster than similar-sized models, aiming to spur adoption and, ultimately, chip demand.</span><span class="src">AlphaSignal</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The chipmaker is now competing on models, not just silicon.</strong> Nvidia joining Meta in the open-weight camp deepens a U.S. open-source push against China&#x27;s models while making its own hardware the default place to run them.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Nvidia lined up $500 billion in financing with six asset managers to treat AI compute as a borrow-against asset class.</h2>
+        <ul>
+          <li><span class="btext">The push mobilizes third-party capital for hyperscalers, frontier labs and enterprises to build data centers and buy Nvidia hardware without tapping their own balance sheets.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Nvidia argues compute can be underwritten like commercial real estate or toll roads because the hardware is a revenue-generating, transferable asset with a long life.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The financing lands as Jensen Huang publicly calls his chips an &#x27;investable asset,&#x27; part of a broader $500B infrastructure-financing effort covered across the day&#x27;s newsletters.</span><span class="src">The Neuron Daily</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>AI buildout is being turned into structured debt.</strong> Financializing GPUs as collateral lets customers scale spending far beyond their cash on hand, concentrating even more of the AI economy&#x27;s risk on the assumption that compute demand keeps compounding.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">C2PA metadata</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>An open provenance standard (Coalition for Content Provenance and Authenticity) that attaches tamper-evident &#x27;nutrition label&#x27; data to a file recording how it was made — here, marking that an image came from Claude.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Post-transformer architecture</div>
+          <div class="csrc">The Deep View</div>
+          <p>A model design that departs from the standard transformer, using different memory mechanisms to reason with far fewer parameters and no chain-of-thought; Pathway&#x27;s BDH-CQ is an early example aimed at cutting compute cost.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Zero-day</div>
+          <div class="csrc">AlphaSignal</div>
+          <p>A software security flaw that is unknown to the vendor and has no patch yet, so defenders have &#x27;zero days&#x27; to prepare — the class of bug OpenAI&#x27;s GPT-5.6-Cyber was built to find.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Open-weight model</div>
+          <div class="csrc">The Neuron Daily</div>
+          <p>A model whose trained parameter files are published so anyone can download, run and modify it on their own hardware, rather than only calling it through the maker&#x27;s servers.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron Daily, TLDR AI, AlphaSignal, The Deep View, Brain Buzz, Everyday AI, genai.works</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
