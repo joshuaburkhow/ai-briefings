@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday, August 13, 2026</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday, August 13, 2026   ·   Based on August 12 newsletters   ·   7 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Researchers decoded the hidden reasoning frontier labs encrypt, and found real passwords inside</h2>
+        <ul>
+          <li><span class="btext">A disclosed paper showed the encrypted chain-of-thought blocks that Anthropic, OpenAI and Google hand back to client apps can be replayed into a weaker sibling model from the same provider, which can then be jailbroken into reading the stronger model&#x27;s hidden reasoning aloud — no encryption key needed, and no attack on the stronger model at all.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">A scan of roughly 7,000 public traces turned up 62 unique API keys, 33 email addresses and 33 passwords, with 64 items appearing only inside the reasoning blocks and nowhere in the visible session.</span><span class="src">AINews</span></li>
+          <li><span class="btext">A wider sweep of 315,320 public reasoning blocks recovered 367 pieces of personal information and 182 credentials; the researchers also saw Kimi K3 producing reasoning strikingly similar to hidden frontier traces, though similarity alone does not prove how it was trained.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">All three labs were notified before publication and several of the vulnerabilities are already fixed, but the recovered token counts matched billed thinking tokens roughly one to one.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anything you paste into a public agent session may be carrying secrets you cannot see.</strong> The point is not that a lab was careless with a key. It is that hidden reasoning was treated as a black box that could be shipped around between apps, sessions and users, and that box turned out to be readable by a cheaper model from the same family. If you have ever shared a Claude Code or Codex session publicly, the encrypted blob in it is part of what you shared. Treat reasoning traces as data you are publishing, not as opaque plumbing, and stop pasting whole sessions into issue trackers and gists.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Gemini and ChatGPT both crossed a billion monthly users in the same week</h2>
+        <ul>
+          <li><span class="btext">Google said the Gemini app passed 1 billion monthly active users, its fourteenth product to hit that mark and the fastest to get there; the count only includes people who opened the Gemini app or the web interface.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Sundar Pichai&#x27;s announcement put the milestone alongside more than 150 million images generated daily and over 100 million active Gemini users on iOS.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">ChatGPT crossed the same line, turning the consumer AI race into a contest over grid capacity and enterprise scale rather than model quality alone.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Distribution, not benchmark scores, is deciding this round.</strong> Gemini did not reach a billion by winning a leaderboard. It reached a billion because it is wired into Search, Android and Workspace, and Google can put it in front of people who never chose it. For anyone building on top of these models, that changes the risk calculation: the assistant your customers already have is the one bundled with something else they already use, and a better model with no distribution is not a competitor to it.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI&#x27;s longtime COO leaves as a $7 billion tender values the company at $852 billion</h2>
+        <ul>
+          <li><span class="btext">Brad Lightcap, chief operating officer for eight years, is departing to &quot;start something new,&quot; following Fidji Simo, Bill Peebles and Kevin Weil out the door in a pre-IPO executive shakeup.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">A $7 billion tender offer lets employees cash out at an $852 billion valuation ahead of a possible trillion-dollar listing.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The company is simultaneously hiring a power-trading lead to hedge electricity prices across a $30 billion Georgia campus and a possible 10-gigawatt Ohio site.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A company hiring an energy trader is telling you where its costs now live.</strong> Four senior departures in a run-up to an IPO is worth noticing, but the power-trading hire is the more useful signal. OpenAI is far enough into the buildout that electricity price volatility is a line item big enough to hedge, like an airline hedging jet fuel. That is what the cost structure of a frontier lab looks like now, and it is why every capability announcement lately arrives attached to a data centre announcement.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>SpaceXAI shipped Grok 4.6 and priced it at $2 per million input tokens</h2>
+        <ul>
+          <li><span class="btext">SpaceXAI released Grok 4.6, pitched at coding, long-running agents, knowledge work and visual tasks, and available through several developer platforms on day one.</span><span class="src">Everyday AI</span></li>
+          <li><span class="btext">On overall intelligence it lands on par with GPT-5.6 Sol and Claude Fable 5, and slightly behind Claude Opus 5, with API pricing starting at $2 per million input tokens.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The frontier tier now has four models at roughly one price.</strong> Grok 4.6 arrives at the same $2 per million input tokens Anthropic just locked in permanently for Claude Sonnet 5. When four labs converge on comparable capability at a comparable price, model choice stops being a strategic decision and becomes a routing decision — which is exactly the problem the next story is about.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>NVIDIA&#x27;s Switchyard picks a different model for each step of an agent&#x27;s task</h2>
+        <ul>
+          <li><span class="btext">NeMo Switchyard is an open-source library that routes each step of an agent workflow to whichever model fits it, rather than committing the whole run to one model.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Paired with the new Nemotron 3.5 Lightning, NVIDIA&#x27;s own tests put task completion at frontier level while costing roughly a third of running Opus 4.8 alone.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Lightning itself is a 30-billion-parameter open mixture-of-experts model with about 3 billion active parameters, built for high-volume agent execution and roughly 30% faster than Qwen3.6-35B at matching accuracy.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The unit of model selection is shrinking from the app to the step.</strong> Most teams still pick one model per product and live with it. Switchyard treats that as waste: planning wants a strong model, the eighty tool calls after it do not. If a third of the cost at the same completion rate holds up outside NVIDIA&#x27;s own benchmarks, per-step routing stops being an optimisation and becomes the default architecture — and the practical question for your own agents becomes which steps genuinely need the expensive model.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Koray Kavukcuoglu takes over Google DeepMind, reporting straight to Pichai</h2>
+        <ul>
+          <li><span class="btext">Kavukcuoglu, previously DeepMind&#x27;s CTO and Google&#x27;s chief AI architect, becomes head of Google DeepMind with Gemini model development, frontier research and the Gemini app and developer teams under him.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">He reports directly to Sundar Pichai; the promotion of an architect rather than a researcher reads as Google prioritising execution over deep research.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The change is framed as a move to close the gap with OpenAI and Anthropic.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google just put a shipping engineer in charge of its research lab.</strong> DeepMind was built as a research organisation and has spent two years being asked to behave like a product team. Handing it to the person who was chief AI architect, with the Gemini app in the same reporting line as frontier research, removes the seam between the two. Expect the cadence of Gemini releases to matter more to Google than the next paper.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>The AI provenance push spreads from text to music and newsletters</h2>
+        <ul>
+          <li><span class="btext">Spotify is rolling out &quot;AI Persona&quot; badges marking artists that do not represent a real person, applied both to self-disclosed profiles and to relevant profiles that do not disclose, and will keep those artists out of recommendations unless a user follows them.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Suno is adding watermarking and fingerprinting alongside a changed download policy aimed at spam and fraud, and Substack has integrated the Pangram detector so readers can see how much of a post was AI-written.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">A Deezer study found 97% of listeners cannot tell fully AI-generated music from human-made tracks.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The commitments sit under the EU AI Act transparency code, which OpenAI, Microsoft, Google, Cohere, Meta and Synthesia have also backed.</span><span class="src">Everyday AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Provenance is becoming a platform obligation, not a lab courtesy.</strong> Yesterday this was one lab watermarking its own output. Today it is a streaming service, a music generator and a newsletter platform, all pointed at the same EU transparency code. The direction of travel is that anything you publish through a major platform will carry a machine-readable claim about how it was made. Worth knowing before you find out from a badge on your own work.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic signs a $9.1 billion, 20-year compute deal with a former Bitcoin miner</h2>
+        <ul>
+          <li><span class="btext">The agreement covers 191 MW at Riot Platforms&#x27; Rockdale, Texas campus over twenty years.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Anthropic also joined Macquarie and Singapore sovereign fund GIC to launch Theseus Infrastructure for dedicated US data centres, with a commitment to cover consumer electricity price increases.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The moves are timed ahead of a possible September or early-October IPO at a reported $965 billion valuation.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Crypto mines are becoming the fastest available source of powered land.</strong> Riot already had the substation, the cooling and the grid interconnect, which is the part that takes years. Buying a decommissioning Bitcoin site is the shortcut around a five-year queue for power. The consumer electricity pledge attached to Theseus is the other half of the story: the political cost of AI buildout is now high enough that labs are pre-paying to defuse it.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>Unsloth Desktop puts local training and inference in a single open-source app</h2>
+        <ul>
+          <li><span class="btext">The app runs and trains models locally on Mac, Windows and Linux across MLX, GGUF, diffusion image and video, audio, CPU and multi-GPU setups, with OpenAI-compatible APIs.</span><span class="src">AINews</span></li>
+          <li><span class="btext">It bundles tool calling, sandboxed code execution, private search, RAG and MCP, and claims 2x faster training with 70% less VRAM — closer to a local AI operating environment than an LM Studio competitor.</span><span class="src">AINews</span></li>
+          <li><span class="btext">It covers more than 500 text, vision, audio and embedding models and is free and open source.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Fine-tuning on your own machine is now a download rather than a project.</strong> The gap between using a local model and improving one has been the whole reason local AI stayed a hobby. Putting training, serving, MCP and sandboxed execution in one installable app closes it. For work with data that genuinely cannot leave the building, this is the first setup that does not require a dedicated ML engineer to stand up.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Encrypted reasoning trace</div>
+          <div class="csrc">AINews</div>
+          <p>The private step-by-step thinking a model does before answering, returned to the calling app as a signed, encrypted block so the app can hand it back on the next turn without the app — or a competitor — being able to read it. This week&#x27;s paper showed the block travels between models, sessions and users, which is what made it attackable.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Distillation</div>
+          <div class="csrc">The Neuron</div>
+          <p>Training a smaller, cheaper model on the outputs of a stronger one to copy some of its capability. Hiding chain-of-thought was the main defence against it, which is why decoded traces matter commercially and not only for privacy.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Mixture of experts (MoE)</div>
+          <div class="csrc">TLDR AI</div>
+          <p>A model split into many specialist sub-networks where only a few activate per token. Nemotron 3.5 Lightning is 30 billion parameters total but around 3 billion active, which is why it serves fast and cheap while still being a large model.</p>
+        </div>
+        <div class="concept">
+          <div class="term">C2PA</div>
+          <div class="csrc">The Deep View</div>
+          <p>An open standard for attaching tamper-evident provenance metadata to a file, recording what created it and what edited it. It is the mechanism behind the AI-labelling commitments now being made under the EU AI Act.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Breakfast, AINews, Brain Buzz, Everyday AI, TLDR AI, The Deep View, The Neuron</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
