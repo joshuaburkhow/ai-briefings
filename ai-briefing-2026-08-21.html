@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday · Based on August 20 newsletters · 43 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>An AI-Designed Cancer Therapy Just Cleared Phase 3</h2>
+        <ul>
+          <li><span class="btext">Merck and Moderna reported the first positive Phase 3 result for an individualized mRNA cancer therapy, intismeran autogene, in the INTerpath-001 melanoma trial.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Moderna&#x27;s AI algorithms read sequencing data from a patient&#x27;s tumor and blood, scan the cancer&#x27;s mutations, and predict up to 34 &#x27;neoantigens&#x27; most likely to trigger an immune response, which are then encoded into a custom mRNA dose for that patient.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Paired with Keytruda, the personalized therapy significantly improved recurrence-free and distant-metastasis-free survival versus Keytruda alone; overall-survival follow-up is still ongoing.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>This is a concrete clinical result, not a lab demo.</strong> Phase 3 data is the threshold regulators and doctors actually act on. An AI pipeline choosing which mutations to target, one patient at a time, and clearing that bar is a rare case of frontier AI directly changing what a doctor can offer a patient today.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Public Trust in AI Is Cracking, and Young Adults Are Leading the Turn</h2>
+        <ul>
+          <li><span class="btext">A new Pew Research survey found 52% of Americans are now more concerned than excited about AI, up from 37% in 2021, and for the first time a majority of adults under 30 (55%) share that view.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">71% of adults now think AI will mean fewer jobs in the US over the next two decades, up from 64% last year; Geoffrey Hinton has publicly told people to consider trades like plumbing instead.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Separately, rising community opposition to AI data centers over electricity bills, water use and jobs is reshaping state politics, with Pennsylvania and Wisconsin governor&#x27;s races both turning into data-center fights.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">A companion poll cited in that reporting found 52% of Americans are more concerned than excited about AI overall, and OpenAI and Meta have started local community-outreach efforts to blunt the backlash.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The demographic that normally adopts new tech first is now the most wary of it.</strong> Sentiment isn&#x27;t just a mood metric here: it is starting to shape hiring choices, state elections and where hyperscalers can build. A generation that historically embraces new tools opting out changes the adoption curve labs and enterprises have been planning around.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Stripe Buys OpenRouter to Sit on Top of the Model-Routing Boom</h2>
+        <ul>
+          <li><span class="btext">Stripe acquired OpenRouter, which routes and inspects more than 10 trillion tokens of AI traffic a day, positioning Stripe as a neutral behavioral-data layer for AI security and alignment across providers.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The deal lands the same day Ramp launched its own router.com, claiming 40% lower inference cost for the same outputs by matching each request to the cheapest model that clears the bar.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Ben&#x27;s Bites flagged the timing as notable: Stripe co-led Ramp&#x27;s $115M Series B back in 2021, and a leaked investor letter framed the OpenRouter purchase around that same cross-network data advantage.</span><span class="src">Ben&#x27;s Bites</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Routing has quietly become the layer everyone wants to own.</strong> Whoever sits between an app and dozens of interchangeable models sees which ones actually get used, at what cost, and where they fail — a vantage point now worth acquiring outright rather than just building.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Pauses Frontier RL Training for Two Weeks</h2>
+        <ul>
+          <li><span class="btext">OpenAI halted reinforcement-learning training on its deployable models for two weeks and postponed its largest planned RL run to add safeguards, in a scoped pause that leaves other R&amp;D untouched.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The stated aim is preventing models from being able to hack real-world targets during testing; experts note a voluntary, unilateral pause only meaningfully slows the industry if competitors follow.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Ben&#x27;s Bites reported the pause followed a Hugging Face security incident and signs that OpenAI&#x27;s Astra model may be approaching its internal critical-cyber capability threshold.</span><span class="src">Ben&#x27;s Bites</span></li>
+          <li><span class="btext">Separately, OpenAI CFO Sarah Friar told employees the company &#x27;will be a public company in 2027,&#x27; with the timeline able to move up if growth keeps accelerating.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A frontier lab choosing to slow down is itself the story.</strong> OpenAI has spent the year racing rivals and investors alike; pausing RL training on safety grounds, even briefly, is a signal about what its own red-teaming is finding in Astra, right as it also puts a public date on going public.</p>
+        </div>
+      </article>
+      <article class="story cat-4">
+        <div class="tag">DEEPSEEK</div>
+        <h2>Z.ai Says GLM-5.3&#x27;s Jump Came From Training, Not Size</h2>
+        <ul>
+          <li><span class="btext">Z.ai CEO Jie Tang argued raw parameter count is no longer a useful shorthand for capability, saying it only means something alongside training data volume, compute allocation, and deployment conditions.</span><span class="src">AINews</span></li>
+          <li><span class="btext">GLM-5.3&#x27;s largest capability jumps came entirely from reinforcement learning on long-horizon, production-style task environments — some representing several days of real engineering work — rather than from a bigger base model.</span><span class="src">AINews</span></li>
+          <li><span class="btext">To scale that training, Z.ai built pipelines that synthesize entire task environments end-to-end, including verifiers that check a task is genuinely solvable without ever seeing the reference solution.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>This is an explicit break from the scaling-law playbook the whole industry has cited for years.</strong> If long-horizon RL environments, not parameter count, are what&#x27;s driving the next round of capability gains, that changes where labs — including Chinese labs racing on tighter compute budgets — should be spending their next dollar.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Snowflake Joins the Rush to Route AI Requests to Cheaper Models</h2>
+        <ul>
+          <li><span class="btext">Snowflake added dynamic model routing to its Cortex AI Gateway and its Snowflake CoCo/CoWork products, automatically sending each task to the cheapest model that can still handle it.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">In Snowflake&#x27;s internal tests, agents building a dbt data pipeline saw up to 3x greater token efficiency with routing versus a frontier-model-only path, without a quality drop; a separate coding test found 25% greater token efficiency at the same PR output.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The move follows Nvidia&#x27;s own open-source NeMo Switchyard router, and comes as a Gartner forecast cited in the same report projects AI inference cost per agentic workflow to more than quintuple through 2028.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Model routing is turning into the default answer to the industry&#x27;s cost problem.</strong> As agentic workflows multiply the number of model calls per task, routing to the cheapest adequate model — rather than defaulting to the frontier model for everything — is becoming table stakes rather than a niche optimization.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta Pushes AI Onto the Desktop and Into Video, on the Same Day</h2>
+        <ul>
+          <li><span class="btext">Meta&#x27;s Muse Video model entered closed beta, producing 10-second clips with native audio and early testers reporting strong detail and temporal consistency.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Meta also launched an AI desktop app for macOS with system-wide voice dictation, screen-aware answers via its Muse Spark model, and direct integrations into Instagram, Facebook, Meta Ads and Google Workspace for campaign analytics.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Meta is positioning the Mac app as both a personal productivity tool and a business engine, generating proposal decks and handling customer support inquiries over WhatsApp and Instagram.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta is trying to own both ends of the AI stack at once — generation and the interface people use daily.</strong> A closed-beta video model and a desktop assistant look like separate launches, but together they are Meta positioning AI as infrastructure for both content creation and everyday business operations, not just a chat window.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Context Engineering</div>
+          <div class="csrc">AI Corner</div>
+          <p>The discipline of deliberately budgeting what an AI agent sees at each step — which instruction files load when, what survives a context compaction — rather than front-loading everything into the prompt. Anthropic&#x27;s engineering org cited it as the main driver behind engineers merging 8x more code per day than in 2024, with the model and team otherwise unchanged.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Private Safety Processing</div>
+          <div class="csrc">AI Entrepreneurs</div>
+          <p>OpenAI&#x27;s proposed system for detecting harmful usage patterns across related API interactions for Zero Data Retention customers, without giving OpenAI staff access to the underlying prompts or responses — automated safety signals instead of stored, human-reviewable content.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Physical Prompting</div>
+          <div class="csrc">The Neuron</div>
+          <p>A robot-learning technique from Generalist&#x27;s GEN-1.5 model: showing a robot a single 3-12 second video demonstration of a task, which it holds in a 30-second context window and immediately attempts, with zero gradient updates. Ten weight-update steps on five minutes of data raised success on simple tasks from 59% to 83%.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron, The Deep View, Brain Buzz, TLDR AI, AINews, AI Entrepreneurs, Turing Post, AI Corner, Ben&#x27;s Bites, Louis Bouchard</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
