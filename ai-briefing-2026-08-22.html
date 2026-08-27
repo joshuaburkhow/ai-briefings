@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Friday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Friday · Based on August 21 newsletters · 42 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Lines Up an IPO to Rival SpaceX&#x27;s Record</h2>
+        <ul>
+          <li><span class="btext">Anthropic told investors it expects its IPO to match or exceed SpaceX&#x27;s record raise ($75B base, $86.2B with overallotment), and could file publicly as soon as the end of this month.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Anthropic&#x27;s Q2 numbers: $11.6 billion in revenue with a $559 million operating profit, versus OpenAI&#x27;s $6.7 billion revenue and $12.3 billion operating loss.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The company is exploring super-voting shares for Dario Amodei and his co-founders; Morgan Stanley, Goldman Sachs, and JPMorgan are leading the offering.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Anthropic is also finalizing a revolving credit facility to raise more than its roughly $10 billion target ahead of the filing.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is out-executing OpenAI&#x27;s IPO race with actual profit behind it.</strong> Being profitable while OpenAI is still burning billions gives Anthropic a much stronger pitch to public investors, and it&#x27;s already pushing OpenAI&#x27;s CFO to publicly commit to a 2027-or-sooner IPO to keep pace.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Nvidia&#x27;s $6B Reverse Execuhire Absorbs Most of Poolside</h2>
+        <ul>
+          <li><span class="btext">Nvidia is paying Poolside $6 billion to license its Model Factory and is hiring 109 of Poolside&#x27;s roughly 115 technical staff, while Poolside&#x27;s founders stay behind to pursue a new pivot.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Poolside lost a 40,000-GPU GB300 cluster late last year after missing a six-week window to raise the $2 billion needed to pay for it, and says next-gen frontier models need far more than 10x that capacity.</span><span class="src">AINews</span></li>
+          <li><span class="btext">The founders call it neither an acquisition nor an acquihire — the reverse of deals like Windsurf-Google or Scale-Meta, where executives usually leave and employees stay with a payout.</span><span class="src">AINews</span></li>
+          <li><span class="btext">The Neuron flagged it alongside Nvidia&#x27;s separate early talks with Korean inference-chip startup Rebellions, part of a broader wave of compute consolidation.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Compute scarcity is now expensive enough to dissolve a well-funded startup.</strong> Poolside had real funding and a shipped model but still couldn&#x27;t secure enough contracted compute to stay competitive — a sign that data-center space, not capital, is now the binding constraint at the frontier.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>ChatGPT&#x27;s Apple Messages Plugin Turns Up the Pressure on Siri</h2>
+        <ul>
+          <li><span class="btext">OpenAI launched an Apple Messages plug-in for ChatGPT that can search, sort, draft, send, and delete iMessage, SMS, and RCS texts, available across all plans in the ChatGPT Mac app.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The feature requires Full Disk Access and has unclear retention policies; OpenAI says messages aren&#x27;t fully indexed and the AI only acts on explicit requests, warning against persistent approval.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The Deep View framed it as AI shifting from answering questions to managing tasks, adding pressure on Apple&#x27;s Siri overhaul expected in September.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The plugin also works with Codex and ChatGPT Work for professional use cases.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>OpenAI is building deep into the iPhone before Apple ships its own fix.</strong> By handling texts before Apple&#x27;s delayed Siri overhaul lands, OpenAI is positioning ChatGPT as the default AI layer on iOS — encroaching on ground Apple has always controlled itself.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Slack Code Turns Slack Into a Workspace for AI Coding Agents</h2>
+        <ul>
+          <li><span class="btext">Slack Code adds project-specific code channels where teams and AI coding agents plan, write, and review software together, now available on any Slack plan.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Tagging a coding agent from any conversation spins up a dedicated channel with GitHub, Anthropic, and Vercel tooling built in, which auto-archives once the task ends.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Engineers can watch live code diffs and previews directly inside Slack instead of switching to a separate browser tab or IDE.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Chat apps are becoming where AI agents actually do the work, not just report on it.</strong> Folding a full coding workflow into Slack signals vendors expect people to supervise agents from tools they already live in all day, rather than a separate dashboard.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Packages Computer Use, Skills, and Files Into One Production Surface</h2>
+        <ul>
+          <li><span class="btext">Anthropic made Computer Use, the browser tool, the Skills API, and the Files API generally available on the Claude Platform, turning four previously separate agent ingredients into one production-ready surface.</span><span class="src">AINews</span></li>
+          <li><span class="btext">The Skills API adds versioned, reusable procedures; the Files API now supports expiration control, 5x higher rate limits (500 RPM), and 1 TB per organization.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Separately, Anthropic&#x27;s Mac-first Project Parka captures meeting audio, produces speaker-attributed transcripts, and turns them into runnable implementation prompts for Claude&#x27;s agents.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Anthropic also published an AG-UI adapter mapping Claude Managed Agent chat threads to managed sessions, streaming tool calls and reasoning into custom interfaces.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic is packaging its agent toolkit for teams to keep, not just demo.</strong> Letting a team upload a procedure once, pin a version, and reuse files across requests lowers the cost of building agents that stick around in a real workflow instead of one-off scripts.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>AT&amp;T Proves the Cheapest Adequate Model Can Beat the Smartest One</h2>
+        <ul>
+          <li><span class="btext">AT&amp;T is routing about 40% of internal employee AI usage to open-weight models instead of frontier ones, targeting 60-70%, and cut coding costs 56% for roughly a 2% quality tradeoff at 45 billion tokens a day.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The Information reported AT&amp;T&#x27;s smart routing cut costs 80-90% on some applications while keeping its overall OpenAI and Anthropic spending flat.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The move follows Stripe&#x27;s reported $7 billion acquisition of OpenRouter and Ramp&#x27;s own launch of a model router called &quot;Router.&quot;</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">AINews&#x27; Twitter recap noted the same AT&amp;T data point being read as a warning sign for OpenAI and Anthropic&#x27;s enterprise pricing moat.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A big enterprise just proved routine AI work doesn&#x27;t need the smartest model.</strong> When a company AT&amp;T&#x27;s size shows most internal AI tasks run fine on cheap open models, it pressures OpenAI and Anthropic&#x27;s high-margin enterprise pricing and explains the sudden rush of new AI routing products.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Lets Publishers Pin Themselves as Trusted Sources Across Search and AI</h2>
+        <ul>
+          <li><span class="btext">Google launched a &quot;Preferred Sources&quot; button publishers can embed on their own sites; when a reader clicks it, that outlet gets pinned as a trusted source across Search, Discover, Google News, AI Overviews, and AI Mode.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Google Discover is adding conversational prompt controls so users can describe feed preferences in natural language, and Android is getting customizable audio news briefings.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Google AI Studio added full bi-directional GitHub integration to manage repositories, pull requests, and merges directly inside the workspace UI.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">DeepMind is testing &quot;Backstory,&quot; a tool chaining C2PA metadata scans, SynthID watermark checks, manipulation detection, and reverse image search into automated fact-check reports.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Publishers get a way to push back on AI answers eating their traffic.</strong> Letting outlets opt in to being a &quot;trusted source&quot; for Google&#x27;s AI answers is a direct response to years of publisher complaints about AI Overviews cutting them out, though Google still decides who counts as trustworthy.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Model routing</div>
+          <div class="csrc">The Neuron</div>
+          <p>Automatically directing each AI request to the cheapest model capable of handling it, escalating only harder or higher-stakes tasks to a more expensive frontier model.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Reverse execuhire</div>
+          <div class="csrc">AINews</div>
+          <p>A deal where a company&#x27;s employees leave to join an acquiring company while its founders and investors stay behind — the inverse of a typical acquihire, where executives leave with a payout and employees remain.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Skills API</div>
+          <div class="csrc">AINews</div>
+          <p>Anthropic&#x27;s system for packaging a reusable, versioned procedure that a Claude agent can call repeatedly instead of having it re-explained inside every prompt.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Super-voting shares</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>A class of stock that gives its holders, often founders, more votes per share than regular shareholders, used to keep control of a company after it goes public.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Breakfast, AINews, Brain Buzz, TLDR AI, The Deep View, The Neuron</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
