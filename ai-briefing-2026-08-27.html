@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Wednesday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Wednesday · Based on August 26 newsletters · 37 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI&#x27;s Jalapeno Inference Chip Beats Nvidia Blackwell on Power Efficiency</h2>
+        <ul>
+          <li><span class="btext">OpenAI&#x27;s first custom inference chip, Jalapeno, delivered 1.5x to 4x the performance-per-watt of leading AI chips on SemiAnalysis-verified InferenceX benchmarks tested on GPT-OSS, DeepSeek R1, and Kimi K2.5.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The chip only runs models, it cannot train them, so OpenAI still needs Nvidia hardware for training; a partnership with Broadcom took Jalapeno from concept to working silicon in under two years.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">OpenAI plans a small batch of Jalapeno-powered systems this year plus two newer chip generations already in development, eyeing it for its most latency-sensitive Codex Ultra Fast Mode.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Every major AI lab is racing to own silicon, not just rent Nvidia&#x27;s.</strong> If Jalapeno&#x27;s efficiency numbers hold up in production, OpenAI could cut its own inference costs sharply and lean less on Nvidia for the workloads it runs most, even though it still needs Nvidia chips to train new models.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic Tells IPO Investors Its Market Opportunity Tops $30 Trillion</h2>
+        <ul>
+          <li><span class="btext">Anthropic is preparing IPO paperwork estimating a total addressable market above $30 trillion, beating SpaceX&#x27;s earlier $28.5 trillion claim, per the Wall Street Journal.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The company&#x27;s actual 2028 revenue projection is a far smaller $190 to $200 billion; it more than doubled to $11.6 billion in revenue last quarter alone.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The TAM narrative underpins Anthropic&#x27;s push for a roughly $2 trillion IPO valuation, and is framed as justifying the heavy capital spending needed to compete with OpenAI.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>A trillion-dollar sales pitch needs a bigger number to match.</strong> TAM slides are sales tools, not forecasts, but a claim this size shows how confident AI labs have become that AI will eventually touch nearly every corner of the economy, and how much they need investors to believe it before the IPO roadshow starts.</p>
+        </div>
+      </article>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Claude&#x27;s Memory Now Works the Same in Chat and Cowork</h2>
+        <ul>
+          <li><span class="btext">Anthropic merged Claude&#x27;s chat and Cowork memory into one system, on by default, so context added mid-conversation carries across both surfaces.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Memory stores editable, deletable topic files; sensitive data like IDs and SSNs is excluded by default and users can view or delete what&#x27;s stored.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Anthropic paired the update with centralized identity management for MCP connectors across Claude, Claude Code, and Cowork, letting IT teams enforce role-based access and block data exfiltration.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Less rebriefing, more risk surface.</strong> Shared memory removes a real annoyance, re-explaining a project every time you switch tools, but it also means whatever Claude remembers now follows you everywhere, raising the stakes on what gets stored and who inside a company can see it.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>Apple&#x27;s New M6 and M5 Ultra Chips Bet Big on Local AI</h2>
+        <ul>
+          <li><span class="btext">Apple&#x27;s new M6 chip (12-core CPU/GPU, dual 16-core Neural Engines) claims up to 4x the AI performance of the M4; it ships in the Mac mini starting at $899.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The M5 Ultra fuses four dies with up to 80 GPU cores and 512GB of unified memory, claiming 4.5x the peak AI compute of the M3 Ultra, enough to run models with hundreds of billions of parameters locally.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Both chips launch September 22 amid a global AI-driven memory shortage pushing up prices across Macs, iPads, and the upcoming iPhone 18.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Running big models on your own desk is now a real option.</strong> With enough unified memory to hold hundreds-of-billions-of-parameter models, Apple is positioning its desktop chips as an alternative to cloud inference for developers who want privacy or don&#x27;t want to pay per token.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>Perplexity and Nvidia Launch a Fully Local AI Agent With Zero Token Costs</h2>
+        <ul>
+          <li><span class="btext">Perplexity&#x27;s Portable Computer runs its agentic Computer platform entirely on local Nvidia hardware, Linux plus an RTX GPU with at least 24GB VRAM, with no per-task billing.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The system defaults every task to on-device processing and asks permission before escalating any step to a cloud model.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">It&#x27;s live now for Pro, Max, Enterprise Pro, and Enterprise Max subscribers on Linux; Windows support comes in September.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Local AI just got an enterprise-grade privacy pitch.</strong> Bundling models, tools, and sandboxing into hardware users already own removes token costs and keeps sensitive files off the cloud by default, a direct pitch to privacy-sensitive enterprises that Nvidia and Perplexity are both betting on.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Expands Gemini Enterprise Into Legal Work</h2>
+        <ul>
+          <li><span class="btext">Google Cloud launched Gemini Enterprise for Legal, giving law firms like Weil Gotshal AI agents for contract review and legal research.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The launch follows Google Cloud&#x27;s Gemini Enterprise rollout for financial services, which added more than 50 finance-specific AI skills.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is going after white-collar professional work one vertical at a time.</strong> Pairing a legal-specific agent with the financial-services version launched the same week shows Google chasing high-value enterprise verticals where AI agents can replace billable research and review hours.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Nvidia&#x27;s Financing Web Is Starting to Worry Wall Street</h2>
+        <ul>
+          <li><span class="btext">The Wall Street Journal reports Nvidia has effectively become a banker to the AI boom, financing deals across the industry it also supplies chips to.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Credit default swaps insuring against a Nvidia debt default have doubled in price over two months, after Nvidia gave a $105 billion residual value guarantee on OpenAI&#x27;s Ohio data center and took part in two other $500 billion deals this month.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Nvidia has reportedly been party to more than 300 financing deals in the last five years; analysts worry an AI downturn could unwind the circular deals and cause cascading losses.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The company selling the shovels is also lending the money to buy them.</strong> When the chip supplier is also financing its customers&#x27; purchases of its own chips, a slowdown in AI spending doesn&#x27;t just hurt demand, it could hit Nvidia&#x27;s balance sheet directly, which is why credit markets are starting to price in more risk.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Lovable Hits $13.3 Billion Valuation as It Pivots From App Builder to Agent Platform</h2>
+        <ul>
+          <li><span class="btext">Lovable closed a $400 million Series C led by Menlo Ventures alongside EQT&#x27;s Scaleup Europe Fund, valuing the AI app-building company at $13.3 billion.</span><span class="src">AINews</span></li>
+          <li><span class="btext">The company has surpassed a $500 million annualized revenue run rate, with more than 60 million projects created and over 900 million monthly visits to Lovable-built apps.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Lovable is repositioning around &#x27;capabilities,&#x27; exposing app functions as MCP-server tools so agents like Claude or ChatGPT can operate the app directly instead of a human opening it.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The app-builder market is turning into the agent-infrastructure market.</strong> Lovable&#x27;s bet is that fewer people will open apps directly as agents handle more tasks on their behalf, a shift that, if it holds, changes what software companies need to build for.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">TAM (Total Addressable Market)</div>
+          <div class="csrc">The Neuron</div>
+          <p>The entire theoretical revenue opportunity if a company captured every possible customer. Often used in IPO pitches as an aspirational sales narrative, not an actual revenue forecast.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Performance-per-watt</div>
+          <div class="csrc">The Deep View</div>
+          <p>How much computational work a chip completes for each unit of power it consumes. It&#x27;s now the key efficiency metric AI chip makers compete on, alongside raw speed.</p>
+        </div>
+        <div class="concept">
+          <div class="term">MCP (Model Context Protocol)</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>A standard that lets AI agents connect to outside tools and data sources. Anthropic added centralized identity management for MCP connectors so companies can control what agents can access.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Unified memory</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>A chip architecture where the CPU and GPU share one pool of RAM instead of separate memory banks. It&#x27;s why Apple&#x27;s M5 Ultra, with 512GB of it, can hold huge AI models locally without needing a data-center GPU.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron, AI Breakfast, TLDR AI, The Deep View, Brain Buzz, AINews</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
