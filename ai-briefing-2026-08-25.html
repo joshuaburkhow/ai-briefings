@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Monday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Monday · Based on August 24 newsletters · 34 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic&#x27;s Bankers Are Now Pitching a $2 Trillion IPO</h2>
+        <ul>
+          <li><span class="btext">Anthropic&#x27;s bankers reportedly told investors the IPO could raise more than $100 billion, implying a valuation near $2 trillion, more than double its last private mark of $965 billion from June.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">That would match or beat SpaceX&#x27;s June IPO, which raised $85.7 billion at a $1.77 trillion valuation and currently holds the record for largest IPO ever.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Morgan Stanley, Goldman Sachs, and JPMorgan are reportedly leading; a listing is possible as soon as October, with public filing paperwork expected in coming weeks.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Only Apple, Microsoft, and Nvidia have ever crossed a $2 trillion valuation; Anthropic would list well ahead of OpenAI, which isn&#x27;t planning to go public until 2027.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The number just doubled in three days.</strong> As recently as last week the IPO chatter was pegged at $75-86 billion. Bankers are now shopping a valuation more than 20 times that, on the back of a projected $47 billion in annual revenue. If it lands anywhere close, Anthropic becomes one of the handful of companies ever to cross $2 trillion before OpenAI even files.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>ChatGPT Ads Roll Out to 31 European Markets</h2>
+        <ul>
+          <li><span class="btext">OpenAI expanded its ChatGPT advertising pilot to 31 European markets as of August 18, including Germany, France, Spain, Italy, and several Nordic and Eastern European countries.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Free and low-cost ChatGPT users in Europe will start seeing ads inside the product; paid subscribers stay ad-free.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The move follows OpenAI&#x27;s broader push to build new revenue lines beyond subscriptions as it scales toward its 2027 IPO target.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Free ChatGPT is starting to look like every other free product.</strong> Ads in the free tier is the same playbook every consumer tech company runs once growth slows and infrastructure costs pile up. It also draws a harder line between paying and non-paying users than OpenAI has drawn before.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>DeepMind Is Training Agents Inside a Live EVE Online Server</h2>
+        <ul>
+          <li><span class="btext">Google DeepMind is training agents inside an isolated EVE Online server to test long-term memory, continual learning, planning, and multi-agent behavior over extended play.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The work could extend into EVE Frontier, a version with changing rules and persistent in-game economies, for even harder long-horizon tests.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">DeepMind says the goal is enriching the game experience rather than replacing human players.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Games are still the best lab for long-horizon agents.</strong> Sparse-benchmark tests like ARC-AGI measure single tasks. A live, persistent multiplayer economy forces an agent to remember what happened weeks ago and keep adapting, which is closer to what an agent needs to do in a real job than any static benchmark.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Hugging Face Quietly Shopped Itself at a $13 Billion Valuation</h2>
+        <ul>
+          <li><span class="btext">Hugging Face reportedly worked with a bank to gauge buyer interest at a valuation of $13 billion or more, nearly triple its 2023 valuation.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">No agreement was reached; the interest reflects the value of its model hub, developer ecosystem, and AI infrastructure business.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The plumbing of open-source AI just got a price tag.</strong> Hugging Face doesn&#x27;t build frontier models, it hosts and distributes almost everyone else&#x27;s. A $13 billion valuation for that role says the open-weight ecosystem itself, not just any single model, is now seen as core infrastructure worth owning.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Open-Weight Models Just Took Over Most of the Token Volume</h2>
+        <ul>
+          <li><span class="btext">Open-source models&#x27; share of tokens processed on the Vercel AI platform jumped from 28% to 62% over the last two months.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">Anthropic&#x27;s own engineers acknowledged Opus 5 is drawing complaints for being too verbose, even as it overtook Fable 5 in corporate model spending within a month of launch.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Anthropic&#x27;s premium tier is described as facing slower adoption as the market shifts toward cheaper, &#x27;good enough&#x27; tools that need less compute and simpler integration.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The most expensive model is no longer the default choice.</strong> A jump from 28% to 62% open-weight token share in two months is a fast swing for enterprise infrastructure. Combined with frontier labs&#x27; own premium tiers struggling for adoption, it points to buyers routing routine work to cheaper models and saving the expensive ones for what actually needs them.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>A Mystery &#x27;Stealth Model&#x27; Has the Industry Guessing Who Built It</h2>
+        <ul>
+          <li><span class="btext">An anonymous reasoning model called &#x27;Ox Alpha&#x27; surfaced on OpenRouter, free in preview for one week with near-unlimited usage and capacity cited at 100 trillion tokens per day.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">It carries a roughly 1 million-token context window, 131K-token max output, tool calling, and multimodal support; a viral 10-task subset test showed an 80% pass rate beating Claude Fable 5 and GPT-5.6 Sol, though the full 113-task suite gave a more modest 63%, roughly matching GPT-5.6 Sol.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">A DeepMind researcher hinted at a stealth Gemini Pro; outside researchers doing tokenizer and error-signature analysis instead point to Z.ai&#x27;s GLM-5.3. Nothing is confirmed.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">Stripe CEO Patrick Collison called it &#x27;very impressive&#x27; on X.</span><span class="src">Human in the Loop</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Nobody will say who built it, and that&#x27;s the story.</strong> Labs increasingly test frontier-caliber models anonymously before deciding whether to claim them. It lets a company gauge the reaction and the benchmarks without the reputational risk of an official launch, and it means the public leaderboard is no longer a full picture of who&#x27;s actually at the frontier.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Nvidia Warns Customers of 15-17% Price Hikes on Next-Gen AI Servers</h2>
+        <ul>
+          <li><span class="btext">Nvidia is warning customers that AI servers built on its Vera Rubin and Grace Blackwell chips could cost 15-17% more starting early next year.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">The increase is driven by rising DRAM and HBM memory prices from Samsung, SK Hynix, and Micron as AI data-center demand outpaces memory supply; memory prices are up roughly 500% over the past 12 months.</span><span class="src">Turing Post</span></li>
+          <li><span class="btext">Microsoft, Google, and Oracle have already been notified; Amazon, Meta, OpenAI, and Anthropic remain heavily dependent on Nvidia hardware despite their own chip efforts.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The Neuron estimates the hike could add roughly $5 billion to the cost of building a single large data center; Nvidia has also raised prices on its gaming GPUs.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The AI buildout just got a lot more expensive, and it isn&#x27;t Nvidia&#x27;s chips causing it.</strong> A 500% jump in memory prices over one year means the bottleneck has moved from GPU supply to the memory sitting next to it. Every hyperscaler&#x27;s AI infrastructure budget just went up whether or not they change a single order.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>A Small Open-Source Model Beat Every Frontier Model at Picking Sales Leads</h2>
+        <ul>
+          <li><span class="btext">Marketing firm NextLM built &#x27;Savant 3.5&#x27; on lightweight open-source Nvidia Nemotron models (about 30B parameters, 3B active per input) for sales-prospect targeting.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Savant put 24.6% of eventual buyers in its top-10% recommendations, ahead of GPT-5.6 Sol at 22.8% and Grok 4.5 at 22.3%; Anthropic&#x27;s models ranked lowest, with Fable 5 at 18.1% and Opus 5 last at 14.6%.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">Cost per 1,000 prospects scored ran $0.003-$0.011 for Savant versus $0.26-$5.11 for the frontier APIs tested.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Bigger and more expensive lost to smaller and cheaper, on a real business task.</strong> This wasn&#x27;t a benchmark built to flatter a small model. It&#x27;s a specific commercial job, and a purpose-built 30B model beat every frontier competitor on accuracy while costing roughly 100 times less per prospect. That is the strongest evidence yet that &#x27;general intelligence&#x27; and &#x27;best tool for a specific job&#x27; are separate questions.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Stealth model</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>An AI model released anonymously, often on a platform like OpenRouter, so a lab can test capabilities and gauge public reaction before deciding whether to claim it as an official release.</p>
+        </div>
+        <div class="concept">
+          <div class="term">HBM (High Bandwidth Memory)</div>
+          <div class="csrc">The Neuron</div>
+          <p>Specialized memory chips stacked next to AI processors for fast data access. Tight supply and sharply rising prices for HBM are now a bigger driver of AI hardware costs than the processors themselves.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Reverse federalism</div>
+          <div class="csrc">Brain Buzz</div>
+          <p>When individual US states pass binding AI rules, like safety-reporting requirements, faster than Congress acts, effectively setting national policy by default rather than waiting for federal law.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Continual learning</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>An AI system&#x27;s ability to keep learning and adapting from ongoing experience over a long period without forgetting earlier lessons, tested here by having agents play a persistent multiplayer game for weeks at a time.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: The Neuron, AI Breakfast, TLDR AI, The Deep View, Brain Buzz, Human in the Loop, Turing Post</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
