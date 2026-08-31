@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Sunday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Sunday · Based on August 29 newsletters · 14 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>a16z Launches $1.1 Billion AI Hardware Fund</h2>
+        <ul>
+          <li><span class="btext">Andreessen Horowitz raised $1.1 billion for its first dedicated hardware fund, backing chips, memory, networking, data centers, robotics, cooling, and power.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">The firm says AI models are advancing faster than infrastructure, with compute and supply constraints expected to persist through 2028.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Big venture money is now chasing the physical layer, not just model companies.</strong> A dedicated $1.1B hardware fund signals investors think the next bottleneck, and the next big return, is in chips and data centers rather than another app-layer wrapper. It is also a bet that compute scarcity holds through the end of the decade.</p>
+        </div>
+      </article>
+      <article class="story cat-6">
+        <div class="tag">OSS</div>
+        <h2>Three Open-Weight Frontier Models Land in One Week: GLM-5.3, Hy4-Preview, Qwen3.8-Flash</h2>
+        <ul>
+          <li><span class="btext">Z.ai&#x27;s GLM-5.3 gained a 50% coding-benchmark boost over GLM-5.2 through post-training alone on the same base model, hit state-of-the-art on the CyberGym security benchmark, and will open its weights after more safety testing.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">Tencent&#x27;s Hy4-preview (770B total / 49B active parameters, 1M context) landed around #5 on the Code Arena WebDev benchmark, a +115 point jump over its predecessor Hy3, and reportedly leads SWE-bench Pro.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Alibaba&#x27;s Qwen3.8-Flash launched as a cheaper, faster sibling to Qwen3.8 Max (125B total / 6B active parameters), though early field reports flagged multi-turn tracking issues at lower precision.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Open-weight models keep closing the gap with closed frontier labs, and doing it with post-training tricks, not just bigger base models.</strong> GLM-5.3&#x27;s gain came without a new base model, and Hy4-preview is being described as genuine open-source frontier rather than an incremental release. That matters for anyone choosing between API models and self-hosted ones: the cost/performance gap keeps narrowing.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI Cuts Off Cursor&#x27;s API Access After Its SpaceX Acquisition</h2>
+        <ul>
+          <li><span class="btext">OpenAI shut off Cursor&#x27;s access to its models following the close of Cursor&#x27;s acquisition by Elon Musk&#x27;s SpaceX, citing &quot;our experience with Elon Musk&#x27;s companies violating contracts.&quot;</span><span class="src">AINews</span></li>
+          <li><span class="btext">Cursor says OpenAI traffic was only about 5% of its usage and is not treating the cutoff as necessarily final; it can lean on GPT-5.6, Grok 4.6, or Claude for coding instead.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>This mirrors what Anthropic did to Windsurf when it was up for sale to OpenAI, and shows model access is now a competitive weapon.</strong> As coding tools get acquired by rival AI labs&#x27; backers, the underlying model providers are willing to cut them off rather than keep subsidizing a competitor&#x27;s product. It&#x27;s a sign the coding-agent market is now split along lab allegiance lines, not just feature sets.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google Turns Your Ebooks Into an AI Tutor</h2>
+        <ul>
+          <li><span class="btext">Google&#x27;s new Expert Intelligence feature lets users add select Google Play Books ebooks into Gemini Notebook and interact with them alongside their own files.</span><span class="src">AI Entrepreneurs</span></li>
+          <li><span class="btext">Users can ask questions grounded in exact passages with citations, generate flashcards and quizzes, and create Audio Overviews from the book content.</span><span class="src">AI Entrepreneurs</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Google is extending its NotebookLM-style grounded Q&amp;A pattern into paid book content, not just uploaded documents.</strong> This pushes AI tutoring into a space (licensed ebooks) that most AI study tools can&#x27;t touch, since it relies on Google&#x27;s existing Play Books catalog and licensing relationships.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>South Korea Launches Free, Unlimited AI Access for Its Entire Population</h2>
+        <ul>
+          <li><span class="btext">South Korea&#x27;s &quot;AI for All&quot; program begins beta in September and rolls out fully later in 2026, giving citizens unlimited generative AI access with no token limits, powered by government-supplied Nvidia B200 compute.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">The program is backed by $7.2 billion in 2026 AI funding, triple last year&#x27;s budget, and integrates AI into healthcare appointments, housing search, tax help, and education through three telecom- and Kakao-led consortia.</span><span class="src">Brain Buzz</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>This is the most aggressive government move yet to make AI a public utility rather than a paid consumer product.</strong> By supplying compute and unlimited access directly, South Korea is trying to build a domestic AI industry and reduce reliance on US and Chinese platforms. It&#x27;s a policy model other governments will likely be watched to see if they copy.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Perplexity Tops a New AI Search Benchmark</h2>
+        <ul>
+          <li><span class="btext">Artificial Analysis launched a new Search Index benchmark and ranked Perplexity Search on top across all three context variants tested.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Perplexity&#x27;s medium tier scored 80 versus a prior best of 75, while also posting the lowest per-task inference cost among tested providers due to smaller search payloads.</span><span class="src">AINews</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Search is becoming a measured, competitive subsystem inside AI products, not just a hidden plumbing layer.</strong> As agents increasingly rely on live search, providers that deliver accurate results at lower token cost have a real edge on both latency and spend, and a formal benchmark makes that advantage visible and comparable for the first time.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Open-weight model</div>
+          <div class="csrc">AI Entrepreneurs / AINews</div>
+          <p>An AI model whose trained parameters are published for anyone to download and run locally or self-host, rather than being accessible only through a paid API from the lab that built it.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Mixture of Experts (MoE)</div>
+          <div class="csrc">AINews</div>
+          <p>A model architecture where only a subset of the model&#x27;s total parameters, called experts, activate for any given input. This lets a huge model like Hy4-preview (770B total parameters) run at roughly the cost of a much smaller one (49B active).</p>
+        </div>
+        <div class="concept">
+          <div class="term">Speculative decoding</div>
+          <div class="csrc">AINews</div>
+          <p>An inference speedup technique where a small, fast draft model predicts several tokens ahead and the main model verifies them in one pass instead of generating one token at a time. vLLM&#x27;s benchmarking found no single method wins across all model families.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>AI Entrepreneurs, AINews, Brain Buzz</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
