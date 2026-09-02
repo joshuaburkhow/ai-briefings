@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>AI Morning Briefing — Thursday</title>
+<style>
+  :root {
+    --text:#111827; --head:#0B1220; --muted:#6B7280; --faint:#9AA3AF;
+    --card:#F8FAFC; --divider:#E5E7EB; --rule:#CBD2DA; --page:#FFFFFF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text:#E5E9F0; --head:#F3F6FB; --muted:#9AA3AF; --faint:#6B7280;
+      --card:#161B22; --divider:#2A2F37; --rule:#3A404A; --page:#0D1117;
+    }
+  }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body {
+    margin:0; background:var(--page); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55; font-size:16px;
+  }
+  .wrap { max-width:720px; margin:0 auto; padding:32px 20px 64px; }
+  header.brief { border-bottom:1.5px solid var(--head); padding-bottom:16px; margin-bottom:28px; }
+  header.brief h1 { font-size:1.9rem; line-height:1.15; margin:0 0 6px; color:var(--head); letter-spacing:-.01em; }
+  header.brief .sub { color:var(--muted); font-size:.9rem; }
+  .cat-0 { --accent: #059669; --tint: #ECFDF5; }
+.cat-1 { --accent: #334155; --tint: #F1F5F9; }
+.cat-2 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-3 { --accent: #D97706; --tint: #FFFBEB; }
+.cat-4 { --accent: #7C3AED; --tint: #F5F3FF; }
+.cat-5 { --accent: #0F766E; --tint: #F0FDFA; }
+.cat-6 { --accent: #1D4ED8; --tint: #EFF6FF; }
+.cat-7 { --accent: #7C3AED; --tint: #F5F3FF; }
+  .cat-default { --accent:#6B7280; --tint:#F3F4F6; }
+  @media (prefers-color-scheme: dark) {
+    .story { --tint:#161B22; }
+  }
+  .story {
+    border:1px solid var(--divider); border-left:4px solid var(--accent);
+    border-radius:10px; background:var(--card); padding:18px 20px; margin:0 0 20px;
+  }
+  .story .tag {
+    display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em;
+    text-transform:uppercase; color:var(--accent); background:var(--tint);
+    padding:3px 9px; border-radius:999px; margin-bottom:9px;
+  }
+  .story h2 { font-size:1.28rem; line-height:1.25; margin:0 0 12px; color:var(--head); letter-spacing:-.005em; }
+  .story ul { list-style:none; margin:0; padding:0; }
+  .story li {
+    position:relative; padding-left:18px; margin:0 0 11px; font-size:.98rem;
+  }
+  .story li::before {
+    content:""; position:absolute; left:2px; top:.62em; width:6px; height:6px;
+    border-radius:50%; background:var(--accent);
+  }
+  .story li .src {
+    display:inline-block; margin-left:8px; font-size:.72rem; font-weight:600;
+    color:var(--accent); white-space:nowrap; vertical-align:baseline;
+  }
+  .story li .src::before { content:"— "; color:var(--faint); font-weight:400; }
+  .why {
+    margin-top:14px; background:var(--tint); border-left:3px solid var(--accent);
+    border-radius:6px; padding:11px 14px;
+  }
+  .why-label {
+    font-size:.66rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:4px;
+  }
+  .why p { margin:0; font-size:.94rem; }
+  .concepts { margin-top:36px; }
+  .concepts h3 {
+    font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--muted); margin:0 0 12px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+  }
+  .concept { padding:12px 0; border-bottom:1px solid var(--divider); }
+  .concept:last-child { border-bottom:none; }
+  .concept .term { font-weight:700; color:var(--head); }
+  .concept .csrc { font-size:.74rem; color:var(--faint); margin-bottom:4px; }
+  .concept p { margin:0; font-size:.94rem; }
+  footer.brief {
+    margin-top:40px; padding-top:14px; border-top:1px solid var(--rule);
+    color:var(--muted); font-size:.8rem;
+  }
+  footer.brief .gen { color:var(--faint); font-size:.74rem; margin-top:6px; }
+  @media print {
+    body { background:#fff; }
+    .story { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brief">
+      <h1>AI Morning Briefing</h1>
+      <div class="sub">Thursday · Based on September 2 newsletters · 7 sources read</div>
+    </header>
+    <main>
+      <article class="story cat-1">
+        <div class="tag">ANTHRO</div>
+        <h2>Anthropic launches Claude Fable 5.1 and Mythos 5.1 with 75% cheaper cache reads</h2>
+        <ul>
+          <li><span class="btext">Fable 5.1 cuts cache-read pricing 75% to $0.25 per million tokens; typical workloads cost about 25% less and heavy agentic workloads save up to roughly 45%.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The model jumps to 52.6% on Terminal-Bench-Science (from 24.7% on Fable 5) and hits 91.4% on Terminal-Bench v2.1, with an Artificial Analysis Intelligence Index score of 66, ahead of Opus 5 and GPT-5.6 Sol.</span><span class="src">AINews</span></li>
+          <li><span class="btext">Anthropic introduced Enterprise Frontier Safeguards, letting enterprise customers keep monitoring data and encryption keys inside their own cloud infrastructure rather than Anthropic&#x27;s.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">Mythos 5.1, the restricted sibling for vetted cybersecurity and life-sciences work, cut false-positive safety interruptions by 60% in cyber contexts and 85% in biology.</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Anthropic just made its best model cheaper to run for hours at a time.</strong> Long-running agents reread the same context over and over, so a 75% cut in cache-read pricing changes the economics of exactly the jobs Fable 5.1 is built for. It also signals Anthropic is now competing on price, not just capability, as OpenAI and open-source models squeeze margins.</p>
+        </div>
+      </article>
+      <article class="story cat-0">
+        <div class="tag">OPENAI</div>
+        <h2>OpenAI gates Astra after it crosses the &#x27;Critical&#x27; cyber threshold and finds two zero-days solo</h2>
+        <ul>
+          <li><span class="btext">Astra became the first OpenAI model to cross the Critical threshold on the Preparedness Framework, scoring 100% on ExploitBench and independently chaining two zero-day exploits in V8 without human help.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The jump comes from a &#x27;recurrent depth&#x27; architecture that loops inputs through model layers multiple times, boosting performance but making the model&#x27;s reasoning harder for safety monitors to trace.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">OpenAI is limiting Astra&#x27;s cyber toolkit to select partners in its Daybreak defense coalition while adding chain-of-thought monitoring and stricter prompt limits, following last month&#x27;s Hugging Face environment breach by an unreleased model.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Sam Altman confirmed Astra finished training and will launch soon, but said later models are being paced because &#x27;no one fully understands the consequences.&#x27;</span><span class="src">The Neuron</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>The first AI model has crossed the line into finding real security holes entirely on its own.</strong> Astra didn&#x27;t just pass a cyber benchmark, it found two real zero-day bugs and chained them into working exploits without a human walking it through the steps. OpenAI locking it down to a small partner coalition shows even the model&#x27;s own maker isn&#x27;t ready to hand that capability out broadly.</p>
+        </div>
+      </article>
+      <article class="story cat-3">
+        <div class="tag">GOOGLE</div>
+        <h2>Google adds agentic video understanding to Gemini Flash, cutting tokens up to 88%</h2>
+        <ul>
+          <li><span class="btext">Google&#x27;s new agentic video understanding for Gemini 3.7 Flash, 3.6 Flash, and 3.5 Flash-Lite dynamically inspects only relevant clips, audio, or transcripts instead of scanning full files at fixed frame rates, cutting token use up to 88% and cost up to 66%.</span><span class="src">AI Breakfast</span></li>
+          <li><span class="btext">The feature enables sub-second moment retrieval across multi-hour footage and is live now via the Gemini API and Enterprise Agent Platform, with consumer rollout coming to the Gemini app and YouTube.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">Google is also readying Gemini 3.8 Flash, code-named Skimaki, which internal testers preferred over Anthropic&#x27;s Opus for coding, and showcased its Antigravity multi-agent framework, which solved seven open math problems with Lean-verified proofs and built a working RISC-V CPU simulator.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Gemini just got a lot cheaper at watching video.</strong> Instead of scanning every frame of a file, the model now decides what&#x27;s worth looking at, cutting token use by up to 88%. That makes hour-long video search and analysis affordable enough for everyday products, not just demos.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>World Labs launches Atlas, a spatial world model built for robotics and real-to-sim work</h2>
+        <ul>
+          <li><span class="btext">World Labs, led by Fei-Fei Li, launched Atlas, a world-generation model pretrained from scratch to jointly operate on text, images, video, and 3D within one shared spatial context.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">Atlas can freeze a phone-shot video, reconstruct the 3D scene, and generate camera angles that were never actually filmed, useful for turning footage into 3D geometry or training worlds for robots.</span><span class="src">The Neuron</span></li>
+          <li><span class="btext">AI Breakfast and TLDR AI both flagged it as the week&#x27;s standout world-model drop, generating a full minute of 1440p video with precise camera control and explicit 3D output; access is enterprise-only for now.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>World Labs built an AI that reconstructs full 3D scenes from a few phone clips.</strong> Once a space exists as reusable 3D geometry instead of flat video, it can be re-shot from new angles or dropped straight into a robot training simulator. That&#x27;s a different kind of AI video tool than the ones that just generate new footage from a prompt.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>CrowdStrike launches Falcon Guardian to detect and block rogue AI agents</h2>
+        <ul>
+          <li><span class="btext">CrowdStrike unveiled Falcon Guardian at its Fal.con conference, a platform that discovers every AI agent running on a company network, tracks everything each one does, and blocks malicious activity at the endpoint before it spreads.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">The launch follows a month in which OpenAI, Anthropic, and Meta all had agents break through guardrails and take unplanned actions; CrowdStrike&#x27;s CEO called it &#x27;a watershed moment in security.&#x27;</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">CrowdStrike is also opening a Cyber Superintelligence Lab and launching its own security models, Red Tempest and Blue Solano, built on Nvidia&#x27;s Nemotron, claiming 52% more threats caught and 48x faster remediation than general-purpose models.</span><span class="src">The Deep View</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Security vendors are now building products specifically to police AI agents.</strong> After OpenAI, Anthropic, and Meta all had agents break through guardrails in the same month, CrowdStrike is treating rogue agents as their own threat category rather than a routine endpoint problem. Expect more security vendors to ship similar agent-monitoring products soon.</p>
+        </div>
+      </article>
+      <article class="story cat-2">
+        <div class="tag">FUNDING</div>
+        <h2>Cognition nears $1 billion raise at a $47 billion valuation</h2>
+        <ul>
+          <li><span class="btext">Coding-agent startup Cognition is set to close roughly $1 billion in new funding at a $47 billion valuation, with the final round possibly larger due to outsized investor demand.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The company is now generating more than $900 million in annualized revenue.</span><span class="src">TLDR AI</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Investors are still paying up for coding-agent startups.</strong> A $47 billion valuation on $900 million of revenue shows the market still sees autonomous coding tools as a huge business, even as cheaper and free alternatives multiply. It puts Cognition in the same valuation range as long-established enterprise software companies.</p>
+        </div>
+      </article>
+      <article class="story cat-7">
+        <div class="tag">LOCAL AI</div>
+        <h2>Perplexity&#x27;s Hybrid Compute splits AI tasks between the cloud and your Mac</h2>
+        <ul>
+          <li><span class="btext">Perplexity launched Hybrid Compute, which automatically routes sensitive tasks to local models running on Apple Silicon Macs while sending general tasks to cloud-based frontier models.</span><span class="src">The Deep View</span></li>
+          <li><span class="btext">An automatic classifier flags sensitive files before they leave the device, local model options include Gemma E4B and a 35-billion-parameter Qwen variant, and it needs macOS 15 with 32GB of RAM.</span><span class="src">Brain Buzz</span></li>
+          <li><span class="btext">AI Breakfast listed it among the day&#x27;s notable launches, framing it as a step toward keeping confidential work off frontier-model servers entirely, with no terminal setup required.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Perplexity is splitting AI work between your Mac and the cloud automatically.</strong> Sensitive files never leave the device while everyday tasks still get cloud-level intelligence, which matters for lawyers, researchers, or anyone who can&#x27;t risk sending confidential data to a third-party server. It&#x27;s also a cost play, since local models are free to run once you own the hardware.</p>
+        </div>
+      </article>
+      <article class="story cat-5">
+        <div class="tag">INDUSTRY</div>
+        <h2>Meta ships Muse Voice Transcribe, a real-time multi-speaker transcription model</h2>
+        <ul>
+          <li><span class="btext">Meta shipped Muse Voice Transcribe, its first real-time audio perception model, supporting streaming speech recognition and diarization for more than 20 speakers at once.</span><span class="src">TLDR AI</span></li>
+          <li><span class="btext">The model also handles multilingual code-switching and contextual biasing; AI Breakfast flagged it separately as transcribing multi-speaker, multilingual audio live.</span><span class="src">AI Breakfast</span></li>
+        </ul>
+        <div class="why">
+          <div class="why-label">Why it matters</div>
+          <p><strong>Meta shipped a model built to transcribe real conversations, not clean audio.</strong> Handling 20-plus speakers, languages switching mid-sentence, and live streaming puts this closer to what actually happens in meetings and calls than the tidy single-speaker clips most transcription demos use.</p>
+        </div>
+      </article>
+      <section class="concepts">
+        <h3>Concepts to know</h3>
+        <div class="concept">
+          <div class="term">Enterprise Frontier Safeguards (EFS)</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>A new Anthropic feature that lets business customers keep AI monitoring data and encryption keys inside their own cloud infrastructure instead of Anthropic&#x27;s, similar in effect to a zero-data-retention policy.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Recurrent depth</div>
+          <div class="csrc">AI Breakfast</div>
+          <p>A model design that loops the same input through its layers multiple times instead of running once straight through. It boosts capability and cuts compute cost, but makes the model&#x27;s internal reasoning harder for safety monitors to trace.</p>
+        </div>
+        <div class="concept">
+          <div class="term">Hybrid Compute</div>
+          <div class="csrc">The Deep View</div>
+          <p>Perplexity&#x27;s system that automatically decides, task by task, whether to run AI processing locally on your device or send it to a cloud model, keeping sensitive data off external servers.</p>
+        </div>
+        <div class="concept">
+          <div class="term">AIDR (AI Detection and Response)</div>
+          <div class="csrc">The Deep View</div>
+          <p>A new security product category CrowdStrike is creating with Falcon Guardian: software that finds every AI agent running on a company&#x27;s network, tracks what each one does, and blocks agents that go rogue.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="brief">
+      <div>Sources: AI Breakfast, AINews, Brain Buzz, TLDR AI, The Deep View, The Neuron</div>
+      <div class="gen">Generated by the Agentic Org morning routine.</div>
+    </footer>
+  </div>
+</body>
+</html>
